@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import simsLogo from "../assets/sims-logo.png";
+import { NavLink } from "react-router-dom";
 
 const services = [
     {
@@ -75,32 +76,39 @@ const Header = () => {
     return (
         <header className="sticky top-0 z-50 bg-white shadow-lg">
             <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-                {/* Logo */}
-                <a href="/">
+                <NavLink to="/">
                     <img
                         src={simsLogo}
                         alt="SIMS Healthcare"
                         className="h-16 w-auto object-contain"
                     />
-                </a>
+                </NavLink>
 
-                {/* Navigation */}
                 <nav className="hidden items-center gap-10 md:flex">
-                    <a
-                        href="/"
-                        className="font-medium text-gray-800 transition hover:text-teal-500"
+                    <NavLink
+                        to="/"
+                        className={({ isActive }) =>
+                            `font-medium transition ${isActive
+                                ? "text-[#25b8a7]"
+                                : "text-gray-800 hover:text-[#25b8a7]"
+                            }`
+                        }
                     >
                         Home
-                    </a>
+                    </NavLink>
 
-                    <a
-                        href="#about"
-                        className="font-medium text-gray-800 transition hover:text-teal-500"
+                    <NavLink
+                        to="/about"
+                        className={({ isActive }) =>
+                            `font-medium transition ${isActive
+                                ? "text-[#25b8a7]"
+                                : "text-gray-800 hover:text-[#25b8a7]"
+                            }`
+                        }
                     >
                         About Us
-                    </a>
+                    </NavLink>
 
-                    {/* Services Mega Menu */}
                     <div
                         className="relative"
                         onMouseEnter={() => setShowServices(true)}
@@ -112,7 +120,6 @@ const Header = () => {
 
                         {showServices && (
                             <div className="absolute left-1/2 top-full z-50 mt-4 flex -translate-x-1/2">
-                                {/* Left Menu */}
                                 <div className="w-[320px] border-2 border-teal-400 bg-white shadow-2xl">
                                     {services.map((service) => (
                                         <div
