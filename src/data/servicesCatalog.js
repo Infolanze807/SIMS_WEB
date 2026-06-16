@@ -149,16 +149,16 @@ export const SERVICES_CATALOG = [
     category: 'lab',
     relatedSlugs: ['lab-test-at-home', 'nipt-test-at-home', 'hormones-lab-test'],
   },
-  {
-    slug: 'vitamin-minerals-test-at-home',
-    title: 'Vitamin & Minerals Test at Home',
-    description:
-      'SIMS Health Care offers vitamin and minerals testing at home with safe sample collection, accurate results, and complete privacy for better health management.',
-    image:
-      'https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=1200',
-    category: 'lab',
-    relatedSlugs: ['lab-test-at-home', 'health-checkup-at-home', 'hormones-lab-test'],
-  },
+  // {
+  //   slug: 'vitamin-minerals-test-at-home',
+  //   title: 'Vitamin & Minerals Test at Home',
+  //   description:
+  //     'SIMS Health Care offers vitamin and minerals testing at home with safe sample collection, accurate results, and complete privacy for better health management.',
+  //   image:
+  //     'https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=1200',
+  //   category: 'lab',
+  //   relatedSlugs: ['lab-test-at-home', 'health-checkup-at-home', 'hormones-lab-test'],
+  // },
   {
     slug: 'allergy-food-intolerance-test',
     title: 'Allergy & Food Intolerance Test',
