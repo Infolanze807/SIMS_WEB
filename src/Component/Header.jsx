@@ -1,199 +1,165 @@
-import React, { useState } from "react";
-import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
-import simsLogo from "../assets/sims-logo.png";
-import { NavLink } from "react-router-dom";
-
-const services = [
-    {
-        title: "Doctor On Call",
-        children: [
-            "Doctor At Home",
-            "Doctor at Hotel",
-            "Pediatrician at Home",
-            "Pediatrician on Call",
-        ],
-    },
-    {
-        title: "Lab Test at Home",
-        children: [
-            "STD Test at Home",
-            "NIPT Test at Home",
-            "DNA Test at Home",
-            "HIV Test at Home",
-            "Semen Analysis",
-            "Hormones Lab Test",
-            "Beta HCG Test at Home",
-            "Vitamin & Minerals Test at Home",
-        ],
-    },
-    {
-        title: "Physiotherapy At Home",
-        children: [],
-    },
-    {
-        title: "Nursing Care at Home",
-        children: [
-            "Elderly care at home",
-            "Mother & Baby Care",
-            "Post Surgical Care",
-            "ECG at Home",
-            "Wound Care",
-            "Dressing Care at Home",
-            "Urine Catheter Management",
-            "Medication Management",
-        ],
-    },
-    {
-        title: "IV Therapy at Home",
-        children: [],
-    },
-    {
-        title: "Oxygen Therapy at Home",
-        children: [],
-    },
-    {
-        title: "Covid PCR Test at Home",
-        children: [],
-    },
-    {
-        title: "Flu Vaccination at Home",
-        children: [],
-    },
-    {
-        title: "Health Checkup at Home",
-        children: [],
-    },
-    {
-        title: "Injection Service",
-        children: [],
-    },
-];
+import React, { useState, useRef, useEffect } from 'react';
+import { FaPhoneAlt, FaWhatsapp } from 'react-icons/fa';
+import simsLogo from '../assets/sims-logo.png';
+import { NavLink, useNavigate } from 'react-router-dom';
+import { HEADER_NAV_SERVICES } from '../data/servicesCatalog';
 
 const Header = () => {
-    const [showServices, setShowServices] = useState(false);
-    const [activeService, setActiveService] = useState(null);
+  const navigate = useNavigate();
+  const servicesRef = useRef(null);
+  const [showServices, setShowServices] = useState(false);
+  const [activeService, setActiveService] = useState(null);
 
-    return (
-        <header className="sticky top-0 z-50 bg-white shadow-lg">
-            <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-                <NavLink to="/">
-                    <img
-                        src={simsLogo}
-                        alt="SIMS Healthcare"
-                        className="h-16 w-auto object-contain"
-                    />
-                </NavLink>
+  const closeServicesMenu = () => {
+    setShowServices(false);
+    setActiveService(null);
+  };
 
-                <nav className="hidden items-center gap-10 md:flex">
-                    <NavLink
-                        to="/"
-                        className={({ isActive }) =>
-                            `font-medium transition ${isActive
-                                ? "text-[#25b8a7]"
-                                : "text-gray-800 hover:text-[#25b8a7]"
-                            }`
-                        }
-                    >
-                        Home
-                    </NavLink>
+  const goToService = (slug) => {
+    closeServicesMenu();
+    navigate(`/services/${slug}`);
+  };
 
-                    <NavLink
-                        to="/about"
-                        className={({ isActive }) =>
-                            `font-medium transition ${isActive
-                                ? "text-[#25b8a7]"
-                                : "text-gray-800 hover:text-[#25b8a7]"
-                            }`
-                        }
-                    >
-                        About Us
-                    </NavLink>
+  useEffect(() => {
+    if (!showServices) return;
 
-                    <div
-                        className="relative"
-                        onMouseEnter={() => setShowServices(true)}
-                        onMouseLeave={() => setShowServices(false)}
-                    >
-                        <button className="font-medium text-gray-800 transition hover:text-teal-500">
-                            Our Services
-                        </button>
+    const handleClickOutside = (event) => {
+      if (servicesRef.current && !servicesRef.current.contains(event.target)) {
+        closeServicesMenu();
+      }
+    };
 
-                        {showServices && (
-                            <div className="absolute left-1/2 top-full z-50 mt-4 flex -translate-x-1/2">
-                                <div className="w-[320px] border-2 border-teal-400 bg-white shadow-2xl">
-                                    {services.map((service) => (
-                                        <div
-                                            key={service.title}
-                                            onMouseEnter={() => setActiveService(service)}
-                                            className={`flex cursor-pointer items-center justify-between border-b border-gray-100 px-6 py-5 text-lg font-semibold transition-all duration-200 ${activeService?.title === service.title
-                                                ? "bg-[#25b8a7] text-white"
-                                                : "bg-white text-gray-800 hover:bg-gray-50"
-                                                }`}
-                                        >
-                                            <span>{service.title}</span>
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [showServices]);
 
-                                            {service.children.length > 0 && (
-                                                <span className="text-3xl font-light">+</span>
-                                            )}
-                                        </div>
-                                    ))}
-                                </div>
+  return (
+    <header className="sticky top-0 z-50 bg-white shadow-lg">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+        <NavLink to="/">
+          <img src={simsLogo} alt="SIMS Healthcare" className="h-16 w-auto object-contain" />
+        </NavLink>
 
-                                {activeService?.children?.length > 0 && (
-                                    <div className="w-[330px] border-y-2 border-r-2 border-teal-400 bg-white shadow-2xl">
-                                        {activeService.children.map((item) => (
-                                            <a
-                                                key={item}
-                                                href="#"
-                                                className="block border-b border-gray-100 px-6 py-5 text-lg font-medium text-gray-800 transition hover:bg-gray-50"
-                                            >
-                                                {item}
-                                            </a>
-                                        ))}
-                                    </div>
-                                )}
-                            </div>
+        <nav className="hidden items-center gap-10 md:flex">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `font-medium transition ${isActive ? 'text-[#25b8a7]' : 'text-gray-800 hover:text-[#25b8a7]'}`
+            }
+          >
+            Home
+          </NavLink>
+
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              `font-medium transition ${isActive ? 'text-[#25b8a7]' : 'text-gray-800 hover:text-[#25b8a7]'}`
+            }
+          >
+            About Us
+          </NavLink>
+
+          <div
+            ref={servicesRef}
+            className="relative"
+            onMouseEnter={() => setShowServices(true)}
+            onMouseLeave={closeServicesMenu}
+          >
+            <NavLink
+              to="/services"
+              className={({ isActive }) =>
+                `font-medium transition ${isActive ? 'text-[#25b8a7]' : 'text-gray-800 hover:text-[#25b8a7]'}`
+              }
+            >
+              Our Services +
+            </NavLink>
+
+            {showServices && (
+              <div className="absolute left-1/2 top-full z-50 -translate-x-1/2 pt-3">
+                <div className="flex">
+                  <div className="w-[320px] border-2 border-teal-400 bg-white shadow-2xl">
+                    {HEADER_NAV_SERVICES.map((service) => (
+                      <div
+                        key={service.slug}
+                        role="button"
+                        tabIndex={0}
+                        onMouseEnter={() => setActiveService(service)}
+                        onClick={() => goToService(service.slug)}
+                        onKeyDown={(e) => {
+                          if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            goToService(service.slug);
+                          }
+                        }}
+                        className={`flex cursor-pointer items-center justify-between border-b border-gray-100 px-6 py-5 text-lg font-semibold transition-all duration-200 ${
+                          activeService?.slug === service.slug
+                            ? 'bg-[#25b8a7] text-white'
+                            : 'bg-white text-gray-800 hover:bg-gray-50'
+                        }`}
+                      >
+                        <span>{service.title}</span>
+                        {service.children.length > 0 && (
+                          <span className="text-3xl font-light">+</span>
                         )}
+                      </div>
+                    ))}
+                  </div>
+
+                  {activeService?.children?.length > 0 && (
+                    <div className="w-[330px] border-y-2 border-r-2 border-teal-400 bg-white shadow-2xl">
+                      {activeService.children.map((item) => (
+                        <button
+                          key={item.slug}
+                          type="button"
+                          onClick={() => goToService(item.slug)}
+                          className="block w-full border-b border-gray-100 px-6 py-5 text-left text-lg font-medium text-gray-800 transition hover:bg-gray-50"
+                        >
+                          {item.title}
+                        </button>
+                      ))}
                     </div>
-
-                    <a
-                        href="#contact"
-                        className="font-medium text-gray-800 transition hover:text-teal-500"
-                    >
-                        Contact Us
-                    </a>
-
-                    <a
-                        href="#blog"
-                        className="font-medium text-gray-800 transition hover:text-teal-500"
-                    >
-                        Blog
-                    </a>
-                </nav>
-
-                {/* Action Buttons */}
-                <div className="flex items-center gap-3">
-                    <a
-                        href="tel:0525231028"
-                        className="flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-semibold text-gray-800 transition hover:border-gray-300"
-                    >
-                        <FaPhoneAlt />
-                        052 523 1028
-                    </a>
-
-                    <a
-                        href="https://wa.me/971525231028"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 rounded-full bg-green-500 px-5 py-2 text-sm font-semibold text-white transition hover:bg-green-600"
-                    >
-                        <FaWhatsapp />
-                        Book Now
-                    </a>
+                  )}
                 </div>
-            </div>
-        </header>
-    );
+              </div>
+            )}
+          </div>
+
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              `font-medium transition ${isActive ? 'text-[#25b8a7]' : 'text-gray-800 hover:text-[#25b8a7]'}`
+            }
+          >
+            Contact
+          </NavLink>
+
+          <a href="#blog" className="font-medium text-gray-800 transition hover:text-teal-500">
+            Blog
+          </a>
+        </nav>
+
+        <div className="flex items-center gap-3">
+          <a
+            href="tel:0525231028"
+            className="flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-semibold text-gray-800 transition hover:border-gray-300"
+          >
+            <FaPhoneAlt />
+            052 523 1028
+          </a>
+
+          <a
+            href="https://wa.me/971525231028"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 rounded-full bg-green-500 px-5 py-2 text-sm font-semibold text-white transition hover:bg-green-600"
+          >
+            <FaWhatsapp />
+            Book Now
+          </a>
+        </div>
+      </div>
+    </header>
+  );
 };
 
 export default Header;
