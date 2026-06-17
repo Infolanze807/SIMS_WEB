@@ -13,7 +13,7 @@ const HOME_FEATURED_SLUGS = [
 
 const toCard = (post) =>
   post && {
-    href: `/blog/${post.slug}`,
+    // href: `/blog/${post.slug}`,
     day: post.day,
     month: post.month,
     author: post.author,

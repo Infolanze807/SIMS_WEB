@@ -32,7 +32,7 @@ const BlogGrid = () => {
           {BLOG_POSTS.map((post) => (
             <motion.div key={post.slug} variants={fadeUp} whileHover={{ y: -8 }}>
               <Link
-                to={`/blog/${post.slug}`}
+                // to={`/blog/${post.slug}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex flex-col overflow-hidden rounded-[32px] border border-slate-100 bg-white shadow-[0_15px_40px_rgba(0,61,77,0.02)] transition-shadow duration-500 hover:shadow-[0_30px_60px_rgba(0,61,77,0.08)]"

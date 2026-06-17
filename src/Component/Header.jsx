@@ -74,7 +74,7 @@ const Header = () => {
               Our Services +
             </NavLink>
 
-            {showServices && (
+            {/* {showServices && (
               <div className="absolute left-1/2 top-full z-50 -translate-x-1/2 pt-3">
                 <div className="flex">
                   <div className="w-[320px] border-2 border-teal-400 bg-white shadow-2xl">
@@ -121,7 +121,7 @@ const Header = () => {
                   )}
                 </div>
               </div>
-            )}
+            )} */}
           </div>
 
           <NavLink
