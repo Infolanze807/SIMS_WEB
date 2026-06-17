@@ -1,58 +1,77 @@
 import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import AnimateInView, { fadeUp } from '../AnimateInView';
 
 const ServiceDetailFAQs = ({ title, faqs = [] }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="py-24 bg-[#FAFBFD] px-6 lg:px-10 font-sans antialiased">
-      <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-12 space-y-3">
-          <h2 className="text-3xl sm:text-4xl font-black text-brand-dark">{title}</h2>
-          <p className="text-slate-500 font-medium italic">
+    <section className="bg-[#FAFBFD] px-6 py-24 font-sans antialiased lg:px-10">
+      <div className="mx-auto max-w-4xl">
+        <AnimateInView className="mb-12 space-y-3 text-center">
+          <h2 className="text-3xl font-black text-brand-dark sm:text-4xl">{title}</h2>
+          <p className="font-medium italic text-slate-500">
             Have Questions? We&apos;ve Got You Covered
           </p>
-        </div>
+        </AnimateInView>
 
-        <div className="space-y-4">
+        <motion.div
+          className="space-y-4"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={{ visible: { transition: { staggerChildren: 0.06 } } }}
+        >
           {faqs.map((item, index) => {
             const isOpen = activeIndex === index;
             return (
-              <div
+              <motion.div
                 key={item.question}
-                className={`border rounded-3xl overflow-hidden transition-all duration-300 ${
+                variants={fadeUp}
+                layout
+                className={`overflow-hidden rounded-3xl border transition-all duration-300 ${
                   isOpen
-                    ? 'bg-white shadow-lg border-brand-accent/20'
-                    : 'bg-white/70 border-slate-200 hover:border-brand-accent/20'
+                    ? 'border-brand-accent/20 bg-white shadow-lg'
+                    : 'border-slate-200 bg-white/70 hover:border-brand-accent/20'
                 }`}
               >
                 <button
                   type="button"
                   onClick={() => setActiveIndex(isOpen ? null : index)}
-                  className="w-full flex items-center justify-between p-6 text-left gap-4"
+                  className="flex w-full items-center justify-between gap-4 p-6 text-left"
                 >
                   <span
-                    className={`font-black text-sm sm:text-base text-brand-dark ${isOpen ? 'text-brand-accent' : ''}`}
+                    className={`text-sm font-black text-brand-dark sm:text-base ${isOpen ? 'text-brand-accent' : ''}`}
                   >
                     {item.question}
                   </span>
                   <div
-                    className={`p-2 rounded-full shrink-0 ${isOpen ? 'bg-brand-accent text-white' : 'bg-slate-100 text-slate-400'}`}
+                    className={`shrink-0 rounded-full p-2 ${isOpen ? 'bg-brand-accent text-white' : 'bg-slate-100 text-slate-400'}`}
                   >
                     {isOpen ? <FaChevronUp className="text-xs" /> : <FaChevronDown className="text-xs" />}
                   </div>
                 </button>
-                <div
-                  className={`grid transition-all duration-300 ${isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}
-                >
-                  <div className="overflow-hidden">
-                    <p className="px-6 pb-6 text-slate-500 text-sm leading-relaxed whitespace-pre-line">{item.answer}</p>
-                  </div>
-                </div>
-              </div>
+
+                <AnimatePresence initial={false}>
+                  {isOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+                      className="overflow-hidden"
+                    >
+                      <p className="whitespace-pre-line px-6 pb-6 text-sm leading-relaxed text-slate-500">
+                        {item.answer}
+                      </p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

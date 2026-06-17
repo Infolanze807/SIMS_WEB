@@ -1,81 +1,134 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const ServiceDetailHero = ({ eyebrow, headline, subheadline, bullets = [], image, title }) => {
   return (
-    <section className="relative w-full min-h-[85vh] flex items-center bg-brand-dark overflow-hidden font-sans text-white">
-      <img
+    <section className="relative flex min-h-[85vh] w-full items-center overflow-hidden bg-brand-dark font-sans text-white">
+      <motion.img
         src={image}
         alt=""
-        className="absolute inset-0 w-full h-full object-cover opacity-25 scale-105"
+        className="absolute inset-0 h-full w-full scale-105 object-cover opacity-25"
+        initial={{ scale: 1.1 }}
+        animate={{ scale: 1.05 }}
+        transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
       />
       <div className="absolute inset-0 bg-gradient-to-br from-brand-dark via-brand-dark/95 to-brand-dark-mid/90" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(37,184,167,0.25),transparent_55%)]" />
-      <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-brand-accent/10 rounded-full blur-3xl" />
+      <motion.div
+        className="absolute -bottom-32 -left-32 h-96 w-96 rounded-full bg-brand-accent/10 blur-3xl"
+        animate={{ scale: [1, 1.1, 1], opacity: [0.5, 0.8, 0.5] }}
+        transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+      />
 
-      <div className="relative z-20 max-w-7xl mx-auto px-6 py-20 lg:py-28 w-full">
-        <div className="mb-6">
+      <div className="relative z-20 mx-auto w-full max-w-7xl px-6 py-20 lg:py-28">
+        <motion.div
+          className="mb-6"
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+        >
           <Link
             to="/services"
-            className="inline-flex items-center gap-2 text-xs font-bold text-brand-accent-light/80 hover:text-white transition-colors"
+            className="inline-flex items-center gap-2 text-xs font-bold text-brand-accent-light/80 transition-colors hover:text-white"
           >
             ← All Services
           </Link>
-        </div>
+        </motion.div>
 
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          <div className="lg:col-span-7 space-y-6">
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-accent/15 border border-brand-accent/30 text-brand-accent-light text-[10px] font-black tracking-[0.2em] uppercase">
+        <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
+          <motion.div
+            className="space-y-6 lg:col-span-7"
+            initial={{ opacity: 0, x: -32 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <motion.span
+              className="inline-flex items-center gap-2 rounded-full border border-brand-accent/30 bg-brand-accent/15 px-3 py-1 text-[10px] font-black uppercase tracking-[0.2em] text-brand-accent-light"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+            >
               {eyebrow}
-            </span>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black leading-[1.08] tracking-tight">
+            </motion.span>
+            <motion.h1
+              className="text-3xl font-black leading-[1.08] tracking-tight sm:text-4xl lg:text-5xl xl:text-6xl"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 0.7 }}
+            >
               {headline}
-            </h1>
+            </motion.h1>
             {subheadline && (
-              <p className="text-base lg:text-lg text-white/75 font-medium leading-relaxed max-w-2xl">
+              <motion.p
+                className="max-w-2xl text-base font-medium leading-relaxed text-white/75 lg:text-lg"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.45 }}
+              >
                 {subheadline}
-              </p>
+              </motion.p>
             )}
 
-            <div className="grid sm:grid-cols-1 gap-3 pt-2">
+            <div className="grid gap-3 pt-2 sm:grid-cols-1">
               {bullets.map((text, i) => (
-                <div
-                  key={i}
-                  className="flex gap-3 items-start bg-white/[0.05] backdrop-blur-sm border border-white/10 rounded-xl px-4 py-3"
+                <motion.div
+                  key={text}
+                  className="flex items-start gap-3 rounded-xl border border-white/10 bg-white/[0.05] px-4 py-3 backdrop-blur-sm"
+                  initial={{ opacity: 0, x: -16 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.5 + i * 0.08 }}
                 >
                   <span className="mt-0.5 h-2 w-2 shrink-0 rounded-full bg-brand-accent-light" />
-                  <p className="text-sm text-white/85 leading-relaxed">{text}</p>
-                </div>
+                  <p className="text-sm leading-relaxed text-white/85">{text}</p>
+                </motion.div>
               ))}
             </div>
 
-            <div className="flex flex-wrap gap-4 pt-2">
-              <a
+            <motion.div
+              className="flex flex-wrap gap-4 pt-2"
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.7 }}
+            >
+              <motion.a
                 href="tel:+971525231028"
-                className="inline-flex items-center gap-3 bg-white text-brand-dark px-8 py-4 rounded-2xl font-black text-sm tracking-wide hover:bg-brand-accent-light transition-all shadow-xl hover:-translate-y-0.5"
+                className="inline-flex items-center gap-3 rounded-2xl bg-white px-8 py-4 text-sm font-black tracking-wide text-brand-dark shadow-xl"
+                whileHover={{ y: -3, scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
               >
                 <FaPhoneAlt /> +971 5252 310 28
-              </a>
-              <span className="inline-flex items-center gap-2 bg-brand-accent/20 border border-brand-accent/40 text-brand-accent-light px-5 py-4 rounded-2xl text-xs font-black uppercase tracking-widest">
+              </motion.a>
+              <span className="inline-flex items-center gap-2 rounded-2xl border border-brand-accent/40 bg-brand-accent/20 px-5 py-4 text-xs font-black uppercase tracking-widest text-brand-accent-light">
                 24/7 Dubai
               </span>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
-          <div className="lg:col-span-5 relative">
-            <div className="absolute -inset-4 border border-brand-accent/20 rounded-[48px] rotate-2 pointer-events-none" />
-            <div className="relative rounded-[40px] overflow-hidden border border-white/15 shadow-[0_40px_80px_rgba(0,0,0,0.4)] aspect-[4/5] max-h-[520px]">
-              <img src={image} alt={title} className="w-full h-full object-cover" />
+          <motion.div
+            className="relative lg:col-span-5"
+            initial={{ opacity: 0, x: 32, scale: 0.96 }}
+            animate={{ opacity: 1, x: 0, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <div className="pointer-events-none absolute -inset-4 rotate-2 rounded-[48px] border border-brand-accent/20" />
+            <div className="relative aspect-[4/5] max-h-[520px] overflow-hidden rounded-[40px] border border-white/15 shadow-[0_40px_80px_rgba(0,0,0,0.4)]">
+              <img src={image} alt={title} className="h-full w-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent" />
-              <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md rounded-2xl p-5 shadow-xl">
-                <p className="font-black text-brand-dark text-lg">{title}</p>
-                <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mt-1">
+              <motion.div
+                className="absolute bottom-6 left-6 right-6 rounded-2xl bg-white/95 p-5 shadow-xl backdrop-blur-md"
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.6 }}
+              >
+                <p className="text-lg font-black text-brand-dark">{title}</p>
+                <p className="mt-1 text-[10px] font-bold uppercase tracking-widest text-slate-500">
                   DHA Certified · SIMS Healthcare
                 </p>
-              </div>
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

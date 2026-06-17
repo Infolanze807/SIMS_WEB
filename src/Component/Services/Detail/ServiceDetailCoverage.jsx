@@ -1,45 +1,65 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { FaCheckCircle } from 'react-icons/fa';
+import AnimateInView, { fadeUp, slideFromLeft, staggerContainer } from '../AnimateInView';
 
 const ServiceDetailCoverage = ({ title, intro, items = [], idealFor = [] }) => {
   return (
-    <section className="w-full bg-brand-dark py-24 px-6 lg:px-10 font-sans antialiased text-white">
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12">
-        <div className="lg:col-span-5 space-y-4">
-          <span className="text-xs font-black tracking-[0.2em] text-brand-accent-light uppercase">
+    <section className="w-full bg-brand-dark px-6 py-24 font-sans antialiased text-white lg:px-10">
+      <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-12">
+        <AnimateInView variants={slideFromLeft} className="space-y-4 lg:col-span-5">
+          <span className="text-xs font-black uppercase tracking-[0.2em] text-brand-accent-light">
             Coverage
           </span>
-          <h2 className="text-3xl sm:text-4xl font-black tracking-tight leading-tight">{title}</h2>
-          {intro && <p className="text-sm text-white/70 leading-relaxed">{intro}</p>}
-        </div>
+          <h2 className="text-3xl font-black leading-tight tracking-tight sm:text-4xl">{title}</h2>
+          {intro && <p className="text-sm leading-relaxed text-white/70">{intro}</p>}
+        </AnimateInView>
 
-        <div className="lg:col-span-7 space-y-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div className="space-y-8 lg:col-span-7">
+          <motion.div
+            className="grid grid-cols-1 gap-3 sm:grid-cols-2"
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
             {items.map((item) => (
-              <div
+              <motion.div
                 key={item}
-                className="flex items-start gap-3 bg-white/5 border border-white/10 rounded-xl p-4"
+                variants={fadeUp}
+                whileHover={{ x: 4 }}
+                className="flex items-start gap-3 rounded-xl border border-white/10 bg-white/5 p-4"
               >
-                <FaCheckCircle className="text-brand-accent-light shrink-0 mt-0.5 text-sm" />
-                <span className="text-sm text-white/85 leading-relaxed">{item}</span>
-              </div>
+                <FaCheckCircle className="mt-0.5 shrink-0 text-sm text-brand-accent-light" />
+                <span className="text-sm leading-relaxed text-white/85">{item}</span>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
 
           {idealFor.length > 0 && (
-            <div className="space-y-4">
+            <AnimateInView delay={0.1} className="space-y-4">
               <h3 className="text-sm font-black uppercase tracking-widest text-brand-accent-light">
                 Ideal For
               </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <motion.div
+                className="grid grid-cols-1 gap-3 sm:grid-cols-2"
+                variants={staggerContainer}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+              >
                 {idealFor.map((item) => (
-                  <div key={item} className="flex items-center gap-2 text-sm text-white/75">
-                    <FaCheckCircle className="text-brand-accent-light text-xs shrink-0" />
+                  <motion.div
+                    key={item}
+                    variants={fadeUp}
+                    className="flex items-center gap-2 text-sm text-white/75"
+                  >
+                    <FaCheckCircle className="shrink-0 text-xs text-brand-accent-light" />
                     {item}
-                  </div>
+                  </motion.div>
                 ))}
-              </div>
-            </div>
+              </motion.div>
+            </AnimateInView>
           )}
         </div>
       </div>

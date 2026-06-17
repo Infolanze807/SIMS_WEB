@@ -133,9 +133,14 @@ const Header = () => {
             Contact
           </NavLink>
 
-          <a href="#blog" className="font-medium text-gray-800 transition hover:text-teal-500">
+          <NavLink
+            to="/blog"
+            className={({ isActive }) =>
+              `font-medium transition ${isActive ? 'text-[#25b8a7]' : 'text-gray-800 hover:text-[#25b8a7]'}`
+            }
+          >
             Blog
-          </a>
+          </NavLink>
         </nav>
 
         <div className="flex items-center gap-3">

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import { FaPhoneAlt, FaCheckCircle, FaUserMd, FaHospitalUser, FaBuilding, FaUserClock, FaPaperPlane } from 'react-icons/fa';
+import AnimateInView, { fadeUp, slideFromLeft, slideFromRight, staggerContainer } from '../Services/AnimateInView';
 
 const SIMSBookingAndAudience = () => {
   const [formData, setFormData] = useState({
@@ -21,7 +23,7 @@ const SIMSBookingAndAudience = () => {
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
           
-          <div className="lg:col-span-5 space-y-8 lg:sticky lg:top-12">
+          <AnimateInView variants={slideFromLeft} className="space-y-8 lg:col-span-5 lg:sticky lg:top-12">
             <div className="space-y-3">
               <span className="text-xs font-black tracking-[0.2em] text-[#25b8a7] uppercase block">
                 On-Demand Access
@@ -47,23 +49,28 @@ const SIMSBookingAndAudience = () => {
               </h4>
               
               <div className="space-y-3">
-                <div className="flex items-center gap-3 bg-[#FAFBFD] p-3.5 rounded-2xl border border-slate-100/70 shadow-sm">
-                  <FaCheckCircle className="text-[#25b8a7] text-base shrink-0" />
-                  <span className="text-xs sm:text-sm font-bold text-slate-700">We respond within minutes of your request</span>
-                </div>
-                <div className="flex items-center gap-3 bg-[#FAFBFD] p-3.5 rounded-2xl border border-slate-100/70 shadow-sm">
-                  <FaCheckCircle className="text-[#25b8a7] text-base shrink-0" />
-                  <span className="text-xs sm:text-sm font-bold text-slate-700">Emergency cases get priority handling</span>
-                </div>
-                <div className="flex items-center gap-3 bg-[#FAFBFD] p-3.5 rounded-2xl border border-slate-100/70 shadow-sm">
-                  <FaCheckCircle className="text-[#25b8a7] text-base shrink-0" />
-                  <span className="text-xs sm:text-sm font-bold text-slate-700">All submissions are 100% confidential & secure</span>
-                </div>
+                {[
+                  'We respond within minutes of your request',
+                  'Emergency cases get priority handling',
+                  'All submissions are 100% confidential & secure',
+                ].map((text, i) => (
+                  <motion.div
+                    key={text}
+                    className="flex items-center gap-3 rounded-2xl border border-slate-100/70 bg-[#FAFBFD] p-3.5 shadow-sm"
+                    initial={{ opacity: 0, x: -16 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.1 }}
+                  >
+                    <FaCheckCircle className="shrink-0 text-base text-[#25b8a7]" />
+                    <span className="text-xs font-bold text-slate-700 sm:text-sm">{text}</span>
+                  </motion.div>
+                ))}
               </div>
             </div>
-          </div>
+          </AnimateInView>
 
-          <div className="lg:col-span-7 w-full bg-[#FAFBFD] border border-slate-100 p-8 sm:p-10 rounded-[40px] shadow-[0_30px_60px_rgba(0,61,77,0.04)]">
+          <AnimateInView variants={slideFromRight} className="w-full rounded-[40px] border border-slate-100 bg-[#FAFBFD] p-8 shadow-[0_30px_60px_rgba(0,61,77,0.04)] sm:p-10 lg:col-span-7">
             <form onSubmit={(e) => e.preventDefault()} className="space-y-6">
               
               <div className="space-y-1.5">
@@ -156,16 +163,18 @@ const SIMSBookingAndAudience = () => {
                 ></textarea>
               </div>
 
-              <button 
-                type="submit" 
-                className="w-full sm:w-auto bg-gradient-to-r from-[#25b8a7] to-[#0a5568] hover:from-[#1fa394] hover:to-[#084656] text-white text-xs font-black uppercase tracking-widest py-4 px-10 rounded-xl transition-all duration-300 shadow-[0_10px_25px_rgba(37,184,167,0.25)] hover:shadow-none flex items-center justify-center gap-2 group"
+              <motion.button
+                type="submit"
+                className="group flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#25b8a7] to-[#0a5568] px-10 py-4 text-xs font-black uppercase tracking-widest text-white shadow-[0_10px_25px_rgba(37,184,167,0.25)] transition-all duration-300 hover:from-[#1fa394] hover:to-[#084656] hover:shadow-none sm:w-auto"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
               >
                 <span>Submit Request</span>
-                <FaPaperPlane className="text-[10px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-              </button>
+                <FaPaperPlane className="text-[10px] transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+              </motion.button>
 
             </form>
-          </div>
+          </AnimateInView>
 
         </div>
       </section>
@@ -176,7 +185,7 @@ const SIMSBookingAndAudience = () => {
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           
-          <div className="lg:col-span-6 space-y-10 relative z-10">
+          <AnimateInView variants={slideFromLeft} className="relative z-10 space-y-10 lg:col-span-6">
             <div className="space-y-4">
               <div className="space-y-2">
                 <span className="text-sm font-extrabold text-[#25b8a7] tracking-wider block uppercase">
@@ -192,49 +201,35 @@ const SIMSBookingAndAudience = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              
-              <div className="bg-white/[0.03] backdrop-blur-sm border border-white/10 p-5 rounded-2xl flex gap-4 items-start group hover:bg-white/[0.06] transition-colors">
-                <div className="h-9 w-9 rounded-xl bg-[#25b8a7]/20 border border-[#25b8a7]/30 flex items-center justify-center text-[#25b8a7] shrink-0">
-                  <FaBuilding className="text-sm" />
-                </div>
-                <div className="space-y-1">
-                  <h5 className="text-sm font-extrabold text-white">Hotels & Tourism</h5>
-                  <p className="text-xs text-slate-400 font-normal leading-relaxed">Partners in need of on-site medical services</p>
-                </div>
-              </div>
-
-              <div className="bg-white/[0.03] backdrop-blur-sm border border-white/10 p-5 rounded-2xl flex gap-4 items-start group hover:bg-white/[0.06] transition-colors">
-                <div className="h-9 w-9 rounded-xl bg-teal-500/20 border border-teal-500/30 flex items-center justify-center text-teal-400 shrink-0">
-                  <FaHospitalUser className="text-sm" />
-                </div>
-                <div className="space-y-1">
-                  <h5 className="text-sm font-extrabold text-white">Families & Individuals</h5>
-                  <p className="text-xs text-slate-400 font-normal leading-relaxed">Seeking medical care at home</p>
-                </div>
-              </div>
-
-              <div className="bg-white/[0.03] backdrop-blur-sm border border-white/10 p-5 rounded-2xl flex gap-4 items-start group hover:bg-white/[0.06] transition-colors">
-                <div className="h-9 w-9 rounded-xl bg-cyan-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0">
-                  <FaUserMd className="text-sm" />
-                </div>
-                <div className="space-y-1">
-                  <h5 className="text-sm font-extrabold text-white">Corporate Clients</h5>
-                  <p className="text-xs text-slate-400 font-normal leading-relaxed">Looking for workplace wellness solutions</p>
-                </div>
-              </div>
-
-              <div className="bg-white/[0.03] backdrop-blur-sm border border-white/10 p-5 rounded-2xl flex gap-4 items-start group hover:bg-white/[0.06] transition-colors">
-                <div className="h-9 w-9 rounded-xl bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
-                  <FaUserClock className="text-sm" />
-                </div>
-                <div className="space-y-1">
-                  <h5 className="text-sm font-extrabold text-white">Elderly Patients</h5>
-                  <p className="text-xs text-slate-400 font-normal leading-relaxed">Needing continuous care</p>
-                </div>
-              </div>
-
-            </div>
+            <motion.div
+              className="grid grid-cols-1 gap-4 sm:grid-cols-2"
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            >
+              {[
+                { icon: <FaBuilding className="text-sm" />, iconClass: 'bg-[#25b8a7]/20 border-[#25b8a7]/30 text-[#25b8a7]', title: 'Hotels & Tourism', desc: 'Partners in need of on-site medical services' },
+                { icon: <FaHospitalUser className="text-sm" />, iconClass: 'bg-teal-500/20 border-teal-500/30 text-teal-400', title: 'Families & Individuals', desc: 'Seeking medical care at home' },
+                { icon: <FaUserMd className="text-sm" />, iconClass: 'bg-cyan-500/20 border-cyan-500/30 text-cyan-400', title: 'Corporate Clients', desc: 'Looking for workplace wellness solutions' },
+                { icon: <FaUserClock className="text-sm" />, iconClass: 'bg-emerald-500/20 border-emerald-500/30 text-emerald-400', title: 'Elderly Patients', desc: 'Needing continuous care' },
+              ].map((item) => (
+                <motion.div
+                  key={item.title}
+                  variants={fadeUp}
+                  whileHover={{ x: 4 }}
+                  className="group flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur-sm transition-colors hover:bg-white/[0.06]"
+                >
+                  <div className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border ${item.iconClass}`}>
+                    {item.icon}
+                  </div>
+                  <div className="space-y-1">
+                    <h5 className="text-sm font-extrabold text-white">{item.title}</h5>
+                    <p className="text-xs font-normal leading-relaxed text-slate-400">{item.desc}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
 
             <div className="inline-flex flex-col sm:flex-row sm:items-center gap-4 bg-white/[0.04] border border-white/10 p-4 rounded-3xl backdrop-blur-sm">
               <div className="h-12 w-12 rounded-2xl bg-gradient-to-tr from-[#25b8a7] to-teal-500 text-white flex items-center justify-center shadow-md shadow-[#25b8a7]/20">
@@ -245,9 +240,9 @@ const SIMSBookingAndAudience = () => {
                 <span className="block text-xl sm:text-2xl font-black text-[#25b8a7] tracking-tight mt-1">+971 5252 310 28</span>
               </div>
             </div>
-          </div>
+          </AnimateInView>
 
-          <div className="lg:col-span-6 relative w-full flex items-center justify-center min-h-[440px] z-10">
+          <AnimateInView variants={slideFromRight} className="relative z-10 flex min-h-[440px] w-full items-center justify-center lg:col-span-6">
             <div className="absolute inset-0 bg-[radial-gradient(rgba(37,184,167,0.15)_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none rounded-[40px]"></div>
 
             <div className="relative w-full max-w-[440px] aspect-square rounded-[50px] overflow-hidden border border-white/10 shadow-[0_40px_80px_rgba(0,0,0,0.3)] bg-slate-900/40 group">
@@ -262,7 +257,7 @@ const SIMSBookingAndAudience = () => {
                 <span>+</span>
               </div>
             </div>
-          </div>
+          </AnimateInView>
 
         </div>
       </section>

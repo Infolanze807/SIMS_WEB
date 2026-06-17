@@ -1,5 +1,7 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { FaPhoneAlt, FaPaperPlane, FaCheckCircle } from 'react-icons/fa';
+import AnimateInView, { fadeUp, slideFromLeft, slideFromRight } from './AnimateInView';
 
 const SERVICE_OPTIONS = [
   'Service Required',
@@ -28,7 +30,7 @@ const ServiceEmergencyBooking = () => {
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-gradient-to-l from-brand-accent/5 to-transparent rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start relative z-10">
-        <div className="lg:col-span-5 space-y-8 lg:sticky lg:top-12">
+        <AnimateInView variants={slideFromLeft} className="space-y-8 lg:col-span-5 lg:sticky lg:top-12">
           <div className="space-y-3">
             <span className="text-xs font-black tracking-[0.2em] text-brand-accent uppercase block">
               With access to
@@ -50,24 +52,23 @@ const ServiceEmergencyBooking = () => {
           <div className="w-16 h-[2px] bg-brand-accent/40 rounded-full" />
 
           <div className="space-y-3">
-            <div className="flex items-center gap-3 bg-white p-3.5 rounded-2xl border border-slate-100/70 shadow-sm">
-              <FaCheckCircle className="text-brand-accent text-base shrink-0" />
-              <span className="text-xs sm:text-sm font-bold text-slate-700">
-                We respond within minutes of your request
-              </span>
-            </div>
-            <div className="flex items-center gap-3 bg-white p-3.5 rounded-2xl border border-slate-100/70 shadow-sm">
-              <FaCheckCircle className="text-brand-accent text-base shrink-0" />
-              <span className="text-xs sm:text-sm font-bold text-slate-700">
-                Emergency cases get priority handling
-              </span>
-            </div>
-            <div className="flex items-center gap-3 bg-white p-3.5 rounded-2xl border border-slate-100/70 shadow-sm">
-              <FaCheckCircle className="text-brand-accent text-base shrink-0" />
-              <span className="text-xs sm:text-sm font-bold text-slate-700">
-                All submissions are 100% confidential &amp; secure
-              </span>
-            </div>
+            {[
+              'We respond within minutes of your request',
+              'Emergency cases get priority handling',
+              'All submissions are 100% confidential & secure',
+            ].map((text, i) => (
+              <motion.div
+                key={text}
+                className="flex items-center gap-3 rounded-2xl border border-slate-100/70 bg-white p-3.5 shadow-sm"
+                initial={{ opacity: 0, x: -16 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+              >
+                <FaCheckCircle className="shrink-0 text-base text-brand-accent" />
+                <span className="text-xs font-bold text-slate-700 sm:text-sm">{text}</span>
+              </motion.div>
+            ))}
           </div>
 
           <a
@@ -76,9 +77,9 @@ const ServiceEmergencyBooking = () => {
           >
             <FaPhoneAlt /> +971 5252 310 28
           </a>
-        </div>
+        </AnimateInView>
 
-        <div className="lg:col-span-7 w-full bg-white border border-slate-100 p-8 sm:p-10 rounded-[40px] shadow-[0_30px_60px_rgba(0,61,77,0.04)]">
+        <AnimateInView variants={slideFromRight} className="w-full rounded-[40px] border border-slate-100 bg-white p-8 shadow-[0_30px_60px_rgba(0,61,77,0.04)] sm:p-10 lg:col-span-7">
           <form onSubmit={(e) => e.preventDefault()} className="space-y-6">
             <div className="space-y-1.5">
               <label className="text-xs font-black text-brand-dark uppercase tracking-wide">
@@ -190,15 +191,17 @@ const ServiceEmergencyBooking = () => {
               />
             </div>
 
-            <button
+            <motion.button
               type="submit"
-              className="w-full sm:w-auto bg-gradient-to-r from-brand-accent to-brand-dark-mid hover:from-brand-accent/90 hover:to-brand-dark text-white text-xs font-black uppercase tracking-widest py-4 px-10 rounded-xl transition-all duration-300 shadow-[0_10px_25px_rgba(37,184,167,0.25)] hover:shadow-none flex items-center justify-center gap-2 group"
+              className="group flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-brand-accent to-brand-dark-mid px-10 py-4 text-xs font-black uppercase tracking-widest text-white shadow-[0_10px_25px_rgba(37,184,167,0.25)] transition-all duration-300 hover:from-brand-accent/90 hover:to-brand-dark hover:shadow-none sm:w-auto"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
             >
               <span>Submit</span>
-              <FaPaperPlane className="text-[10px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-            </button>
+              <FaPaperPlane className="text-[10px] transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+            </motion.button>
           </form>
-        </div>
+        </AnimateInView>
       </div>
     </section>
   );

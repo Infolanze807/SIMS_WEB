@@ -1,5 +1,7 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { FaShieldAlt, FaUserMd, FaClock, FaCheckCircle } from 'react-icons/fa';
+import AnimateInView, { fadeUp, slideFromLeft, slideFromRight, staggerContainer } from '../Services/AnimateInView';
 
 const HealthcareAbout = () => {
   return (
@@ -10,7 +12,7 @@ const HealthcareAbout = () => {
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center relative z-10">
         
-        <div className="lg:col-span-5 relative w-full flex justify-center items-center">
+        <AnimateInView variants={slideFromLeft} className="relative flex w-full items-center justify-center lg:col-span-5">
           
           <div className="relative w-full max-w-md aspect-square rounded-[48px] border border-white/10 bg-white/5 p-4 backdrop-blur-md shadow-[0_30px_70px_rgba(0,0,0,0.3)]">
             
@@ -36,9 +38,9 @@ const HealthcareAbout = () => {
             </div>
 
           </div>
-        </div>
+        </AnimateInView>
 
-        <div className="lg:col-span-7 space-y-8">
+        <AnimateInView variants={slideFromRight} className="space-y-8 lg:col-span-7">
           
           <div className="space-y-4">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[#25b8a7] text-xs font-mono tracking-widest uppercase">
@@ -91,26 +93,27 @@ const HealthcareAbout = () => {
 
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs sm:text-sm font-medium text-slate-200">
-            <div className="flex items-center gap-2">
-              <FaCheckCircle className="text-[#25b8a7] shrink-0" />
-              <span>Free Consultation & Guidance</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <FaCheckCircle className="text-[#25b8a7] shrink-0" />
-              <span>On-Site Laboratory Diagnostics</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <FaCheckCircle className="text-[#25b8a7] shrink-0" />
-              <span>Elite DHA Certified Practitioners</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <FaCheckCircle className="text-[#25b8a7] shrink-0" />
-              <span>Full Dubai Territorial Coverage</span>
-            </div>
-          </div>
+          <motion.div
+            className="grid grid-cols-1 gap-3 pt-2 text-xs font-medium text-slate-200 sm:grid-cols-2 sm:text-sm"
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            {[
+              'Free Consultation & Guidance',
+              'On-Site Laboratory Diagnostics',
+              'Elite DHA Certified Practitioners',
+              'Full Dubai Territorial Coverage',
+            ].map((text) => (
+              <motion.div key={text} variants={fadeUp} className="flex items-center gap-2">
+                <FaCheckCircle className="shrink-0 text-[#25b8a7]" />
+                <span>{text}</span>
+              </motion.div>
+            ))}
+          </motion.div>
 
-        </div>
+        </AnimateInView>
 
       </div>
     </section>

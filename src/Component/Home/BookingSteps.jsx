@@ -1,5 +1,7 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { FaPhoneAlt, FaUserMd, FaHeartbeat } from 'react-icons/fa';
+import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInView';
 
 const STEPS_DATA = [
   {
@@ -33,8 +35,8 @@ const BookingSteps = () => {
     <section className="w-full bg-white py-20 px-6 lg:px-10 font-sans text-gray-800 overflow-hidden select-none">
       <div className="max-w-7xl mx-auto space-y-16">
         
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-end border-b border-gray-200/60 pb-10">
-          <div className="lg:col-span-7 space-y-3">
+        <AnimateInView className="grid grid-cols-1 items-end gap-6 border-b border-gray-200/60 pb-10 lg:grid-cols-12">
+          <div className="space-y-3 lg:col-span-7">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#003d4d]/5 border border-[#003d4d]/10">
               <span className="w-1.5 h-1.5 rounded-full bg-[#25b8a7] animate-pulse"></span>
               <span className="text-[10px] font-black tracking-widest text-[#003d4d] uppercase">Fast & Personalized</span>
@@ -52,16 +54,24 @@ const BookingSteps = () => {
               At SIMS Home Healthcare, we bring professional medical services straight to you—fast, safe, and tailored around your schedule. Equipped with the latest tools, our team is here to help 24/7.
             </p>
           </div>
-        </div>
+        </AnimateInView>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+        <motion.div
+          className="relative grid grid-cols-1 gap-8 md:grid-cols-3"
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: '-40px' }}
+        >
           
           <div className="hidden md:block absolute top-1/2 left-4 right-4 h-[1px] bg-gradient-to-r from-gray-200 via-gray-300 to-transparent -translate-y-12 z-0"></div>
 
           {STEPS_DATA.map((step, idx) => (
-            <div 
+            <motion.div
               key={idx}
-              className="group relative bg-white rounded-3xl p-8 border border-gray-100 shadow-[0_15px_40px_-15px_rgba(0,0,0,0.05)] hover:shadow-[0_30px_60px_-10px_rgba(0,61,77,0.18)] transition-all duration-500 hover:-translate-y-2 flex flex-col justify-between min-h-[350px] z-10 overflow-hidden"
+              variants={fadeUp}
+              whileHover={{ y: -8 }}
+              className="group relative z-10 flex min-h-[350px] flex-col justify-between overflow-hidden rounded-3xl border border-gray-100 bg-white p-8 shadow-[0_15px_40px_-15px_rgba(0,0,0,0.05)] transition-all duration-500 hover:shadow-[0_30px_60px_-10px_rgba(0,61,77,0.18)]"
             >
               
               <div className="absolute inset-0 w-full h-full z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
@@ -101,11 +111,11 @@ const BookingSteps = () => {
                   {step.stepNumber}
                 </span>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
-        <div className="relative rounded-[32px] overflow-hidden bg-gradient-to-br from-[#003d4d] to-[#0a5568] p-8 md:p-10 text-white shadow-[0_20px_50px_rgba(0,61,77,0.15)]">
+        <AnimateInView className="relative overflow-hidden rounded-[32px] bg-gradient-to-br from-[#003d4d] to-[#0a5568] p-8 text-white shadow-[0_20px_50px_rgba(0,61,77,0.15)] md:p-10">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_90%_10%,rgba(37,184,167,0.15),transparent_40%)] pointer-events-none"></div>
           <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-white/5 rounded-full blur-2xl pointer-events-none"></div>
           
@@ -115,7 +125,7 @@ const BookingSteps = () => {
               Whether you are recovering at home, managing a chronic condition, or need urgent medical attention, our mission is to ensure your comfort, recovery, and well-being <span className="font-semibold text-[#4fc3c0]">without the stress of hospital visits</span>. We proudly serve families, individuals, and travelers across Dubai.
             </p>
           </div>
-        </div>
+        </AnimateInView>
 
       </div>
     </section>

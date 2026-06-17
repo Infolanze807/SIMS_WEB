@@ -15,7 +15,7 @@ export const SERVICES_CATALOG = [
     description:
       'Get reliable, confidential lab tests at your convenience. Our licensed professionals cover a wide range of tests, delivered and collected safely at your location.',
     image:
-      'https://images.unsplash.com/photo-1511174511575-235b9c39263a?auto=format&fit=crop&q=80&w=1200',
+      'https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=1200',
     category: 'lab',
     relatedSlugs: ['std-test-at-home', 'nipt-test-at-home', 'dna-test-at-home', 'hiv-test-at-home'],
   },
@@ -35,7 +35,7 @@ export const SERVICES_CATALOG = [
     description:
       'Our trained nurses offer compassionate, professional care tailored to your needs, from elderly support to post-surgical recovery.',
     image:
-      'https://images.unsplash.com/photo-1584515901107-d5d4d38c6411?auto=format&fit=crop&q=80&w=1200',
+      'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=1200',
     category: 'nursing',
     relatedSlugs: ['elderly-care', 'post-surgical-care', 'mother-baby-care', 'wound-care'],
   },
@@ -75,7 +75,7 @@ export const SERVICES_CATALOG = [
     description:
       'Stay protected from seasonal flu with licensed nurses administering vaccines in the comfort and safety of your home.',
     image:
-      'https://images.unsplash.com/photo-1632550944664-ab2b757e8006?auto=format&fit=crop&q=80&w=1200',
+      'https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&q=80&w=1200',
     category: 'general',
     relatedSlugs: ['injection-service-at-home', 'health-checkup-at-home', 'doctor-on-call'],
   },
@@ -85,7 +85,7 @@ export const SERVICES_CATALOG = [
     description:
       'Comprehensive health screening packages including lab tests and doctor consultations, tailored to your wellness goals and delivered to your doorstep.',
     image:
-      'https://images.unsplash.com/photo-1606206595346-8618e7283c9d?auto=format&fit=crop&q=80&w=1200',
+      'https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&q=80&w=1200',
     category: 'general',
     relatedSlugs: ['lab-test-at-home', 'doctor-on-call', 'ecg-at-home'],
   },
@@ -95,7 +95,7 @@ export const SERVICES_CATALOG = [
     description:
       'SIMS Health Care offers safe and professional injection service at home with trained nurses, ensuring comfort, hygiene, and complete privacy.',
     image:
-      'https://images.unsplash.com/photo-1579684389782-64d84b5e901a?auto=format&fit=crop&q=80&w=1200',
+      'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&q=80&w=1200',
     category: 'nursing',
     relatedSlugs: ['nursing-care-at-home', 'iv-therapies', 'medication-management'],
   },
@@ -225,7 +225,7 @@ export const SERVICES_CATALOG = [
     description:
       'SIMS Health Care provides hormones lab tests at home with safe sample collection, accurate results, and complete privacy for your health monitoring.',
     image:
-      'https://images.unsplash.com/photo-1511174511575-235b9c39263a?auto=format&fit=crop&q=80&w=1200',
+      'https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=1200',
     category: 'lab',
     relatedSlugs: ['lab-test-at-home', 'allergy-food-intolerance-test', 'health-checkup-at-home'],
   },
@@ -285,7 +285,7 @@ export const SERVICES_CATALOG = [
     description:
       'SIMS Health Care offers urine catheter management at home with expert care, hygiene maintenance, infection prevention, and patient comfort support.',
     image:
-      'https://images.unsplash.com/photo-1584515901107-d5d4d38c6411?auto=format&fit=crop&q=80&w=1200',
+      'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=1200',
     category: 'nursing',
     relatedSlugs: ['nursing-care-at-home', 'elderly-care', 'post-surgical-care'],
   },

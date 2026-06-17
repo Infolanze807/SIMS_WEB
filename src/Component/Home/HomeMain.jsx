@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import { FaPhoneAlt, FaWhatsapp, FaBriefcaseMedical } from 'react-icons/fa';
 
 const SLIDE_DATA = [
@@ -76,13 +77,18 @@ const HomeMain = () => {
           <div
             key={slide.id}
             className={`absolute inset-0 w-full h-full bg-gradient-to-tr from-[#003d4d] via-[#0a5568] to-[#25b8a7] transition-all duration-1000 ease-in-out ${
-              index === currentSlide ? "opacity-100 scale-100 z-10" : "opacity-0 scale-105 z-0"
+              index === currentSlide ? 'opacity-100 scale-100 z-10' : 'opacity-0 scale-105 z-0'
             }`}
           >
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_120%,rgba(79,195,192,0.15),transparent_50%)]"></div>
-            <div className="absolute top-0 right-0 w-[50vw] h-full opacity-10 bg-gradient-to-l from-white/10 to-transparent transform -skew-x-12 origin-top"></div>
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_120%,rgba(79,195,192,0.15),transparent_50%)]" />
+            <div className="absolute top-0 right-0 h-full w-[50vw] origin-top -skew-x-12 transform bg-gradient-to-l from-white/10 to-transparent opacity-10" />
           </div>
         ))}
+        <motion.div
+          className="absolute -left-20 top-20 z-20 h-64 w-64 rounded-full bg-[#25b8a7]/10 blur-3xl"
+          animate={{ scale: [1, 1.12, 1], opacity: [0.35, 0.6, 0.35] }}
+          transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
+        />
       </div>
 
       <div className="w-full max-w-7xl mx-auto px-6 lg:px-10 py-12 relative z-20 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
@@ -139,9 +145,11 @@ const HomeMain = () => {
           </div>
 
           <div className="grid grid-cols-2 gap-4 pt-2">
-            <a
+            <motion.a
               href="tel:+971525231028"
-              className="flex items-center justify-between bg-white text-[#003d4d] hover:bg-gray-50 p-4 rounded-2xl shadow-xl transition-all duration-300 hover:-translate-y-0.5 group"
+              className="group flex items-center justify-between rounded-2xl bg-white p-4 text-[#003d4d] shadow-xl transition-all duration-300"
+              whileHover={{ y: -3, scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
             >
               <div className="space-y-0.5">
                 <span className="block text-[9px] font-extrabold uppercase tracking-wider text-gray-400">Direct Call 24/7</span>
@@ -150,13 +158,15 @@ const HomeMain = () => {
               <div className="h-8 w-8 rounded-xl bg-[#003d4d]/5 flex items-center justify-center text-[#003d4d] group-hover:bg-[#25b8a7] group-hover:text-white transition-all">
                 <FaPhoneAlt className="text-xs" />
               </div>
-            </a>
+            </motion.a>
 
-            <a
+            <motion.a
               href="https://wa.me/971525231028"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center justify-between bg-white/[0.04] border border-white/[0.08] hover:bg-white/[0.08] p-4 rounded-2xl shadow-xl transition-all duration-300 hover:-translate-y-0.5 group"
+              className="group flex items-center justify-between rounded-2xl border border-white/[0.08] bg-white/[0.04] p-4 shadow-xl transition-all duration-300 hover:bg-white/[0.08]"
+              whileHover={{ y: -3, scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
             >
               <div className="space-y-0.5">
                 <span className="block text-[9px] font-extrabold uppercase tracking-wider text-white/40">Instant Booking</span>
@@ -165,7 +175,7 @@ const HomeMain = () => {
               <div className="h-8 w-8 rounded-xl bg-white/5 flex items-center justify-center text-[#25d366] group-hover:bg-[#25d366] group-hover:text-white transition-all">
                 <FaWhatsapp className="text-sm" />
               </div>
-            </a>
+            </motion.a>
           </div>
 
           <div className="pt-4 flex flex-col gap-2">

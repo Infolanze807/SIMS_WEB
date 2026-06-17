@@ -1,15 +1,17 @@
 import React from 'react';
-import { 
-  FaWhatsapp, 
-  FaArrowRight, 
-  FaUserMd, 
-  FaSyringe, 
-  FaVial, 
-  FaBaby, 
-  FaHeartbeat, 
-  FaBriefcaseMedical, 
-  FaCheckCircle 
+import { motion } from 'framer-motion';
+import {
+  FaWhatsapp,
+  FaArrowRight,
+  FaUserMd,
+  FaSyringe,
+  FaVial,
+  FaBaby,
+  FaHeartbeat,
+  FaBriefcaseMedical,
+  FaCheckCircle,
 } from 'react-icons/fa';
+import AnimateInView, { fadeUp, slideFromLeft, slideFromRight, staggerContainer } from '../Services/AnimateInView';
 
 const ContentSection = () => {
   const services = [
@@ -55,14 +57,11 @@ const ContentSection = () => {
     <div className="w-full bg-white font-sans antialiased text-slate-800">
       
       {/* SECTION 1: ABOUT SIMS HEALTHCARE */}
-      <section className="relative w-full py-20 lg:py-28 px-6 lg:px-12 overflow-hidden">
-        {/* Soft background glow */}
-        <div className="absolute top-1/2 left-1/4 -translate-y-1/2 -translate-x-1/2 w-96 h-96 bg-[#25b8a7]/5 rounded-full blur-3xl pointer-events-none"></div>
+      <section className="relative w-full overflow-hidden px-6 py-20 lg:px-12 lg:py-28">
+        <div className="pointer-events-none absolute left-1/4 top-1/2 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#25b8a7]/5 blur-3xl" />
 
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          
-          {/* Visual Canvas (Left) */}
-          <div className="lg:col-span-5 relative flex justify-center items-center">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-16">
+          <AnimateInView variants={slideFromLeft} className="relative flex items-center justify-center lg:col-span-5">
             {/* Elegant background shapes */}
             <div className="absolute -top-6 -left-6 w-48 h-48 rounded-full border-2 border-dashed border-[#25b8a7]/20 pointer-events-none"></div>
             
@@ -89,10 +88,9 @@ const ContentSection = () => {
                 <p className="text-[10px] text-slate-500 font-medium mt-1">In-Home Medical Services</p>
               </div>
             </div>
-          </div>
+          </AnimateInView>
 
-          {/* Content Canvas (Right) */}
-          <div className="lg:col-span-7 space-y-8">
+          <AnimateInView variants={slideFromRight} className="space-y-8 lg:col-span-7">
             <div className="space-y-4">
               <span className="text-xs font-extrabold tracking-widest text-[#25b8a7] uppercase bg-[#25b8a7]/10 px-4 py-2 rounded-full inline-block">
                 About SIMS Healthcare
@@ -107,19 +105,19 @@ const ContentSection = () => {
               At SIMS Healthcare, we believe that quality medical care should be accessible, personalized, and right where you are most comfortable—your home. Based in Dubai, we specialize in delivering 24/7 home healthcare services tailored to your family's needs. From doctor visits and nursing care to lab testing and elderly support, our team is committed to raising the bar for in-home healthcare in the UAE.
             </p>
 
-            <div className="pt-4">
+            <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }} className="pt-4">
               <a
                 href="https://wa.me/971525231028"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-[#25d366] hover:bg-[#20ba56] text-white px-8 py-4 rounded-2xl font-bold tracking-wide transition-all duration-300 shadow-[0_10px_25px_rgba(37,211,102,0.3)] hover:shadow-[0_15px_30px_rgba(37,211,102,0.4)] hover:-translate-y-1 group"
+                className="group inline-flex items-center gap-3 rounded-2xl bg-[#25d366] px-8 py-4 font-bold tracking-wide text-white shadow-[0_10px_25px_rgba(37,211,102,0.3)] transition-all duration-300 hover:bg-[#20ba56] hover:shadow-[0_15px_30px_rgba(37,211,102,0.4)]"
               >
                 <FaWhatsapp className="text-xl" />
                 <span>Book Now</span>
-                <FaArrowRight className="text-sm group-hover:translate-x-1 transition-transform" />
+                <FaArrowRight className="text-sm transition-transform group-hover:translate-x-1" />
               </a>
-            </div>
-          </div>
+            </motion.div>
+          </AnimateInView>
 
         </div>
       </section>
@@ -130,7 +128,7 @@ const ContentSection = () => {
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
-          <div className="lg:col-span-7 space-y-8">
+          <AnimateInView variants={slideFromLeft} className="space-y-8 lg:col-span-7">
             <div className="space-y-4">
               <span className="text-xs font-extrabold tracking-widest text-[#25b8a7] uppercase bg-[#25b8a7]/10 px-4 py-2 rounded-full inline-block">
                 What We Do
@@ -144,11 +142,19 @@ const ContentSection = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <motion.div
+              className="grid grid-cols-1 gap-4 sm:grid-cols-2"
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            >
               {services.map((item, idx) => (
-                <div 
-                  key={idx} 
-                  className={`flex gap-4 p-5 rounded-2xl border border-slate-100 bg-white shadow-sm hover:shadow-md hover:border-slate-200/80 transition-all duration-300 group`}
+                <motion.div
+                  key={idx}
+                  variants={fadeUp}
+                  whileHover={{ y: -4 }}
+                  className="group flex gap-4 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm transition-all duration-300 hover:border-slate-200/80 hover:shadow-md"
                 >
                   <div className={`h-11 w-11 rounded-xl flex items-center justify-center shrink-0 border ${item.bgColor}`}>
                     {item.icon}
@@ -161,9 +167,9 @@ const ContentSection = () => {
                       {item.desc}
                     </p>
                   </div>
-                </div>
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
 
             <p className="text-sm sm:text-base text-slate-600 font-medium leading-relaxed italic border-l-4 border-[#25b8a7] pl-4 py-1">
               "With a focus on both preventive and acute care, we ensure that our patients get the attention they deserve – without waiting rooms or hospital delays."
@@ -181,9 +187,9 @@ const ContentSection = () => {
                 <FaArrowRight className="text-sm group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
-          </div>
+          </AnimateInView>
 
-          <div className="lg:col-span-5 relative flex justify-center items-center lg:sticky lg:top-32">
+          <AnimateInView variants={slideFromRight} className="relative flex items-center justify-center lg:sticky lg:top-32 lg:col-span-5">
             <div className="absolute -bottom-6 -left-6 w-48 h-48 rounded-full border-2 border-dashed border-[#25b8a7]/20 pointer-events-none"></div>
             
             <div className="absolute -top-4 -right-4 w-[90%] h-[90%] rounded-[40px] border-4 border-[#25b8a7]/30 pointer-events-none transform -translate-x-2 -translate-y-2"></div>
@@ -196,7 +202,7 @@ const ContentSection = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 via-transparent to-transparent"></div>
             </div>
-          </div>
+          </AnimateInView>
 
         </div>
       </section>

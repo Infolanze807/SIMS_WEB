@@ -1,115 +1,124 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { FaUser, FaFolderOpen, FaArrowRight, FaCalendarAlt } from 'react-icons/fa';
+import { getBlogPostBySlug } from '../../data/blogPosts';
+import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInView';
+
+const HOME_FEATURED_SLUGS = [
+  'post-surgery-rehabilitation-care-dubai-heal-comfortably-at-home',
+  'lab-tests-at-home-dubai-fast-accurate-convenient',
+  'doctor-on-call-in-dubai-fast-reliable-healthcare-at-your-doorstep',
+];
+
+const toCard = (post) =>
+  post && {
+    href: `/blog/${post.slug}`,
+    day: post.day,
+    month: post.month,
+    author: post.author,
+    category: post.category,
+    title: post.title,
+    image: post.image,
+    excerpt: post.excerpt,
+  };
 
 const NewsAndBlog = () => {
-  const articles = [
-    {
-      id: 1,
-      day: "20",
-      month: "Nov",
-      author: "simshealthcare",
-      category: "Uncategorized",
-      title: "Post-Surgery & Rehabilitation Care Dubai – Heal Comfortably at Home",
-      image: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80&w=600",
-      excerpt: "Discover tailored recovery plans engineered to bring medical excellence and comprehensive physical rehabilitation directly into your private residence."
-    },
-    {
-      id: 2,
-      day: "06",
-      month: "Nov",
-      author: "simshealthcare",
-      category: "Uncategorized",
-      title: "Lab Tests at Home Dubai – Fast, Accurate & Convenient",
-      image: "https://images.unsplash.com/photo-1579154204601-01588f351167?auto=format&fit=crop&q=80&w=600",
-      excerpt: "Skip the waiting rooms. Certified clinical technicians deliver professional sample collection and swift diagnostics inside your comfort zone."
-    },
-    {
-      id: 3,
-      day: "01",
-      month: "Nov",
-      author: "simshealthcare",
-      category: "Uncategorized",
-      title: "Doctor on Call in Dubai – Fast, Reliable Healthcare at Your Doorstep",
-      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=600",
-      excerpt: "Access 24/7 top-tier DHA licensed medical consultation and localized acute treatment packages right at your home or hotel desk."
-    }
-  ];
+  const articles = HOME_FEATURED_SLUGS.map((slug) => toCard(getBlogPostBySlug(slug))).filter(
+    Boolean
+  );
 
   return (
-    <section className="w-full bg-[#FAFBFD] py-28 px-6 lg:px-10 font-sans antialiased text-slate-900 overflow-hidden select-none">
-      <div className="max-w-7xl mx-auto space-y-16">
-        
-        <div className="flex flex-col items-center justify-center text-center gap-6 pb-8">
-          <div className="space-y-3 max-w-xl flex flex-col items-center">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#25b8a7]/10 text-[#25b8a7] text-[10px] font-black tracking-widest uppercase">
+    <section className="w-full overflow-hidden bg-[#FAFBFD] px-6 py-28 font-sans antialiased text-slate-900 lg:px-10">
+      <div className="mx-auto max-w-7xl space-y-16">
+        <AnimateInView className="flex flex-col items-center justify-center gap-6 pb-8 text-center">
+          <div className="flex max-w-xl flex-col items-center space-y-3">
+            <div className="inline-flex items-center gap-2 rounded-full bg-brand-accent/10 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-brand-accent">
               <span>Clinical Intelligence</span>
             </div>
-            <h2 className="text-4xl sm:text-5xl font-black tracking-tight text-[#003d4d] leading-none">
+            <h2 className="text-4xl font-black leading-none tracking-tight text-brand-dark sm:text-5xl">
               News & Blog
             </h2>
           </div>
-        </div>
+        </AnimateInView>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+        <motion.div
+          className="grid grid-cols-1 gap-8 md:grid-cols-3 lg:gap-10"
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: '-40px' }}
+        >
           {articles.map((post) => (
-            <article 
-              key={post.id} 
-              className="bg-white border border-slate-100 rounded-[32px] overflow-hidden shadow-[0_15px_40px_rgba(0,61,77,0.02)] hover:shadow-[0_30px_60px_rgba(0,61,77,0.08)] hover:-translate-y-2 transition-all duration-500 flex flex-col group"
-            >
-              
-              <div className="w-full aspect-[16/11] overflow-hidden relative bg-slate-100">
-                <img 
-                  src={post.image} 
-                  alt={post.title} 
-                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                />
-                
-                <div className="absolute bottom-4 left-4 bg-[#003d4d] text-white py-2 px-3.5 rounded-2xl flex items-center gap-2 shadow-lg backdrop-blur-md border border-white/10 z-10">
-                  <FaCalendarAlt className="text-[#25b8a7] text-xs" />
-                  <div className="flex items-baseline gap-0.5 leading-none">
-                    <span className="text-sm font-black tracking-tight">{post.day}</span>
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-300">{post.month}</span>
-                  </div>
-                </div>
-                
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent"></div>
-              </div>
+            <motion.div key={post.title} variants={fadeUp} whileHover={{ y: -8 }}>
+              <Link
+                to={post.href}
+                className="group flex flex-col overflow-hidden rounded-[32px] border border-slate-100 bg-white shadow-[0_15px_40px_rgba(0,61,77,0.02)] transition-shadow duration-500 hover:shadow-[0_30px_60px_rgba(0,61,77,0.08)]"
+              >
+                <div className="relative aspect-[16/11] w-full overflow-hidden bg-slate-100">
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  />
 
-              <div className="p-7 sm:p-8 flex flex-col flex-1 space-y-4">
-                
-                <div className="flex flex-wrap items-center gap-y-2 gap-x-4 text-[11px] font-black uppercase tracking-wider text-slate-400">
-                  <div className="flex items-center gap-1.5 hover:text-[#25b8a7] transition-colors cursor-pointer">
-                    <FaUser className="text-[#25b8a7]/70 text-[10px]" />
-                    <span>{post.author}</span>
+                  <div className="absolute bottom-4 left-4 z-10 flex items-center gap-2 rounded-2xl border border-white/10 bg-brand-dark px-3.5 py-2 text-white shadow-lg backdrop-blur-md">
+                    <FaCalendarAlt className="text-xs text-brand-accent-light" />
+                    <div className="flex items-baseline gap-0.5 leading-none">
+                      <span className="text-sm font-black tracking-tight">{post.day}</span>
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-slate-300">
+                        {post.month}
+                      </span>
+                    </div>
                   </div>
-                  <span className="text-slate-200">•</span>
-                  <div className="flex items-center gap-1.5 hover:text-[#25b8a7] transition-colors cursor-pointer">
-                    <FaFolderOpen className="text-slate-400 text-[10px]" />
-                    <span>{post.category}</span>
-                  </div>
+
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent" />
                 </div>
 
-                <h3 className="text-lg sm:text-xl font-black text-[#003d4d] tracking-tight leading-[1.3] group-hover:text-[#25b8a7] transition-colors duration-300 line-clamp-3">
-                  {post.title}
-                </h3>
+                <div className="flex flex-1 flex-col space-y-4 p-7 sm:p-8">
+                  <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[11px] font-black uppercase tracking-wider text-slate-400">
+                    <div className="flex items-center gap-1.5">
+                      <FaUser className="text-[10px] text-brand-accent/70" />
+                      <span>{post.author}</span>
+                    </div>
+                    <span className="text-slate-200">•</span>
+                    <div className="flex items-center gap-1.5">
+                      <FaFolderOpen className="text-[10px] text-slate-400" />
+                      <span>{post.category}</span>
+                    </div>
+                  </div>
 
-                <p className="text-xs sm:text-sm text-slate-400 font-normal leading-relaxed line-clamp-2 pt-1 flex-1">
-                  {post.excerpt}
-                </p>
+                  <h3 className="line-clamp-3 text-lg font-black leading-snug tracking-tight text-brand-dark transition-colors duration-300 group-hover:text-brand-accent sm:text-xl">
+                    {post.title}
+                  </h3>
 
-                <div className="pt-4 flex items-center text-xs font-black text-[#003d4d] uppercase tracking-widest group/btn cursor-pointer">
-                  <span className="group-hover/btn:text-[#25b8a7] transition-colors">Read Article</span>
-                  <div className="ml-2 h-6 w-6 rounded-lg bg-slate-50 group-hover/btn:bg-[#25b8a7] group-hover/btn:text-white text-[#003d4d] flex items-center justify-center transition-all duration-300">
-                    <FaArrowRight className="text-[9px] transform group-hover/btn:translate-x-0.5 transition-transform" />
+                  <p className="line-clamp-2 flex-1 pt-1 text-sm leading-relaxed text-slate-400">
+                    {post.excerpt}
+                  </p>
+
+                  <div className="flex items-center pt-4 text-xs font-black uppercase tracking-widest text-brand-dark">
+                    <span className="transition-colors group-hover:text-brand-accent">Read Article</span>
+                    <div className="ml-2 flex h-6 w-6 items-center justify-center rounded-lg bg-slate-50 text-brand-dark transition-all duration-300 group-hover:bg-brand-accent group-hover:text-white">
+                      <FaArrowRight className="transform text-[9px] transition-transform group-hover:translate-x-0.5" />
+                    </div>
                   </div>
                 </div>
-
-              </div>
-
-            </article>
+              </Link>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
+        <AnimateInView className="flex justify-center pt-2">
+          <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
+            <Link
+              to="/blog"
+              className="inline-flex items-center gap-2 rounded-2xl border border-brand-accent/20 bg-white px-8 py-3 text-xs font-black uppercase tracking-widest text-brand-dark transition hover:border-brand-accent hover:text-brand-accent"
+            >
+              View All Articles
+              <FaArrowRight className="text-[10px]" />
+            </Link>
+          </motion.div>
+        </AnimateInView>
       </div>
     </section>
   );

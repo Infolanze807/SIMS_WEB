@@ -1,49 +1,64 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
+import AnimateInView, { fadeUp, slideFromLeft, staggerContainer } from '../AnimateInView';
 
 const ServiceDetailIntro = ({ eyebrow = 'About This Service', title, paragraphs = [] }) => {
   return (
-    <section className="w-full bg-white py-20 px-6 lg:px-10 font-sans antialiased">
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
-        <div className="lg:col-span-8 space-y-6">
-          <span className="text-xs font-black tracking-[0.2em] text-brand-accent uppercase">
-            {eyebrow}
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-black text-brand-dark tracking-tight leading-tight">
+    <section className="w-full bg-white px-6 py-20 font-sans antialiased lg:px-10">
+      <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-12">
+        <AnimateInView variants={slideFromLeft} className="space-y-6 lg:col-span-8">
+          <span className="text-xs font-black uppercase tracking-[0.2em] text-brand-accent">{eyebrow}</span>
+          <h2 className="text-3xl font-black leading-tight tracking-tight text-brand-dark sm:text-4xl">
             {title}
           </h2>
           <div className="space-y-4">
             {paragraphs.map((p, i) => (
-              <p key={i} className="text-slate-600 text-sm sm:text-base leading-relaxed">
+              <motion.p
+                key={i}
+                className="text-sm leading-relaxed text-slate-600 sm:text-base"
+                initial={{ opacity: 0, y: 12 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08 }}
+              >
                 {p}
-              </p>
+              </motion.p>
             ))}
           </div>
           <NavLink
             to="/about"
-            className="inline-flex items-center gap-2 text-sm font-black text-brand-accent uppercase tracking-widest hover:text-brand-dark transition-colors"
+            className="inline-flex items-center gap-2 text-sm font-black uppercase tracking-widest text-brand-accent transition-colors hover:text-brand-dark"
           >
             Learn More About Us →
           </NavLink>
-        </div>
+        </AnimateInView>
 
-        <div className="lg:col-span-4 grid grid-cols-3 lg:grid-cols-1 gap-4">
+        <motion.div
+          className="grid grid-cols-3 gap-4 lg:col-span-4 lg:grid-cols-1"
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
           {[
             { label: 'Medical Staff', value: '50+' },
             { label: 'UAE Experience', value: '10+ Yrs' },
             { label: 'Patients Covered', value: '10K+' },
           ].map((stat) => (
-            <div
+            <motion.div
               key={stat.label}
-              className="bg-[#FAFBFD] border border-slate-100 rounded-2xl p-6 text-center hover:shadow-md transition-shadow"
+              variants={fadeUp}
+              whileHover={{ y: -4, scale: 1.02 }}
+              className="rounded-2xl border border-slate-100 bg-[#FAFBFD] p-6 text-center transition-shadow hover:shadow-md"
             >
               <p className="text-2xl font-black text-brand-accent">{stat.value}</p>
-              <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mt-1">
+              <p className="mt-1 text-xs font-bold uppercase tracking-wider text-slate-500">
                 {stat.label}
               </p>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

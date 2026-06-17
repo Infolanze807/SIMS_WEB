@@ -1,12 +1,14 @@
 import React from 'react';
-import { FaUserMd, FaShieldAlt, FaBriefcaseMedical, FaHeartbeat } from 'react-icons/fa';
+import { motion } from 'framer-motion';
+import { FaUserMd, FaShieldAlt, FaBriefcaseMedical } from 'react-icons/fa';
+import AnimateInView, { fadeUp, slideFromLeft, slideFromRight, staggerContainer } from '../Services/AnimateInView';
 
 const ExperienceCare = () => {
   return (
     <section className="w-full bg-[#002e3a] py-28 px-6 lg:px-10 font-sans antialiased text-white overflow-hidden select-none">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-20 items-center">
         
-        <div className="lg:col-span-7 space-y-10">
+        <AnimateInView variants={slideFromLeft} className="space-y-10 lg:col-span-7">
           
           <div className="space-y-4">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#25b8a7]/10 border border-[#25b8a7]/20 text-[#25b8a7] text-[10px] font-black tracking-widest uppercase">
@@ -42,24 +44,33 @@ const ExperienceCare = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
-            <div className="flex items-center gap-3 bg-white/5 border border-white/10 p-3.5 rounded-2xl shadow-sm hover:bg-white/10 transition-colors duration-300">
-              <FaUserMd className="text-[#25b8a7] text-base" />
-              <span className="text-xs font-bold text-slate-200">Clinical Expertise</span>
-            </div>
-            <div className="flex items-center gap-3 bg-white/5 border border-white/10 p-3.5 rounded-2xl shadow-sm hover:bg-white/10 transition-colors duration-300">
-              <FaShieldAlt className="text-teal-400 text-base" />
-              <span className="text-xs font-bold text-slate-200">Reduced Wait Times</span>
-            </div>
-            <div className="flex items-center gap-3 bg-white/5 border border-white/10 p-3.5 rounded-2xl shadow-sm hover:bg-white/10 transition-colors duration-300">
-              <FaBriefcaseMedical className="text-[#25b8a7] text-base" />
-              <span className="text-xs font-bold text-slate-200">Corporate Standards</span>
-            </div>
-          </div>
+          <motion.div
+            className="grid grid-cols-1 gap-4 pt-4 sm:grid-cols-3"
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            {[
+              { icon: <FaUserMd className="text-base text-[#25b8a7]" />, label: 'Clinical Expertise' },
+              { icon: <FaShieldAlt className="text-base text-teal-400" />, label: 'Reduced Wait Times' },
+              { icon: <FaBriefcaseMedical className="text-base text-[#25b8a7]" />, label: 'Corporate Standards' },
+            ].map((item) => (
+              <motion.div
+                key={item.label}
+                variants={fadeUp}
+                whileHover={{ y: -3 }}
+                className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-3.5 shadow-sm transition-colors duration-300 hover:bg-white/10"
+              >
+                {item.icon}
+                <span className="text-xs font-bold text-slate-200">{item.label}</span>
+              </motion.div>
+            ))}
+          </motion.div>
 
-        </div>
+        </AnimateInView>
 
-        <div className="lg:col-span-5 relative w-full flex justify-center items-center min-h-[500px]">
+        <AnimateInView variants={slideFromRight} className="relative flex min-h-[500px] w-full items-center justify-center lg:col-span-5">
           
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-[#25b8a7]/20 to-transparent rounded-full blur-3xl pointer-events-none"></div>
           
@@ -109,7 +120,7 @@ const ExperienceCare = () => {
             </div>
           </div>
 
-        </div>
+        </AnimateInView>
 
       </div>
     </section>
