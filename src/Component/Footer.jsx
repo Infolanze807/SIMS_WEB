@@ -84,7 +84,7 @@ const Footer = () => {
                 {serviceTags.map((tag) => (
                   <Link
                     key={tag.slug}
-                    // to={`/services/${tag.slug}`}
+                    to={`/services/${tag.slug}`}
                     className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-[10px] font-bold uppercase tracking-wide text-white/70 transition hover:border-brand-accent/40 hover:bg-brand-accent/10 hover:text-brand-accent-light"
                   >
                     {tag.label}
@@ -135,7 +135,7 @@ const Footer = () => {
                 {featuredServices.map((service) => (
                   <li key={service.slug}>
                     <Link
-                      // to={`/services/${service.slug}`}
+                      to={`/services/${service.slug}`}
                       className="group flex items-center gap-2 text-sm text-white/80 transition hover:text-brand-accent-light"
                     >
                       <FaChevronRight className="text-[10px] text-brand-accent-light transition group-hover:translate-x-0.5" />
@@ -188,7 +188,7 @@ const Footer = () => {
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-brand-accent/15 text-brand-accent-light">
                     <FaPhoneAlt className="text-sm" />
                   </span>
-                  <span className="min-w-0 flex-1 text-sm font-bold text-white">+971 5252 310 28</span>
+                  <span className="min-w-0 flex-1 text-sm font-bold text-white pt-2">+971 5252 310 28</span>
                 </a>
               </div>
 

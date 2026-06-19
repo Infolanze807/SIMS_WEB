@@ -38,7 +38,7 @@ const ServicesGrid = () => {
               className="group overflow-hidden rounded-[28px] border border-slate-100 bg-white shadow-[0_10px_30px_-15px_rgba(0,0,0,0.04)] transition-shadow duration-500 hover:shadow-[0_25px_50px_-12px_rgba(0,61,77,0.12)]"
             >
               <Link 
-              // to={`/services/${service.slug}`}
+              to={`/services/${service.slug}`}
                className="block">
                 <div className="relative h-48 overflow-hidden">
                   <img

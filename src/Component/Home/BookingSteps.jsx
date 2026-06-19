@@ -71,43 +71,43 @@ const BookingSteps = () => {
               key={idx}
               variants={fadeUp}
               whileHover={{ y: -8 }}
-              className="group relative z-10 flex min-h-[350px] flex-col justify-between overflow-hidden rounded-3xl border border-gray-100 bg-white p-8 shadow-[0_15px_40px_-15px_rgba(0,0,0,0.05)] transition-all duration-500 hover:shadow-[0_30px_60px_-10px_rgba(0,61,77,0.18)]"
+              className="group relative z-10 flex min-h-[350px] flex-col justify-between overflow-hidden rounded-3xl border border-gray-100 bg-white p-8 shadow-[0_15px_40px_-15px_rgba(0,0,0,0.05)] transition-[box-shadow,transform] duration-500 hover:shadow-[0_30px_60px_-10px_rgba(0,61,77,0.18)]"
             >
               
-              <div className="absolute inset-0 w-full h-full z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+              <div className="pointer-events-none absolute inset-0 z-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                 <img 
                   src={step.bgImage} 
                   alt="" 
-                  className="absolute inset-0 w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-500 brightness-[0.65] contrast-[1.05] saturate-[1.1]" 
+                  className="absolute inset-0 h-full w-full object-cover brightness-[0.65] contrast-[1.05] saturate-[1.1] group-hover:scale-100 scale-105 transition-transform duration-500" 
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#002833] via-[#003d4d]/80 to-[#003d4d]/30"></div>
               </div>
 
               <div className={`absolute top-0 left-8 right-8 h-[3px] rounded-b-full bg-gradient-to-r ${step.accent} opacity-100 z-10`}></div>
 
-              <div className="space-y-6 relative z-10 select-none">
+              <div className="relative z-10 space-y-6 antialiased">
                 <div className="flex items-center justify-between">
-                  <div className="h-12 w-12 rounded-2xl bg-gray-50 border border-gray-100 flex items-center justify-center group-hover:bg-[#25b8a7] group-hover:border-transparent transition-all duration-300 shadow-inner">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-gray-100 bg-gray-50 shadow-inner transition-colors duration-300 group-hover:border-transparent group-hover:bg-[#25b8a7]">
                     {step.icon}
                   </div>
                   
-                  <span className="text-[10px] font-bold text-gray-400 group-hover:text-white/60 tracking-widest uppercase bg-gray-100 group-hover:bg-white/10 px-2.5 py-1 rounded-md transition-colors duration-300 backdrop-blur-sm">
+                  <span className="rounded-md bg-gray-100 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-gray-500 transition-colors duration-300 group-hover:bg-white/10 group-hover:text-white/70 group-hover:backdrop-blur-sm">
                     Phase {step.stepNumber}
                   </span>
                 </div>
 
                 <div className="space-y-2.5">
-                  <h3 className="text-lg font-bold text-[#003d4d] group-hover:text-white tracking-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.2)] transition-colors duration-300">
+                  <h3 className="text-lg font-bold tracking-tight text-[#003d4d] transition-colors duration-300 group-hover:text-white group-hover:drop-shadow-[0_2px_4px_rgba(0,0,0,0.25)]">
                     {step.title}
                   </h3>
-                  <p className="text-xs md:text-sm text-gray-500 group-hover:text-white font-normal leading-relaxed drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)] transition-colors duration-300">
+                  <p className="text-xs font-normal leading-relaxed text-gray-600 transition-colors duration-300 md:text-sm group-hover:text-white/95 group-hover:drop-shadow-[0_1px_3px_rgba(0,0,0,0.35)]">
                     {step.description}
                   </p>
                 </div>
               </div>
 
-              <div className="absolute bottom-2 right-4 pointer-events-none select-none z-10">
-                <span className="text-7xl font-black text-gray-100/70 group-hover:text-white/[0.08] tracking-tighter block font-mono transition-colors duration-500">
+              <div className="pointer-events-none absolute bottom-2 right-4 z-10">
+                <span className="block font-mono text-7xl font-black tracking-tighter text-gray-100 transition-colors duration-500 group-hover:text-white/[0.08]">
                   {step.stepNumber}
                 </span>
               </div>

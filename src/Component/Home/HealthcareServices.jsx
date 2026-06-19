@@ -177,7 +177,7 @@ const HealthcareServices = () => {
               className="group relative flex min-h-[130px] overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-shadow duration-300 hover:border-[#25b8a7]/30 hover:shadow-[0_16px_40px_-20px_rgba(0,61,77,0.2)] sm:min-h-[140px]"
             >
               <Link
-                // to={`/services/${service.slug}`}
+                to={`/services/${service.slug}`}
                 className="flex min-w-0 flex-1"
                 aria-label={`Learn more about ${service.title}`}
               >
