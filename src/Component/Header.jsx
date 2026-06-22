@@ -86,21 +86,25 @@ const Header = () => {
             <AnimatePresence>
               {showServices && (
                 <motion.div
-                  className="absolute left-1/2 top-full z-50 -translate-x-1/2 pt-4"
+                  className="absolute left-0 top-full z-50 pt-3"
                   initial={{ opacity: 0, y: 8 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 6 }}
                   transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
                 >
+                  {/* Hover bridge — keeps menu open when moving from link to panel */}
+                  <div className="absolute -top-3 left-0 h-3 w-full" aria-hidden="true" />
+
                   <div className="flex overflow-hidden rounded-[24px] shadow-[0_28px_60px_-16px_rgba(0,61,77,0.28)] ring-1 ring-slate-200/90">
-                    {/* Main services list */}
-                    <div className="w-[300px] bg-white">
+                    {/* Main services — left column (matches live site) */}
+                    <div className="w-[300px] shrink-0 bg-white">
                       <div className="border-b border-slate-100 bg-[#FAFBFD] px-5 py-3">
                         <p className="text-[10px] font-black uppercase tracking-[0.2em] text-brand-accent">
                           Our Services
                         </p>
                       </div>
 
+                      <div className="max-h-[min(420px,70vh)] overflow-y-auto">
                       {HEADER_NAV_SERVICES.map((service) => {
                         const isActive = activeService?.slug === service.slug;
                         const hasChildren = service.children.length > 0;
@@ -148,36 +152,38 @@ const Header = () => {
                           </div>
                         );
                       })}
+                      </div>
                     </div>
 
-                    {/* Sub-services panel */}
+                    {/* Sub-services — right column (opens beside left list) */}
                     {activeService?.children?.length > 0 && (
                       <motion.div
-                        className="w-[310px] border-l border-slate-100 bg-[#FAFBFD]"
-                        initial={{ opacity: 0, x: -8 }}
+                        className="w-[310px] shrink-0 border-l border-slate-100 bg-[#FAFBFD]"
+                        initial={{ opacity: 0, x: 8 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.2 }}
                       >
                         <div className="border-b border-slate-100 bg-brand-dark px-5 py-3.5">
                           <p className="text-[10px] font-black uppercase tracking-[0.15em] text-brand-accent-light">
-                            Sub Services
+                            {activeService.title}
                           </p>
-                          <p className="mt-0.5 text-sm font-bold text-white">{activeService.title}</p>
                         </div>
 
-                        {activeService.children.map((item) => (
-                          <button
-                            key={item.slug}
-                            type="button"
-                            onClick={() => goToService(item.slug)}
-                            className="group/item flex w-full items-center justify-between gap-3 border-b border-slate-100 px-5 py-4 text-left transition-all duration-200 last:border-b-0 hover:bg-white hover:pl-6"
-                          >
-                            <span className="text-sm font-semibold text-brand-dark transition-colors group-hover/item:text-brand-accent">
-                              {item.title}
-                            </span>
-                            <FaChevronRight className="shrink-0 text-[9px] text-slate-300 transition-all group-hover/item:translate-x-0.5 group-hover/item:text-brand-accent" />
-                          </button>
-                        ))}
+                        <div className="max-h-[min(420px,70vh)] overflow-y-auto">
+                          {activeService.children.map((item) => (
+                            <button
+                              key={item.slug}
+                              type="button"
+                              onClick={() => goToService(item.slug)}
+                              className="group/item flex w-full items-center justify-between gap-3 border-b border-slate-100 px-5 py-4 text-left transition-all duration-200 last:border-b-0 hover:bg-white hover:pl-6"
+                            >
+                              <span className="text-sm font-semibold text-brand-dark transition-colors group-hover/item:text-brand-accent">
+                                {item.title}
+                              </span>
+                              <FaChevronRight className="shrink-0 text-[9px] text-slate-300 transition-all group-hover/item:translate-x-0.5 group-hover/item:text-brand-accent" />
+                            </button>
+                          ))}
+                        </div>
                       </motion.div>
                     )}
                   </div>

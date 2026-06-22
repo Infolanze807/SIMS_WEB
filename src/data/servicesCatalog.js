@@ -125,7 +125,7 @@ export const SERVICES_CATALOG = [
     description:
       'SIMS Health Care offers doctor at home services, providing safe, reliable, and personalized medical care at your doorstep.',
     image:
-      'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=1200',
+      'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=1200',
     category: 'doctor',
     relatedSlugs: ['doctor-on-call', 'doctor-at-hotel', 'pediatrician-at-home'],
   },
