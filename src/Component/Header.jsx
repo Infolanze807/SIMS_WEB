@@ -16,6 +16,8 @@ const Header = () => {
 
   const openServicesMenu = () => {
     setShowServices(true);
+    import('../data/serviceOverrides');
+    import('../data/serviceManualOverrides');
     if (!activeService) {
       const firstWithChildren = HEADER_NAV_SERVICES.find((s) => s.children.length > 0);
       if (firstWithChildren) setActiveService(firstWithChildren);
@@ -104,7 +106,7 @@ const Header = () => {
                         </p>
                       </div>
 
-                      <div className="max-h-[min(420px,70vh)] overflow-y-auto">
+                      <div className="">
                       {HEADER_NAV_SERVICES.map((service) => {
                         const isActive = activeService?.slug === service.slug;
                         const hasChildren = service.children.length > 0;
@@ -169,7 +171,7 @@ const Header = () => {
                           </p>
                         </div>
 
-                        <div className="max-h-[min(420px,70vh)] overflow-y-auto">
+                        <div className="">
                           {activeService.children.map((item) => (
                             <button
                               key={item.slug}

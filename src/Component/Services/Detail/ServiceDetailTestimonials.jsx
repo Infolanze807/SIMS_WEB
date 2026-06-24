@@ -18,7 +18,7 @@ const ServiceDetailTestimonials = ({ testimonials = [] }) => {
   return (
     <section className="w-full bg-white px-6 py-24 font-sans antialiased lg:px-10">
       <div className="mx-auto max-w-7xl space-y-14">
-        <AnimateInView className="space-y-3 text-center">
+        <AnimateInView animateOnMount className="space-y-3 text-center">
           <div className="inline-flex items-center gap-1.5 rounded-full bg-brand-accent/10 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-brand-accent">
             <FaStar className="text-[9px]" /> Verified Patient Feedback
           </div>
@@ -32,8 +32,7 @@ const ServiceDetailTestimonials = ({ testimonials = [] }) => {
           className={`grid ${gridClass} gap-8`}
           variants={staggerContainer}
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: '-40px' }}
+          animate="visible"
         >
           {testimonials.map((item, index) => (
             <motion.div

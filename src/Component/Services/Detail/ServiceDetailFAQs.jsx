@@ -9,7 +9,7 @@ const ServiceDetailFAQs = ({ title, faqs = [] }) => {
   return (
     <section className="bg-[#FAFBFD] px-6 py-24 font-sans antialiased lg:px-10">
       <div className="mx-auto max-w-4xl">
-        <AnimateInView className="mb-12 space-y-3 text-center">
+        <AnimateInView animateOnMount className="mb-12 space-y-3 text-center">
           <h2 className="text-3xl font-black text-brand-dark sm:text-4xl">{title}</h2>
           <p className="font-medium italic text-slate-500">
             Have Questions? We&apos;ve Got You Covered
@@ -19,8 +19,7 @@ const ServiceDetailFAQs = ({ title, faqs = [] }) => {
         <motion.div
           className="space-y-4"
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
+          animate="visible"
           variants={{ visible: { transition: { staggerChildren: 0.06 } } }}
         >
           {faqs.map((item, index) => {

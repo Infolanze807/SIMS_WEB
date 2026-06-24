@@ -18,7 +18,7 @@ const ServiceDetailRelated = ({
   return (
     <section className="w-full bg-[#FAFBFD] px-6 py-24 font-sans antialiased lg:px-10">
       <div className="mx-auto max-w-7xl space-y-12">
-        <AnimateInView className="mx-auto max-w-3xl space-y-3 text-center">
+        <AnimateInView animateOnMount className="mx-auto max-w-3xl space-y-3 text-center">
           <span className="text-xs font-black uppercase tracking-[0.2em] text-brand-accent">
             {useExplore ? 'More From SIMS' : 'Explore More'}
           </span>
@@ -36,8 +36,7 @@ const ServiceDetailRelated = ({
           }`}
           variants={staggerContainer}
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: '-40px' }}
+          animate="visible"
         >
           {display.map((item, index) => {
             const slug = item.slug;
@@ -83,7 +82,7 @@ const ServiceDetailRelated = ({
           })}
         </motion.div>
 
-        <AnimateInView className="text-center">
+        <AnimateInView animateOnMount className="text-center">
           <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
             <Link
               to="/services"

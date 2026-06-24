@@ -16,7 +16,7 @@ const ServiceDetailSteps = ({ title, subtitle, steps = [] }) => {
       <div className="pointer-events-none absolute right-0 top-0 h-96 w-96 rounded-full bg-brand-accent/5 blur-3xl" />
 
       <div className="relative z-10 mx-auto max-w-7xl space-y-14">
-        <AnimateInView className="grid items-end gap-6 border-b border-slate-200/80 pb-10 lg:grid-cols-12">
+        <AnimateInView animateOnMount className="grid items-end gap-6 border-b border-slate-200/80 pb-10 lg:grid-cols-12">
           <div className="space-y-3 lg:col-span-7">
             <span className="inline-flex items-center gap-2 rounded-full bg-brand-accent/10 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-brand-accent">
               Simple Process
@@ -35,8 +35,7 @@ const ServiceDetailSteps = ({ title, subtitle, steps = [] }) => {
           className="relative grid grid-cols-1 gap-8 md:grid-cols-3"
           variants={staggerContainer}
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: '-40px' }}
+          animate="visible"
         >
           <div className="absolute left-[16%] right-[16%] top-20 hidden h-px bg-gradient-to-r from-transparent via-brand-accent/40 to-transparent md:block" />
 

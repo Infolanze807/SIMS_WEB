@@ -1,6 +1,4 @@
 import { getServiceBySlug } from './servicesCatalog';
-import { DETAIL_OVERRIDES as GENERATED_OVERRIDES } from './serviceOverrides';
-import { MANUAL_OVERRIDES } from './serviceManualOverrides';
 
 const mergeOverride = (template, override) => {
   const merged = { ...template };
@@ -18,13 +16,30 @@ const mergeOverride = (template, override) => {
   return merged;
 };
 
-const DETAIL_OVERRIDES = Object.fromEntries(
-  Object.keys({ ...GENERATED_OVERRIDES, ...MANUAL_OVERRIDES }).map((slug) => {
-    const generated = GENERATED_OVERRIDES[slug] || {};
-    const manual = MANUAL_OVERRIDES[slug] || {};
-    return [slug, mergeOverride(generated, manual)];
-  })
-);
+let overridesPromise = null;
+const mergedBySlug = new Map();
+
+const loadOverrideModules = () => {
+  if (!overridesPromise) {
+    overridesPromise = Promise.all([
+      import('./serviceOverrides'),
+      import('./serviceManualOverrides'),
+    ]);
+  }
+  return overridesPromise;
+};
+
+const getOverrideForSlug = async (slug) => {
+  if (mergedBySlug.has(slug)) return mergedBySlug.get(slug);
+
+  const [generatedMod, manualMod] = await loadOverrideModules();
+  const merged = mergeOverride(
+    generatedMod.DETAIL_OVERRIDES[slug] || {},
+    manualMod.MANUAL_OVERRIDES[slug] || {},
+  );
+  mergedBySlug.set(slug, merged);
+  return merged;
+};
 
 const CATEGORY_DEFAULTS = {
   doctor: {
@@ -183,26 +198,21 @@ const buildFromTemplate = (service) => {
     coverageTitle: `What's Included in ${service.title}`,
     coverageIntro: `Our ${service.title} service covers:`,
     coverage: defaults.coverage,
-    // cta: {
-    //   title: `Access DHA-Certified ${service.title} — 24/7 Across Dubai`,
-    //   description: service.description,
-    //   buttonText: 'Your Wellness Is Just A Call Away',
-    // },
     faqsTitle: `${service.title} Frequently Asked Questions`,
     faqs: defaults.faqs(service.title),
   };
 };
 
-export const getServiceDetail = (slug) => {
+export const getServiceDetail = async (slug) => {
   const base = getServiceBySlug(slug);
   if (!base) return null;
 
-  const override = DETAIL_OVERRIDES[base.slug] || {};
+  const override = await getOverrideForSlug(base.slug);
   const template = buildFromTemplate(base);
   const merged = mergeOverride(template, override);
   merged.slug = base.slug;
   merged.title = base.title;
-  merged.image = base.image;
+  merged.image = override.image ?? merged.hero?.image ?? base.image;
   merged.relatedSlugs = override.relatedSlugs ?? base.relatedSlugs;
 
   if (merged.exploreServices?.length) {

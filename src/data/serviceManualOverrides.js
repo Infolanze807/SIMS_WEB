@@ -1444,6 +1444,227 @@ export const MANUAL_OVERRIDES = {
       },
     ],
   },
+  'allergy-food-intolerance-test': {
+    hero: {
+      eyebrow: 'Available 24/7 Support',
+      headline: 'Allergy & Food Intolerance Test at Home in Dubai – Accurate & Private',
+      subheadline: 'Identify Allergies and Food Intolerances Without Leaving Home',
+      bullets: [
+        'Identify allergies and food intolerances from the comfort of home with easy sample collection and expert lab analysis.',
+        'Book at-home allergy testing in Dubai with DHA-certified professionals and confidential digital reports within 24–48 hours.',
+        'Comprehensive food intolerance and allergen panels—sample collection at your home, hotel, or office across Dubai.',
+      ],
+    },
+    intro: {
+      eyebrow: 'About Our Allergy & Food Intolerance Test at Home in Dubai',
+      title: 'Identify Allergies and Food Intolerances Without Leaving Home',
+      paragraphs: [
+        'Searching for an “allergy test at home in Dubai”, “food intolerance test near me”, or “allergy blood test Dubai”? SIMS Healthcare offers professional at-home allergy and food intolerance testing with accurate, lab-verified results.',
+        'Whether you experience bloating, skin reactions, digestive discomfort, chronic fatigue, or unexplained symptoms after eating, our DHA-certified medical professionals collect your blood sample discreetly at your home, hotel, or office.',
+        'We process samples in DHA-approved laboratories and deliver confidential digital reports covering common food allergens, environmental triggers, and intolerance markers—helping you make informed dietary and lifestyle choices.',
+      ],
+    },
+    reasonsTitle: 'Why Choose Our Allergy & Food Intolerance Test at Home in Dubai?',
+    reasonsSubtitle: 'Trusted, Private & Professional Allergy Testing Wherever You Are',
+    reasons: [
+      {
+        title: 'DHA-Certified Sample Collection at Your Doorstep',
+        description:
+          'Licensed nurses and phlebotomists collect your blood sample safely and hygienically at any location across Dubai.',
+      },
+      {
+        title: 'Same-Day Appointments Available',
+        description:
+          'Book online, via WhatsApp, or by phone for same-day or next-day home visits—available 24/7 including weekends.',
+      },
+      {
+        title: 'Comprehensive Allergy & Intolerance Panels',
+        description:
+          'Choose from food allergy panels, environmental allergen screens, gluten/lactose intolerance tests, and full-body allergy profiles.',
+      },
+      {
+        title: 'Fast, Secure Digital Reports',
+        description:
+          'Results are processed in accredited labs and delivered privately via WhatsApp or email within 24–48 hours.',
+      },
+      {
+        title: 'Complete Privacy & Comfort',
+        description:
+          'No clinic queues or exposure—get tested in the comfort and privacy of your own space.',
+      },
+      {
+        title: 'Transparent All-Inclusive Pricing',
+        description:
+          'Clear rates cover nurse visit, sample collection, lab testing, and digital report delivery—no hidden fees.',
+      },
+    ],
+    stepsTitle: 'How Our Allergy & Food Intolerance Test at Home Works – 3 Simple Steps',
+    stepsSubtitle:
+      'Book in minutes. A DHA-certified nurse collects your blood sample at home, hotel, or office across Dubai — private, safe, and lab-verified.',
+    steps: [
+      {
+        title: 'Book Your Test',
+        description: 'Contact us 24/7 via WhatsApp, phone, or online form. Tell us your location and preferred panel.',
+        points: ['Available 24/7', 'Quick booking', 'Immediate confirmation'],
+      },
+      {
+        title: 'Sample Collection at Home',
+        description:
+          'A DHA-certified nurse visits your location and collects your blood sample using sterile, lab-approved equipment.',
+        points: ['Licensed professionals', 'Safe and hygienic', 'Discreet visit'],
+      },
+      {
+        title: 'Receive Your Results',
+        description:
+          'Get your confidential allergy and intolerance report digitally within 24–48 hours. Doctor follow-up available on request.',
+        points: ['Secure digital delivery', 'Lab-verified accuracy', 'Aftercare guidance'],
+      },
+    ],
+    coverageTitle: 'Allergy & Food Intolerance Tests Available at Home',
+    coverageIntro: 'We offer a wide range of allergy and intolerance panels, including:',
+    coverage: [
+      'IgE Food Allergy Panel (nuts, dairy, eggs, seafood, wheat)',
+      'Environmental Allergy Panel (dust, pollen, pet dander, mould)',
+      'Gluten Intolerance & Celiac Screening',
+      'Lactose Intolerance Test',
+      'Comprehensive Food Intolerance Panel',
+      'Pediatric Allergy Testing for Children',
+      'Seasonal & Respiratory Allergen Screening',
+      'Custom Allergy Panels on Request',
+    ],
+    idealFor: [
+      'Adults with unexplained digestive or skin symptoms',
+      'Parents concerned about food allergies in children',
+      'People with chronic bloating, fatigue, or skin rashes',
+      'Residents and tourists seeking convenient home testing',
+      'Anyone wanting to identify food triggers without visiting a clinic',
+    ],
+    exploreTitle: 'Explore All At-Home Health Test Services',
+    exploreServices: [
+      {
+        title: 'STD Test at Home',
+        description:
+          'Discreet and reliable STD testing at home with quick sample collection and accurate results.',
+        slug: 'std-test-at-home',
+      },
+      {
+        title: 'NIPT Test at Home',
+        description:
+          'Accurate and safe NIPT testing at home with expert sample collection and confidential reporting.',
+        slug: 'nipt-test-at-home',
+      },
+      {
+        title: 'DNA Test at Home',
+        description:
+          'Get reliable DNA testing at home with professional sample collection and secure, confidential results.',
+        slug: 'dna-test-at-home',
+      },
+      {
+        title: 'HIV Test at Home',
+        description:
+          'Confidential HIV testing at home with safe sample collection and fast, accurate results.',
+        slug: 'hiv-test-at-home',
+      },
+      {
+        title: 'Semen Analysis',
+        description:
+          'Private and professional semen analysis at home with expert collection and lab-verified results.',
+        slug: 'semen-analysis',
+      },
+      {
+        title: 'Hormones Lab Test',
+        description:
+          'Comprehensive hormone testing at home with easy sample collection and precise diagnostic results.',
+        slug: 'hormones-lab-test',
+      },
+      {
+        title: 'Beta HCG Test at Home',
+        description:
+          'Convenient Beta HCG testing at home with accurate results to confirm pregnancy or monitor health conditions.',
+        slug: 'beta-hcg-test-at-home',
+      },
+      {
+        title: 'Vitamin & Minerals Test at Home',
+        description:
+          'Check your vitamin and mineral levels from home with hassle-free sample collection and expert lab reports.',
+        slug: 'vitamin-minerals-test-at-home',
+      },
+      {
+        title: 'Lab Test at Home',
+        description:
+          'Get reliable, confidential lab tests at your convenience with safe sample collection at your location.',
+        slug: 'lab-test-at-home',
+      },
+    ],
+    testimonials: [
+      {
+        name: 'Layla M.',
+        initials: 'LM',
+        role: 'Patient',
+        location: 'Dubai Marina',
+        text: 'I had been struggling with food reactions for months. SIMS collected my sample at home and the allergy panel helped me identify triggers I never knew about. Very professional service.',
+      },
+      {
+        name: 'Daniel R.',
+        initials: 'DR',
+        role: 'Patient',
+        location: 'JLT',
+        text: 'Booking the food intolerance test at home was easy and completely private. The nurse was punctual, and results arrived within two days with clear explanations.',
+      },
+      {
+        name: 'Priya S.',
+        initials: 'PS',
+        role: 'Patient',
+        location: 'Dubai',
+        text: 'Excellent allergy test at home experience. SIMS Health Care made the whole process stress-free—from sample collection to receiving my digital report. Highly recommend.',
+      },
+    ],
+    cta: {
+      title:
+        'Access DHA Certified Allergy & Food Intolerance Testing Anytime 24/7, 365 Days a Year, Including Public Holidays!',
+      description:
+        'Book hassle-free allergy and food intolerance testing at home within 30 minutes. At SIMS, our DHA-certified professionals ensure safe sample collection, hygienic procedures, and complete privacy. From food allergen panels to intolerance screening, we deliver reliable reports directly to you—trusted, convenient, and stress-free.',
+      buttonText: 'Your Wellness Is Just A Call Away',
+    },
+    faqsTitle: 'Allergy & Food Intolerance Test at Home – Frequently Asked Questions',
+    faqs: [
+      {
+        question: '1. What is an allergy and food intolerance test at home?',
+        answer:
+          'It is a convenient service where a DHA-certified professional visits your location to collect a blood sample for allergy or food intolerance screening—without visiting a clinic.',
+      },
+      {
+        question: '2. What is the difference between a food allergy and food intolerance?',
+        answer:
+          'A food allergy involves an immune system (IgE) reaction that can be immediate and severe. Food intolerance typically causes slower digestive symptoms and is tested differently. We offer panels for both.',
+      },
+      {
+        question: '3. How long does it take to get results?',
+        answer:
+          'Most allergy and intolerance test results are delivered digitally within 24–48 hours after sample collection.',
+      },
+      {
+        question: '4. Can children get allergy testing at home?',
+        answer:
+          'Yes. We offer pediatric allergy testing with gentle, child-friendly sample collection by experienced nurses.',
+      },
+      {
+        question: '5. Can I get tested at my hotel or office in Dubai?',
+        answer:
+          'Absolutely. Our team visits homes, hotels, and offices across all areas of Dubai.',
+      },
+      {
+        question: '6. Are the results accurate and confidential?',
+        answer:
+          'Yes. All samples are processed in DHA-approved laboratories, and your results are shared securely and privately.',
+      },
+      {
+        question: '7. Do I need to fast before the test?',
+        answer:
+          'Fasting is not always required, but we will advise you based on the specific panel you book when you schedule your appointment.',
+      },
+    ],
+  },
   'beta-hcg-test-at-home': {
     hero: {
       eyebrow: 'Available 24/7 Support',
@@ -1932,15 +2153,26 @@ export const MANUAL_OVERRIDES = {
     coverageIntro:
       'Our physiotherapists are trained to manage a wide range of health concerns, including:',
     coverage: [
-      'Post-Operative Rehabilitation – Knee, hip, or spinal surgery recovery',
-      'Back & Neck Pain – Disc issues, poor posture, muscle stiffness',
-      'Sports Injuries – Sprains, strains, ligament tears, muscle imbalance',
-      'Stroke Recovery & Neurological Rehab',
-      'Elderly Mobility & Fall Prevention',
-      'Arthritis & Joint Pain Relief',
-      'Frozen Shoulder, Tennis Elbow, Sciatica',
-      'Pediatric Physiotherapy – Developmental delay, motor coordination',
-      'Chronic Conditions – Parkinson’s, multiple sclerosis, fibromyalgia',
+      'Orthopedic Physiotherapy',
+      'Sports Injury Rehabilitation',
+      'Neurological Physiotherapy (Stroke, Parkinson\'s)',
+      'Post-Surgery Rehabilitation',
+      'Back Pain Treatment',
+      'Neck Pain Treatment',
+      'Knee Pain Physiotherapy',
+      'Shoulder Pain Physiotherapy',
+      'Joint Pain Management',
+      'Geriatric (Elderly) Physiotherapy',
+      'Balance & Fall Prevention Therapy',
+      'Exercise Therapy',
+      'Manual Therapy',
+      'Home Physiotherapy for Bedridden Patients',
+      'Musculoskeletal Physiotherapy',
+      'Mobility & Strength Training',
+      'Respiratory / Chest Physiotherapy',
+      'Pediatric Physiotherapy (Children)',
+      'Post-Fracture Rehabilitation',
+      'Pain Management Physiotherapy',
     ],
     idealFor: [
       'Post-surgical patients requiring in-home rehab',
@@ -3852,20 +4084,16 @@ export const MANUAL_OVERRIDES = {
     coverageIntro:
       'We provide a wide range of IV therapy options based on your health, lifestyle, and wellness goals:',
     coverage: [
-      'Hydration IV Drip – Replenish fluids and electrolytes after travel, illness, or workouts',
-      'Immune Boost IV – Vitamin C, zinc, and antioxidants to support your immune system',
-      'Hangover Recovery IV – Fast relief from headache, dehydration, and nausea',
-      'Energy & Focus IV – B-complex vitamins and amino acids to boost productivity',
-      'Anti-Aging & Skin Glow IV – Glutathione and collagen-enhancing nutrients',
-      'Jet Lag Recovery IV – Beat fatigue and dehydration after long flights',
-      'Fat Burn & Metabolism Boost IV – L-carnitine and MIC blend for fitness support',
-      'Custom IV Cocktails – Tailored formulas based on doctor guidance and lab test results',
-      'Hair Growth – Nourishes hair follicles and promotes healthier, stronger hair',
-      'Skin Glow – Enhances skin hydration and radiance from within',
-      'Gut Healer – Supports digestion and helps restore gut health',
-      'Vitamin Premium Drip – Delivers essential vitamins and nutrients for total wellness',
-      'Energy Drip – Boosts energy levels and reduces fatigue instantly',
-      'NAD Drip – Improves focus, cellular health, and slows aging signs',
+      'Immune Booster',
+      'NAD Drip',
+      'Skin Glow',
+      'Energy Drip',
+      'Hangover IV Drip',
+      'Iron Drip',
+      'Gut Healer',
+      'Vitamin Premium Drip',
+      'Weight Loss Drip',
+      'Hair Growth',
     ],
     idealFor: [
       'Travelers and tourists',
@@ -5299,15 +5527,14 @@ export const MANUAL_OVERRIDES = {
     coverageTitle: 'Types of Health Checkups We Offer',
     coverageIntro: 'Choose the right plan for you or your family from a variety of at-home health check options:',
     coverage: [
-      'Popular At-Home Health Checkup Packages – Choose from our most trusted health packages—delivered 24/7 at your doorstep in Dubai.',
-      'General Health Package for Men – Covers essential tests focused on men’s wellness, including heart, liver, kidney, sugar & hormone levels.',
-      'Premium Wellness Package for Women – Tailored for women’s health—includes hormonal, thyroid, calcium, Vitamin D, and gynecological markers.',
-      'Comprehensive Health Package – A full-spectrum checkup for complete body analysis—ideal for annual health tracking.',
-      'Executive Plus Health Package – Designed for professionals—includes stress markers, cardiac tests, and lifestyle assessments.',
-      'Healthy Ageing Screening Package – Perfect for seniors—focus on bone health, organ function, chronic disease, and medication impact.',
-      'Basic Hormonal Health Package – Includes thyroid, cortisol, reproductive hormones, and more—for hormonal balance and early diagnosis.',
-      'Essential Immunity Package – Evaluate your body’s natural defenses—includes Vitamin D, infection markers, and immunity profiles.',
-      'Essential Health Package – Budget-friendly everyday health check for vitals, CBC, glucose, and basic organ screening.',
+      'Comprehensive Health Package',
+      'Executive Plus Health Package',
+      'Healthy Ageing Screening Package',
+      'Basic Hormonal Health Package',
+      'Premium Wellness Package for Women',
+      'General Health Package for Men',
+      'Essential Immunity Package',
+      'Essential Health Package',
     ],
     idealFor: [
       'Working professionals',
@@ -5451,12 +5678,12 @@ export const MANUAL_OVERRIDES = {
     coverageTitle: 'Types of Injections We Provide',
     coverageIntro: 'We offer a wide range of home-based injection services in Dubai:',
     coverage: [
-      'Intramuscular (IM) Injections – Antibiotics, B12, vaccines, hormone therapy',
-      'Subcutaneous (SC) Injections – Insulin, fertility medications, anticoagulants',
-      'Intravenous (IV) Injections – Hydration therapy, vitamin boosts, medications',
-      'Vaccinations & Preventive Shots – Flu shots, travel vaccines, and boosters',
-      'Vitamin Injections – B12, D3, Glutathione, Iron supplements',
-      'Custom Doctor-Prescribed Injections – Based on your condition and treatment plan',
+      'Vitamin Injections',
+      'Hormone Injections',
+      'Antibiotic Injections',
+      'Painkiller Injections',
+      'Immunization Injections',
+      'Insulin Injections',
     ],
     idealFor: [
       'Patients needing regular medication',

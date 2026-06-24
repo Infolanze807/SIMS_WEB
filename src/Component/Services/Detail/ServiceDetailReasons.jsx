@@ -25,7 +25,7 @@ const ServiceDetailReasons = ({ title, subtitle, reasons = [] }) => {
       <div className="pointer-events-none absolute right-0 top-0 h-72 w-72 rounded-full bg-brand-accent/5 blur-3xl" />
 
       <div className="relative z-10 mx-auto max-w-7xl space-y-14">
-        <AnimateInView className="mx-auto max-w-3xl space-y-3 text-center">
+        <AnimateInView animateOnMount className="mx-auto max-w-3xl space-y-3 text-center">
           <span className="inline-flex items-center gap-2 rounded-full bg-brand-accent/10 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-brand-accent">
             Why Choose SIMS
           </span>
@@ -41,8 +41,7 @@ const ServiceDetailReasons = ({ title, subtitle, reasons = [] }) => {
           className={`grid ${gridClass} gap-6`}
           variants={staggerContainer}
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: '-40px' }}
+          animate="visible"
         >
           {reasons.map((item, i) => {
             const Icon = ICONS[i % ICONS.length];

@@ -7,7 +7,7 @@ const ServiceDetailIntro = ({ eyebrow = 'About This Service', title, paragraphs 
   return (
     <section className="w-full bg-white px-6 py-20 font-sans antialiased lg:px-10">
       <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-12">
-        <AnimateInView variants={slideFromLeft} className="space-y-6 lg:col-span-8">
+        <AnimateInView animateOnMount variants={slideFromLeft} className="space-y-6 lg:col-span-8">
           <span className="text-xs font-black uppercase tracking-[0.2em] text-brand-accent">{eyebrow}</span>
           <h2 className="text-3xl font-black leading-tight tracking-tight text-brand-dark sm:text-4xl">
             {title}
@@ -18,8 +18,7 @@ const ServiceDetailIntro = ({ eyebrow = 'About This Service', title, paragraphs 
                 key={i}
                 className="text-sm leading-relaxed text-slate-600 sm:text-base"
                 initial={{ opacity: 0, y: 12 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.08 }}
               >
                 {p}
@@ -38,8 +37,7 @@ const ServiceDetailIntro = ({ eyebrow = 'About This Service', title, paragraphs 
           className="grid grid-cols-3 gap-4 lg:col-span-4 lg:grid-cols-1"
           variants={staggerContainer}
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
+          animate="visible"
         >
           {[
             { label: 'Medical Staff', value: '50+' },

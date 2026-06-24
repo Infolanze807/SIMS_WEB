@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import { getServiceDetail } from '../data/serviceDetailContent';
 import { getRelatedServices } from '../data/servicesCatalog';
+import PageLoader from '../Component/PageLoader';
 import ServiceDetailHero from '../Component/Services/Detail/ServiceDetailHero';
 import ServiceDetailIntro from '../Component/Services/Detail/ServiceDetailIntro';
 import ServiceDetailReasons from '../Component/Services/Detail/ServiceDetailReasons';
@@ -14,16 +15,42 @@ import ServiceDetailCTA from '../Component/Services/Detail/ServiceDetailCTA';
 
 const ServiceDetail = () => {
   const { slug } = useParams();
-  const detail = getServiceDetail(slug);
+  const [detail, setDetail] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [notFound, setNotFound] = useState(false);
 
-  if (!detail) {
+  useEffect(() => {
+    let active = true;
+    setLoading(true);
+    setNotFound(false);
+
+    getServiceDetail(slug).then((result) => {
+      if (!active) return;
+      if (!result) setNotFound(true);
+      else {
+        setDetail(result);
+        window.scrollTo({ top: 0, behavior: 'instant' });
+      }
+      setLoading(false);
+    });
+
+    return () => {
+      active = false;
+    };
+  }, [slug]);
+
+  if (loading) {
+    return <PageLoader label="Loading service…" />;
+  }
+
+  if (notFound || !detail) {
     return <Navigate to="/services" replace />;
   }
 
   const related = getRelatedServices(detail.relatedSlugs);
 
   return (
-    <div className="font-sans antialiased">
+    <div key={detail.slug} className="font-sans antialiased">
       <ServiceDetailHero {...detail.hero} title={detail.title} image={detail.image} />
       <ServiceDetailIntro {...detail.intro} />
       <ServiceDetailReasons

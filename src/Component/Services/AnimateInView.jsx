@@ -40,15 +40,18 @@ const AnimateInView = ({
   duration = 0.6,
   variants = fadeUp,
   as = 'div',
+  animateOnMount = false,
 }) => {
   const Component = motion[as] || motion.div;
+  const motionProps = animateOnMount
+    ? { animate: 'visible' }
+    : { whileInView: 'visible', viewport: { once: true, amount: 0.15 } };
 
   return (
     <Component
       className={className}
       initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: '-50px' }}
+      {...motionProps}
       variants={variants}
       transition={{ duration, delay, ease: [0.22, 1, 0.36, 1] }}
     >

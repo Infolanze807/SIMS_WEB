@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import { getBlogPostBySlug, BLOG_SLUG_ALIASES } from '../data/blogPosts';
-import { getBlogPostContent } from '../data/blogPostContent';
+import { getBlogPostContent } from '../data/blogPostLoader';
+import PageLoader from '../Component/PageLoader';
 import BlogPostHero from '../Component/Blog/BlogPostHero';
 import BlogPostBody from '../Component/Blog/BlogPostBody';
 import BlogPostNav from '../Component/Blog/BlogPostNav';
@@ -12,9 +13,34 @@ const BlogPost = () => {
   const { slug } = useParams();
   const resolvedSlug = BLOG_SLUG_ALIASES[slug] || slug;
   const post = getBlogPostBySlug(resolvedSlug);
-  const content = getBlogPostContent(resolvedSlug);
 
-  if (!post || !content) {
+  const [content, setContent] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    let active = true;
+    setLoading(true);
+
+    getBlogPostContent(resolvedSlug).then((result) => {
+      if (!active) return;
+      setContent(result);
+      setLoading(false);
+    });
+
+    return () => {
+      active = false;
+    };
+  }, [resolvedSlug]);
+
+  if (!post) {
+    return <Navigate to="/blog" replace />;
+  }
+
+  if (loading) {
+    return <PageLoader label="Loading article…" />;
+  }
+
+  if (!content) {
     return <Navigate to="/blog" replace />;
   }
 

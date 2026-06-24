@@ -7,7 +7,7 @@ export const SERVICES_CATALOG = [
     image:
       'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=1200',
     category: 'doctor',
-    relatedSlugs: ['doctor-at-home', 'doctor-at-hotel', 'pediatrician-on-call', 'pediatrician-at-home'],
+    relatedSlugs: ['doctor-at-home', 'doctor-at-hotel', 'home-visit-doctor', 'pediatrician-at-home', 'pediatrician-at-hotel'],
   },
   {
     slug: 'lab-test-at-home',
@@ -107,17 +107,27 @@ export const SERVICES_CATALOG = [
     image:
       'https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=1200',
     category: 'doctor',
-    relatedSlugs: ['pediatrician-on-call', 'doctor-on-call', 'doctor-at-home'],
+    relatedSlugs: ['pediatrician-at-hotel', 'doctor-on-call', 'doctor-at-home'],
   },
   {
-    slug: 'pediatrician-on-call',
-    title: 'Pediatrician on Call',
+    slug: 'home-visit-doctor',
+    title: 'Home Visit Doctor',
     description:
-      'SIMS Health Care offers pediatrician on call services, providing expert child care at home whenever your little one needs it.',
+      'SIMS Health Care provides home visit doctor services in Dubai—DHA-certified physicians come to your doorstep 24/7 for fast, private medical care.',
+    image:
+      'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=1200',
+    category: 'doctor',
+    relatedSlugs: ['doctor-on-call', 'doctor-at-home', 'doctor-at-hotel', 'pediatrician-at-home'],
+  },
+  {
+    slug: 'pediatrician-at-hotel',
+    title: 'Pediatrician at Hotel',
+    description:
+      'SIMS Health Care offers pediatrician at hotel services in Dubai—expert child care delivered discreetly to your hotel room, 24/7.',
     image:
       'https://images.unsplash.com/photo-1531983412531-1f49a365ffed?auto=format&fit=crop&q=80&w=1200',
     category: 'doctor',
-    relatedSlugs: ['pediatrician-at-home', 'doctor-on-call', 'doctor-at-hotel'],
+    relatedSlugs: ['pediatrician-at-home', 'doctor-on-call', 'doctor-at-hotel', 'home-visit-doctor'],
   },
   {
     slug: 'doctor-at-home',
@@ -137,7 +147,7 @@ export const SERVICES_CATALOG = [
     image:
       'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1200',
     category: 'doctor',
-    relatedSlugs: ['doctor-on-call', 'doctor-at-home', 'pediatrician-on-call'],
+    relatedSlugs: ['doctor-on-call', 'doctor-at-home', 'pediatrician-at-hotel', 'home-visit-doctor'],
   },
   {
     slug: 'beta-hcg-test-at-home',
@@ -318,8 +328,9 @@ export const HEADER_NAV_SERVICES = [
     children: [
       { title: 'Doctor At Home', slug: 'doctor-at-home' },
       { title: 'Doctor at Hotel', slug: 'doctor-at-hotel' },
+      { title: 'Home Visit Doctor', slug: 'home-visit-doctor' },
       { title: 'Pediatrician at Home', slug: 'pediatrician-at-home' },
-      { title: 'Pediatrician on Call', slug: 'pediatrician-on-call' },
+      { title: 'Pediatrician at Hotel', slug: 'pediatrician-at-hotel' },
     ],
   },
   {
@@ -332,9 +343,9 @@ export const HEADER_NAV_SERVICES = [
       { title: 'HIV Test at Home', slug: 'hiv-test-at-home' },
       { title: 'Semen Analysis', slug: 'semen-analysis' },
       { title: 'Hormones Lab Test', slug: 'hormones-lab-test' },
+      { title: 'Allergy & Food Intolerance Test', slug: 'allergy-food-intolerance-test' },
       { title: 'Beta HCG Test at Home', slug: 'beta-hcg-test-at-home' },
       { title: 'Vitamin & Minerals Test at Home', slug: 'vitamin-minerals-test-at-home' },
-      // { title: 'Allergy & Food Intolerance Test', slug: 'allergy-food-intolerance-test' },
     ],
   },
   { title: 'Physiotherapy At Home', slug: 'physiotherapy-at-home', children: [] },
@@ -342,8 +353,8 @@ export const HEADER_NAV_SERVICES = [
     title: 'Nursing Care at Home',
     slug: 'nursing-care-at-home',
     children: [
-      { title: 'Elderly care at home', slug: 'elderly-care' },
-      { title: 'Mother & Baby Care', slug: 'mother-baby-care' },
+      // { title: 'Elderly care at home', slug: 'elderly-care' },
+      // { title: 'Mother & Baby Care', slug: 'mother-baby-care' },
       { title: 'Post Surgical Care', slug: 'post-surgical-care' },
       { title: 'ECG at Home', slug: 'ecg-at-home' },
       { title: 'Wound Care', slug: 'wound-care' },

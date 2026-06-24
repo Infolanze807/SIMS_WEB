@@ -6,7 +6,7 @@ import AnimateInView, { scaleIn } from '../AnimateInView';
 const ServiceDetailCTA = ({ title, description, buttonText }) => {
   return (
     <section className="w-full px-6 py-20 font-sans antialiased lg:px-10">
-      <AnimateInView variants={scaleIn} className="mx-auto max-w-7xl">
+      <AnimateInView animateOnMount variants={scaleIn} className="mx-auto max-w-7xl">
         <div className="relative overflow-hidden rounded-[40px] bg-gradient-to-r from-brand-dark via-brand-dark-mid to-brand-accent p-10 text-white sm:p-14">
           <motion.div
             className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(255,255,255,0.08),transparent_50%)]"

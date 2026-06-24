@@ -1,17 +1,18 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { Suspense, lazy } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Header from "./Component/Header";
-import Footer from "./Component/Footer";
-import ScrollToTop from "./Component/ScrollToTop";
+import Header from './Component/Header';
+import Footer from './Component/Footer';
+import ScrollToTop from './Component/ScrollToTop';
+import PageLoader from './Component/PageLoader';
 
-import Home from "./Pages/Home";
-import About from "./Pages/About";
-import Contact from "./Pages/Contact";
-import Service from "./Pages/Service";
-import ServiceDetail from "./Pages/ServiceDetail";
-import Blog from "./Pages/Blog";
-import BlogPost from "./Pages/BlogPost";
+const Home = lazy(() => import('./Pages/Home'));
+const About = lazy(() => import('./Pages/About'));
+const Contact = lazy(() => import('./Pages/Contact'));
+const Service = lazy(() => import('./Pages/Service'));
+const ServiceDetail = lazy(() => import('./Pages/ServiceDetail'));
+const Blog = lazy(() => import('./Pages/Blog'));
+const BlogPost = lazy(() => import('./Pages/BlogPost'));
 
 const App = () => {
   return (
@@ -21,15 +22,17 @@ const App = () => {
         <Header />
 
         <main className="flex-1">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/services" element={<Service />} />
-            <Route path="/services/:slug" element={<ServiceDetail />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:slug" element={<BlogPost />} />
-          </Routes>
+          <Suspense fallback={<PageLoader />}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/services" element={<Service />} />
+              <Route path="/services/:slug" element={<ServiceDetail />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:slug" element={<BlogPost />} />
+            </Routes>
+          </Suspense>
         </main>
 
         <Footer />
