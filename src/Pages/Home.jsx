@@ -17,7 +17,7 @@ import ModernFAQs from '../Component/Home/ModernFAQs'
 const Home = () => {
   return (
     <div>
-        <HomeMain />
+        {/* <HomeMain /> */}
         <HealthcareHeroSection />
         <BookingSteps />
         <HealthcareServices />

@@ -167,7 +167,7 @@ const Footer = () => {
                     <FaMapMarkerAlt className="text-sm" />
                   </span>
                   <p className="min-w-0 flex-1 text-sm leading-relaxed text-white/85">
-                    Al Barsha1, Shaikh Zayed Road, Dubai
+                    207, AB Center , Sheikh Zayed Road,  Al Barsha First , Dubai
                   </p>
                 </div>
                 <a

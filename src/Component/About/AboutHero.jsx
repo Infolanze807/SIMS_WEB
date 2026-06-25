@@ -10,7 +10,7 @@ const AboutHero = () => {
   ];
 
   return (
-    <section className="relative w-full overflow-hidden bg-gradient-to-tr from-[#003d4d] via-[#0a5568] to-[#25b8a7] py-20 font-sans text-white lg:py-32">
+    <section className="relative w-full overflow-hidden bg-gradient-to-tr from-[#003d4d] via-[#0a5568] to-[#25b8a7] py-12 font-sans text-white lg:py-16">
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_120%,rgba(79,195,192,0.15),transparent_50%)]" />
         <motion.div
