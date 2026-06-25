@@ -22,7 +22,7 @@ import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome01.jpeg';
 import nursingCareAtHomeImage from '../../assets/NursingAtHome01.jpeg';
 import ivTherapiesImage from '../../assets/IVTherapies04.jpeg';
 import oxygenTherapyAtHomeImage from '../../assets/OxygenTherapyAtHome03.jpeg';
-import covidPcrTestAtHomeImage from '../../assets/CovidPcrTestAtHome03.jpeg';
+import covidPCRTestAtHomeImage from '../../assets/CovidPCRTestAtHome03.jpeg';
 import fluVaccinationAtHomeInDubaiImage from '../../assets/FluVaccinationAtHomeInDubai03.jpeg';
 import healthCheckupAtHomeImage from '../../assets/HealthCheckupAtHome03.jpeg';
 import injectionServiceAtHomeImage from '../../assets/InjectionServiceAtHome03.jpeg';
@@ -88,7 +88,7 @@ const SERVICES_DATA = [
       'Certified COVID-19 PCR testing with quick home sample collection and official DHA-approved reports.',
     icon: <FaVirus />,
     bgImage:
-      covidPcrTestAtHomeImage,
+      covidPCRTestAtHomeImage,
   },
   {
     slug: 'flu-vaccination-at-home-in-dubai',
