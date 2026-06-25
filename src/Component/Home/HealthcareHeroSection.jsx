@@ -14,14 +14,19 @@ import {
 } from 'react-icons/fa';
 import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInView';
 import dhaHealthBadge from '../../assets/logoo.png';
-
+import doctorOnCallImage from '../../assets/DoctorOnCall01.jpeg';
+import ivTherapiesImage from '../../assets/IVTherapies04.jpeg';
+import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome01.jpeg';
+import labTestAtHomeImage from '../../assets/LabTestAtHome01.jpeg';
+import nursingCareAtHomeImage from '../../assets/NursingAtHome01.jpeg';
+import healthCheckupAtHomeImage from '../../assets/HealthCheckupAtHome03.jpeg';
 const HERO_SERVICES = [
-  { slug: 'doctor-on-call', title: 'Doctor On Call', image: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=400' },
-  { slug: 'iv-therapies', title: 'IV Therapy At Home', image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=400' },
-  { slug: 'physiotherapy-at-home', title: 'Physiotherapy At Home', image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=400' },
-  { slug: 'lab-test-at-home', title: 'Lab Tests At Home', image: 'https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=400' },
-  { slug: 'nursing-care-at-home', title: 'Nursing At Home', image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=400' },
-  { slug: 'health-checkup-at-home', title: 'Health Checkups', image: 'https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80&w=400' },
+  { slug: 'doctor-on-call', title: 'Doctor On Call', image: doctorOnCallImage },
+  { slug: 'iv-therapies', title: 'IV Therapy At Home', image: ivTherapiesImage },
+  { slug: 'physiotherapy-at-home', title: 'Physiotherapy At Home', image: physiotherapyAtHomeImage },
+  { slug: 'lab-test-at-home', title: 'Lab Tests At Home', image: labTestAtHomeImage },
+  { slug: 'nursing-care-at-home', title: 'Nursing At Home', image: nursingCareAtHomeImage },
+  { slug: 'health-checkup-at-home', title: 'Health Checkups', image: healthCheckupAtHomeImage },
 ];
 
 const TRUST_BADGES = [

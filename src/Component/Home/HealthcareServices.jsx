@@ -16,7 +16,16 @@ import {
   FaArrowRight,
 } from 'react-icons/fa';
 import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInView';
-
+import doctorOnCallImage from '../../assets/DoctorOnCall01.jpeg';
+import labTestAtHomeImage from '../../assets/LabTestAtHome01.jpeg';
+import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome01.jpeg';
+import nursingCareAtHomeImage from '../../assets/NursingAtHome01.jpeg';
+import ivTherapiesImage from '../../assets/IVTherapies04.jpeg';
+import oxygenTherapyAtHomeImage from '../../assets/OxygenTherapyAtHome03.jpeg';
+import covidPcrTestAtHomeImage from '../../assets/CovidPcrTestAtHome03.jpeg';
+import fluVaccinationAtHomeInDubaiImage from '../../assets/FluVaccinationAtHomeInDubai03.jpeg';
+import healthCheckupAtHomeImage from '../../assets/HealthCheckupAtHome03.jpeg';
+import injectionServiceAtHomeImage from '../../assets/InjectionServiceAtHome03.jpeg';
 const SERVICES_DATA = [
   {
     slug: 'doctor-on-call',
@@ -25,8 +34,8 @@ const SERVICES_DATA = [
       'Our DHA-certified doctors bring personalized medical care right to your doorstep, hotel room, or workplace anytime you need it.',
     icon: <FaPhoneAlt />,
     bgImage:
-      'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=600',
-  },
+      doctorOnCallImage,
+    },
   {
     slug: 'lab-test-at-home',
     title: 'Lab Test at Home',
@@ -34,7 +43,7 @@ const SERVICES_DATA = [
       'Get reliable, confidential lab tests at your convenience. Our licensed professionals cover a wide range of tests, delivered and collected safely at your location.',
     icon: <FaFlask />,
     bgImage:
-      'https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=600',
+      labTestAtHomeImage,
   },
   {
     slug: 'physiotherapy-at-home',
@@ -43,7 +52,7 @@ const SERVICES_DATA = [
       'Personalized physiotherapy sessions delivered to your home, helping you recover from injuries, manage pain, and improve mobility in comfort.',
     icon: <FaUserMd />,
     bgImage:
-      'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=600',
+      physiotherapyAtHomeImage,
   },
   {
     slug: 'nursing-care-at-home',
@@ -52,7 +61,7 @@ const SERVICES_DATA = [
       'Our trained nurses offer compassionate, professional care tailored to your needs, from elderly support to post-surgical recovery.',
     icon: <FaHeartbeat />,
     bgImage:
-      'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=600',
+      nursingCareAtHomeImage,
   },
   {
     slug: 'iv-therapies',
@@ -61,7 +70,7 @@ const SERVICES_DATA = [
       'Boost energy, immunity, and hydration with our range of IV drip therapies, safely administered by licensed nurses at home or hotel.',
     icon: <FaBriefcaseMedical />,
     bgImage:
-      'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=600',
+      ivTherapiesImage,
   },
   {
     slug: 'oxygen-therapy-at-home',
@@ -70,7 +79,7 @@ const SERVICES_DATA = [
       'Oxygen support for respiratory conditions delivered and monitored by healthcare professionals in your home.',
     icon: <FaLungs />,
     bgImage:
-      'https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&q=80&w=600',
+        oxygenTherapyAtHomeImage,
   },
   {
     slug: 'covid-pcr-test-at-home',
@@ -79,7 +88,7 @@ const SERVICES_DATA = [
       'Certified COVID-19 PCR testing with quick home sample collection and official DHA-approved reports.',
     icon: <FaVirus />,
     bgImage:
-      'https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&q=80&w=600',
+      covidPcrTestAtHomeImage,
   },
   {
     slug: 'flu-vaccination-at-home-in-dubai',
@@ -88,7 +97,7 @@ const SERVICES_DATA = [
       'Stay protected from seasonal flu with licensed nurses administering vaccines in the comfort and safety of your home.',
     icon: <FaShieldVirus />,
     bgImage:
-      'https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&q=80&w=600',
+      fluVaccinationAtHomeInDubaiImage,
   },
   {
     slug: 'health-checkup-at-home',
@@ -97,7 +106,7 @@ const SERVICES_DATA = [
       'Comprehensive health screening packages including lab tests and doctor consultations, tailored to your wellness goals and delivered to your doorstep.',
     icon: <FaStethoscope />,
     bgImage:
-      'https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&q=80&w=600',
+      healthCheckupAtHomeImage,
   },
   {
     slug: 'injection-service-at-home',
@@ -106,7 +115,7 @@ const SERVICES_DATA = [
       'SIMS Health Care offers safe and professional injection service at home with trained nurses, ensuring comfort, hygiene, and complete privacy.',
     icon: <FaSyringe />,
     bgImage:
-      'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&q=80&w=600',
+      injectionServiceAtHomeImage,
   },
   {
     slug: 'mother-baby-care',

@@ -1,11 +1,41 @@
+import doctorOnCallImage from '../assets/DoctorOnCall01.jpeg';
+import labTestAtHomeImage from '../assets/LabTestAtHome01.jpeg';
+import physiotherapyAtHomeImage from '../assets/PhysiotherapyAtHome01.jpeg';
+import nursingCareAtHomeImage from '../assets/NursingAtHome01.jpeg';
+import ivTherapiesImage from '../assets/IVTherapies04.jpeg';
+import oxygenTherapyAtHomeImage from '../assets/OxygenTherapyAtHome03.jpeg';
+import covidPcrTestAtHomeImage from '../assets/CovidPcrTestAtHome03.jpeg';
+import fluVaccinationAtHomeInDubaiImage from '../assets/FluVaccinationAtHomeInDubai03.jpeg';
+import healthCheckupAtHomeImage from '../assets/HealthCheckupAtHome03.jpeg';
+import injectionServiceAtHomeImage from '../assets/InjectionServiceAtHome03.jpeg';
+import doctorAtHomeImage from '../assets/DoctorAtHome02.jpeg';
+import doctorAtHotelImage from '../assets/DoctorAtHotel01.jfif';
+import homeVisitDoctorImage from '../assets/HomeVisitDoctor01.jfif';
+import pediatricianAtHomeImage from '../assets/PediatricianAtHome02.jfif';
+import pediatricianAtHotelImage from '../assets/PediatricianAtHotel01.jfif';
+import stdTestAtHomeImage from '../assets/STDTestAtHome002.jfif';
+import NIPTTestAtHomeImage from '../assets/NIPTTestAtHome002.png';
+import dnaTestAtHomeImage from '../assets/DNATestAtHome01.jfif';
+import hivTestAtHomeImage from '../assets/HIVTestAtHome01.jfif';
+import semenAnalysisAtHomeImage from '../assets/SemanAnalytics.png';
+import hormonesLabTestAtHomeImage from '../assets/HormonesLabTest02.jpg';
+import allergyFoodIntoleranceTestAtHomeImage from '../assets/AllergyFood02.jpg';
+import betaHcgTestAtHomeImage from '../assets/BetaHCG02.jpg';
+import vitaminMineralsTestAtHomeImage from '../assets/Vitamin&MineralsTest01.jpg';
+import postSurgicalCareAtHomeImage from '../assets/PostSurgicalCare01.jfif';
+import ecgAtHomeImage from '../assets/ECGAtHome02.jpg';
+import woundCareAtHomeImage from '../assets/WoundCare02.jpg';
+import dressingCareAtHomeImage from '../assets/DressingCare02.jpg';
+import urineCatheterManagementAtHomeImage from '../assets/UrineCatheterManagement02.jpg';
+import medicationManagementAtHomeImage from '../assets/MedicationManagement03.jpg';
+
 export const SERVICES_CATALOG = [
   {
     slug: 'doctor-on-call',
     title: 'Doctor On Call',
     description:
       'Our DHA-certified doctors bring personalized medical care right to your doorstep, hotel room, or workplace anytime you need it.',
-    image:
-      'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=1200',
+    image: doctorOnCallImage,
     category: 'doctor',
     relatedSlugs: ['doctor-at-home', 'doctor-at-hotel', 'home-visit-doctor', 'pediatrician-at-home', 'pediatrician-at-hotel'],
   },
@@ -14,18 +44,16 @@ export const SERVICES_CATALOG = [
     title: 'Lab Test at Home',
     description:
       'Get reliable, confidential lab tests at your convenience. Our licensed professionals cover a wide range of tests, delivered and collected safely at your location.',
-    image:
-      'https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=1200',
+    image: labTestAtHomeImage,
     category: 'lab',
-    relatedSlugs: ['std-test-at-home', 'nipt-test-at-home', 'dna-test-at-home', 'hiv-test-at-home'],
+    relatedSlugs: ['std-test-at-home', 'nipt-test-at-home', 'dna-test-at-home', 'hiv-test-at-home', 'vitamin-minerals-test-at-home'],
   },
   {
     slug: 'physiotherapy-at-home',
     title: 'Physiotherapy at Home',
     description:
       'Personalized physiotherapy sessions delivered to your home, helping you recover from injuries, manage pain, and improve mobility in comfort.',
-    image:
-      'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1200',
+    image: physiotherapyAtHomeImage,
     category: 'physio',
     relatedSlugs: ['post-surgical-care', 'nursing-care-at-home', 'elderly-care'],
   },
@@ -34,8 +62,7 @@ export const SERVICES_CATALOG = [
     title: 'Nursing Care at Home',
     description:
       'Our trained nurses offer compassionate, professional care tailored to your needs, from elderly support to post-surgical recovery.',
-    image:
-      'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=1200',
+    image: nursingCareAtHomeImage,
     category: 'nursing',
     relatedSlugs: ['elderly-care', 'post-surgical-care', 'mother-baby-care', 'wound-care'],
   },
@@ -44,8 +71,7 @@ export const SERVICES_CATALOG = [
     title: 'IV Therapies',
     description:
       'Boost energy, immunity, and hydration with our range of IV drip therapies, safely administered by licensed nurses at home or hotel.',
-    image:
-      'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=1200',
+    image: ivTherapiesImage,
     category: 'general',
     relatedSlugs: ['injection-service-at-home', 'health-checkup-at-home', 'doctor-on-call'],
   },
@@ -54,8 +80,7 @@ export const SERVICES_CATALOG = [
     title: 'Oxygen Therapy at Home',
     description:
       'Oxygen support for respiratory conditions delivered and monitored by healthcare professionals in your home.',
-    image:
-      'https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&q=80&w=1200',
+    image: oxygenTherapyAtHomeImage,
     category: 'general',
     relatedSlugs: ['nursing-care-at-home', 'doctor-on-call', 'covid-pcr-test-at-home'],
   },
@@ -64,8 +89,7 @@ export const SERVICES_CATALOG = [
     title: 'Covid PCR Test at Home',
     description:
       'Certified COVID-19 PCR testing with quick home sample collection and official DHA-approved reports.',
-    image:
-      'https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&q=80&w=1200',
+    image: covidPcrTestAtHomeImage,
     category: 'lab',
     relatedSlugs: ['lab-test-at-home', 'health-checkup-at-home', 'flu-vaccination-at-home-in-dubai'],
   },
@@ -74,8 +98,7 @@ export const SERVICES_CATALOG = [
     title: 'Flu Vaccination at Home in Dubai',
     description:
       'Stay protected from seasonal flu with licensed nurses administering vaccines in the comfort and safety of your home.',
-    image:
-      'https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&q=80&w=1200',
+    image: fluVaccinationAtHomeInDubaiImage,
     category: 'general',
     relatedSlugs: ['injection-service-at-home', 'health-checkup-at-home', 'doctor-on-call'],
   },
@@ -84,8 +107,7 @@ export const SERVICES_CATALOG = [
     title: 'Health Checkup at Home',
     description:
       'Comprehensive health screening packages including lab tests and doctor consultations, tailored to your wellness goals and delivered to your doorstep.',
-    image:
-      'https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&q=80&w=1200',
+    image: healthCheckupAtHomeImage,
     category: 'general',
     relatedSlugs: ['lab-test-at-home', 'doctor-on-call', 'ecg-at-home'],
   },
@@ -94,8 +116,7 @@ export const SERVICES_CATALOG = [
     title: 'Injection Service at Home',
     description:
       'SIMS Health Care offers safe and professional injection service at home with trained nurses, ensuring comfort, hygiene, and complete privacy.',
-    image:
-      'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&q=80&w=1200',
+    image: injectionServiceAtHomeImage,
     category: 'nursing',
     relatedSlugs: ['nursing-care-at-home', 'iv-therapies', 'medication-management'],
   },
@@ -104,8 +125,7 @@ export const SERVICES_CATALOG = [
     title: 'Pediatrician at Home',
     description:
       'SIMS Health Care provides pediatrician at home services, ensuring expert, safe, and convenient healthcare for your child.',
-    image:
-      'https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=1200',
+    image: pediatricianAtHomeImage,
     category: 'doctor',
     relatedSlugs: ['pediatrician-at-hotel', 'doctor-on-call', 'doctor-at-home'],
   },
@@ -114,8 +134,7 @@ export const SERVICES_CATALOG = [
     title: 'Home Visit Doctor',
     description:
       'SIMS Health Care provides home visit doctor services in Dubai—DHA-certified physicians come to your doorstep 24/7 for fast, private medical care.',
-    image:
-      'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=1200',
+    image: homeVisitDoctorImage,
     category: 'doctor',
     relatedSlugs: ['doctor-on-call', 'doctor-at-home', 'doctor-at-hotel', 'pediatrician-at-home'],
   },
@@ -124,8 +143,7 @@ export const SERVICES_CATALOG = [
     title: 'Pediatrician at Hotel',
     description:
       'SIMS Health Care offers pediatrician at hotel services in Dubai—expert child care delivered discreetly to your hotel room, 24/7.',
-    image:
-      'https://images.unsplash.com/photo-1531983412531-1f49a365ffed?auto=format&fit=crop&q=80&w=1200',
+    image: pediatricianAtHotelImage,
     category: 'doctor',
     relatedSlugs: ['pediatrician-at-home', 'doctor-on-call', 'doctor-at-hotel', 'home-visit-doctor'],
   },
@@ -134,8 +152,7 @@ export const SERVICES_CATALOG = [
     title: 'Doctor at Home',
     description:
       'SIMS Health Care offers doctor at home services, providing safe, reliable, and personalized medical care at your doorstep.',
-    image:
-      'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=1200',
+    image: doctorAtHomeImage,
     category: 'doctor',
     relatedSlugs: ['doctor-on-call', 'doctor-at-hotel', 'pediatrician-at-home'],
   },
@@ -144,8 +161,7 @@ export const SERVICES_CATALOG = [
     title: 'Doctor at Hotel',
     description:
       'SIMS Health Care provides doctor at hotel services, offering convenient, professional, and timely medical care wherever you stay.',
-    image:
-      'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1200',
+    image: doctorAtHotelImage,
     category: 'doctor',
     relatedSlugs: ['doctor-on-call', 'doctor-at-home', 'pediatrician-at-hotel', 'home-visit-doctor'],
   },
@@ -154,28 +170,25 @@ export const SERVICES_CATALOG = [
     title: 'Beta HCG Test at Home',
     description:
       'SIMS Health Care provides Beta HCG testing at home with safe sample collection, accurate results, and complete privacy for pregnancy and health monitoring.',
-    image:
-      'https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&q=80&w=1200',
+    image: betaHcgTestAtHomeImage,
     category: 'lab',
     relatedSlugs: ['lab-test-at-home', 'nipt-test-at-home', 'hormones-lab-test'],
   },
-  // {
-  //   slug: 'vitamin-minerals-test-at-home',
-  //   title: 'Vitamin & Minerals Test at Home',
-  //   description:
-  //     'SIMS Health Care offers vitamin and minerals testing at home with safe sample collection, accurate results, and complete privacy for better health management.',
-  //   image:
-  //     'https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=1200',
-  //   category: 'lab',
-  //   relatedSlugs: ['lab-test-at-home', 'health-checkup-at-home', 'hormones-lab-test'],
-  // },
+  {
+    slug: 'vitamin-minerals-test-at-home',
+    title: 'Vitamin & Minerals Test at Home',
+    description:
+      'SIMS Health Care offers vitamin and minerals testing at home with safe sample collection, accurate results, and complete privacy for better health management.',
+    image: vitaminMineralsTestAtHomeImage,
+    category: 'lab',
+    relatedSlugs: ['lab-test-at-home', 'health-checkup-at-home', 'hormones-lab-test'],
+  },
   {
     slug: 'allergy-food-intolerance-test',
     title: 'Allergy & Food Intolerance Test',
     description:
       'SIMS Health Care offers allergy & food intolerance tests at home with safe sample collection, accurate results, and complete privacy for better health management.',
-    image:
-      'https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=1200',
+    image: allergyFoodIntoleranceTestAtHomeImage,
     category: 'lab',
     relatedSlugs: ['lab-test-at-home', 'hormones-lab-test', 'health-checkup-at-home'],
   },
@@ -184,8 +197,7 @@ export const SERVICES_CATALOG = [
     title: 'STD Test at Home',
     description:
       'SIMS Health Care offers confidential STD testing at home with safe sample collection, accurate results, and complete privacy.',
-    image:
-      'https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&q=80&w=1200',
+    image: stdTestAtHomeImage,
     category: 'lab',
     relatedSlugs: ['hiv-test-at-home', 'lab-test-at-home', 'dna-test-at-home'],
   },
@@ -194,8 +206,7 @@ export const SERVICES_CATALOG = [
     title: 'NIPT Test at Home',
     description:
       'SIMS Health Care provides NIPT testing at home with safe sample collection, accurate results, and complete privacy for expectant mothers.',
-    image:
-      'https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&q=80&w=1200',
+    image: NIPTTestAtHomeImage,
     category: 'lab',
     relatedSlugs: ['beta-hcg-test-at-home', 'lab-test-at-home', 'mother-baby-care'],
   },
@@ -204,8 +215,7 @@ export const SERVICES_CATALOG = [
     title: 'DNA Test at Home',
     description:
       'SIMS Health Care offers DNA testing at home with safe sample collection, accurate results, and full privacy for reliable genetic analysis.',
-    image:
-      'https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=1200',
+    image: dnaTestAtHomeImage,
     category: 'lab',
     relatedSlugs: ['std-test-at-home', 'hiv-test-at-home', 'lab-test-at-home'],
   },
@@ -214,8 +224,7 @@ export const SERVICES_CATALOG = [
     title: 'HIV Test at Home',
     description:
       'SIMS Health Care provides HIV testing at home with discreet sample collection, accurate results, and complete privacy for your peace of mind.',
-    image:
-      'https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&q=80&w=1200',
+    image: hivTestAtHomeImage,
     category: 'lab',
     relatedSlugs: ['std-test-at-home', 'lab-test-at-home', 'semen-analysis'],
   },
@@ -224,8 +233,7 @@ export const SERVICES_CATALOG = [
     title: 'Semen Analysis',
     description:
       'SIMS Health Care offers semen analysis at home with safe sample collection, accurate results, and complete privacy in a comfortable environment.',
-    image:
-      'https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&q=80&w=1200',
+    image: semenAnalysisAtHomeImage,
     category: 'lab',
     relatedSlugs: ['hormones-lab-test', 'lab-test-at-home', 'beta-hcg-test-at-home'],
   },
@@ -234,8 +242,7 @@ export const SERVICES_CATALOG = [
     title: 'Hormones Lab Test',
     description:
       'SIMS Health Care provides hormones lab tests at home with safe sample collection, accurate results, and complete privacy for your health monitoring.',
-    image:
-      'https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=1200',
+    image: hormonesLabTestAtHomeImage,
     category: 'lab',
     relatedSlugs: ['lab-test-at-home', 'allergy-food-intolerance-test', 'health-checkup-at-home'],
   },
@@ -254,8 +261,7 @@ export const SERVICES_CATALOG = [
     title: 'Medication Management',
     description:
       'SIMS Health Care offers medication management at home with expert guidance, timely reminders, and complete support to ensure safe and effective treatment.',
-    image:
-      'https://images.unsplash.com/photo-1587854692152-c3d09b27b0a6?auto=format&fit=crop&q=80&w=1200',
+    image: medicationManagementAtHomeImage,
     category: 'nursing',
     relatedSlugs: ['nursing-care-at-home', 'elderly-care', 'injection-service-at-home'],
   },
@@ -264,8 +270,7 @@ export const SERVICES_CATALOG = [
     title: 'ECG at Home',
     description:
       'SIMS Health Care provides ECG at home with expert technicians, accurate heart monitoring, and complete comfort in a safe and private environment.',
-    image:
-      'https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=80&w=1200',
+    image: ecgAtHomeImage,
     category: 'nursing',
     relatedSlugs: ['health-checkup-at-home', 'doctor-on-call', 'nursing-care-at-home'],
   },
@@ -274,8 +279,7 @@ export const SERVICES_CATALOG = [
     title: 'Wound Care',
     description:
       'SIMS Health Care offers wound care at home with expert medical attention, safe dressing, infection prevention, and faster healing in a comfortable environment.',
-    image:
-      'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&q=80&w=1200',
+    image: woundCareAtHomeImage,
     category: 'nursing',
     relatedSlugs: ['dressing-care-at-home', 'post-surgical-care', 'nursing-care-at-home'],
   },
@@ -284,8 +288,7 @@ export const SERVICES_CATALOG = [
     title: 'Dressing Care at Home',
     description:
       'SIMS Health Care provides dressing care at home with expert nurses, safe wound management, infection control, and personalized healing support.',
-    image:
-      'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&q=80&w=1200',
+    image: dressingCareAtHomeImage,
     category: 'nursing',
     relatedSlugs: ['wound-care', 'post-surgical-care', 'nursing-care-at-home'],
   },
@@ -294,8 +297,7 @@ export const SERVICES_CATALOG = [
     title: 'Urine Catheter Management',
     description:
       'SIMS Health Care offers urine catheter management at home with expert care, hygiene maintenance, infection prevention, and patient comfort support.',
-    image:
-      'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=1200',
+    image: urineCatheterManagementAtHomeImage,
     category: 'nursing',
     relatedSlugs: ['nursing-care-at-home', 'elderly-care', 'post-surgical-care'],
   },
@@ -314,8 +316,7 @@ export const SERVICES_CATALOG = [
     title: 'Post-Surgical Care',
     description:
       'SIMS Health Care provides post-surgical care at home with expert monitoring, wound management, medication support, and faster, safe recovery in comfort.',
-    image:
-      'https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&q=80&w=1200',
+    image: postSurgicalCareAtHomeImage,
     category: 'nursing',
     relatedSlugs: ['physiotherapy-at-home', 'wound-care', 'nursing-care-at-home'],
   },
