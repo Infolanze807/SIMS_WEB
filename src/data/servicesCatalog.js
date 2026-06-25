@@ -4,7 +4,7 @@ import physiotherapyAtHomeImage from '../assets/PhysiotherapyAtHome01.jpeg';
 import nursingCareAtHomeImage from '../assets/NursingAtHome01.jpeg';
 import ivTherapiesImage from '../assets/IVTherapies04.jpeg';
 import oxygenTherapyAtHomeImage from '../assets/OxygenTherapyAtHome03.jpeg';
-import covidPcrTestAtHomeImage from '../assets/CovidPcrTestAtHome03.jpeg';
+import covidPCRTestAtHomeImage from '../assets/CovidPCRTestAtHome03.jpeg';
 import fluVaccinationAtHomeInDubaiImage from '../assets/FluVaccinationAtHomeInDubai03.jpeg';
 import healthCheckupAtHomeImage from '../assets/HealthCheckupAtHome03.jpeg';
 import injectionServiceAtHomeImage from '../assets/InjectionServiceAtHome03.jpeg';
@@ -89,7 +89,7 @@ export const SERVICES_CATALOG = [
     title: 'Covid PCR Test at Home',
     description:
       'Certified COVID-19 PCR testing with quick home sample collection and official DHA-approved reports.',
-    image: covidPcrTestAtHomeImage,
+    image: covidPCRTestAtHomeImage,
     category: 'lab',
     relatedSlugs: ['lab-test-at-home', 'health-checkup-at-home', 'flu-vaccination-at-home-in-dubai'],
   },
