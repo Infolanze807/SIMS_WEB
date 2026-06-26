@@ -16,7 +16,7 @@ import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInVi
 import dhaHealthBadge from '../../assets/logoo.png';
 import doctorOnCallImage from '../../assets/DoctorOnCall01.jpeg';
 import ivTherapiesImage from '../../assets/IVTherapies04.jpeg';
-import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome01.jpeg';
+import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.jpeg';
 import labTestAtHomeImage from '../../assets/LabTestAtHome01.jpeg';
 import nursingCareAtHomeImage from '../../assets/NursingAtHome01.jpeg';
 import healthCheckupAtHomeImage from '../../assets/HealthCheckupAtHome03.jpeg';
@@ -135,7 +135,7 @@ const HealthcareHeroSection = () => {
               </div>
               <div className="border-t border-slate-100 p-4">
                 <a href="tel:+971525231028" className="flex w-full items-center justify-center gap-2 rounded-2xl bg-[#003d4d] py-3.5 text-sm font-bold text-white hover:bg-[#25b8a7]">
-                  Call +971 5252 31028
+                  Call +971 05252 310 28
                 </a>
               </div>
             </div>

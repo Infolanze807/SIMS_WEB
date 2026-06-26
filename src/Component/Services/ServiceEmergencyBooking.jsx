@@ -75,7 +75,7 @@ const ServiceEmergencyBooking = () => {
             href="tel:+971525231028"
             className="inline-flex items-center gap-3 bg-brand-dark text-white px-8 py-4 rounded-2xl font-black text-sm tracking-wide hover:bg-brand-dark-mid transition-all shadow-lg"
           >
-            <FaPhoneAlt /> +971 5252 310 28
+            <FaPhoneAlt /> +971 05252 310 28
           </a>
         </AnimateInView>
 

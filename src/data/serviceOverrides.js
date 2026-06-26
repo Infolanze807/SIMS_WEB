@@ -109,26 +109,26 @@ export const DETAIL_OVERRIDES = {
         "description": "Get lab tests done at home with ease and accuracy. Our certified team ensures safe sample collection. Quick, reliable reports delivered straight to you without visiting a clinic.",
         "slug": "lab-test-at-home"
       },
-      {
-        "title": "Doctor for Elderly Care",
-        "description": "Compassionate doctors for elderly care at home ensure comfort, safety, and personalized treatment. From routine checkups to chronic care, we provide trusted medical support for seniors.",
-        "slug": "elderly-care"
-      },
-      {
-        "title": "Pediatrician at Home",
-        "description": "Expert pediatricians at home provide gentle, child-friendly care. From newborn checkups to illness management, we ensure your little one’s health and comfort in a safe, familiar environment.",
-        "slug": "pediatrician-at-home"
-      },
+      // {
+      //   "title": "Doctor for Elderly Care",
+      //   "description": "Compassionate doctors for elderly care at home ensure comfort, safety, and personalized treatment. From routine checkups to chronic care, we provide trusted medical support for seniors.",
+      //   "slug": "elderly-care"
+      // },
+      // {
+      //   "title": "Pediatrician at Home",
+      //   "description": "Expert pediatricians at home provide gentle, child-friendly care. From newborn checkups to illness management, we ensure your little one’s health and comfort in a safe, familiar environment.",
+      //   "slug": "pediatrician-at-home"
+      // },
       {
         "title": "Physiotherapy at Home",
         "description": "Professional physiotherapy at home helps restore mobility, relieve pain, and support recovery. Get personalized exercises and hands-on care in the comfort of your own space.",
         "slug": "physiotherapy-at-home"
       },
-      {
-        "title": "Pediatrician at Hotel",
-        "description": "Expert pediatricians visit your hotel room for gentle, child-focused care—available 24/7 across Dubai for traveling families and guests.",
-        "slug": "pediatrician-at-hotel"
-      },
+      // {
+      //   "title": "Pediatrician at Hotel",
+      //   "description": "Expert pediatricians visit your hotel room for gentle, child-focused care—available 24/7 across Dubai for traveling families and guests.",
+      //   "slug": "pediatrician-at-hotel"
+      // },
       {
         "title": "Wound Care & Dressing",
         "description": "Fast and reliable prescription delivery service to your doorstep. Get your medicines on time without hassle, ensuring convenience, safety, and uninterrupted treatment at home.",
@@ -295,26 +295,26 @@ export const DETAIL_OVERRIDES = {
         "description": "Get lab tests done at home with ease and accuracy. Our certified team ensures safe sample collection. Quick, reliable reports delivered straight to you without visiting a clinic.",
         "slug": "lab-test-at-home"
       },
-      {
-        "title": "Doctor for Elderly Care",
-        "description": "Compassionate doctors for elderly care at home ensure comfort, safety, and personalized treatment. From routine checkups to chronic care, we provide trusted medical support for seniors.",
-        "slug": "elderly-care"
-      },
-      {
-        "title": "Pediatrician at Home",
-        "description": "Expert pediatricians at home provide gentle, child-friendly care. From newborn checkups to illness management, we ensure your little one’s health and comfort in a safe, familiar environment.",
-        "slug": "pediatrician-at-home"
-      },
+      // {
+      //   "title": "Doctor for Elderly Care",
+      //   "description": "Compassionate doctors for elderly care at home ensure comfort, safety, and personalized treatment. From routine checkups to chronic care, we provide trusted medical support for seniors.",
+      //   "slug": "elderly-care"
+      // },
+      // {
+      //   "title": "Pediatrician at Home",
+      //   "description": "Expert pediatricians at home provide gentle, child-friendly care. From newborn checkups to illness management, we ensure your little one’s health and comfort in a safe, familiar environment.",
+      //   "slug": "pediatrician-at-home"
+      // },
       {
         "title": "Physiotherapy at Home",
         "description": "Professional physiotherapy at home helps restore mobility, relieve pain, and support recovery. Get personalized exercises and hands-on care in the comfort of your own space.",
         "slug": "physiotherapy-at-home"
       },
-      {
-        "title": "Pediatrician at Hotel",
-        "description": "Expert pediatricians visit your hotel room for gentle, child-focused care—available 24/7 across Dubai for traveling families and guests.",
-        "slug": "pediatrician-at-hotel"
-      },
+      // {
+      //   "title": "Pediatrician at Hotel",
+      //   "description": "Expert pediatricians visit your hotel room for gentle, child-focused care—available 24/7 across Dubai for traveling families and guests.",
+      //   "slug": "pediatrician-at-hotel"
+      // },
       {
         "title": "Wound Care & Dressing",
         "description": "Fast and reliable prescription delivery service to your doorstep. Get your medicines on time without hassle, ensuring convenience, safety, and uninterrupted treatment at home.",
@@ -486,16 +486,16 @@ export const DETAIL_OVERRIDES = {
         "description": "Get lab tests done at home with ease and accuracy. Our certified team ensures safe sample collection. Quick, reliable reports delivered straight to you without visiting a clinic.",
         "slug": "lab-test-at-home"
       },
-      {
-        "title": "Doctor for Elderly Care",
-        "description": "Compassionate doctors for elderly care at home ensure comfort, safety, and personalized treatment. From routine checkups to chronic care, we provide trusted medical support for seniors.",
-        "slug": "elderly-care"
-      },
-      {
-        "title": "Pediatrician at Home",
-        "description": "Expert pediatricians at home provide gentle, child-friendly care. From newborn checkups to illness management, we ensure your little one’s health and comfort in a safe, familiar environment.",
-        "slug": "pediatrician-at-home"
-      },
+      // {
+      //   "title": "Doctor for Elderly Care",
+      //   "description": "Compassionate doctors for elderly care at home ensure comfort, safety, and personalized treatment. From routine checkups to chronic care, we provide trusted medical support for seniors.",
+      //   "slug": "elderly-care"
+      // },
+      // {
+      //   "title": "Pediatrician at Home",
+      //   "description": "Expert pediatricians at home provide gentle, child-friendly care. From newborn checkups to illness management, we ensure your little one’s health and comfort in a safe, familiar environment.",
+      //   "slug": "pediatrician-at-home"
+      // },
       {
         "title": "Doctor at Hotel",
         "description": "Receive expert medical care and consultations directly in your hotel room, ensuring comfort, privacy, and quick recovery during your stay.",
@@ -558,310 +558,310 @@ export const DETAIL_OVERRIDES = {
       }
     ]
   },
-  "pediatrician-at-home": {
-    "hero": {
-      "eyebrow": "Available 24/7 Support",
-      "headline": "Pediatrician at Home in Dubai – 24/7 DHA-Certified Care for Your Child",
-      "subheadline": "Pediatrician at Home in Dubai – 24/7 DHA-Certified Care for Your Child",
-      "bullets": [
-        "DHA-certified pediatricians across Dubai—book for home, hotel, or short-term stays",
-        "Expert care for fever, flu, infections, and routine check-ups—right in your child’s comfort zone",
-        "On-demand pediatric visits within 60 minutes—gentle, stress-free, and child-focused"
-      ]
-    },
-    "intro": {
-      "eyebrow": "About Our Pediatrician at Home Services in Dubai",
-      "title": "Pediatrician at Home in Dubai – 24/7 DHA-Certified Care for Your Child",
-      "paragraphs": [
-        "Gentle, Professional Care from Pediatricians in Dubai – Delivered to Your Home Looking for “Pediatrician at Home,” “Pediatric Doctor at Home,” or “Pediatric Doctor in Dubai”? You’ve found a trusted solution.",
-        "Our home-visit pediatric care service connects you with DHA-licensed pediatric doctors for prompt, private, and personalized care—anytime, anywhere in Dubai. Whether your child has a fever, rash, or infection—or you need a general check-up—you’ll receive expert medical attention without clinic stress."
-      ]
-    },
-    "reasonsTitle": "Why Choose Our At - Home Pediatric Doctor Service in Dubai?",
-    "reasonsSubtitle": "Trusted, Prompt & Child- Centered Healthcare in a Familiar Environment",
-    "reasons": [
-      {
-        "title": "24/7 Pediatrician at Home Across Dubai",
-        "description": "Book day or night, including weekends and holidays"
-      },
-      {
-        "title": "DHA-Licensed Pediatric Doctors Only",
-        "description": "Verified, child-specialized physicians using MOH-approved care protocols"
-      },
-      {
-        "title": "Home, Hotel, or Temporary Stays",
-        "description": "Ideal for residents, tourists, and short-term visitors needing care"
-      },
-      {
-        "title": "Private, Comfortable Setting for Your Child",
-        "description": "Skip the waiting room and reduce stress during illness"
-      }
-    ],
-    "stepsTitle": "How It Works – Pediatric Doctor at Home in 3 Easy Steps",
-    "steps": [
-      {
-        "title": "Book Anytime – 24/7",
-        "description": "Call or WhatsApp us with your location, child’s symptoms, and preferred time",
-        "points": [
-          "Same-day appointments"
-        ]
-      },
-      {
-        "title": "We Come to You",
-        "description": "Our DHA-licensed pediatrician arrives within 30–60 minutes at your home, hotel, or Airbnb",
-        "points": [
-          "Sterile equipment"
-        ]
-      },
-      {
-        "title": "Receive Expert Pediatric Care",
-        "description": "A gentle and thorough exam, treatment, and recommendations—all in the comfort of home",
-        "points": [
-          "Child-friendly approach"
-        ]
-      }
-    ],
-    "coverageTitle": "What's Included",
-    "coverageIntro": "",
-    "coverage": [],
-    "idealFor": [
-      "New parents",
-      "Families with toddlers or school-age children",
-      "Travelers and tourists in Dubai",
-      "Children with anxiety in medical settings",
-      "Post-hospital follow-ups"
-    ],
-    "testimonials": [
-      {
-        "name": "Sarah M.",
-        "initials": "SM",
-        "role": "Patient",
-        "location": "Dubai",
-        "text": "Business Bay I was worried about my baby’s rash. The doctor visited us at home and gave clear treatment and advice. Wonderful bedside manner and timely service."
-      },
-      {
-        "name": "Imran T.",
-        "initials": "IT",
-        "role": "Patient",
-        "location": "Dubai",
-        "text": "Al Nahda Our toddler had a high fever and we didn’t want to go out. The home visit saved us! The pediatrician was calm, knowledgeable, and great with kids."
-      },
-      {
-        "name": "Leena F.",
-        "initials": "LF",
-        "role": "Patient",
-        "location": "Dubai",
-        "text": "Dubai Silicon Oasis During the flu season, having a pediatrician come my home made a huge difference. The doctor was very friendly with our little one and timely service."
-      }
-    ],
-    "cta": {
-      "title": "DHA-Certified Care — 24/7 Across Dubai",
-      "description": "",
-      "buttonText": "Your Wellness Is Just A Call Away"
-    },
-    "faqsTitle": "Pediatrician at Home Frequently Asked Questions",
-    "faqs": [
-      {
-        "question": "1. What is a Pediatric Doctor at Home service?",
-        "answer": "It’s a mobile healthcare service in Dubai that sends licensed pediatricians to your location to treat your child comfortably at home or hotel."
-      },
-      {
-        "question": "2. What age groups do you treat?",
-        "answer": "Newborns to teenagers (0–16 years)."
-      },
-      {
-        "question": "3. Is it safe?",
-        "answer": "Yes—our pediatricians are DHA-licensed and follow strict hygiene protocols."
-      },
-      {
-        "question": "4. What if my child needs emergency care?",
-        "answer": "We treat non-critical issues. In case of emergencies, we will advise immediate hospital transfer."
-      },
-      {
-        "question": "5. How soon can a doctor arrive?",
-        "answer": "Usually within 30 to 60 minutes, depending on your location in Dubai."
-      },
-      {
-        "question": "6. Do you serve tourists or short-term visitors?",
-        "answer": "Yes. We often help families staying in hotels or Airbnb in Dubai."
-      }
-    ]
-  },
-  "pediatrician-at-hotel": {
-    "hero": {
-      "eyebrow": "Available 24/7 Support",
-      "headline": "Pediatrician at Hotel in Dubai – 24/7 DHA-Certified Care for Your Child",
-      "subheadline": "Child Healthcare Delivered – Expert Pediatric Doctor Visits at Your Hotel Room",
-      "bullets": [
-        "Get pediatric consultations at your hotel—anytime, anywhere in Dubai.",
-        "24/7 hotel pediatric doctor support for fever, flu, rashes, infections, and more."
-      ]
-    },
-    "intro": {
-      "eyebrow": "About Our Pediatrician at Hotel Services in Dubai",
-      "title": "Child Healthcare Delivered – 24/7 Pediatric Doctor at Your Hotel in Dubai",
-      "paragraphs": [
-        "Searching for “pediatrician at hotel in Dubai”, “child doctor near me”, or “pediatric doctor hotel visit Dubai”? You’re in the right place.",
-        "Our Pediatrician at Hotel service brings trusted child medical care right to your hotel room—whether you’re on vacation, a business trip, or a short stay. Whether your child has a fever, cough, ear infection, rashes, stomach ache, or needs a follow-up checkup, our DHA-certified pediatric doctors are available 24/7.",
-        "We provide safe, calm, and comforting medical visits to ensure your little one gets professional attention without the stress of hospital waiting rooms. Our doctors are pediatric specialists trained to diagnose and treat infants, toddlers, and older children using DHA-approved protocols."
-      ]
-    },
-    "reasonsTitle": "Why Choose Pediatrician at Hotel in Dubai?",
-    "reasonsSubtitle": "Expert Pediatric Care That Comes to Your Hotel – Anytime, Anywhere",
-    "reasons": [
-      {
-        "title": "24/7 Pediatric Doctor at Your Hotel",
-        "description": "Round-the-clock service—even on weekends or holidays—perfect for late-night fevers or travel emergencies."
-      },
-      {
-        "title": "DHA-Certified Pediatricians",
-        "description": "We only send licensed, experienced child specialists with a calm, friendly approach."
-      },
-      {
-        "title": "Comfortable & Child-Friendly Care in Your Hotel Room",
-        "description": "Avoid long waits and stressful clinics. Your child is treated in a familiar and relaxed environment."
-      },
-      {
-        "title": "Fast Response Across Dubai",
-        "description": "Our doctors usually reach your hotel within 30–60 minutes across all Dubai areas."
-      },
-      {
-        "title": "Personalized, Safe & Evidence-Based Treatment",
-        "description": "We follow pediatric care protocols, offer symptom-based management, and provide prescriptions as needed."
-      }
-    ],
-    "stepsTitle": "Easy Booking – Here’s How It Works",
-    "steps": [
-      {
-        "title": "Book Anytime – 24/7",
-        "description": "Tell us your child’s symptoms, your hotel name, room number, and preferred time. We’ll take care of the rest.",
-        "points": [
-          "Instant booking",
-          "Consultation at your convenience"
-        ]
-      },
-      {
-        "title": "We Come to Your Hotel",
-        "description": "Our DHA-certified pediatrician arrives at your hotel room—usually within 30–60 minutes.",
-        "points": [
-          "No long queues or waiting",
-          "Child-safe, gentle approach"
-        ]
-      },
-      {
-        "title": "Expert Pediatric Care",
-        "description": "The doctor evaluates your child, explains the condition, and offers the best course of treatment.",
-        "points": [
-          "Prescriptions provided on-site",
-          "Follow-up guidance available"
-        ]
-      }
-    ],
-    "coverageTitle": "Conditions We Treat – Pediatric Care at Hotel Dubai",
-    "coverageIntro": "Our pediatric doctors can diagnose and treat a wide range of common childhood conditions:",
-    "coverage": [
-      "Fever & Viral Infections",
-      "Flu, Cold & Cough",
-      "Ear, Nose & Throat Infections",
-      "Vomiting, Diarrhea & Stomach Pain",
-      "Skin Rashes, Allergies & Insect Bites",
-      "Sore Throat & Tonsillitis",
-      "Asthma, Wheezing & Breathing Issues",
-      "Urinary Tract Infections (UTIs)",
-      "Minor Injuries & First Aid",
-      "Developmental Consultations",
-      "Follow-Up Checkups"
-    ],
-    "idealFor": [
-      "Parents of infants, toddlers & teens",
-      "Tourists or expats needing urgent pediatric care",
-      "Families staying at hotels in Dubai",
-      "Busy families seeking convenient, trusted care",
-      "Children with recurring or sudden symptoms"
-    ],
-    "exploreTitle": "Explore more of our pediatric & doctor services:",
-    "exploreServices": [
-      {
-        "title": "Pediatrician at Home",
-        "description": "Expert pediatricians at home provide gentle, child-friendly care. From newborn checkups to illness management, we ensure your little one’s health and comfort in a safe, familiar environment.",
-        "slug": "pediatrician-at-home"
-      },
-      {
-        "title": "Doctor at Hotel",
-        "description": "Receive expert medical care and consultations directly in your hotel room, ensuring comfort, privacy, and quick recovery during your stay.",
-        "slug": "doctor-at-hotel"
-      },
-      {
-        "title": "Home Visit Doctor",
-        "description": "Receive expert medical care and consultations directly at your home, ensuring comfort, privacy, and quick recovery during your stay.",
-        "slug": "home-visit-doctor"
-      },
-      {
-        "title": "Doctor On Call",
-        "description": "Our DHA-certified doctors bring personalized medical care right to your doorstep, hotel room, or workplace anytime you need it.",
-        "slug": "doctor-on-call"
-      }
-    ],
-    "testimonials": [
-      {
-        "name": "Fatima R.",
-        "initials": "FR",
-        "role": "Patient",
-        "location": "Dubai",
-        "text": "Bur Dubai We were traveling from the UK when our 2-year-old developed a high fever. The pediatrician arrived at our hotel in under 30 minutes and was so gentle."
-      },
-      {
-        "name": "Alexander Wright",
-        "initials": "AW",
-        "role": "Patient",
-        "location": "Dubai",
-        "text": "Such a relief to find a certified pediatrician at our hotel when my son had an allergic reaction during our vacation. The doctor was kind, patient, and well-equipped."
-      },
-      {
-        "name": "Rehan D.",
-        "initials": "RD",
-        "role": "Patient",
-        "location": "Dubai",
-        "text": "The Palm Jumeirah My daughter had stomach flu late at night. Within one hour, the doctor was at our hotel room. Thorough diagnosis and friendly approach. SIMS is a blessing for parents!"
-      }
-    ],
-    "cta": {
-      "title": "Access DHA Certified Pediatricians at Your Hotel Anytime 24/7, 365 Days a Year, Including Public Holidays!",
-      "description": "Book a pediatrician visit within 30 minutes for your child’s urgent or routine needs. At SIMS, our DHA-certified pediatricians provide safe, expert, and compassionate care right at your hotel. From fever, cough, or infections to vaccination guidance and newborn checkups, we ensure your child gets timely treatment without the stress of clinic visits.",
-      "buttonText": "Your Wellness Is Just A Call Away"
-    },
-    "faqsTitle": "Pediatrician at Hotel - Frequently Asked Questions",
-    "faqs": [
-      {
-        "question": "1. What is a Pediatrician at Hotel service?",
-        "answer": "It’s a mobile healthcare service where certified pediatric doctors visit your hotel room to treat your child for common illnesses or concerns—no clinic visits needed."
-      },
-      {
-        "question": "2. Is it safe for infants and toddlers?",
-        "answer": "Absolutely. All our pediatricians are DHA-licensed and trained to handle all age groups safely and gently."
-      },
-      {
-        "question": "3. What are the most common reasons to call a pediatrician at your hotel?",
-        "answer": "Fevers, rashes, vomiting, flu, sore throat, minor injuries, or general child health checkups."
-      },
-      {
-        "question": "4. How fast can a doctor arrive?",
-        "answer": "Typically within 30–60 minutes, depending on your hotel location in Dubai."
-      },
-      {
-        "question": "5. Do you serve all hotels in Dubai?",
-        "answer": "Yes! We serve all hotels, resorts, and short-term stay locations across Dubai."
-      },
-      {
-        "question": "6. Are prescriptions provided?",
-        "answer": "Yes. The pediatrician can prescribe medication and offer treatment guidance on-site."
-      },
-      {
-        "question": "7. Is this available 24/7?",
-        "answer": "Yes! Pediatrician at Hotel is available any time—day or night."
-      }
-    ]
-  },
+  // "pediatrician-at-home": {
+  //   "hero": {
+  //     "eyebrow": "Available 24/7 Support",
+  //     "headline": "Pediatrician at Home in Dubai – 24/7 DHA-Certified Care for Your Child",
+  //     "subheadline": "Pediatrician at Home in Dubai – 24/7 DHA-Certified Care for Your Child",
+  //     "bullets": [
+  //       "DHA-certified pediatricians across Dubai—book for home, hotel, or short-term stays",
+  //       "Expert care for fever, flu, infections, and routine check-ups—right in your child’s comfort zone",
+  //       "On-demand pediatric visits within 60 minutes—gentle, stress-free, and child-focused"
+  //     ]
+  //   },
+  //   "intro": {
+  //     "eyebrow": "About Our Pediatrician at Home Services in Dubai",
+  //     "title": "Pediatrician at Home in Dubai – 24/7 DHA-Certified Care for Your Child",
+  //     "paragraphs": [
+  //       "Gentle, Professional Care from Pediatricians in Dubai – Delivered to Your Home Looking for “Pediatrician at Home,” “Pediatric Doctor at Home,” or “Pediatric Doctor in Dubai”? You’ve found a trusted solution.",
+  //       "Our home-visit pediatric care service connects you with DHA-licensed pediatric doctors for prompt, private, and personalized care—anytime, anywhere in Dubai. Whether your child has a fever, rash, or infection—or you need a general check-up—you’ll receive expert medical attention without clinic stress."
+  //     ]
+  //   },
+  //   "reasonsTitle": "Why Choose Our At - Home Pediatric Doctor Service in Dubai?",
+  //   "reasonsSubtitle": "Trusted, Prompt & Child- Centered Healthcare in a Familiar Environment",
+  //   "reasons": [
+  //     {
+  //       "title": "24/7 Pediatrician at Home Across Dubai",
+  //       "description": "Book day or night, including weekends and holidays"
+  //     },
+  //     {
+  //       "title": "DHA-Licensed Pediatric Doctors Only",
+  //       "description": "Verified, child-specialized physicians using MOH-approved care protocols"
+  //     },
+  //     {
+  //       "title": "Home, Hotel, or Temporary Stays",
+  //       "description": "Ideal for residents, tourists, and short-term visitors needing care"
+  //     },
+  //     {
+  //       "title": "Private, Comfortable Setting for Your Child",
+  //       "description": "Skip the waiting room and reduce stress during illness"
+  //     }
+  //   ],
+  //   "stepsTitle": "How It Works – Pediatric Doctor at Home in 3 Easy Steps",
+  //   "steps": [
+  //     {
+  //       "title": "Book Anytime – 24/7",
+  //       "description": "Call or WhatsApp us with your location, child’s symptoms, and preferred time",
+  //       "points": [
+  //         "Same-day appointments"
+  //       ]
+  //     },
+  //     {
+  //       "title": "We Come to You",
+  //       "description": "Our DHA-licensed pediatrician arrives within 30–60 minutes at your home, hotel, or Airbnb",
+  //       "points": [
+  //         "Sterile equipment"
+  //       ]
+  //     },
+  //     {
+  //       "title": "Receive Expert Pediatric Care",
+  //       "description": "A gentle and thorough exam, treatment, and recommendations—all in the comfort of home",
+  //       "points": [
+  //         "Child-friendly approach"
+  //       ]
+  //     }
+  //   ],
+  //   "coverageTitle": "What's Included",
+  //   "coverageIntro": "",
+  //   "coverage": [],
+  //   "idealFor": [
+  //     "New parents",
+  //     "Families with toddlers or school-age children",
+  //     "Travelers and tourists in Dubai",
+  //     "Children with anxiety in medical settings",
+  //     "Post-hospital follow-ups"
+  //   ],
+  //   "testimonials": [
+  //     {
+  //       "name": "Sarah M.",
+  //       "initials": "SM",
+  //       "role": "Patient",
+  //       "location": "Dubai",
+  //       "text": "Business Bay I was worried about my baby’s rash. The doctor visited us at home and gave clear treatment and advice. Wonderful bedside manner and timely service."
+  //     },
+  //     {
+  //       "name": "Imran T.",
+  //       "initials": "IT",
+  //       "role": "Patient",
+  //       "location": "Dubai",
+  //       "text": "Al Nahda Our toddler had a high fever and we didn’t want to go out. The home visit saved us! The pediatrician was calm, knowledgeable, and great with kids."
+  //     },
+  //     {
+  //       "name": "Leena F.",
+  //       "initials": "LF",
+  //       "role": "Patient",
+  //       "location": "Dubai",
+  //       "text": "Dubai Silicon Oasis During the flu season, having a pediatrician come my home made a huge difference. The doctor was very friendly with our little one and timely service."
+  //     }
+  //   ],
+  //   "cta": {
+  //     "title": "DHA-Certified Care — 24/7 Across Dubai",
+  //     "description": "",
+  //     "buttonText": "Your Wellness Is Just A Call Away"
+  //   },
+  //   "faqsTitle": "Pediatrician at Home Frequently Asked Questions",
+  //   "faqs": [
+  //     {
+  //       "question": "1. What is a Pediatric Doctor at Home service?",
+  //       "answer": "It’s a mobile healthcare service in Dubai that sends licensed pediatricians to your location to treat your child comfortably at home or hotel."
+  //     },
+  //     {
+  //       "question": "2. What age groups do you treat?",
+  //       "answer": "Newborns to teenagers (0–16 years)."
+  //     },
+  //     {
+  //       "question": "3. Is it safe?",
+  //       "answer": "Yes—our pediatricians are DHA-licensed and follow strict hygiene protocols."
+  //     },
+  //     {
+  //       "question": "4. What if my child needs emergency care?",
+  //       "answer": "We treat non-critical issues. In case of emergencies, we will advise immediate hospital transfer."
+  //     },
+  //     {
+  //       "question": "5. How soon can a doctor arrive?",
+  //       "answer": "Usually within 30 to 60 minutes, depending on your location in Dubai."
+  //     },
+  //     {
+  //       "question": "6. Do you serve tourists or short-term visitors?",
+  //       "answer": "Yes. We often help families staying in hotels or Airbnb in Dubai."
+  //     }
+  //   ]
+  // },
+  // "pediatrician-at-hotel": {
+  //   "hero": {
+  //     "eyebrow": "Available 24/7 Support",
+  //     "headline": "Pediatrician at Hotel in Dubai – 24/7 DHA-Certified Care for Your Child",
+  //     "subheadline": "Child Healthcare Delivered – Expert Pediatric Doctor Visits at Your Hotel Room",
+  //     "bullets": [
+  //       "Get pediatric consultations at your hotel—anytime, anywhere in Dubai.",
+  //       "24/7 hotel pediatric doctor support for fever, flu, rashes, infections, and more."
+  //     ]
+  //   },
+  //   "intro": {
+  //     "eyebrow": "About Our Pediatrician at Hotel Services in Dubai",
+  //     "title": "Child Healthcare Delivered – 24/7 Pediatric Doctor at Your Hotel in Dubai",
+  //     "paragraphs": [
+  //       "Searching for “pediatrician at hotel in Dubai”, “child doctor near me”, or “pediatric doctor hotel visit Dubai”? You’re in the right place.",
+  //       "Our Pediatrician at Hotel service brings trusted child medical care right to your hotel room—whether you’re on vacation, a business trip, or a short stay. Whether your child has a fever, cough, ear infection, rashes, stomach ache, or needs a follow-up checkup, our DHA-certified pediatric doctors are available 24/7.",
+  //       "We provide safe, calm, and comforting medical visits to ensure your little one gets professional attention without the stress of hospital waiting rooms. Our doctors are pediatric specialists trained to diagnose and treat infants, toddlers, and older children using DHA-approved protocols."
+  //     ]
+  //   },
+  //   "reasonsTitle": "Why Choose Pediatrician at Hotel in Dubai?",
+  //   "reasonsSubtitle": "Expert Pediatric Care That Comes to Your Hotel – Anytime, Anywhere",
+  //   "reasons": [
+  //     {
+  //       "title": "24/7 Pediatric Doctor at Your Hotel",
+  //       "description": "Round-the-clock service—even on weekends or holidays—perfect for late-night fevers or travel emergencies."
+  //     },
+  //     {
+  //       "title": "DHA-Certified Pediatricians",
+  //       "description": "We only send licensed, experienced child specialists with a calm, friendly approach."
+  //     },
+  //     {
+  //       "title": "Comfortable & Child-Friendly Care in Your Hotel Room",
+  //       "description": "Avoid long waits and stressful clinics. Your child is treated in a familiar and relaxed environment."
+  //     },
+  //     {
+  //       "title": "Fast Response Across Dubai",
+  //       "description": "Our doctors usually reach your hotel within 30–60 minutes across all Dubai areas."
+  //     },
+  //     {
+  //       "title": "Personalized, Safe & Evidence-Based Treatment",
+  //       "description": "We follow pediatric care protocols, offer symptom-based management, and provide prescriptions as needed."
+  //     }
+  //   ],
+  //   "stepsTitle": "Easy Booking – Here’s How It Works",
+  //   "steps": [
+  //     {
+  //       "title": "Book Anytime – 24/7",
+  //       "description": "Tell us your child’s symptoms, your hotel name, room number, and preferred time. We’ll take care of the rest.",
+  //       "points": [
+  //         "Instant booking",
+  //         "Consultation at your convenience"
+  //       ]
+  //     },
+  //     {
+  //       "title": "We Come to Your Hotel",
+  //       "description": "Our DHA-certified pediatrician arrives at your hotel room—usually within 30–60 minutes.",
+  //       "points": [
+  //         "No long queues or waiting",
+  //         "Child-safe, gentle approach"
+  //       ]
+  //     },
+  //     {
+  //       "title": "Expert Pediatric Care",
+  //       "description": "The doctor evaluates your child, explains the condition, and offers the best course of treatment.",
+  //       "points": [
+  //         "Prescriptions provided on-site",
+  //         "Follow-up guidance available"
+  //       ]
+  //     }
+  //   ],
+  //   "coverageTitle": "Conditions We Treat – Pediatric Care at Hotel Dubai",
+  //   "coverageIntro": "Our pediatric doctors can diagnose and treat a wide range of common childhood conditions:",
+  //   "coverage": [
+  //     "Fever & Viral Infections",
+  //     "Flu, Cold & Cough",
+  //     "Ear, Nose & Throat Infections",
+  //     "Vomiting, Diarrhea & Stomach Pain",
+  //     "Skin Rashes, Allergies & Insect Bites",
+  //     "Sore Throat & Tonsillitis",
+  //     "Asthma, Wheezing & Breathing Issues",
+  //     "Urinary Tract Infections (UTIs)",
+  //     "Minor Injuries & First Aid",
+  //     "Developmental Consultations",
+  //     "Follow-Up Checkups"
+  //   ],
+  //   "idealFor": [
+  //     "Parents of infants, toddlers & teens",
+  //     "Tourists or expats needing urgent pediatric care",
+  //     "Families staying at hotels in Dubai",
+  //     "Busy families seeking convenient, trusted care",
+  //     "Children with recurring or sudden symptoms"
+  //   ],
+  //   "exploreTitle": "Explore more of our pediatric & doctor services:",
+  //   "exploreServices": [
+  //     {
+  //       "title": "Pediatrician at Home",
+  //       "description": "Expert pediatricians at home provide gentle, child-friendly care. From newborn checkups to illness management, we ensure your little one’s health and comfort in a safe, familiar environment.",
+  //       "slug": "pediatrician-at-home"
+  //     },
+  //     {
+  //       "title": "Doctor at Hotel",
+  //       "description": "Receive expert medical care and consultations directly in your hotel room, ensuring comfort, privacy, and quick recovery during your stay.",
+  //       "slug": "doctor-at-hotel"
+  //     },
+  //     {
+  //       "title": "Home Visit Doctor",
+  //       "description": "Receive expert medical care and consultations directly at your home, ensuring comfort, privacy, and quick recovery during your stay.",
+  //       "slug": "home-visit-doctor"
+  //     },
+  //     {
+  //       "title": "Doctor On Call",
+  //       "description": "Our DHA-certified doctors bring personalized medical care right to your doorstep, hotel room, or workplace anytime you need it.",
+  //       "slug": "doctor-on-call"
+  //     }
+  //   ],
+  //   "testimonials": [
+  //     {
+  //       "name": "Fatima R.",
+  //       "initials": "FR",
+  //       "role": "Patient",
+  //       "location": "Dubai",
+  //       "text": "Bur Dubai We were traveling from the UK when our 2-year-old developed a high fever. The pediatrician arrived at our hotel in under 30 minutes and was so gentle."
+  //     },
+  //     {
+  //       "name": "Alexander Wright",
+  //       "initials": "AW",
+  //       "role": "Patient",
+  //       "location": "Dubai",
+  //       "text": "Such a relief to find a certified pediatrician at our hotel when my son had an allergic reaction during our vacation. The doctor was kind, patient, and well-equipped."
+  //     },
+  //     {
+  //       "name": "Rehan D.",
+  //       "initials": "RD",
+  //       "role": "Patient",
+  //       "location": "Dubai",
+  //       "text": "The Palm Jumeirah My daughter had stomach flu late at night. Within one hour, the doctor was at our hotel room. Thorough diagnosis and friendly approach. SIMS is a blessing for parents!"
+  //     }
+  //   ],
+  //   "cta": {
+  //     "title": "Access DHA Certified Pediatricians at Your Hotel Anytime 24/7, 365 Days a Year, Including Public Holidays!",
+  //     "description": "Book a pediatrician visit within 30 minutes for your child’s urgent or routine needs. At SIMS, our DHA-certified pediatricians provide safe, expert, and compassionate care right at your hotel. From fever, cough, or infections to vaccination guidance and newborn checkups, we ensure your child gets timely treatment without the stress of clinic visits.",
+  //     "buttonText": "Your Wellness Is Just A Call Away"
+  //   },
+  //   "faqsTitle": "Pediatrician at Hotel - Frequently Asked Questions",
+  //   "faqs": [
+  //     {
+  //       "question": "1. What is a Pediatrician at Hotel service?",
+  //       "answer": "It’s a mobile healthcare service where certified pediatric doctors visit your hotel room to treat your child for common illnesses or concerns—no clinic visits needed."
+  //     },
+  //     {
+  //       "question": "2. Is it safe for infants and toddlers?",
+  //       "answer": "Absolutely. All our pediatricians are DHA-licensed and trained to handle all age groups safely and gently."
+  //     },
+  //     {
+  //       "question": "3. What are the most common reasons to call a pediatrician at your hotel?",
+  //       "answer": "Fevers, rashes, vomiting, flu, sore throat, minor injuries, or general child health checkups."
+  //     },
+  //     {
+  //       "question": "4. How fast can a doctor arrive?",
+  //       "answer": "Typically within 30–60 minutes, depending on your hotel location in Dubai."
+  //     },
+  //     {
+  //       "question": "5. Do you serve all hotels in Dubai?",
+  //       "answer": "Yes! We serve all hotels, resorts, and short-term stay locations across Dubai."
+  //     },
+  //     {
+  //       "question": "6. Are prescriptions provided?",
+  //       "answer": "Yes. The pediatrician can prescribe medication and offer treatment guidance on-site."
+  //     },
+  //     {
+  //       "question": "7. Is this available 24/7?",
+  //       "answer": "Yes! Pediatrician at Hotel is available any time—day or night."
+  //     }
+  //   ]
+  // },
   "lab-test-at-home": {
     "hero": {
       "eyebrow": "Available 24/7 Support",
@@ -2543,11 +2543,11 @@ export const DETAIL_OVERRIDES = {
         "description": "Safe and hygienic urine catheter management at home in Dubai with expert nurse support and regular monitoring.",
         "slug": null
       },
-      {
-        "title": "Mother & Baby Care",
-        "description": "Personalized mother & baby care at home in Dubai, ensuring safety, comfort, and expert support.",
-        "slug": "mother-baby-care"
-      },
+      // {
+      //   "title": "Mother & Baby Care",
+      //   "description": "Personalized mother & baby care at home in Dubai, ensuring safety, comfort, and expert support.",
+      //   "slug": "mother-baby-care"
+      // },
       {
         "title": "Post-Surgical Care",
         "description": "Expert at-home nursing support for smooth recovery, including wound dressing, pain management, mobility assistance, and doctor follow-ups",
@@ -2563,11 +2563,11 @@ export const DETAIL_OVERRIDES = {
         "description": "Professional at-home medication management in Dubai ensuring timely doses, safety, and effective treatment monitoring.",
         "slug": null
       },
-      {
-        "title": "Elderly care at Home",
-        "description": "Compassionate elderly care at home in Dubai, ensuring comfort, dignity, and 24/7 support.",
-        "slug": "elderly-care"
-      }
+      // {
+      //   "title": "Elderly care at Home",
+      //   "description": "Compassionate elderly care at home in Dubai, ensuring comfort, dignity, and 24/7 support.",
+      //   "slug": "elderly-care"
+      // }
     ],
     "testimonials": [
       {

@@ -23,7 +23,7 @@ const ServiceDetailCTA = ({ title, description, buttonText }) => {
               whileTap={{ scale: 0.98 }}
             >
               <FaPhoneAlt />
-              {buttonText || 'Call +971 5252 310 28'}
+              {buttonText || 'Call +971 05252 310 28'}
             </motion.a>
           </div>
         </div>

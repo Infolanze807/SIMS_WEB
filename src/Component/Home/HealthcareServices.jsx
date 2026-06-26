@@ -18,9 +18,9 @@ import {
 import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInView';
 import doctorOnCallImage from '../../assets/DoctorOnCall01.jpeg';
 import labTestAtHomeImage from '../../assets/LabTestAtHome01.jpeg';
-import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome01.jpeg';
+import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.jpeg';
 import nursingCareAtHomeImage from '../../assets/NursingAtHome01.jpeg';
-import ivTherapiesImage from '../../assets/IVTherapies04.jpeg';
+import ivTherapiesImage from '../../assets/IVTherapies02.jpeg';
 import oxygenTherapyAtHomeImage from '../../assets/OxygenTherapyAtHome03.jpeg';
 import covidPCRTestAtHomeImage from '../../assets/CovidPCRTestAtHome03.jpeg';
 import fluVaccinationAtHomeInDubaiImage from '../../assets/FluVaccinationAtHomeInDubai03.jpeg';
@@ -117,24 +117,24 @@ const SERVICES_DATA = [
     bgImage:
       injectionServiceAtHomeImage,
   },
-  {
-    slug: 'mother-baby-care',
-    title: 'Mother & baby care',
-    description:
-      'SIMS Health Care provides expert mother & baby care at home with skilled nurses, ensuring safety, comfort, support, and personalized attention.',
-    icon: <FaBaby />,
-    bgImage:
-      'https://images.unsplash.com/photo-1531983412531-1f49a365ffed?auto=format&fit=crop&q=80&w=600',
-  },
-  {
-    slug: 'elderly-care',
-    title: 'Elderly care',
-    description:
-      'SIMS Health Care offers compassionate elderly care at home with trained caregivers, ensuring dignity, safety, comfort, and reliable daily support.',
-    icon: <FaUserMd />,
-    bgImage:
-      'https://images.unsplash.com/photo-1516841273335-e39b37888115?auto=format&fit=crop&q=80&w=600',
-  },
+  // {
+  //   slug: 'mother-baby-care',
+  //   title: 'Mother & baby care',
+  //   description:
+  //     'SIMS Health Care provides expert mother & baby care at home with skilled nurses, ensuring safety, comfort, support, and personalized attention.',
+  //   icon: <FaBaby />,
+  //   bgImage:
+  //     'https://images.unsplash.com/photo-1531983412531-1f49a365ffed?auto=format&fit=crop&q=80&w=600',
+  // },
+  // {
+  //   slug: 'elderly-care',
+  //   title: 'Elderly care',
+  //   description:
+  //     'SIMS Health Care offers compassionate elderly care at home with trained caregivers, ensuring dignity, safety, comfort, and reliable daily support.',
+  //   icon: <FaUserMd />,
+  //   bgImage:
+  //     'https://images.unsplash.com/photo-1516841273335-e39b37888115?auto=format&fit=crop&q=80&w=600',
+  // },
 ];
 
 const cardImageVariants = {

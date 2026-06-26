@@ -1,8 +1,8 @@
 import doctorOnCallImage from '../assets/DoctorOnCall01.jpeg';
 import labTestAtHomeImage from '../assets/LabTestAtHome01.jpeg';
-import physiotherapyAtHomeImage from '../assets/PhysiotherapyAtHome01.jpeg';
+import physiotherapyAtHomeImage from '../assets/PhysiotherapyAtHome003.jpeg';
 import nursingCareAtHomeImage from '../assets/NursingAtHome01.jpeg';
-import ivTherapiesImage from '../assets/IVTherapies04.jpeg';
+import ivTherapiesImage from '../assets/IVTherapies02.jpeg';
 import oxygenTherapyAtHomeImage from '../assets/OxygenTherapyAtHome03.jpeg';
 import covidPCRTestAtHomeImage from '../assets/CovidPCRTestAtHome03.jpeg';
 import fluVaccinationAtHomeInDubaiImage from '../assets/FluVaccinationAtHomeInDubai03.jpeg';
@@ -13,20 +13,20 @@ import doctorAtHotelImage from '../assets/DoctorAtHotel01.jfif';
 import homeVisitDoctorImage from '../assets/HomeVisitDoctor01.jfif';
 import pediatricianAtHomeImage from '../assets/PediatricianAtHome02.jfif';
 import pediatricianAtHotelImage from '../assets/PediatricianAtHotel01.jfif';
-import stdTestAtHomeImage from '../assets/STDTestAtHome002.jfif';
-import NIPTTestAtHomeImage from '../assets/NIPTTestAtHome002.png';
+import stdTestAtHomeImage from '../assets/STDTestAtHome001.jpeg';
+import NIPTTestAtHomeImage from '../assets/NIPTTestAtHome001.jpeg';
 import dnaTestAtHomeImage from '../assets/DNATestAtHome01.jfif';
 import hivTestAtHomeImage from '../assets/HIVTestAtHome01.jfif';
-import semenAnalysisAtHomeImage from '../assets/SemanAnalytics.png';
+import semenAnalysisAtHomeImage from '../assets/SemanAnalytics001.jpeg';
 import hormonesLabTestAtHomeImage from '../assets/HormonesLabTest02.jpg';
 import allergyFoodIntoleranceTestAtHomeImage from '../assets/AllergyFood02.jpg';
 import betaHcgTestAtHomeImage from '../assets/BetaHCG02.jpg';
-import vitaminMineralsTestAtHomeImage from '../assets/Vitamin&MineralsTest01.jpg';
+import vitaminMineralsTestAtHomeImage from '../assets/Vitamin&MineralsTest01.jpeg';
 import postSurgicalCareAtHomeImage from '../assets/PostSurgicalCare01.jfif';
 import ecgAtHomeImage from '../assets/ECGAtHome02.jpg';
-import woundCareAtHomeImage from '../assets/WoundCare02.jpg';
+import woundCareAtHomeImage from '../assets/WoundCare01.jpeg';
 import dressingCareAtHomeImage from '../assets/DressingCare02.jpg';
-import urineCatheterManagementAtHomeImage from '../assets/UrineCatheterManagement02.jpg';
+import urineCatheterManagementAtHomeImage from '../assets/UrineCatheterManagement01.jpeg';
 import medicationManagementAtHomeImage from '../assets/MedicationManagement03.jpg';
 
 export const SERVICES_CATALOG = [
@@ -37,7 +37,9 @@ export const SERVICES_CATALOG = [
       'Our DHA-certified doctors bring personalized medical care right to your doorstep, hotel room, or workplace anytime you need it.',
     image: doctorOnCallImage,
     category: 'doctor',
-    relatedSlugs: ['doctor-at-home', 'doctor-at-hotel', 'home-visit-doctor', 'pediatrician-at-home', 'pediatrician-at-hotel'],
+    relatedSlugs: ['doctor-at-home', 'doctor-at-hotel', 'home-visit-doctor', 
+      // 'pediatrician-at-home', 'pediatrician-at-hotel'
+    ],
   },
   {
     slug: 'lab-test-at-home',
@@ -120,15 +122,15 @@ export const SERVICES_CATALOG = [
     category: 'nursing',
     relatedSlugs: ['nursing-care-at-home', 'iv-therapies', 'medication-management'],
   },
-  {
-    slug: 'pediatrician-at-home',
-    title: 'Pediatrician at Home',
-    description:
-      'SIMS Health Care provides pediatrician at home services, ensuring expert, safe, and convenient healthcare for your child.',
-    image: pediatricianAtHomeImage,
-    category: 'doctor',
-    relatedSlugs: ['pediatrician-at-hotel', 'doctor-on-call', 'doctor-at-home'],
-  },
+  // {
+  //   slug: 'pediatrician-at-home',
+  //   title: 'Pediatrician at Home',
+  //   description:
+  //     'SIMS Health Care provides pediatrician at home services, ensuring expert, safe, and convenient healthcare for your child.',
+  //   image: pediatricianAtHomeImage,
+  //   category: 'doctor',
+  //   relatedSlugs: ['pediatrician-at-hotel', 'doctor-on-call', 'doctor-at-home'],
+  // },
   {
     slug: 'home-visit-doctor',
     title: 'Home Visit Doctor',
@@ -136,17 +138,18 @@ export const SERVICES_CATALOG = [
       'SIMS Health Care provides home visit doctor services in Dubai—DHA-certified physicians come to your doorstep 24/7 for fast, private medical care.',
     image: homeVisitDoctorImage,
     category: 'doctor',
-    relatedSlugs: ['doctor-on-call', 'doctor-at-home', 'doctor-at-hotel', 'pediatrician-at-home'],
+    relatedSlugs: ['doctor-on-call', 'doctor-at-home', 'doctor-at-hotel', // 'pediatrician-at-home'
+    ],
   },
-  {
-    slug: 'pediatrician-at-hotel',
-    title: 'Pediatrician at Hotel',
-    description:
-      'SIMS Health Care offers pediatrician at hotel services in Dubai—expert child care delivered discreetly to your hotel room, 24/7.',
-    image: pediatricianAtHotelImage,
-    category: 'doctor',
-    relatedSlugs: ['pediatrician-at-home', 'doctor-on-call', 'doctor-at-hotel', 'home-visit-doctor'],
-  },
+  // {
+  //   slug: 'pediatrician-at-hotel',
+  //   title: 'Pediatrician at Hotel',
+  //   description:
+  //     'SIMS Health Care offers pediatrician at hotel services in Dubai—expert child care delivered discreetly to your hotel room, 24/7.',
+  //   image: pediatricianAtHotelImage,
+  //   category: 'doctor',
+  //   relatedSlugs: ['pediatrician-at-home', 'doctor-on-call', 'doctor-at-hotel', 'home-visit-doctor'],
+  // },
   {
     slug: 'doctor-at-home',
     title: 'Doctor at Home',
@@ -154,7 +157,8 @@ export const SERVICES_CATALOG = [
       'SIMS Health Care offers doctor at home services, providing safe, reliable, and personalized medical care at your doorstep.',
     image: doctorAtHomeImage,
     category: 'doctor',
-    relatedSlugs: ['doctor-on-call', 'doctor-at-hotel', 'pediatrician-at-home'],
+    relatedSlugs: ['doctor-on-call', 'doctor-at-hotel', // 'pediatrician-at-home'
+    ],
   },
   {
     slug: 'doctor-at-hotel',
@@ -163,7 +167,9 @@ export const SERVICES_CATALOG = [
       'SIMS Health Care provides doctor at hotel services, offering convenient, professional, and timely medical care wherever you stay.',
     image: doctorAtHotelImage,
     category: 'doctor',
-    relatedSlugs: ['doctor-on-call', 'doctor-at-home', 'pediatrician-at-hotel', 'home-visit-doctor'],
+    relatedSlugs: ['doctor-on-call', 'doctor-at-home', 
+      // 'pediatrician-at-hotel', 
+      'home-visit-doctor'],
   },
   {
     slug: 'beta-hcg-test-at-home',
@@ -246,16 +252,16 @@ export const SERVICES_CATALOG = [
     category: 'lab',
     relatedSlugs: ['lab-test-at-home', 'allergy-food-intolerance-test', 'health-checkup-at-home'],
   },
-  {
-    slug: 'elderly-care',
-    title: 'Elderly care',
-    description:
-      'SIMS Health Care offers compassionate elderly care at home with trained caregivers, ensuring dignity, safety, comfort, and reliable daily support.',
-    image:
-      'https://images.unsplash.com/photo-1516841273335-e39b37888115?auto=format&fit=crop&q=80&w=1200',
-    category: 'nursing',
-    relatedSlugs: ['nursing-care-at-home', 'medication-management', 'physiotherapy-at-home'],
-  },
+  // {
+  //   slug: 'elderly-care',
+  //   title: 'Elderly care',
+  //   description:
+  //     'SIMS Health Care offers compassionate elderly care at home with trained caregivers, ensuring dignity, safety, comfort, and reliable daily support.',
+  //   image:
+  //     'https://images.unsplash.com/photo-1516841273335-e39b37888115?auto=format&fit=crop&q=80&w=1200',
+  //   category: 'nursing',
+  //   relatedSlugs: ['nursing-care-at-home', 'medication-management', 'physiotherapy-at-home'],
+  // },
   {
     slug: 'medication-management',
     title: 'Medication Management',
@@ -301,16 +307,16 @@ export const SERVICES_CATALOG = [
     category: 'nursing',
     relatedSlugs: ['nursing-care-at-home', 'elderly-care', 'post-surgical-care'],
   },
-  {
-    slug: 'mother-baby-care',
-    title: 'Mother & baby care',
-    description:
-      'SIMS Health Care provides mother & baby care at home with expert support, newborn checkups, feeding guidance, and postnatal care for a healthy recovery and growth.',
-    image:
-      'https://images.unsplash.com/photo-1531983412531-1f49a365ffed?auto=format&fit=crop&q=80&w=1200',
-    category: 'nursing',
-    relatedSlugs: ['pediatrician-at-home', 'nipt-test-at-home', 'nursing-care-at-home'],
-  },
+  // {
+  //   slug: 'mother-baby-care',
+  //   title: 'Mother & baby care',
+  //   description:
+  //     'SIMS Health Care provides mother & baby care at home with expert support, newborn checkups, feeding guidance, and postnatal care for a healthy recovery and growth.',
+  //   image:
+  //     'https://images.unsplash.com/photo-1531983412531-1f49a365ffed?auto=format&fit=crop&q=80&w=1200',
+  //   category: 'nursing',
+  //   relatedSlugs: ['pediatrician-at-home', 'nipt-test-at-home', 'nursing-care-at-home'],
+  // },
   {
     slug: 'post-surgical-care',
     title: 'Post-Surgical Care',
@@ -330,8 +336,8 @@ export const HEADER_NAV_SERVICES = [
       { title: 'Doctor At Home', slug: 'doctor-at-home' },
       { title: 'Doctor at Hotel', slug: 'doctor-at-hotel' },
       { title: 'Home Visit Doctor', slug: 'home-visit-doctor' },
-      { title: 'Pediatrician at Home', slug: 'pediatrician-at-home' },
-      { title: 'Pediatrician at Hotel', slug: 'pediatrician-at-hotel' },
+      // { title: 'Pediatrician at Home', slug: 'pediatrician-at-home' },
+      // { title: 'Pediatrician at Hotel', slug: 'pediatrician-at-hotel' },
     ],
   },
   {

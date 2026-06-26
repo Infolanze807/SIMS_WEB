@@ -153,7 +153,7 @@ const HomeMain = () => {
             >
               <div className="space-y-0.5">
                 <span className="block text-[9px] font-extrabold uppercase tracking-wider text-gray-400">Direct Call 24/7</span>
-                <span className="text-xs font-black tracking-wide">+971 5252 31028</span>
+                <span className="text-xs font-black tracking-wide">+971 05252 31028</span>
               </div>
               <div className="h-8 w-8 rounded-xl bg-[#003d4d]/5 flex items-center justify-center text-[#003d4d] group-hover:bg-[#25b8a7] group-hover:text-white transition-all">
                 <FaPhoneAlt className="text-xs" />

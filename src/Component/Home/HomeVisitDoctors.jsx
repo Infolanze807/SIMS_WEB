@@ -19,16 +19,16 @@ const PARENT_SERVICE = getServiceBySlug('doctor-on-call');
 const FEATURED_DOCTOR_SLUGS = [
   'doctor-at-home',
   'doctor-at-hotel',
-  'pediatrician-at-home',
+  // 'pediatrician-at-home',
   'doctor-on-call',
 ];
 
 const SERVICE_ICONS = {
   'doctor-at-home': FaHome,
   'doctor-at-hotel': FaHotel,
-  'pediatrician-at-home': FaBaby,
+  // 'pediatrician-at-home': FaBaby,
   'doctor-on-call': FaPhoneAlt,
-  'pediatrician-on-call': FaPhoneAlt,
+  // 'pediatrician-on-call': FaPhoneAlt,
 };
 
 const FALLBACK_IMAGE =
@@ -137,7 +137,7 @@ const HomeVisitDoctors = () => {
                 </div>
               </div>
               <span className="border-b-2 border-[#25b8a7]/40 pb-0.5 text-sm font-bold text-white transition-colors group-hover:border-[#25b8a7] group-hover:text-[#4fc3c0]">
-                See Our Doctors
+                Meet Our Staff
               </span>
             </Link>
           </AnimateInView>

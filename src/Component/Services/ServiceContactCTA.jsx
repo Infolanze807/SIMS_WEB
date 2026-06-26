@@ -32,7 +32,7 @@ const ServiceContactCTA = () => {
                 Call Us Anytime
               </p>
               <p className="text-2xl sm:text-3xl font-black text-white tracking-tight">
-                +971 5252 310 28
+                +971 05252 310 28
               </p>
             </div>
           </a>

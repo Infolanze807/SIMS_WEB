@@ -12,6 +12,7 @@ import {
   FaCheckCircle,
 } from 'react-icons/fa';
 import AnimateInView, { fadeUp, slideFromLeft, slideFromRight, staggerContainer } from '../Services/AnimateInView';
+import { RiPsychotherapyLine } from 'react-icons/ri';
 
 const ContentSection = () => {
   const services = [
@@ -34,9 +35,9 @@ const ContentSection = () => {
       bgColor: "bg-indigo-50 border-indigo-100/50",
     },
     {
-      title: "Child & Family Care",
-      desc: "Pediatric visits, family checkups, and elderly care at home.",
-      icon: <FaBaby className="text-xl text-rose-600" />,
+      title: "Physiotherapy at Home",
+      desc: "Professional physiotherapy at home helps restore mobility, relieve pain, and support recovery. Get personalized exercises and hands-on care in the comfort of your own space.",
+      icon: <RiPsychotherapyLine  className="text-xl text-rose-600" />,
       bgColor: "bg-rose-50 border-rose-100/50",
     },
     {

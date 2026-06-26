@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 import AnimateInView, { fadeUp, scaleIn, slideFromRight, staggerContainer } from '../Services/AnimateInView';
 
 const CONTACT_ITEMS = [
-  { title: 'Address', val: 'Al Barsha 1, Sheikh Zayed Rd, Dubai' },
-  { title: 'Phone Support', val: '+971 5252 310 28' },
+  { title: 'Address', val: '207, AB Center , Sheikh Zayed Road,  Al Barsha First , Dubai' },
+  { title: 'Phone Support', val: '+971 05252 310 28' },
   { title: 'Direct Email', val: 'connect@simshealthcare.ae' },
   { title: 'Working Hours', val: '24/7 Professional Assistance' },
 ];

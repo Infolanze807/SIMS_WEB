@@ -107,18 +107,18 @@ export const MANUAL_OVERRIDES = {
           'Receive expert medical care and consultations directly in your hotel room, ensuring comfort, privacy, and quick recovery during your stay.',
         slug: 'doctor-at-hotel',
       },
-      {
-        title: 'Pediatrician on Call',
-        description:
-          'Expert pediatricians available on call to provide trusted medical care for your child anytime, ensuring comfort, safety.',
-        slug: 'pediatrician-on-call',
-      },
-      {
-        title: 'Pediatrician at Home',
-        description:
-          'Get compassionate pediatric care at home with expert doctors ensuring your child’s health, comfort, and safety in a stress-free environment.',
-        slug: 'pediatrician-at-home',
-      },
+      // {
+      //   title: 'Pediatrician on Call',
+      //   description:
+      //     'Expert pediatricians available on call to provide trusted medical care for your child anytime, ensuring comfort, safety.',
+      //   slug: 'pediatrician-on-call',
+      // },
+      // {
+      //   title: 'Pediatrician at Home',
+      //   description:
+      //     'Get compassionate pediatric care at home with expert doctors ensuring your child’s health, comfort, and safety in a stress-free environment.',
+      //   slug: 'pediatrician-at-home',
+      // },
     ],
     testimonials: [
       {
@@ -2363,12 +2363,12 @@ export const MANUAL_OVERRIDES = {
           'Safe and hygienic urine catheter management at home in Dubai with expert nurse support and regular monitoring.',
         slug: 'urine-catheter-management',
       },
-      {
-        title: 'Mother & Baby Care',
-        description:
-          'Personalized mother & baby care at home in Dubai, ensuring safety, comfort, and expert support.',
-        slug: 'mother-baby-care',
-      },
+      // {
+      //   title: 'Mother & Baby Care',
+      //   description:
+      //     'Personalized mother & baby care at home in Dubai, ensuring safety, comfort, and expert support.',
+      //   slug: 'mother-baby-care',
+      // },
       {
         title: 'Post-Surgical Care',
         description:
@@ -2387,12 +2387,12 @@ export const MANUAL_OVERRIDES = {
           'Professional at-home medication management in Dubai ensuring timely doses, safety, and effective treatment monitoring.',
         slug: 'medication-management',
       },
-      {
-        title: 'Elderly care at Home',
-        description:
-          'Compassionate elderly care at home in Dubai, ensuring comfort, dignity, and 24/7 support.',
-        slug: 'elderly-care',
-      },
+      // {
+      //   title: 'Elderly care at Home',
+      //   description:
+      //     'Compassionate elderly care at home in Dubai, ensuring comfort, dignity, and 24/7 support.',
+      //   slug: 'elderly-care',
+      // },
     ],
     testimonials: [
       {
@@ -2576,12 +2576,12 @@ export const MANUAL_OVERRIDES = {
           'Safe and hygienic urine catheter management at home in Dubai with expert nurse support and regular monitoring.',
         slug: 'urine-catheter-management',
       },
-      {
-        title: 'Mother & Baby Care',
-        description:
-          'Personalized mother & baby care at home in Dubai, ensuring safety, comfort, and expert support.',
-        slug: 'mother-baby-care',
-      },
+      // {
+      //   title: 'Mother & Baby Care',
+      //   description:
+      //     'Personalized mother & baby care at home in Dubai, ensuring safety, comfort, and expert support.',
+      //   slug: 'mother-baby-care',
+      // },
       {
         title: 'Post-Surgical Care',
         description:
@@ -2952,12 +2952,12 @@ export const MANUAL_OVERRIDES = {
     ],
     exploreTitle: 'Other At- Home Healthcare Services',
     exploreServices: [
-      {
-        title: 'Mother & Baby Care',
-        description:
-          'Personalized mother & baby care at home in Dubai, ensuring safety, comfort, and expert support.',
-        slug: 'mother-baby-care',
-      },
+      // {
+      //   title: 'Mother & Baby Care',
+      //   description:
+      //     'Personalized mother & baby care at home in Dubai, ensuring safety, comfort, and expert support.',
+      //   slug: 'mother-baby-care',
+      // },
       {
         title: 'ECG at Home',
         description:
@@ -2988,12 +2988,12 @@ export const MANUAL_OVERRIDES = {
           'Professional at-home medication management in Dubai ensuring timely doses, safety, and effective treatment monitoring.',
         slug: 'medication-management',
       },
-      {
-        title: 'Elderly care at Home',
-        description:
-          'Compassionate elderly care at home in Dubai, ensuring comfort, dignity, and 24/7 support.',
-        slug: 'elderly-care',
-      },
+      // {
+      //   title: 'Elderly care at Home',
+      //   description:
+      //     'Compassionate elderly care at home in Dubai, ensuring comfort, dignity, and 24/7 support.',
+      //   slug: 'elderly-care',
+      // },
     ],
     testimonials: [
       {
@@ -3158,12 +3158,12 @@ export const MANUAL_OVERRIDES = {
           'Safe and hygienic urine catheter management at home in Dubai with expert nurse support and regular monitoring.',
         slug: 'urine-catheter-management',
       },
-      {
-        title: 'Mother & Baby Care',
-        description:
-          'Personalized mother & baby care at home in Dubai, ensuring safety, comfort, and expert support.',
-        slug: 'mother-baby-care',
-      },
+      // {
+      //   title: 'Mother & Baby Care',
+      //   description:
+      //     'Personalized mother & baby care at home in Dubai, ensuring safety, comfort, and expert support.',
+      //   slug: 'mother-baby-care',
+      // },
       {
         title: 'Post-Surgical Care',
         description:
@@ -3176,12 +3176,12 @@ export const MANUAL_OVERRIDES = {
           'Professional at-home medication management in Dubai ensuring timely doses, safety, and effective treatment monitoring.',
         slug: 'medication-management',
       },
-      {
-        title: 'Elderly care at Home',
-        description:
-          'Compassionate elderly care at home in Dubai, ensuring comfort, dignity, and 24/7 support.',
-        slug: 'elderly-care',
-      },
+      // {
+      //   title: 'Elderly care at Home',
+      //   description:
+      //     'Compassionate elderly care at home in Dubai, ensuring comfort, dignity, and 24/7 support.',
+      //   slug: 'elderly-care',
+      // },
     ],
     testimonials: [
       {
@@ -3340,12 +3340,12 @@ export const MANUAL_OVERRIDES = {
           'Safe and hygienic urine catheter management at home in Dubai with expert nurse support and regular monitoring.',
         slug: 'urine-catheter-management',
       },
-      {
-        title: 'Mother & Baby Care',
-        description:
-          'Personalized mother & baby care at home in Dubai, ensuring safety, comfort, and expert support.',
-        slug: 'mother-baby-care',
-      },
+      // {
+      //   title: 'Mother & Baby Care',
+      //   description:
+      //     'Personalized mother & baby care at home in Dubai, ensuring safety, comfort, and expert support.',
+      //   slug: 'mother-baby-care',
+      // },
       {
         title: 'Post-Surgical Care',
         description:
@@ -3364,12 +3364,12 @@ export const MANUAL_OVERRIDES = {
           'Professional at-home medication management in Dubai ensuring timely doses, safety, and effective treatment monitoring.',
         slug: 'medication-management',
       },
-      {
-        title: 'Elderly care at Home',
-        description:
-          'Compassionate elderly care at home in Dubai, ensuring comfort, dignity, and 24/7 support.',
-        slug: 'elderly-care',
-      },
+      // {
+      //   title: 'Elderly care at Home',
+      //   description:
+      //     'Compassionate elderly care at home in Dubai, ensuring comfort, dignity, and 24/7 support.',
+      //   slug: 'elderly-care',
+      // },
     ],
     testimonials: [
       {
@@ -3529,12 +3529,12 @@ export const MANUAL_OVERRIDES = {
           'Safe and hygienic urine catheter management at home in Dubai with expert nurse support and regular monitoring.',
         slug: 'urine-catheter-management',
       },
-      {
-        title: 'Mother & Baby Care',
-        description:
-          'Personalized mother & baby care at home in Dubai, ensuring safety, comfort, and expert support.',
-        slug: 'mother-baby-care',
-      },
+      // {
+      //   title: 'Mother & Baby Care',
+      //   description:
+      //     'Personalized mother & baby care at home in Dubai, ensuring safety, comfort, and expert support.',
+      //   slug: 'mother-baby-care',
+      // },
       {
         title: 'Post-Surgical Care',
         description:
@@ -3553,12 +3553,12 @@ export const MANUAL_OVERRIDES = {
           'Professional at-home medication management in Dubai ensuring timely doses, safety, and effective treatment monitoring.',
         slug: 'medication-management',
       },
-      {
-        title: 'Elderly care at Home',
-        description:
-          'Compassionate elderly care at home in Dubai, ensuring comfort, dignity, and 24/7 support.',
-        slug: 'elderly-care',
-      },
+      // {
+      //   title: 'Elderly care at Home',
+      //   description:
+      //     'Compassionate elderly care at home in Dubai, ensuring comfort, dignity, and 24/7 support.',
+      //   slug: 'elderly-care',
+      // },
     ],
     testimonials: [
       {
@@ -3724,12 +3724,12 @@ export const MANUAL_OVERRIDES = {
           'Professional dressing care at home in Dubai for safe wound management, infection control, and faster recovery.',
         slug: 'dressing-care-at-home',
       },
-      {
-        title: 'Mother & Baby Care',
-        description:
-          'Personalized mother & baby care at home in Dubai, ensuring safety, comfort, and expert support.',
-        slug: 'mother-baby-care',
-      },
+      // {
+      //   title: 'Mother & Baby Care',
+      //   description:
+      //     'Personalized mother & baby care at home in Dubai, ensuring safety, comfort, and expert support.',
+      //   slug: 'mother-baby-care',
+      // },
       {
         title: 'Post-Surgical Care',
         description:
@@ -3748,12 +3748,12 @@ export const MANUAL_OVERRIDES = {
           'Professional at-home medication management in Dubai ensuring timely doses, safety, and effective treatment monitoring.',
         slug: 'medication-management',
       },
-      {
-        title: 'Elderly care at Home',
-        description:
-          'Compassionate elderly care at home in Dubai, ensuring comfort, dignity, and 24/7 support.',
-        slug: 'elderly-care',
-      },
+      // {
+      //   title: 'Elderly care at Home',
+      //   description:
+      //     'Compassionate elderly care at home in Dubai, ensuring comfort, dignity, and 24/7 support.',
+      //   slug: 'elderly-care',
+      // },
     ],
     testimonials: [
       {
@@ -3922,12 +3922,12 @@ export const MANUAL_OVERRIDES = {
           'Safe and hygienic urine catheter management at home in Dubai with expert nurse support and regular monitoring.',
         slug: 'urine-catheter-management',
       },
-      {
-        title: 'Mother & Baby Care',
-        description:
-          'Personalized mother & baby care at home in Dubai, ensuring safety, comfort, and expert support.',
-        slug: 'mother-baby-care',
-      },
+      // {
+      //   title: 'Mother & Baby Care',
+      //   description:
+      //     'Personalized mother & baby care at home in Dubai, ensuring safety, comfort, and expert support.',
+      //   slug: 'mother-baby-care',
+      // },
       {
         title: 'Post-Surgical Care',
         description:
@@ -3940,12 +3940,12 @@ export const MANUAL_OVERRIDES = {
           'Accurate ECG testing at home in Dubai with professional monitoring and quick reports.',
         slug: 'ecg-at-home',
       },
-      {
-        title: 'Elderly care at Home',
-        description:
-          'Compassionate elderly care at home in Dubai, ensuring comfort, dignity, and 24/7 support.',
-        slug: 'elderly-care',
-      },
+      // {
+      //   title: 'Elderly care at Home',
+      //   description:
+      //     'Compassionate elderly care at home in Dubai, ensuring comfort, dignity, and 24/7 support.',
+      //   slug: 'elderly-care',
+      // },
     ],
     testimonials: [
       {
@@ -4289,30 +4289,30 @@ export const MANUAL_OVERRIDES = {
           'Get lab tests done at home with ease and accuracy. Our certified team ensures safe sample collection. Quick, reliable reports delivered straight to you without visiting a clinic.',
         slug: 'lab-test-at-home',
       },
-      {
-        title: 'Doctor for Elderly Care',
-        description:
-          'Compassionate doctors for elderly care at home ensure comfort, safety, and personalized treatment. From routine checkups to chronic care, we provide trusted medical support for seniors.',
-        slug: 'elderly-care',
-      },
-      {
-        title: 'Pediatrician at Home',
-        description:
-          'Expert pediatricians at home provide gentle, child-friendly care. From newborn checkups to illness management, we ensure your little one’s health and comfort in a safe, familiar environment.',
-        slug: 'pediatrician-at-home',
-      },
-      {
-        title: 'Physiotherapy at Home',
-        description:
-          'Professional physiotherapy at home helps restore mobility, relieve pain, and support recovery. Get personalized exercises and hands-on care in the comfort of your own space.',
-        slug: 'physiotherapy-at-home',
-      },
-      {
-        title: 'Pediatrician on Call',
-        description:
-          'Get instant access to experienced pediatricians on call, anytime you need. From urgent advice to medical guidance, ensure your child’s health is always in safe hands.',
-        slug: 'pediatrician-on-call',
-      },
+      // {
+      //   title: 'Doctor for Elderly Care',
+      //   description:
+      //     'Compassionate doctors for elderly care at home ensure comfort, safety, and personalized treatment. From routine checkups to chronic care, we provide trusted medical support for seniors.',
+      //   slug: 'elderly-care',
+      // },
+      // {
+      //   title: 'Pediatrician at Home',
+      //   description:
+      //     'Expert pediatricians at home provide gentle, child-friendly care. From newborn checkups to illness management, we ensure your little one’s health and comfort in a safe, familiar environment.',
+      //   slug: 'pediatrician-at-home',
+      // },
+      // {
+      //   title: 'Physiotherapy at Home',
+      //   description:
+      //     'Professional physiotherapy at home helps restore mobility, relieve pain, and support recovery. Get personalized exercises and hands-on care in the comfort of your own space.',
+      //   slug: 'physiotherapy-at-home',
+      // },
+      // {
+      //   title: 'Pediatrician on Call',
+      //   description:
+      //     'Get instant access to experienced pediatricians on call, anytime you need. From urgent advice to medical guidance, ensure your child’s health is always in safe hands.',
+      //   slug: 'pediatrician-on-call',
+      // },
       {
         title: 'Wound Care & Dressing',
         description:
@@ -4387,395 +4387,395 @@ export const MANUAL_OVERRIDES = {
       },
     ],
   },
-  'pediatrician-at-home': {
-    hero: {
-      eyebrow: 'Available 24/7 Support',
-      headline: 'Pediatrician at Home in Dubai – 24/7 DHA-Certified Care for Your Child',
-      subheadline:
-        'Gentle, Professional Care from Pediatricians in Dubai – Delivered to Your Home',
-      bullets: [
-        'DHA-certified pediatricians across Dubai—book for home, hotel, or short-term stays',
-        'Expert care for fever, flu, infections, and routine check-ups—right in your child’s comfort zone',
-        'On-demand pediatric visits within 60 minutes—gentle, stress-free, and child-focused',
-      ],
-    },
-    intro: {
-      eyebrow: 'About Our Pediatrician at Home Services in Dubai',
-      title:
-        'Gentle, Professional Care from Pediatricians in Dubai – Delivered to Your Home',
-      paragraphs: [
-        'Looking for “Pediatrician at Home,” “Pediatric Doctor at Home,” or “Pediatric Doctor in Dubai”? You’ve found a trusted solution.',
-        'Our home-visit pediatric care service connects you with DHA-licensed pediatric doctors for prompt, private, and personalized care—anytime, anywhere in Dubai. Whether your child has a fever, rash, or infection—or you need a general check-up—you’ll receive expert medical attention without clinic stress.',
-      ],
-    },
-    reasonsTitle: 'Why Choose Our At - Home Pediatric Doctor Service in Dubai?',
-    reasonsSubtitle:
-      'Trusted, Prompt & Child- Centered Healthcare in a Familiar Environment',
-    reasons: [
-      {
-        title: '24/7 Pediatrician at Home Across Dubai',
-        description: 'Book day or night, including weekends and holidays',
-      },
-      {
-        title: 'DHA-Licensed Pediatric Doctors Only',
-        description:
-          'Verified, child-specialized physicians using MOH-approved care protocols',
-      },
-      {
-        title: 'Home, Hotel, or Temporary Stays',
-        description: 'Ideal for residents, tourists, and short-term visitors needing care',
-      },
-      {
-        title: 'Private, Comfortable Setting for Your Child',
-        description: 'Skip the waiting room and reduce stress during illness',
-      },
-    ],
-    stepsTitle: 'How It Works – Pediatric Doctor at Home in 3 Easy Steps',
-    stepsSubtitle:
-      'Book in minutes. A DHA-certified pediatrician arrives at your home, hotel, or Airbnb across Dubai — gentle, private, and child-focused.',
-    steps: [
-      {
-        title: 'Book Anytime – 24/7',
-        description:
-          'Call or WhatsApp us with your location, child’s symptoms, and preferred time',
-        points: ['Same-day appointments'],
-      },
-      {
-        title: 'We Come to You',
-        description:
-          'Our DHA-licensed pediatrician arrives within 30–60 minutes at your home, hotel, or Airbnb',
-        points: ['Sterile equipment'],
-      },
-      {
-        title: 'Receive Expert Pediatric Care',
-        description:
-          'A gentle and thorough exam, treatment, and recommendations—all in the comfort of home',
-        points: ['Child-friendly approach'],
-      },
-    ],
-    coverageTitle: 'Conditions Our Pediatric Conditions Our Pediatric',
-    coverageIntro: 'We care for a wide range of child health concerns, including:',
-    coverage: [
-      'Fever, cold, and flu',
-      'Vomiting, diarrhea, or dehydration',
-      'Skin rashes, allergies, or eczema',
-      'Sore throat, ear infections, or cough',
-      'Asthma or respiratory concerns',
-      'Routine well-child check-ups and vaccinations',
-      'Newborn and infant consultations',
-    ],
-    idealFor: [
-      'New parents',
-      'Families with toddlers or school-age children',
-      'Travelers and tourists in Dubai',
-      'Children with anxiety in medical settings',
-      'Post-hospital follow-ups',
-    ],
-    exploreTitle: 'All Pediatric Home Services We Offer',
-    exploreServices: [
-      {
-        title: 'Vaccination consultations',
-        description:
-          'SIMS Health Care provides vaccination consultations at home with expert guidance, safety, and trusted pediatric care.',
-      },
-      {
-        title: 'Pediatric illness diagnosis & treatment',
-        description:
-          'SIMS Health Care offers pediatric illness diagnosis & treatment at home with expert, safe, and reliable care.',
-      },
-      {
-        title: 'Nebulization for asthma or wheezing',
-        description:
-          'SIMS Health Care offers nebulization for asthma or wheezing at home, ensuring safe, quick, and effective relief.',
-      },
-      {
-        title: 'Growth & development assessments',
-        description:
-          'SIMS Health Care provides growth & development assessments at home, ensuring expert tracking of your child’s health.',
-      },
-      {
-        title: 'Feeding & sleep guidance',
-        description:
-          'SIMS Health Care offers expert feeding & sleep guidance at home to support healthy growth and comfort for children.',
-      },
-      {
-        title: 'Follow-up after hospital discharge',
-        description:
-          'SIMS Health Care provides follow-up after hospital discharge at home, ensuring safe recovery and continuous care.',
-      },
-      {
-        title: 'Travel health checks for kids',
-        description:
-          'SIMS Health Care offers travel health checks for kids, ensuring safe journeys with expert medical care and guidance.',
-      },
-    ],
-    testimonials: [
-      {
-        name: 'Sarah M.',
-        initials: 'SM',
-        role: 'Patient',
-        location: 'Business Bay',
-        text: 'I was worried about my baby’s rash. The doctor visited us at home and gave clear treatment and advice. Wonderful bedside manner and timely service.',
-      },
-      {
-        name: 'Imran T.',
-        initials: 'IT',
-        role: 'Patient',
-        location: 'Al Nahda',
-        text: 'Our toddler had a high fever and we didn’t want to go out. The home visit saved us! The pediatrician was calm, knowledgeable, and great with kids.',
-      },
-      {
-        name: 'Leena F.',
-        initials: 'LF',
-        role: 'Patient',
-        location: 'Dubai Silicon Oasis',
-        text: 'During the flu season, having a pediatrician come my home made a huge difference. The doctor was very friendly with our little one and timely service.',
-      },
-    ],
-    cta: {
-      title:
-        'Access DHA Certified Pediatrician at Home Anytime 24/7, 365 Days a Year, Including Public Holidays! –',
-      description:
-        'Book a pediatrician home visit within 30 minutes for expert child care. At SIMS, our DHA-certified pediatricians provide safe, compassionate, and professional medical attention for infants, toddlers, and children in the comfort of your home. From checkups and vaccinations to illness care and growth assessments, we ensure your child’s health is in trusted hands. Choose SIMS for reliable, family-focused pediatric care without the stress of hospital visits.',
-      buttonText: 'Your Wellness Is Just A Call Away',
-    },
-    faqsTitle: 'Pediatrician at Home Frequently Asked Questions',
-    faqs: [
-      {
-        question: '1. What is a Pediatric Doctor at Home service?',
-        answer:
-          'It’s a mobile healthcare service in Dubai that sends licensed pediatricians to your location to treat your child comfortably at home or hotel.',
-      },
-      {
-        question: '2. What age groups do you treat?',
-        answer: 'Newborns to teenagers (0–16 years).',
-      },
-      {
-        question: '3. Is it safe?',
-        answer:
-          'Yes—our pediatricians are DHA-licensed and follow strict hygiene protocols.',
-      },
-      {
-        question: '4. What if my child needs emergency care?',
-        answer:
-          'We treat non-critical issues. In case of emergencies, we will advise immediate hospital transfer.',
-      },
-      {
-        question: '5. How soon can a doctor arrive?',
-        answer:
-          'Usually within 30 to 60 minutes, depending on your location in Dubai.',
-      },
-      {
-        question: '6. Do you serve tourists or short-term visitors?',
-        answer:
-          'Yes. We often help families staying in hotels or Airbnb in Dubai.',
-      },
-    ],
-  },
-  'pediatrician-on-call': {
-    hero: {
-      eyebrow: 'Available 24/7 Support',
-      headline: 'Dubai’s 24/7 On-Call Pediatric Doctors – Home, Hotel & Holiday Visits',
-      subheadline: 'Child Healthcare Delivered – 24/7 Pediatric Doctor On Call in Dubai',
-      bullets: [
-        'Book DHA-licensed pediatricians for expert child care at home',
-        'Get pediatric consultations at your home, hotel, or vacation stay—anytime, anywhere in Dubai.',
-        '24/7 at-home pediatric doctor support for fever, flu, rashes, infections, and more.',
-      ],
-    },
-    intro: {
-      eyebrow: 'About Our Pediatrician at Call Services in Dubai',
-      title: 'Child Healthcare Delivered – 24/7 Pediatric Doctor On Call in Dubai',
-      paragraphs: [
-        'Searching for “pediatrician at home in Dubai”, “child doctor near me”, or “pediatric doctor on call Dubai”? You’re in the right place.',
-        'Our Pediatrician at Home service brings trusted child medical care right to your doorstep—be it your home, hotel, or Airbnb. Whether your child has a fever, cough, ear infection, rashes, stomach ache, or needs a follow-up checkup, our DHA-certified pediatric doctors are available 24/7.',
-        'We provide safe, calm, and comforting medical visits to ensure your little one gets professional attention without the stress of hospital waiting rooms. Our doctors are pediatric specialists trained to diagnose and treat infants, toddlers, and older children using DHA-approved protocols.',
-      ],
-    },
-    reasonsTitle: 'Why Choose Pediatrician at Home in Dubai?',
-    reasonsSubtitle: 'Expert Pediatric Care That Comes to You – Anytime, Anywhere',
-    reasons: [
-      {
-        title: '24/7 Pediatric Doctor On Call',
-        description:
-          'Round-the-clock service—even on weekends or holidays—perfect for late-night fevers or travel emergencies.',
-      },
-      {
-        title: 'DHA-Certified Pediatricians',
-        description:
-          'We only send licensed, experienced child specialists with a calm, friendly approach.',
-      },
-      {
-        title: 'Comfortable & Child-Friendly Care at Home',
-        description:
-          'Avoid long waits and stressful clinics. Your child is treated in a familiar and relaxed environment.',
-      },
-      {
-        title: 'Fast Response Across Dubai',
-        description:
-          'Our doctors usually reach your location within 30–60 minutes across all Dubai areas.',
-      },
-      {
-        title: 'Personalized, Safe & Evidence-Based Treatment',
-        description:
-          'We follow pediatric care protocols, offer symptom-based management, and provide prescriptions as needed.',
-      },
-    ],
-    stepsTitle: 'Easy Booking – Here’s How It Works',
-    stepsSubtitle:
-      'Book in minutes. A DHA-certified pediatrician comes to your home, hotel, or short-stay unit across Dubai — gentle, safe, and professional.',
-    steps: [
-      {
-        title: 'Book Anytime – 24/7',
-        description:
-          'Call or WhatsApp our team anytime. Tell us your child’s symptoms, your location, and preferred time. We’ll take care of the rest.',
-        points: ['Instant booking', 'Consultation at your convenience'],
-      },
-      {
-        title: 'We Come to You',
-        description:
-          'Our DHA-certified pediatrician arrives at your home, hotel, or short-stay unit—usually within 30–60 minutes.',
-        points: ['No long queues or waiting', 'Child-safe, gentle approach'],
-      },
-      {
-        title: 'Expert Pediatric Care',
-        description:
-          'The doctor evaluates your child, explains the condition, and offers the best course of treatment.',
-        points: ['Follow-up guidance available'],
-      },
-    ],
-    coverageTitle: 'Conditions We Treat – Pediatric Care at Home Dubai',
-    coverageIntro:
-      'Our pediatric doctors can diagnose and treat a wide range of common childhood conditions:',
-    coverage: [
-      'Fever & Viral Infections',
-      'Flu, Cold & Cough',
-      'Ear, Nose & Throat Infections',
-      'Vomiting, Diarrhea & Stomach Pain',
-      'Skin Rashes, Allergies & Insect Bites',
-      'Sore Throat & Tonsillitis',
-      'Asthma, Wheezing & Breathing Issues',
-      'Urinary Tract Infections (UTIs)',
-      'Minor Injuries & First Aid',
-      'Developmental Consultations',
-      'Follow-Up Checkups',
-    ],
-    idealFor: [
-      'Parents of infants, toddlers & teens',
-      'Tourists or expats needing urgent pediatric care',
-      'Hotel stays, home visits, or during late nights',
-      'Busy families seeking convenient, trusted care',
-      'Children with recurring or sudden symptoms',
-    ],
-    exploreTitle: 'Our full pediatric doctor on-call service includes:',
-    exploreServices: [
-      {
-        title: 'Pediatric home consultations',
-        description:
-          'Expert pediatric home consultations with SIMS Health Care. Safe, reliable, and personalized care for children.',
-      },
-      {
-        title: 'On-site prescriptions',
-        description:
-          'SIMS Health Care offers on-site prescriptions with ease, ensuring quick, safe, and reliable medication access.',
-      },
-      {
-        title: 'Travel health checks for children',
-        description:
-          'SIMS Health Care provides travel health checks for children, ensuring safe journeys with expert care.',
-      },
-      {
-        title: 'Sick child evaluations',
-        description:
-          'SIMS Health Care offers sick child evaluations at home with expert doctors for safe, quick, and reliable care.',
-      },
-      {
-        title: 'Holiday & tourist medical support',
-        description:
-          'SIMS Health Care offers holiday & tourist medical support with timely, trusted, and professional healthcare.',
-      },
-      {
-        title: 'Follow-up home visits',
-        description:
-          'SIMS Health Care provides follow-up home visits with expert care, ensuring recovery support and health monitoring.',
-      },
-      {
-        title: 'Newborn & infant checkups',
-        description:
-          'SIMS Health Care offers newborn & infant checkups at home, ensuring safe, gentle, and professional pediatric care.',
-      },
-      {
-        title: 'Pediatric referral letters (if needed)',
-        description:
-          'SIMS Health Care provides pediatric referral letters when needed, ensuring smooth access to specialized care.',
-      },
-    ],
-    testimonials: [
-      {
-        name: 'Fatima R.',
-        initials: 'FR',
-        role: 'Patient',
-        location: 'Bur Dubai',
-        text: 'We were traveling from the UK when our 2-year-old developed a high fever. The pediatrician arrived at our hotel in under 30 minutes and was so gentle.',
-      },
-      {
-        name: 'Alexander Wright',
-        initials: 'AW',
-        role: 'Patient',
-        location: 'Dubai',
-        text: 'Such a relief to find a certified pediatrician on call when my son had an allergic reaction during our vacation. The doctor was kind, patient, and well-equipped',
-      },
-      {
-        name: 'Rehan D.',
-        initials: 'RD',
-        role: 'Patient',
-        location: 'The Palm Jumeirah',
-        text: 'My daughter had stomach flu late at night. Within one hour, the doctor was at our home. Thorough diagnosis friendly approach. SIMS is a blessing for parents!',
-      },
-    ],
-    cta: {
-      title:
-        'Access DHA Certified Pediatricians On Call Anytime 24/7, 365 Days a Year, Including Public Holidays! –',
-      description:
-        'Book a pediatrician visit within 30 minutes for your child’s urgent or routine needs. At SIMS, our DHA-certified pediatricians provide safe, expert, and compassionate care right at home. From fever, cough, or infections to vaccination guidance and newborn checkups, we ensure your child gets timely treatment without the stress of clinic visits. Trust SIMS for reliable pediatric care, anytime and anywhere in Dubai.',
-      buttonText: 'Your Wellness Is Just A Call Away',
-    },
-    faqsTitle: 'Pediatrician on Call - Frequently Asked Questions',
-    faqs: [
-      {
-        question: '1. What is a Pediatrician at Home service?',
-        answer:
-          'It’s a mobile healthcare service where certified pediatric doctors visit your home to treat your child for common illnesses or concerns—no clinic visits needed.',
-      },
-      {
-        question: '2. Is it safe for infants and toddlers?',
-        answer:
-          'Absolutely. All our pediatricians are DHA-licensed and trained to handle all age groups safely and gently.',
-      },
-      {
-        question: '3. What are the most common reasons to call a pediatrician at home?',
-        answer:
-          'Fevers, rashes, vomiting, flu, sore throat, minor injuries, or general child health checkups.',
-      },
-      {
-        question: '4. How fast can a doctor arrive?',
-        answer: 'Typically within 30–60 minutes, depending on your location in Dubai.',
-      },
-      {
-        question: '5. Do you offer pediatric services at hotels or Airbnbs?',
-        answer: 'Yes! We serve all residential, hotel, and short-term stay locations in Dubai.',
-      },
-      {
-        question: '6. Are prescriptions provided?',
-        answer:
-          'Yes. The pediatrician can prescribe medication and offer treatment guidance on-site.',
-      },
-      {
-        question: '7. Is this available 24/7?',
-        answer: 'Yes! Pediatrician at Home is available any time—day or night.',
-      },
-    ],
-  },
+  // 'pediatrician-at-home': {
+  //   hero: {
+  //     eyebrow: 'Available 24/7 Support',
+  //     headline: 'Pediatrician at Home in Dubai – 24/7 DHA-Certified Care for Your Child',
+  //     subheadline:
+  //       'Gentle, Professional Care from Pediatricians in Dubai – Delivered to Your Home',
+  //     bullets: [
+  //       'DHA-certified pediatricians across Dubai—book for home, hotel, or short-term stays',
+  //       'Expert care for fever, flu, infections, and routine check-ups—right in your child’s comfort zone',
+  //       'On-demand pediatric visits within 60 minutes—gentle, stress-free, and child-focused',
+  //     ],
+  //   },
+  //   intro: {
+  //     eyebrow: 'About Our Pediatrician at Home Services in Dubai',
+  //     title:
+  //       'Gentle, Professional Care from Pediatricians in Dubai – Delivered to Your Home',
+  //     paragraphs: [
+  //       'Looking for “Pediatrician at Home,” “Pediatric Doctor at Home,” or “Pediatric Doctor in Dubai”? You’ve found a trusted solution.',
+  //       'Our home-visit pediatric care service connects you with DHA-licensed pediatric doctors for prompt, private, and personalized care—anytime, anywhere in Dubai. Whether your child has a fever, rash, or infection—or you need a general check-up—you’ll receive expert medical attention without clinic stress.',
+  //     ],
+  //   },
+  //   reasonsTitle: 'Why Choose Our At - Home Pediatric Doctor Service in Dubai?',
+  //   reasonsSubtitle:
+  //     'Trusted, Prompt & Child- Centered Healthcare in a Familiar Environment',
+  //   reasons: [
+  //     {
+  //       title: '24/7 Pediatrician at Home Across Dubai',
+  //       description: 'Book day or night, including weekends and holidays',
+  //     },
+  //     {
+  //       title: 'DHA-Licensed Pediatric Doctors Only',
+  //       description:
+  //         'Verified, child-specialized physicians using MOH-approved care protocols',
+  //     },
+  //     {
+  //       title: 'Home, Hotel, or Temporary Stays',
+  //       description: 'Ideal for residents, tourists, and short-term visitors needing care',
+  //     },
+  //     {
+  //       title: 'Private, Comfortable Setting for Your Child',
+  //       description: 'Skip the waiting room and reduce stress during illness',
+  //     },
+  //   ],
+  //   stepsTitle: 'How It Works – Pediatric Doctor at Home in 3 Easy Steps',
+  //   stepsSubtitle:
+  //     'Book in minutes. A DHA-certified pediatrician arrives at your home, hotel, or Airbnb across Dubai — gentle, private, and child-focused.',
+  //   steps: [
+  //     {
+  //       title: 'Book Anytime – 24/7',
+  //       description:
+  //         'Call or WhatsApp us with your location, child’s symptoms, and preferred time',
+  //       points: ['Same-day appointments'],
+  //     },
+  //     {
+  //       title: 'We Come to You',
+  //       description:
+  //         'Our DHA-licensed pediatrician arrives within 30–60 minutes at your home, hotel, or Airbnb',
+  //       points: ['Sterile equipment'],
+  //     },
+  //     {
+  //       title: 'Receive Expert Pediatric Care',
+  //       description:
+  //         'A gentle and thorough exam, treatment, and recommendations—all in the comfort of home',
+  //       points: ['Child-friendly approach'],
+  //     },
+  //   ],
+  //   coverageTitle: 'Conditions Our Pediatric Conditions Our Pediatric',
+  //   coverageIntro: 'We care for a wide range of child health concerns, including:',
+  //   coverage: [
+  //     'Fever, cold, and flu',
+  //     'Vomiting, diarrhea, or dehydration',
+  //     'Skin rashes, allergies, or eczema',
+  //     'Sore throat, ear infections, or cough',
+  //     'Asthma or respiratory concerns',
+  //     'Routine well-child check-ups and vaccinations',
+  //     'Newborn and infant consultations',
+  //   ],
+  //   idealFor: [
+  //     'New parents',
+  //     'Families with toddlers or school-age children',
+  //     'Travelers and tourists in Dubai',
+  //     'Children with anxiety in medical settings',
+  //     'Post-hospital follow-ups',
+  //   ],
+  //   exploreTitle: 'All Pediatric Home Services We Offer',
+  //   exploreServices: [
+  //     {
+  //       title: 'Vaccination consultations',
+  //       description:
+  //         'SIMS Health Care provides vaccination consultations at home with expert guidance, safety, and trusted pediatric care.',
+  //     },
+  //     {
+  //       title: 'Pediatric illness diagnosis & treatment',
+  //       description:
+  //         'SIMS Health Care offers pediatric illness diagnosis & treatment at home with expert, safe, and reliable care.',
+  //     },
+  //     {
+  //       title: 'Nebulization for asthma or wheezing',
+  //       description:
+  //         'SIMS Health Care offers nebulization for asthma or wheezing at home, ensuring safe, quick, and effective relief.',
+  //     },
+  //     {
+  //       title: 'Growth & development assessments',
+  //       description:
+  //         'SIMS Health Care provides growth & development assessments at home, ensuring expert tracking of your child’s health.',
+  //     },
+  //     {
+  //       title: 'Feeding & sleep guidance',
+  //       description:
+  //         'SIMS Health Care offers expert feeding & sleep guidance at home to support healthy growth and comfort for children.',
+  //     },
+  //     {
+  //       title: 'Follow-up after hospital discharge',
+  //       description:
+  //         'SIMS Health Care provides follow-up after hospital discharge at home, ensuring safe recovery and continuous care.',
+  //     },
+  //     {
+  //       title: 'Travel health checks for kids',
+  //       description:
+  //         'SIMS Health Care offers travel health checks for kids, ensuring safe journeys with expert medical care and guidance.',
+  //     },
+  //   ],
+  //   testimonials: [
+  //     {
+  //       name: 'Sarah M.',
+  //       initials: 'SM',
+  //       role: 'Patient',
+  //       location: 'Business Bay',
+  //       text: 'I was worried about my baby’s rash. The doctor visited us at home and gave clear treatment and advice. Wonderful bedside manner and timely service.',
+  //     },
+  //     {
+  //       name: 'Imran T.',
+  //       initials: 'IT',
+  //       role: 'Patient',
+  //       location: 'Al Nahda',
+  //       text: 'Our toddler had a high fever and we didn’t want to go out. The home visit saved us! The pediatrician was calm, knowledgeable, and great with kids.',
+  //     },
+  //     {
+  //       name: 'Leena F.',
+  //       initials: 'LF',
+  //       role: 'Patient',
+  //       location: 'Dubai Silicon Oasis',
+  //       text: 'During the flu season, having a pediatrician come my home made a huge difference. The doctor was very friendly with our little one and timely service.',
+  //     },
+  //   ],
+  //   cta: {
+  //     title:
+  //       'Access DHA Certified Pediatrician at Home Anytime 24/7, 365 Days a Year, Including Public Holidays! –',
+  //     description:
+  //       'Book a pediatrician home visit within 30 minutes for expert child care. At SIMS, our DHA-certified pediatricians provide safe, compassionate, and professional medical attention for infants, toddlers, and children in the comfort of your home. From checkups and vaccinations to illness care and growth assessments, we ensure your child’s health is in trusted hands. Choose SIMS for reliable, family-focused pediatric care without the stress of hospital visits.',
+  //     buttonText: 'Your Wellness Is Just A Call Away',
+  //   },
+  //   faqsTitle: 'Pediatrician at Home Frequently Asked Questions',
+  //   faqs: [
+  //     {
+  //       question: '1. What is a Pediatric Doctor at Home service?',
+  //       answer:
+  //         'It’s a mobile healthcare service in Dubai that sends licensed pediatricians to your location to treat your child comfortably at home or hotel.',
+  //     },
+  //     {
+  //       question: '2. What age groups do you treat?',
+  //       answer: 'Newborns to teenagers (0–16 years).',
+  //     },
+  //     {
+  //       question: '3. Is it safe?',
+  //       answer:
+  //         'Yes—our pediatricians are DHA-licensed and follow strict hygiene protocols.',
+  //     },
+  //     {
+  //       question: '4. What if my child needs emergency care?',
+  //       answer:
+  //         'We treat non-critical issues. In case of emergencies, we will advise immediate hospital transfer.',
+  //     },
+  //     {
+  //       question: '5. How soon can a doctor arrive?',
+  //       answer:
+  //         'Usually within 30 to 60 minutes, depending on your location in Dubai.',
+  //     },
+  //     {
+  //       question: '6. Do you serve tourists or short-term visitors?',
+  //       answer:
+  //         'Yes. We often help families staying in hotels or Airbnb in Dubai.',
+  //     },
+  //   ],
+  // },
+  // 'pediatrician-on-call': {
+  //   hero: {
+  //     eyebrow: 'Available 24/7 Support',
+  //     headline: 'Dubai’s 24/7 On-Call Pediatric Doctors – Home, Hotel & Holiday Visits',
+  //     subheadline: 'Child Healthcare Delivered – 24/7 Pediatric Doctor On Call in Dubai',
+  //     bullets: [
+  //       'Book DHA-licensed pediatricians for expert child care at home',
+  //       'Get pediatric consultations at your home, hotel, or vacation stay—anytime, anywhere in Dubai.',
+  //       '24/7 at-home pediatric doctor support for fever, flu, rashes, infections, and more.',
+  //     ],
+  //   },
+  //   intro: {
+  //     eyebrow: 'About Our Pediatrician at Call Services in Dubai',
+  //     title: 'Child Healthcare Delivered – 24/7 Pediatric Doctor On Call in Dubai',
+  //     paragraphs: [
+  //       'Searching for “pediatrician at home in Dubai”, “child doctor near me”, or “pediatric doctor on call Dubai”? You’re in the right place.',
+  //       'Our Pediatrician at Home service brings trusted child medical care right to your doorstep—be it your home, hotel, or Airbnb. Whether your child has a fever, cough, ear infection, rashes, stomach ache, or needs a follow-up checkup, our DHA-certified pediatric doctors are available 24/7.',
+  //       'We provide safe, calm, and comforting medical visits to ensure your little one gets professional attention without the stress of hospital waiting rooms. Our doctors are pediatric specialists trained to diagnose and treat infants, toddlers, and older children using DHA-approved protocols.',
+  //     ],
+  //   },
+  //   reasonsTitle: 'Why Choose Pediatrician at Home in Dubai?',
+  //   reasonsSubtitle: 'Expert Pediatric Care That Comes to You – Anytime, Anywhere',
+  //   reasons: [
+  //     {
+  //       title: '24/7 Pediatric Doctor On Call',
+  //       description:
+  //         'Round-the-clock service—even on weekends or holidays—perfect for late-night fevers or travel emergencies.',
+  //     },
+  //     {
+  //       title: 'DHA-Certified Pediatricians',
+  //       description:
+  //         'We only send licensed, experienced child specialists with a calm, friendly approach.',
+  //     },
+  //     {
+  //       title: 'Comfortable & Child-Friendly Care at Home',
+  //       description:
+  //         'Avoid long waits and stressful clinics. Your child is treated in a familiar and relaxed environment.',
+  //     },
+  //     {
+  //       title: 'Fast Response Across Dubai',
+  //       description:
+  //         'Our doctors usually reach your location within 30–60 minutes across all Dubai areas.',
+  //     },
+  //     {
+  //       title: 'Personalized, Safe & Evidence-Based Treatment',
+  //       description:
+  //         'We follow pediatric care protocols, offer symptom-based management, and provide prescriptions as needed.',
+  //     },
+  //   ],
+  //   stepsTitle: 'Easy Booking – Here’s How It Works',
+  //   stepsSubtitle:
+  //     'Book in minutes. A DHA-certified pediatrician comes to your home, hotel, or short-stay unit across Dubai — gentle, safe, and professional.',
+  //   steps: [
+  //     {
+  //       title: 'Book Anytime – 24/7',
+  //       description:
+  //         'Call or WhatsApp our team anytime. Tell us your child’s symptoms, your location, and preferred time. We’ll take care of the rest.',
+  //       points: ['Instant booking', 'Consultation at your convenience'],
+  //     },
+  //     {
+  //       title: 'We Come to You',
+  //       description:
+  //         'Our DHA-certified pediatrician arrives at your home, hotel, or short-stay unit—usually within 30–60 minutes.',
+  //       points: ['No long queues or waiting', 'Child-safe, gentle approach'],
+  //     },
+  //     {
+  //       title: 'Expert Pediatric Care',
+  //       description:
+  //         'The doctor evaluates your child, explains the condition, and offers the best course of treatment.',
+  //       points: ['Follow-up guidance available'],
+  //     },
+  //   ],
+  //   coverageTitle: 'Conditions We Treat – Pediatric Care at Home Dubai',
+  //   coverageIntro:
+  //     'Our pediatric doctors can diagnose and treat a wide range of common childhood conditions:',
+  //   coverage: [
+  //     'Fever & Viral Infections',
+  //     'Flu, Cold & Cough',
+  //     'Ear, Nose & Throat Infections',
+  //     'Vomiting, Diarrhea & Stomach Pain',
+  //     'Skin Rashes, Allergies & Insect Bites',
+  //     'Sore Throat & Tonsillitis',
+  //     'Asthma, Wheezing & Breathing Issues',
+  //     'Urinary Tract Infections (UTIs)',
+  //     'Minor Injuries & First Aid',
+  //     'Developmental Consultations',
+  //     'Follow-Up Checkups',
+  //   ],
+  //   idealFor: [
+  //     'Parents of infants, toddlers & teens',
+  //     'Tourists or expats needing urgent pediatric care',
+  //     'Hotel stays, home visits, or during late nights',
+  //     'Busy families seeking convenient, trusted care',
+  //     'Children with recurring or sudden symptoms',
+  //   ],
+  //   exploreTitle: 'Our full pediatric doctor on-call service includes:',
+  //   exploreServices: [
+  //     {
+  //       title: 'Pediatric home consultations',
+  //       description:
+  //         'Expert pediatric home consultations with SIMS Health Care. Safe, reliable, and personalized care for children.',
+  //     },
+  //     {
+  //       title: 'On-site prescriptions',
+  //       description:
+  //         'SIMS Health Care offers on-site prescriptions with ease, ensuring quick, safe, and reliable medication access.',
+  //     },
+  //     {
+  //       title: 'Travel health checks for children',
+  //       description:
+  //         'SIMS Health Care provides travel health checks for children, ensuring safe journeys with expert care.',
+  //     },
+  //     {
+  //       title: 'Sick child evaluations',
+  //       description:
+  //         'SIMS Health Care offers sick child evaluations at home with expert doctors for safe, quick, and reliable care.',
+  //     },
+  //     {
+  //       title: 'Holiday & tourist medical support',
+  //       description:
+  //         'SIMS Health Care offers holiday & tourist medical support with timely, trusted, and professional healthcare.',
+  //     },
+  //     {
+  //       title: 'Follow-up home visits',
+  //       description:
+  //         'SIMS Health Care provides follow-up home visits with expert care, ensuring recovery support and health monitoring.',
+  //     },
+  //     {
+  //       title: 'Newborn & infant checkups',
+  //       description:
+  //         'SIMS Health Care offers newborn & infant checkups at home, ensuring safe, gentle, and professional pediatric care.',
+  //     },
+  //     {
+  //       title: 'Pediatric referral letters (if needed)',
+  //       description:
+  //         'SIMS Health Care provides pediatric referral letters when needed, ensuring smooth access to specialized care.',
+  //     },
+  //   ],
+  //   testimonials: [
+  //     {
+  //       name: 'Fatima R.',
+  //       initials: 'FR',
+  //       role: 'Patient',
+  //       location: 'Bur Dubai',
+  //       text: 'We were traveling from the UK when our 2-year-old developed a high fever. The pediatrician arrived at our hotel in under 30 minutes and was so gentle.',
+  //     },
+  //     {
+  //       name: 'Alexander Wright',
+  //       initials: 'AW',
+  //       role: 'Patient',
+  //       location: 'Dubai',
+  //       text: 'Such a relief to find a certified pediatrician on call when my son had an allergic reaction during our vacation. The doctor was kind, patient, and well-equipped',
+  //     },
+  //     {
+  //       name: 'Rehan D.',
+  //       initials: 'RD',
+  //       role: 'Patient',
+  //       location: 'The Palm Jumeirah',
+  //       text: 'My daughter had stomach flu late at night. Within one hour, the doctor was at our home. Thorough diagnosis friendly approach. SIMS is a blessing for parents!',
+  //     },
+  //   ],
+  //   cta: {
+  //     title:
+  //       'Access DHA Certified Pediatricians On Call Anytime 24/7, 365 Days a Year, Including Public Holidays! –',
+  //     description:
+  //       'Book a pediatrician visit within 30 minutes for your child’s urgent or routine needs. At SIMS, our DHA-certified pediatricians provide safe, expert, and compassionate care right at home. From fever, cough, or infections to vaccination guidance and newborn checkups, we ensure your child gets timely treatment without the stress of clinic visits. Trust SIMS for reliable pediatric care, anytime and anywhere in Dubai.',
+  //     buttonText: 'Your Wellness Is Just A Call Away',
+  //   },
+  //   faqsTitle: 'Pediatrician on Call - Frequently Asked Questions',
+  //   faqs: [
+  //     {
+  //       question: '1. What is a Pediatrician at Home service?',
+  //       answer:
+  //         'It’s a mobile healthcare service where certified pediatric doctors visit your home to treat your child for common illnesses or concerns—no clinic visits needed.',
+  //     },
+  //     {
+  //       question: '2. Is it safe for infants and toddlers?',
+  //       answer:
+  //         'Absolutely. All our pediatricians are DHA-licensed and trained to handle all age groups safely and gently.',
+  //     },
+  //     {
+  //       question: '3. What are the most common reasons to call a pediatrician at home?',
+  //       answer:
+  //         'Fevers, rashes, vomiting, flu, sore throat, minor injuries, or general child health checkups.',
+  //     },
+  //     {
+  //       question: '4. How fast can a doctor arrive?',
+  //       answer: 'Typically within 30–60 minutes, depending on your location in Dubai.',
+  //     },
+  //     {
+  //       question: '5. Do you offer pediatric services at hotels or Airbnbs?',
+  //       answer: 'Yes! We serve all residential, hotel, and short-term stay locations in Dubai.',
+  //     },
+  //     {
+  //       question: '6. Are prescriptions provided?',
+  //       answer:
+  //         'Yes. The pediatrician can prescribe medication and offer treatment guidance on-site.',
+  //     },
+  //     {
+  //       question: '7. Is this available 24/7?',
+  //       answer: 'Yes! Pediatrician at Home is available any time—day or night.',
+  //     },
+  //   ],
+  // },
   'doctor-at-hotel': {
     hero: {
       eyebrow: 'Available 24/7 Support',
@@ -4874,30 +4874,30 @@ export const MANUAL_OVERRIDES = {
           'Get lab tests done at home with ease and accuracy. Our certified team ensures safe sample collection. Quick, reliable reports delivered straight to you without visiting a clinic.',
         slug: 'lab-test-at-home',
       },
-      {
-        title: 'Doctor for Elderly Care',
-        description:
-          'Compassionate doctors for elderly care at home ensure comfort, safety, and personalized treatment. From routine checkups to chronic care, we provide trusted medical support for seniors.',
-        slug: 'elderly-care',
-      },
-      {
-        title: 'Pediatrician at Home',
-        description:
-          'Expert pediatricians at home provide gentle, child-friendly care. From newborn checkups to illness management, we ensure your little one’s health and comfort in a safe, familiar environment.',
-        slug: 'pediatrician-at-home',
-      },
+      // {
+      //   title: 'Doctor for Elderly Care',
+      //   description:
+      //     'Compassionate doctors for elderly care at home ensure comfort, safety, and personalized treatment. From routine checkups to chronic care, we provide trusted medical support for seniors.',
+      //   slug: 'elderly-care',
+      // },
+      // {
+      //   title: 'Pediatrician at Home',
+      //   description:
+      //     'Expert pediatricians at home provide gentle, child-friendly care. From newborn checkups to illness management, we ensure your little one’s health and comfort in a safe, familiar environment.',
+      //   slug: 'pediatrician-at-home',
+      // },
       {
         title: 'Physiotherapy at Home',
         description:
           'Professional physiotherapy at home helps restore mobility, relieve pain, and support recovery. Get personalized exercises and hands-on care in the comfort of your own space.',
         slug: 'physiotherapy-at-home',
       },
-      {
-        title: 'Pediatrician on Call',
-        description:
-          'Get instant access to experienced pediatricians on call, anytime you need. From urgent advice to medical guidance, ensure your child’s health is always in safe hands.',
-        slug: 'pediatrician-on-call',
-      },
+      // {
+      //   title: 'Pediatrician on Call',
+      //   description:
+      //     'Get instant access to experienced pediatricians on call, anytime you need. From urgent advice to medical guidance, ensure your child’s health is always in safe hands.',
+      //   slug: 'pediatrician-on-call',
+      // },
       {
         title: 'Wound Care & Dressing',
         description:
@@ -5076,12 +5076,12 @@ export const MANUAL_OVERRIDES = {
           'Safe and hygienic urine catheter management at home in Dubai with expert nurse support and regular monitoring.',
         slug: 'urine-catheter-management',
       },
-      {
-        title: 'Mother & Baby Care',
-        description:
-          'Personalized mother & baby care at home in Dubai, ensuring safety, comfort, and expert support.',
-        slug: 'mother-baby-care',
-      },
+      // {
+      //   title: 'Mother & Baby Care',
+      //   description:
+      //     'Personalized mother & baby care at home in Dubai, ensuring safety, comfort, and expert support.',
+      //   slug: 'mother-baby-care',
+      // },
       {
         title: 'Post-Surgical Care',
         description:
@@ -5100,12 +5100,12 @@ export const MANUAL_OVERRIDES = {
           'Professional at-home medication management in Dubai ensuring timely doses, safety, and effective treatment monitoring.',
         slug: 'medication-management',
       },
-      {
-        title: 'Elderly care at Home',
-        description:
-          'Compassionate elderly care at home in Dubai, ensuring comfort, dignity, and 24/7 support.',
-        slug: 'elderly-care',
-      },
+      // {
+      //   title: 'Elderly care at Home',
+      //   description:
+      //     'Compassionate elderly care at home in Dubai, ensuring comfort, dignity, and 24/7 support.',
+      //   slug: 'elderly-care',
+      // },
     ],
     testimonials: [
       {

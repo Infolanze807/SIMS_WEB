@@ -167,7 +167,7 @@ const Footer = () => {
                     <FaMapMarkerAlt className="text-sm" />
                   </span>
                   <p className="min-w-0 flex-1 text-sm leading-relaxed text-white/85">
-                    207, AB Center , Sheikh Zayed Road,  Al Barsha First , Dubai
+                    207, AB Center, Sheikh Zayed Road, Al Barsha First, Dubai
                   </p>
                 </div>
                 <a
@@ -188,7 +188,7 @@ const Footer = () => {
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-brand-accent/15 text-brand-accent-light">
                     <FaPhoneAlt className="text-sm" />
                   </span>
-                  <span className="min-w-0 flex-1 text-sm font-bold text-white pt-2">+971 5252 310 28</span>
+                  <span className="min-w-0 flex-1 text-sm font-bold text-white pt-2">+971 05252 310 28</span>
                 </a>
               </div>
 

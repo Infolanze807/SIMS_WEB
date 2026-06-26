@@ -237,7 +237,7 @@ const SIMSBookingAndAudience = () => {
               </div>
               <div className="text-left pr-6">
                 <span className="block text-[9px] font-black uppercase tracking-widest text-slate-400 leading-none">24/7 Priority Emergency Line</span>
-                <span className="block text-xl sm:text-2xl font-black text-[#25b8a7] tracking-tight mt-1">+971 5252 310 28</span>
+                <span className="block text-xl sm:text-2xl font-black text-[#25b8a7] tracking-tight mt-1">+971 05252 310 28</span>
               </div>
             </div>
           </AnimateInView>

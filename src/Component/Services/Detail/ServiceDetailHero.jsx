@@ -98,7 +98,7 @@ const ServiceDetailHero = ({ eyebrow, headline, subheadline, bullets = [], image
                 whileHover={{ y: -3, scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <FaPhoneAlt /> +971 5252 310 28
+                <FaPhoneAlt /> +971 05252 310 28
               </motion.a>
               <span className="inline-flex items-center gap-2 rounded-2xl border border-brand-accent/40 bg-brand-accent/20 px-5 py-4 text-xs font-black uppercase tracking-widest text-brand-accent-light">
                 24/7 Dubai
