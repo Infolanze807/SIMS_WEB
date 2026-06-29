@@ -11,10 +11,13 @@ import {
   FaShieldAlt,
   FaClock,
   FaHome,
+  FaStar,
 } from 'react-icons/fa';
 import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInView';
 import dhaHealthBadge from '../../assets/logoo.png';
+import placeLogoBadge from '../../assets/PLACELOGOO.png';
 import doctorOnCallImage from '../../assets/DoctorOnCall01.jpeg';
+import doctorAtHomeImage from '../../assets/DoctorAtHome02.jpeg';
 import ivTherapiesImage from '../../assets/IVTherapies04.jpeg';
 import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.jpeg';
 import labTestAtHomeImage from '../../assets/LabTestAtHome01.jpeg';
@@ -53,8 +56,9 @@ const HealthcareHeroSection = () => {
   return (
     <section className="relative w-full overflow-hidden bg-[#003d4d] px-6 py-16 lg:px-10 lg:py-16 text-white">
       <div className="relative z-10 mx-auto max-w-7xl">
-        <AnimateInView variants={fadeUp} className="mb-12 max-w-4xl space-y-5">
-          <div className="flex flex-wrap items-center gap-3">
+        <AnimateInView variants={fadeUp} className="mb-12">
+          {/* Top badges row */}
+          <div className="flex flex-wrap items-center gap-3 mb-5">
             <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5">
               <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[#25b8a7]" />
               <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white">
@@ -71,13 +75,33 @@ const HealthcareHeroSection = () => {
               </div>
             ))}
           </div>
-          <h1 className="text-3xl font-black leading-[1.08] tracking-tight sm:text-4xl lg:text-[3.25rem]">
-            Healthcare That <span className="text-[#25b8a7]">Comes To You</span>
-          </h1>
-          <p className="max-w-2xl text-sm font-light leading-relaxed text-white/70 sm:text-base">
-            Dubai's leading provider of healthcare at homes, hotels & offices — 24/7 DHA-certified doctors, nurses, and lab services at your doorstep.
-          </p>
-          
+
+          {/* Headline row: text left, PLACELOGO right */}
+          <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+            <div className="space-y-4 max-w-2xl">
+              <h1 className="text-3xl font-black leading-[1.08] tracking-tight sm:text-4xl lg:text-[3.25rem]">
+                Healthcare That <span className="text-[#25b8a7]">Comes To You</span>
+              </h1>
+              <p className="text-sm font-light leading-relaxed text-white/70 sm:text-base">
+                Dubai's leading provider of healthcare at homes, hotels &amp; offices — 24/7 DHA-certified doctors, nurses, and lab services at your doorstep.
+              </p>
+            </div>
+
+            {/* PLACELOGO — prominent hero badge */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, ease: 'easeOut', delay: 0.3 }}
+              className="flex-shrink-0 flex flex-col items-center gap-1 lg:mr-16"
+            >
+              <img
+                src={placeLogoBadge}
+                alt="At Your Place Just In 30 Minutes — Anywhere In Dubai"
+                className="h-40 w-40 object-contain drop-shadow-[0_8px_24px_rgba(37,184,167,0.4)]"
+              />
+              <span className="text-[10px] font-bold uppercase tracking-widest text-[#25b8a7]">Service Guarantee</span>
+            </motion.div>
+          </div>
         </AnimateInView>
 
         <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-12 lg:gap-8">
@@ -119,9 +143,23 @@ const HealthcareHeroSection = () => {
           <AnimateInView variants={fadeUp} className="lg:col-span-4 lg:sticky lg:top-8">
             <div className="overflow-hidden rounded-[28px] border border-white/10 bg-white text-[#003d4d] shadow-[0_25px_60px_rgba(0,0,0,0.3)]">
               <div className="relative h-52 overflow-hidden sm:h-56">
-                <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80&w=600" alt="Consult" className="h-full w-full object-cover" />
+                <img src={doctorAtHomeImage} alt="Consult" className="h-full w-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#003d4d]/60 to-transparent" />
+
+                {/* 5-Star Badge — bottom right */}
+                <div className="absolute bottom-4 right-4 z-10 flex items-center gap-1.5 rounded-full bg-white/95 backdrop-blur-md px-3 py-1.5 shadow-md">
+                  <div className="flex items-center gap-0.5 text-amber-400">
+                    <FaStar className="text-[10px]" />
+                    <FaStar className="text-[10px]" />
+                    <FaStar className="text-[10px]" />
+                    <FaStar className="text-[10px]" />
+                    <FaStar className="text-[10px]" />
+                  </div>
+                  <span className="text-[10px] font-black uppercase tracking-wider text-[#003d4d] ml-1">5.0 Star Rated</span>
+                </div>
               </div>
+
+
               <div className="space-y-2.5 p-4">
                 {TRUST_BADGES.map((badge) => (
                   <div key={badge.title} className="flex items-center gap-3 rounded-2xl border border-slate-100 bg-slate-50 px-4 py-3">

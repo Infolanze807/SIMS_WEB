@@ -114,7 +114,7 @@ const HomeVisitDoctors = () => {
                 'Your personal doctor typically arrives within 30 minutes of booking, fully equipped to provide comprehensive care in the comfort of your home.'}
             </p>
 
-            <Link
+            {/* <Link
               to="/about"
               className="group inline-flex items-center gap-4 transition-all duration-300"
             >
@@ -139,7 +139,7 @@ const HomeVisitDoctors = () => {
               <span className="border-b-2 border-[#25b8a7]/40 pb-0.5 text-sm font-bold text-white transition-colors group-hover:border-[#25b8a7] group-hover:text-[#4fc3c0]">
                 Meet Our Staff
               </span>
-            </Link>
+            </Link> */}
           </AnimateInView>
 
           <div className="relative lg:col-span-7">

@@ -10,8 +10,11 @@ import {
   FaWhatsapp,
   FaChevronRight,
   FaClock,
+  FaYoutube,
 } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 import simsLogo from '../assets/sims-logo.png';
+import dhaLogo from '../assets/DHALOGO.png';
 import { HEADER_NAV_SERVICES } from '../data/servicesCatalog';
 
 const quickLinks = [
@@ -62,15 +65,20 @@ const Footer = () => {
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-12 lg:gap-10">
             {/* Brand */}
             <div className="space-y-6 lg:col-span-4">
-              <Link to="/" className="inline-flex items-center gap-4">
-                <div className="rounded-2xl bg-white px-5 py-3 shadow-lg">
-                  <img src={simsLogo} alt="SIMS Healthcare" className="h-12 w-auto object-contain" />
+              <Link to="/" className="inline-flex items-center gap-4 flex-wrap sm:flex-nowrap">
+                <div className="flex h-14 items-center justify-center rounded-2xl bg-white px-5 shadow-lg shadow-brand-dark/10 transition-all hover:scale-[1.02] duration-300">
+                  <img src={simsLogo} alt="SIMS Healthcare" className="h-9 w-auto object-contain" />
                 </div>
-                <div className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur-sm">
-                  <p className="text-[10px] font-black uppercase tracking-widest text-brand-accent-light">
-                    DHA Licensed
-                  </p>
-                  <p className="text-xs font-bold text-white">Dubai Health Authority</p>
+                <div className="flex h-14 items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 backdrop-blur-sm transition-all hover:bg-white/10 hover:border-brand-accent/30 duration-300">
+                  <img src={dhaLogo} alt="Dubai Health Authority Logo" className="h-8 w-auto object-contain shrink-0" />
+                  <div className="flex flex-col">
+                    <span className="text-[9px] font-black uppercase tracking-widest text-brand-accent-light leading-none mb-1">
+                      DHA Licensed
+                    </span>
+                    <span className="text-[10px] font-extrabold text-white leading-tight">
+                      Dubai Health Authority
+                    </span>
+                  </div>
                 </div>
               </Link>
 
@@ -97,6 +105,8 @@ const Footer = () => {
                   { href: 'https://facebook.com', icon: FaFacebookF, label: 'Facebook' },
                   { href: 'https://instagram.com', icon: FaInstagram, label: 'Instagram' },
                   { href: 'https://linkedin.com', icon: FaLinkedinIn, label: 'LinkedIn' },
+                  { href: 'https://youtube.com', icon: FaYoutube, label: 'YouTube' },
+                  { href: 'https://x.com', icon: FaXTwitter, label: 'X' },
                 ].map(({ href, icon: Icon, label }) => (
                   <a
                     key={label}

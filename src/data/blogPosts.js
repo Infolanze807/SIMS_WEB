@@ -1,3 +1,5 @@
+import labTestAtHomeImage from '../assets/LabTestAtHome01.jpeg';
+
 export const BLOG_POSTS = [
   {
     slug: 'iv-drip-at-home-dubai',
@@ -87,8 +89,7 @@ export const BLOG_POSTS = [
     commentCount: 0,
     excerpt:
       'SIMS Home Healthcare makes it easy with lab tests at home in Dubai, ensuring accurate, professional testing without leaving the comfort of your home.',
-    image:
-      'https://images.unsplash.com/photo-1579154204601-01588f351167?auto=format&fit=crop&q=80&w=800',
+    image: labTestAtHomeImage,
   },
   {
     slug: 'doctor-on-call-in-dubai-fast-reliable-healthcare-at-your-doorstep',

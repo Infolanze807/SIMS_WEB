@@ -1,9 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaPhoneAlt } from 'react-icons/fa';
+import { FaPhoneAlt, FaStar } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import placeLogoBadge from '../../../assets/PLACELOGO.png';
+import dhaLogo from '../../../assets/DHALOGO.png';
 
-const ServiceDetailHero = ({ eyebrow, headline, subheadline, bullets = [], image, title }) => {
+const ServiceDetailHero = ({ eyebrow, headline, subheadline, bullets = [], image, title, badges = {} }) => {
   return (
     <section className="relative flex min-h-[85vh] w-full items-center overflow-hidden bg-brand-dark font-sans text-white">
       <motion.img
@@ -104,6 +106,23 @@ const ServiceDetailHero = ({ eyebrow, headline, subheadline, bullets = [], image
                 24/7 Dubai
               </span>
             </motion.div>
+
+            {/* DHA Logo — large trust badge below CTA */}
+            {badges.showDha && (
+              <motion.div
+                className="flex items-center gap-4 rounded-2xl border border-white/15 bg-white/10 backdrop-blur-sm px-5 py-4 w-fit"
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.85 }}
+              >
+                <img src={dhaLogo} alt="Dubai Health Authority" className="h-14 w-14 object-contain shrink-0" />
+                <div>
+                  <p className="text-[10px] font-bold text-white/50 uppercase tracking-widest leading-none mb-1">Licensed by</p>
+                  <p className="text-sm font-black text-white leading-tight">Dubai Health Authority</p>
+                  <p className="text-[10px] font-medium text-white/60 mt-0.5">DHA-Certified Medical Professionals</p>
+                </div>
+              </motion.div>
+            )}
           </motion.div>
 
           <motion.div
@@ -116,17 +135,22 @@ const ServiceDetailHero = ({ eyebrow, headline, subheadline, bullets = [], image
             <div className="relative aspect-[4/5] max-h-[520px] overflow-hidden rounded-[40px] border border-white/15 shadow-[0_40px_80px_rgba(0,0,0,0.4)]">
               <img src={image} alt={title} className="h-full w-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent" />
+
+
+
+              {/* Bottom card */}
               <motion.div
-                className="absolute bottom-6 left-6 right-6 rounded-2xl bg-white/95 p-5 shadow-xl backdrop-blur-md"
+                className="absolute bottom-6 left-6 right-6 rounded-2xl bg-white/95 p-4 shadow-xl backdrop-blur-md"
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6 }}
               >
-                <p className="text-lg font-black text-brand-dark">{title}</p>
-                <p className="mt-1 text-[10px] font-bold uppercase tracking-widest text-slate-500">
+                <p className="text-base font-black text-brand-dark">{title}</p>
+                <p className="mt-0.5 text-[10px] font-bold uppercase tracking-widest text-slate-500">
                   DHA Certified · SIMS Healthcare
                 </p>
               </motion.div>
+
             </div>
           </motion.div>
         </div>
