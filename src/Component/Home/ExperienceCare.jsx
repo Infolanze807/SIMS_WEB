@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaUserMd, FaShieldAlt, FaBriefcaseMedical } from 'react-icons/fa';
 import AnimateInView, { fadeUp, slideFromLeft, slideFromRight, staggerContainer } from '../Services/AnimateInView';
+import experiencecare from '../../assets/About0002.jpg';
 
 const ExperienceCare = () => {
   return (
@@ -80,7 +81,7 @@ const ExperienceCare = () => {
             
             <div className="w-full aspect-[4/4] rounded-[36px] overflow-hidden relative border border-white/5">
               <img 
-                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800" 
+                src={experiencecare}
                 alt="SIMS Elite Medical Team Group" 
                 className="w-full h-full object-cover scale-102 group-hover:scale-105 transition-transform duration-1000 ease-out"
               />
@@ -103,7 +104,7 @@ const ExperienceCare = () => {
               </div>
               
               <div className="mt-4 pt-3 border-t border-white/20 flex flex-col items-center justify-center">
-                <span className="text-[11px] font-black text-white tracking-wider uppercase">SIMS HEALTHCARE</span>
+                <span className="text-[11px] font-black text-white tracking-wider uppercase">SIMS Home HEALTHCARE</span>
                 <span className="text-[8px] font-bold text-teal-100 uppercase tracking-tight mt-0.5">Trusted Healthcare. Delivered to You.</span>
               </div>
             </div>

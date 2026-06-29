@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaShieldAlt, FaUserMd, FaClock, FaCheckCircle } from 'react-icons/fa';
+import about from '../../assets/About01.jpg';
 import AnimateInView, { fadeUp, slideFromLeft, slideFromRight, staggerContainer } from '../Services/AnimateInView';
 
 const HealthcareAbout = () => {
@@ -20,7 +21,7 @@ const HealthcareAbout = () => {
             
             <div className="w-full h-full rounded-[36px] overflow-hidden relative">
               <img 
-                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800" 
+                src={about} 
                 alt="SIMS Premium Medical Care" 
                 className="w-full h-full object-cover brightness-[0.90] contrast-[1.05]"
               />
