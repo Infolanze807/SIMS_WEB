@@ -2444,7 +2444,7 @@ export const DETAIL_OVERRIDES = {
   "nursing-care-at-home": {
     "hero": {
       "eyebrow": "Available 24/7 Support",
-      "headline": "Nursing Care in Dubai – Professional Help at Your Home",
+      "headline": "Nurse Care in Dubai – Professional Help at Your Home",
       "subheadline": "Compassionate, Professional Nursing Support in the Comfort of Your Home",
       "bullets": [
         "Get licensed nursing care at your home, hotel, or workplace—24/7 across Dubai.",
@@ -2616,7 +2616,7 @@ export const DETAIL_OVERRIDES = {
         "answer": "Absolutely. We respect cultural preferences and offer flexible scheduling—morning, evening, or overnight shifts. Female nurses are available upon request."
       },
       {
-        "question": "5. Do you provide nursing care in hotels or offices?",
+        "question": "5. Do you provide nurse care in hotels or offices?",
         "answer": "Yes. Whether you're staying in a hotel, serviced apartment, or working from your office, our nursing team can visit your location anywhere in Dubai."
       },
       {

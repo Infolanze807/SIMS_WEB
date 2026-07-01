@@ -28,7 +28,7 @@ const HERO_SERVICES = [
   { slug: 'iv-therapies', title: 'IV Therapy At Home', image: ivTherapiesImage },
   { slug: 'physiotherapy-at-home', title: 'Physiotherapy At Home', image: physiotherapyAtHomeImage },
   { slug: 'lab-test-at-home', title: 'Lab Tests At Home', image: labTestAtHomeImage },
-  { slug: 'nursing-care-at-home', title: 'Nursing At Home', image: nursingCareAtHomeImage },
+  { slug: 'nursing-care-at-home', title: 'Nurse At Home', image: nursingCareAtHomeImage },
   { slug: 'health-checkup-at-home', title: 'Health Checkups', image: healthCheckupAtHomeImage },
 ];
 
