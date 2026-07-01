@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaPhoneAlt } from 'react-icons/fa';
+import Service from '../../assets/Service01.jpeg';
+
 
 const bullets = [
   '24/7 Licensed Doctors, Nurses & Lab Services – Wherever You Are in Dubai',
@@ -94,7 +96,7 @@ const ServiceHero = () => {
         >
           <div className="relative h-[500px] w-full max-w-lg overflow-hidden rounded-[40px] border border-white/10 bg-gradient-to-b from-white/5 to-transparent p-3 shadow-[0_30px_70px_rgba(0,0,0,0.4)]">
             <img
-              src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1200&q=80"
+              src={Service}
               alt="SIMS Home Healthcare"
               className="h-full w-full rounded-[40px] object-cover shadow-[0_30px_80px_rgba(0,0,0,0.35)]"
             />

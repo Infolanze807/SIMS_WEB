@@ -16,7 +16,7 @@ import {
   FaArrowRight,
 } from 'react-icons/fa';
 import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInView';
-import doctorOnCallImage from '../../assets/DoctorOnCall02.png';
+import doctorOnCallImage from '../../assets/DoctorOnCall04.png';
 import labTestAtHomeImage from '../../assets/LabTestAtHome02.jpeg';
 import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.jpeg';
 import nursingCareAtHomeImage from '../../assets/NursingAtHome01.jpeg';
@@ -56,7 +56,7 @@ const SERVICES_DATA = [
   },
   {
     slug: 'nursing-care-at-home',
-    title: 'Nursing Care at Home',
+    title: 'Nurse Care at Home',
     description:
       'Our trained nurses offer compassionate, professional care tailored to your needs, from elderly support to post-surgical recovery.',
     icon: <FaHeartbeat />,

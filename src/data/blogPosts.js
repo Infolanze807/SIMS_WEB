@@ -1,4 +1,6 @@
 import labTestAtHomeImage from '../assets/LabTestAtHome02.jpeg';
+import onCall from '../assets/Oncall.png';
+import step from '../assets/StepStep.png';
 
 export const BLOG_POSTS = [
   {
@@ -28,8 +30,7 @@ export const BLOG_POSTS = [
     commentCount: 0,
     excerpt:
       'You’ve woken up with a pounding fever. Or your child hasn’t stopped coughing since midnight. The last thing you want to do …',
-    image:
-      'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800',
+    image: step,
   },
   {
     slug: 'conditions-treated-doctor-at-home-dubai',
@@ -103,8 +104,7 @@ export const BLOG_POSTS = [
     commentCount: 0,
     excerpt:
       'SIMS Home Healthcare’s doctor on call service in Dubai brings professional medical care directly to your home, hotel, or office—timely, effective, and personalized.',
-    image:
-      'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800',
+    image: onCall,
   },
 ];
 

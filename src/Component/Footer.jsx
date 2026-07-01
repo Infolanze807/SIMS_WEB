@@ -29,7 +29,7 @@ const featuredServices = [
   { label: 'Doctor On Call', slug: 'doctor-on-call' },
   { label: 'Doctor at Hotel', slug: 'doctor-at-hotel' },
   { label: 'Lab Test at Home', slug: 'lab-test-at-home' },
-  { label: 'Nursing Care at Home', slug: 'nursing-care-at-home' },
+  { label: 'Nurse Care at Home', slug: 'nursing-care-at-home' },
   { label: 'IV Therapy at Home', slug: 'iv-therapies' },
   { label: 'Health Checkup at Home', slug: 'health-checkup-at-home' },
 ];
@@ -65,24 +65,28 @@ const Footer = () => {
             {/* Brand */}
             <div className="space-y-6 lg:col-span-4">
               <Link to="/" className="inline-flex items-center gap-4 flex-wrap sm:flex-nowrap">
-                <div className="flex h-14 w-[250px] sm:w-auto items-center justify-center rounded-2xl bg-white px-5 shadow-lg shadow-brand-dark/10 transition-all duration-300 hover:scale-[1.02]">
-                  <img
-                    src={simsLogo}
-                    alt="SIMS Healthcare"
-                    className="h-9 w-auto object-contain"
-                  />
-                </div>
-                <div className="flex h-14 items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 backdrop-blur-sm transition-all hover:bg-white/10 hover:border-brand-accent/30 duration-300">
+               <div className="flex flex-col items-center gap-5">
+  {/* SIMS Logo */}
+  <div className="flex h-16 w-[250px] items-center justify-center rounded-2xl bg-white px-6 shadow-lg transition-all duration-300 hover:scale-[1.02]">
+    <img
+      src={simsLogo}
+      alt="SIMS Healthcare"
+      className="h-10 w-auto object-contain"
+    />
+  </div>
+
+  {/* DHA Logo */}
+  <div className="flex h-16 w-[250px] items-center justify-center rounded-2xl bg-white px-6 shadow-lg transition-all duration-300 hover:scale-[1.02]">
+    <img
+      src={dhaLogo}
+      alt="Dubai Health Authority"
+      className="h-12 w-auto object-contain"
+    />
+  </div>
+</div>
+                {/* <div className="flex h-14 items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 backdrop-blur-sm transition-all hover:bg-white/10 hover:border-brand-accent/30 duration-300">
                   <img src={dhaLogo} alt="Dubai Health Authority Logo" className="h-8 w-auto object-contain shrink-0" />
-                  <div className="flex flex-col">
-                    <span className="text-[9px] font-black uppercase tracking-widest text-brand-accent-light leading-none mb-1">
-                      DHA Licensed
-                    </span>
-                    <span className="text-[10px] font-extrabold text-white leading-tight">
-                      Dubai Health Authority
-                    </span>
-                  </div>
-                </div>
+                </div> */}
               </Link>
 
               <p className="text-sm leading-relaxed text-white/75">

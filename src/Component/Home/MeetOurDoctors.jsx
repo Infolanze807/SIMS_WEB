@@ -69,7 +69,7 @@ const DoctorCard = ({ doctor }) => {
         </div> */}
 
         {/* DHA Licensed Floating Badge */}
-        {/* <div className="absolute bottom-4 left-4 right-4 z-10 flex items-center justify-between rounded-xl bg-white/90 backdrop-blur-md px-3.5 py-2 text-xs shadow-sm">
+        <div className="absolute bottom-4 left-4 right-4 z-10 flex items-center justify-between rounded-xl bg-white/90 backdrop-blur-md px-3.5 py-2 text-xs shadow-sm">
           <span className="flex items-center gap-1.5 font-bold text-brand-dark">
             <FaCertificate className="text-brand-accent text-sm shrink-0" />
             DHA Licensed
@@ -77,7 +77,7 @@ const DoctorCard = ({ doctor }) => {
           <span className="text-[10px] font-semibold text-slate-500 uppercase tracking-wider bg-slate-100/80 px-2 py-0.5 rounded-md">
             {doctor.dhaLicense}
           </span>
-        </div> */}
+        </div>
       </div>
 
       {/* Info & Content Section */}
@@ -97,7 +97,7 @@ const DoctorCard = ({ doctor }) => {
         </div>
 
         {/* Bio */}
-        <p className="mb-5 line-clamp-2 text-[13px] leading-relaxed text-slate-500 flex-1">
+        <p className="mb-5 line-clamp-3 text-[13px] leading-relaxed text-slate-500 flex-1">
           {doctor.bio}
         </p>
 

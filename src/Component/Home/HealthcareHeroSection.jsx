@@ -12,17 +12,19 @@ import {
   FaClock,
   FaHome,
   FaStar,
+  FaStarHalfAlt,
 } from 'react-icons/fa';
 import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInView';
 import dhaHealthBadge from '../../assets/logoo.png';
 import placeLogoBadge from '../../assets/PLACELOGOO.png';
-import doctorOnCallImage from '../../assets/DoctorOnCall02.png';
+import doctorOnCallImage from '../../assets/DoctorOnCall04.png';
 import doctorAtHomeImage from '../../assets/DoctorAtHome02.jpeg';
 import ivTherapiesImage from '../../assets/IVTherapies03.jpeg';
 import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.jpeg';
 import labTestAtHomeImage from '../../assets/LabTestAtHome02.jpeg';
 import nursingCareAtHomeImage from '../../assets/NursingAtHome01.jpeg';
 import healthCheckupAtHomeImage from '../../assets/HealthCheckupAtHome03.jpeg';
+import { Rating } from 'react-simple-star-rating';
 const HERO_SERVICES = [
   { slug: 'doctor-on-call', title: 'Doctor On Call', image: doctorOnCallImage },
   { slug: 'iv-therapies', title: 'IV Therapy At Home', image: ivTherapiesImage },
@@ -146,16 +148,17 @@ const HealthcareHeroSection = () => {
                 <img src={doctorAtHomeImage} alt="Consult" className="h-full w-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#003d4d]/60 to-transparent" />
 
-                {/* 5-Star Badge — bottom right */}
-                <div className="absolute bottom-4 right-4 z-10 flex items-center gap-1.5 rounded-full bg-white/95 backdrop-blur-md px-3 py-1.5 shadow-md">
-                  <div className="flex items-center gap-0.5 text-amber-400">
-                    <FaStar className="text-[10px]" />
-                    <FaStar className="text-[10px]" />
-                    <FaStar className="text-[10px]" />
-                    <FaStar className="text-[10px]" />
-                    <FaStar className="text-[10px]" />
-                  </div>
-                  <span className="text-[10px] font-black uppercase tracking-wider text-[#003d4d] ml-1">5.0 Star Rated</span>
+                <div className="absolute bottom-4 right-4 z-10 flex items-center gap-2 rounded-full bg-white/95 px-3 py-1.5 shadow-md backdrop-blur-md">
+                  <Rating
+                    initialValue={4.9}
+                    readonly
+                    allowFraction
+                    size={14}
+                    SVGclassName="inline-block"
+                  />
+                  <span className="text-[10px] font-black uppercase tracking-wider text-[#003d4d] mt-1">
+                    4.9 Rated
+                  </span>
                 </div>
               </div>
 

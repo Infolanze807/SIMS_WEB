@@ -2266,7 +2266,7 @@ export const MANUAL_OVERRIDES = {
       title: 'Compassionate, Professional Nursing Support in the Comfort of Your Home',
       paragraphs: [
         'Searching for “nursing care Dubai”, “home nurse Dubai”, or “elderly care at home Dubai”? We offer qualified, DHA-licensed nurses toprovidepersonalized healthcare right at your doorstep—whether you’re recovering from surgery, managing a chronic condition, or caring for an aging loved one.',
-        'Our Nursing Care in Dubai service brings skilled, compassionate, and round-the-clock care to your home, hotel, or office. From IV therapy to post-surgical wound care, our nurses are trained to handle medical needs with professionalism, empathy, and attention to detail.',
+        'Our Nurse Care in Dubai service brings skilled, compassionate, and round-the-clock care to your home, hotel, or office. From IV therapy to post-surgical wound care, our nurses are trained to handle medical needs with professionalism, empathy, and attention to detail.',
         'You receive hospital-grade care at home, without long wait times or the stress of travel. Perfect for patients who require continuous attention, mobility support, or short-term medical supervision',
       ],
     },
@@ -2424,7 +2424,7 @@ export const MANUAL_OVERRIDES = {
         'Book now and get a qualified nurse at your doorstep within 30 minutes—because your care can’t wait. At SIMS, we believe your loved ones deserve attentive, professional nursing support without delay. Our DHA-certified nurses are available 24/7 to provide compassionate care at home—whether it’s wound dressing, post-surgical support, medication management, or elderly assistance. Just one call connects you to quality healthcare in the comfort of your home.',
       buttonText: 'Your Wellness Is Just A Call Away',
     },
-    faqsTitle: 'Nursing Care at Home Frequently Asked Questions',
+    faqsTitle: 'Nurse Care at Home Frequently Asked Questions',
     faqs: [
       {
         question: '1. What is a home nursing care service in Dubai?',
