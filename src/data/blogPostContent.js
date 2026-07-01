@@ -6,7 +6,7 @@ export const BLOG_POST_CONTENT = {
       title: 'Ready to Book Your IV Drip at Home?',
       description:
         'IV therapy at home in Dubai isn’t a luxury reserved for the few—it’s practical, effective, and increasingly accessible. Contact SIMS Home Healthcare to book your session. A DHA-licensed nurse can be at your door, often within the hour.',
-      buttonText: 'Call +971 05252 310 28',
+      buttonText: 'Call +971525231028',
     },
     sections: [
       {
@@ -237,7 +237,7 @@ export const BLOG_POST_CONTENT = {
       title: 'Book a Home Doctor Visit Today',
       description:
         'SIMS Home Healthcare is here to make the process seamless. Whether it’s a weekday afternoon or the middle of a Friday night, our doctors come to you—fully equipped, fully licensed, and fully focused on your recovery.',
-      buttonText: 'Call +971 05252 310 28',
+      buttonText: 'Call +971525231028',
     },
     sections: [
       {
@@ -557,8 +557,8 @@ export const BLOG_POST_CONTENT = {
     cta: {
       title: 'Book a Home Visit Doctor in Dubai — 24/7, Any Area',
       description:
-        'Ready to book a home visit doctor in Dubai? Call us now on +971 05252 310 28 or WhatsApp us to get a DHA-licensed doctor at your door, any time of day or night.',
-      buttonText: 'Call +971 05252 310 28',
+        'Ready to book a home visit doctor in Dubai? Call us now on +971525231028 or WhatsApp us to get a DHA-licensed doctor at your door, any time of day or night.',
+      buttonText: 'Call +971525231028',
     },
     sections: [
       {
@@ -877,7 +877,7 @@ export const BLOG_POST_CONTENT = {
       title: 'Book a Doctor at Your Hotel in Dubai',
       description:
         'If you’re feeling unwell, don’t wait or struggle to travel. Book a doctor at your hotel and get treated comfortably, safely, and quickly—available 24/7 across Dubai.',
-      buttonText: 'Call +971 05252 310 28',
+      buttonText: 'Call +971525231028',
     },
     sections: [
       {
@@ -1195,7 +1195,7 @@ export const BLOG_POST_CONTENT = {
       title: 'Post-Surgery & Rehabilitation Care at Home in Dubai',
       description:
         'With SIMS Home Healthcare’s post-surgery and rehabilitation services in Dubai, recovery becomes smoother, safer, and more comfortable. Our expert team ensures patients receive high-quality, compassionate care at home—helping them regain independence and return to daily life with confidence.',
-      buttonText: 'Call +971 05252 310 28',
+      buttonText: 'Call +971525231028',
     },
     sections: [
       {
@@ -1290,7 +1290,7 @@ export const BLOG_POST_CONTENT = {
       title: 'Book Lab Tests at Home in Dubai',
       description:
         'With SIMS Home Healthcare’s home lab testing services, taking care of your health has never been easier. Accurate, fast, and professional—these services provide peace of mind while keeping you safe and comfortable at home.',
-      buttonText: 'Call +971 05252 310 28',
+      buttonText: 'Call +971525231028',
     },
     sections: [
       {
@@ -1379,7 +1379,7 @@ export const BLOG_POST_CONTENT = {
       title: 'Book a Doctor on Call in Dubai — 24/7',
       description:
         'Take the stress out of medical emergencies—contact SIMS Home Healthcare today and have a professional doctor on call whenever you need one. Available across Dubai, 24/7.',
-      buttonText: 'Call +971 05252 310 28',
+      buttonText: 'Call +971525231028',
     },
     sections: [
       {

@@ -4,8 +4,8 @@ import AnimateInView, { fadeUp, scaleIn, slideFromRight, staggerContainer } from
 
 const CONTACT_ITEMS = [
   { title: 'Address', val: '207, AB Center , Sheikh Zayed Road,  Al Barsha First , Dubai' },
-  { title: 'Phone Support', val: '+971 05252 310 28' },
-  { title: 'Direct Email', val: 'connect@simshealthcare.ae' },
+  { title: 'Phone Support', val: '+971525231028' },
+  { title: 'Direct Email', val: 'connect@simshomehealthcare.ae' },
   { title: 'Working Hours', val: '24/7 Professional Assistance' },
 ];
 

@@ -16,11 +16,11 @@ import {
 import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInView';
 import dhaHealthBadge from '../../assets/logoo.png';
 import placeLogoBadge from '../../assets/PLACELOGOO.png';
-import doctorOnCallImage from '../../assets/DoctorOnCall01.jpeg';
+import doctorOnCallImage from '../../assets/DoctorOnCall02.png';
 import doctorAtHomeImage from '../../assets/DoctorAtHome02.jpeg';
-import ivTherapiesImage from '../../assets/IVTherapies04.jpeg';
+import ivTherapiesImage from '../../assets/IVTherapies03.jpeg';
 import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.jpeg';
-import labTestAtHomeImage from '../../assets/LabTestAtHome01.jpeg';
+import labTestAtHomeImage from '../../assets/LabTestAtHome02.jpeg';
 import nursingCareAtHomeImage from '../../assets/NursingAtHome01.jpeg';
 import healthCheckupAtHomeImage from '../../assets/HealthCheckupAtHome03.jpeg';
 const HERO_SERVICES = [
@@ -88,7 +88,7 @@ const HealthcareHeroSection = () => {
             </div>
 
             {/* PLACELOGO — prominent hero badge */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.3 }}
@@ -97,10 +97,10 @@ const HealthcareHeroSection = () => {
               <img
                 src={placeLogoBadge}
                 alt="At Your Place Just In 30 Minutes — Anywhere In Dubai"
-                className="h-40 w-40 object-contain drop-shadow-[0_8px_24px_rgba(37,184,167,0.4)]"
+                className="h-52 w-52 object-contain drop-shadow-[0_8px_24px_rgba(37,184,167,0.4)]"
               />
               <span className="text-[10px] font-bold uppercase tracking-widest text-[#25b8a7]">Service Guarantee</span>
-            </motion.div>
+            </motion.div> */}
           </div>
         </AnimateInView>
 
@@ -173,7 +173,7 @@ const HealthcareHeroSection = () => {
               </div>
               <div className="border-t border-slate-100 p-4">
                 <a href="tel:+971525231028" className="flex w-full items-center justify-center gap-2 rounded-2xl bg-[#003d4d] py-3.5 text-sm font-bold text-white hover:bg-[#25b8a7]">
-                  Call +971 05252 310 28
+                  Call +971525231028
                 </a>
               </div>
             </div>

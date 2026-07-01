@@ -50,7 +50,7 @@ const CATEGORY_DEFAULTS = {
       { title: 'Comprehensive On-Site Treatment', description: 'From diagnosis to prescriptions and follow-up guidance—all handled at your location.' },
     ],
     steps: [
-      { title: 'Contact Us 24/7', description: 'Call or WhatsApp +971 05252 310 28 to book your visit.', points: ['Available 24/7', 'Quick booking', 'Immediate confirmation'] },
+      { title: 'Contact Us 24/7', description: 'Call or WhatsApp +971525231028 to book your visit.', points: ['Available 24/7', 'Quick booking', 'Immediate confirmation'] },
       { title: 'Doctor Arrives at Your Location', description: 'A DHA-certified doctor comes to your home, hotel, or office equipped for care.', points: ['Licensed professionals', 'Fully equipped', 'Safe and discreet'] },
       { title: 'Receive Expert Medical Care', description: 'Get personalized consultation, treatment, and follow-up support on-site.', points: ['One-on-one attention', 'Prescriptions if needed', 'Aftercare guidance'] },
     ],
@@ -154,7 +154,7 @@ const CATEGORY_DEFAULTS = {
       { title: 'Safe, Private & Professional', description: 'Strict hygiene protocols with complete confidentiality for every patient.' },
     ],
     steps: [
-      { title: 'Book Your Service', description: 'Call or WhatsApp +971 05252 310 28 to schedule.', points: ['Available 24/7', 'Quick response', 'Easy booking'] },
+      { title: 'Book Your Service', description: 'Call or WhatsApp +971525231028 to schedule.', points: ['Available 24/7', 'Quick response', 'Easy booking'] },
       { title: 'We Come to You', description: 'Our certified professional arrives at your location within 30–45 minutes.', points: ['Licensed staff', 'Fully equipped', 'Professional care'] },
       { title: 'Receive Expert Care', description: 'Complete service delivered at your doorstep with follow-up support.', points: ['Personalized care', 'Safe procedures', 'Aftercare guidance'] },
     ],
@@ -167,7 +167,7 @@ const CATEGORY_DEFAULTS = {
     ],
     faqs: (title) => [
       { question: `1. What is ${title}?`, answer: `SIMS Health Care offers ${title.toLowerCase()} with trained professionals, ensuring comfort, safety, and complete privacy at your location in Dubai.` },
-      { question: '2. How do I book?', answer: 'Call or WhatsApp us 24/7 at +971 05252 310 28. Share your location and preferred time—we handle the rest.' },
+      { question: '2. How do I book?', answer: 'Call or WhatsApp us 24/7 at +971525231028. Share your location and preferred time—we handle the rest.' },
       { question: '3. Are your staff licensed?', answer: 'Yes. All SIMS healthcare professionals are DHA-certified and trained for home-based care.' },
       { question: '4. Is the service available 24/7?', answer: 'Yes. We are available around the clock, including weekends and public holidays.' },
     ],

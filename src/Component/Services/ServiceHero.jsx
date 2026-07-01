@@ -81,7 +81,7 @@ const ServiceHero = () => {
               whileHover={{ y: -3, scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              <FaPhoneAlt /> +971 05252 310 28
+              <FaPhoneAlt /> +971525231028
             </motion.a>
           </motion.div>
         </motion.div>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaPhoneAlt, FaCheckCircle, FaUserMd, FaHospitalUser, FaBuilding, FaUserClock, FaPaperPlane } from 'react-icons/fa';
 import AnimateInView, { fadeUp, slideFromLeft, slideFromRight, staggerContainer } from '../Services/AnimateInView';
+import WhoWeServe from '../../assets/WhoWeServe.png';
 
 const SIMSBookingAndAudience = () => {
   const [formData, setFormData] = useState({
@@ -237,7 +238,7 @@ const SIMSBookingAndAudience = () => {
               </div>
               <div className="text-left pr-6">
                 <span className="block text-[9px] font-black uppercase tracking-widest text-slate-400 leading-none">24/7 Priority Emergency Line</span>
-                <span className="block text-xl sm:text-2xl font-black text-[#25b8a7] tracking-tight mt-1">+971 05252 310 28</span>
+                <span className="block text-xl sm:text-2xl font-black text-[#25b8a7] tracking-tight mt-1">+971525231028</span>
               </div>
             </div>
           </AnimateInView>
@@ -247,9 +248,9 @@ const SIMSBookingAndAudience = () => {
 
             <div className="relative w-full max-w-[440px] aspect-square rounded-[50px] overflow-hidden border border-white/10 shadow-[0_40px_80px_rgba(0,0,0,0.3)] bg-slate-900/40 group">
               <img 
-                src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=800" 
+                src={WhoWeServe}
                 alt="SIMS Associated Professional Practitioners Group" 
-                className="w-full h-full object-cover scale-102 group-hover:scale-105 transition-transform duration-[1200ms] ease-out mix-blend-luminosity opacity-90 group-hover:mix-blend-normal group-hover:opacity-100"
+                className="w-full h-full object-cover scale-102 group-hover:scale-105 transition-transform duration-[1200ms] ease-out"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#002e3a] via-[#002e3a]/20 to-transparent"></div>
               

@@ -1,4 +1,4 @@
-import labTestAtHomeImage from '../assets/LabTestAtHome01.jpeg';
+import labTestAtHomeImage from '../assets/LabTestAtHome02.jpeg';
 
 export const BLOG_POSTS = [
   {

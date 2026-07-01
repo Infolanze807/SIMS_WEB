@@ -16,11 +16,11 @@ import {
   FaArrowRight,
 } from 'react-icons/fa';
 import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInView';
-import doctorOnCallImage from '../../assets/DoctorOnCall01.jpeg';
-import labTestAtHomeImage from '../../assets/LabTestAtHome01.jpeg';
+import doctorOnCallImage from '../../assets/DoctorOnCall02.png';
+import labTestAtHomeImage from '../../assets/LabTestAtHome02.jpeg';
 import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.jpeg';
 import nursingCareAtHomeImage from '../../assets/NursingAtHome01.jpeg';
-import ivTherapiesImage from '../../assets/IVTherapies02.jpeg';
+import ivTherapiesImage from '../../assets/IVTherapies03.jpeg';
 import oxygenTherapyAtHomeImage from '../../assets/OxygenTherapyAtHome03.jpeg';
 import covidPCRTestAtHomeImage from '../../assets/CovidPCRTestAtHome03.jpeg';
 import fluVaccinationAtHomeInDubaiImage from '../../assets/FluVaccinationAtHomeInDubai03.jpeg';

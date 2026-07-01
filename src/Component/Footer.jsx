@@ -43,8 +43,7 @@ const FooterLink = ({ to, children, className = '' }) => (
   <NavLink
     to={to}
     className={({ isActive }) =>
-      `group flex items-center gap-2 text-sm transition ${className} ${
-        isActive ? 'text-brand-accent-light' : 'text-white/80 hover:text-brand-accent-light'
+      `group flex items-center gap-2 text-sm transition ${className} ${isActive ? 'text-brand-accent-light' : 'text-white/80 hover:text-brand-accent-light'
       }`
     }
   >
@@ -66,8 +65,12 @@ const Footer = () => {
             {/* Brand */}
             <div className="space-y-6 lg:col-span-4">
               <Link to="/" className="inline-flex items-center gap-4 flex-wrap sm:flex-nowrap">
-                <div className="flex h-14 items-center justify-center rounded-2xl bg-white px-5 shadow-lg shadow-brand-dark/10 transition-all hover:scale-[1.02] duration-300">
-                  <img src={simsLogo} alt="SIMS Healthcare" className="h-9 w-auto object-contain" />
+                <div className="flex h-14 w-[250px] sm:w-auto items-center justify-center rounded-2xl bg-white px-5 shadow-lg shadow-brand-dark/10 transition-all duration-300 hover:scale-[1.02]">
+                  <img
+                    src={simsLogo}
+                    alt="SIMS Healthcare"
+                    className="h-9 w-auto object-contain"
+                  />
                 </div>
                 <div className="flex h-14 items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 backdrop-blur-sm transition-all hover:bg-white/10 hover:border-brand-accent/30 duration-300">
                   <img src={dhaLogo} alt="Dubai Health Authority Logo" className="h-8 w-auto object-contain shrink-0" />
@@ -102,11 +105,11 @@ const Footer = () => {
 
               <div className="flex items-center gap-3">
                 {[
-                  { href: 'https://facebook.com', icon: FaFacebookF, label: 'Facebook' },
-                  { href: 'https://instagram.com', icon: FaInstagram, label: 'Instagram' },
-                  { href: 'https://linkedin.com', icon: FaLinkedinIn, label: 'LinkedIn' },
-                  { href: 'https://youtube.com', icon: FaYoutube, label: 'YouTube' },
-                  { href: 'https://x.com', icon: FaXTwitter, label: 'X' },
+                  { href: 'https://www.facebook.com/SIMSHomeHealthcare', icon: FaFacebookF, label: 'Facebook' },
+                  { href: 'https://www.instagram.com/simshomehealthcare/', icon: FaInstagram, label: 'Instagram' },
+                  { href: 'https://www.linkedin.com/company/sims-home-healthcare/', icon: FaLinkedinIn, label: 'LinkedIn' },
+                  { href: 'https://www.youtube.com/@SIMSHomeHealthcareCenterLLC', icon: FaYoutube, label: 'YouTube' },
+                  { href: 'https://x.com/SIMSHealthDubai', icon: FaXTwitter, label: 'X' },
                 ].map(({ href, icon: Icon, label }) => (
                   <a
                     key={label}
@@ -198,7 +201,7 @@ const Footer = () => {
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-brand-accent/15 text-brand-accent-light">
                     <FaPhoneAlt className="text-sm" />
                   </span>
-                  <span className="min-w-0 flex-1 text-sm font-bold text-white pt-2">+971 05252 310 28</span>
+                  <span className="min-w-0 flex-1 text-sm font-bold text-white pt-2">+971525231028</span>
                 </a>
               </div>
 

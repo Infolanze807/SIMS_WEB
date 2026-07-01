@@ -72,7 +72,7 @@ const HealthcareAbout = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
             
-            <div className="flex items-start gap-4 p-4 rounded-2xl border border-white/5 bg-white/[0.02] backdrop-blur-md shadow-inner">
+            {/* <div className="flex items-start gap-4 p-4 rounded-2xl border border-white/5 bg-white/[0.02] backdrop-blur-md shadow-inner">
               <div className="h-10 w-10 rounded-xl bg-[#25b8a7]/20 text-[#25b8a7] flex items-center justify-center shrink-0 border border-[#25b8a7]/30">
                 <FaShieldAlt className="text-base" />
               </div>
@@ -80,7 +80,7 @@ const HealthcareAbout = () => {
                 <h5 className="font-bold text-sm text-white tracking-tight">DHA Accredited Standards</h5>
                 <p className="text-xs text-slate-400 mt-0.5 leading-normal">Fully certified professionals adhering strictly to international medical protocols.</p>
               </div>
-            </div>
+            </div> */}
 
             <div className="flex items-start gap-4 p-4 rounded-2xl border border-white/5 bg-white/[0.02] backdrop-blur-md shadow-inner">
               <div className="h-10 w-10 rounded-xl bg-white/10 text-white flex items-center justify-center shrink-0 border border-white/20">
