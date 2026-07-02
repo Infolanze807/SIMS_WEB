@@ -241,11 +241,11 @@ const Header = () => {
 
         <div className="flex items-center gap-2 sm:gap-3">
           <a
-            href="tel:0525231028"
+            href="+971525231028"
             className="hidden items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-brand-dark transition hover:border-brand-accent/30 hover:text-brand-accent sm:flex sm:px-4"
           >
             <FaPhoneAlt />
-            <span className="hidden md:inline">052 523 1028</span>
+            <span className="hidden md:inline">+971525231028</span>
           </a>
 
           <a
@@ -449,7 +449,7 @@ const Header = () => {
                   className="flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-brand-dark transition hover:border-brand-accent/30 hover:text-brand-accent"
                 >
                   <FaPhoneAlt />
-                  052 523 1028
+                  +971525231028
                 </a>
                 <a
                   href="https://wa.me/971525231028"

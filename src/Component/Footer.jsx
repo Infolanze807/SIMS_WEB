@@ -144,7 +144,7 @@ const Footer = () => {
             </div>
 
             {/* Popular Services */}
-            <div className="lg:col-span-3">
+            <div className="lg:col-span-2">
               <p className="mb-5 text-[10px] font-black uppercase tracking-[0.2em] text-brand-accent-light">
                 Popular Services
               </p>
@@ -173,13 +173,13 @@ const Footer = () => {
             </div>
 
             {/* Contact & 24/7 */}
-            <div className="space-y-5 lg:col-span-3">
+            <div className="space-y-5 lg:col-span-4">
               <p className="text-[10px] font-black uppercase tracking-[0.2em] text-brand-accent-light">
                 Contact Us
               </p>
 
               <div className="space-y-3">
-                <div className="flex items-start gap-4 rounded-2xl border border-white/10 bg-white/5 p-4">
+                <div className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-3 sm:gap-4 sm:p-4">
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-brand-accent/15 text-brand-accent-light">
                     <FaMapMarkerAlt className="text-sm" />
                   </span>
@@ -189,18 +189,18 @@ const Footer = () => {
                 </div>
                 <a
                   href="mailto:connect@simshomehealthcare.ae"
-                  className="flex items-start gap-4 rounded-2xl border border-white/10 bg-white/5 p-4 transition hover:border-brand-accent/30 hover:bg-brand-accent/5"
+                  className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-3 transition hover:border-brand-accent/30 hover:bg-brand-accent/5 sm:gap-4 sm:p-4"
                 >
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-brand-accent/15 text-brand-accent-light">
                     <FaEnvelope className="text-sm" />
                   </span>
-                  <span className="min-w-0 flex-1 break-all text-sm leading-relaxed text-white/85">
+                  <span className="min-w-0 flex-1 whitespace-nowrap text-[12px] leading-relaxed text-white/85 sm:text-sm">
                     connect@simshomehealthcare.ae
                   </span>
                 </a>
                 <a
                   href="tel:+971525231028"
-                  className="flex items-start gap-4 rounded-2xl border border-white/10 bg-white/5 p-4 transition hover:border-brand-accent/30 hover:bg-brand-accent/5"
+                  className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-3 transition hover:border-brand-accent/30 hover:bg-brand-accent/5 sm:gap-4 sm:p-4"
                 >
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-brand-accent/15 text-brand-accent-light">
                     <FaPhoneAlt className="text-sm" />
