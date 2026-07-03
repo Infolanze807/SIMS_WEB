@@ -8,7 +8,7 @@ const SERVICE_OPTIONS = [
   'Doctor at Home',
   'Lab Test at Home',
   'Physiotherapy at Home',
-  'Nurse Care at Home',
+  'Nurse at Home',
   'Elderly Care',
   'IV Drip & Vitamin Infusion',
   'PCR Test at Home',

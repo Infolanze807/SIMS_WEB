@@ -20,7 +20,7 @@ import doctorOnCallImage from '../../assets/DoctorOnCall04.png';
 import labTestAtHomeImage from '../../assets/LabTestAtHome02.jpeg';
 import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.jpeg';
 import nursingCareAtHomeImage from '../../assets/NursingAtHome01.jpeg';
-import ivTherapiesImage from '../../assets/IVTherapies03.jpeg';
+import ivTherapiesImage from '../../assets/IVTherapies04.png';
 import oxygenTherapyAtHomeImage from '../../assets/OxygenTherapyAtHome03.jpeg';
 import covidPCRTestAtHomeImage from '../../assets/CovidPCRTestAtHome03.jpeg';
 import fluVaccinationAtHomeInDubaiImage from '../../assets/FluVaccinationAtHomeInDubai03.jpeg';
@@ -56,7 +56,7 @@ const SERVICES_DATA = [
   },
   {
     slug: 'nursing-care-at-home',
-    title: 'Nurse Care at Home',
+    title: 'Nurse at Home',
     description:
       'Our trained nurses offer compassionate, professional care tailored to your needs, from elderly support to post-surgical recovery.',
     icon: <FaHeartbeat />,
@@ -69,10 +69,9 @@ const SERVICES_DATA = [
     description:
       'Boost energy, immunity, and hydration with our range of IV drip therapies, safely administered by licensed nurses at home or hotel.',
     icon: <FaBriefcaseMedical />,
-    bgImage:
-      ivTherapiesImage,
-  },
-  {
+    bgImage: ivTherapiesImage,
+    imagePosition: 'center top',
+  },  {
     slug: 'oxygen-therapy-at-home',
     title: 'Oxygen Therapy at Home',
     description:
@@ -187,19 +186,23 @@ const HealthcareServices = () => {
             >
               <Link
                 to={`/services/${service.slug}`}
-                className="flex min-w-0 flex-1"
+                className="flex min-w-0 flex-1 items-stretch"
                 aria-label={`Learn more about ${service.title}`}
               >
               {/* Full-height image — every service */}
-              <div className="relative w-[118px] shrink-0 overflow-hidden sm:w-[132px]">
+              <div className="relative w-[118px] shrink-0 self-stretch overflow-hidden sm:w-[132px]">
                 <motion.img
                   src={service.bgImage}
                   alt={service.title}
                   loading="lazy"
                   variants={cardImageVariants}
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-white/10" />
+                  style={
+                    service.imagePosition
+                      ? { objectPosition: service.imagePosition }
+                      : undefined
+                  }
+                />                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-white/10" />
                 <div className="absolute inset-0 bg-[#003d4d]/10 transition-colors duration-300 group-hover:bg-[#003d4d]/0" />
 
                 <motion.div

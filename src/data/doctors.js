@@ -44,7 +44,7 @@ export const DOCTORS = [
   {
     id: 'rina-rathod',
     name: 'Rina Rathod',
-    specialty: 'Registered Nurse',
+    specialty: 'DHA Licenses Nurse',
     experience: '15+ Years',
     languages: ['English', 'Arabic', 'French'],
     image: staff04,
@@ -56,7 +56,7 @@ export const DOCTORS = [
   {
     id: 'vivek-nayi',
     name: 'Vivek Nayi',
-    specialty: 'Registered Nurse',
+    specialty: 'DHA Licensed Nurse',
     experience: '9+ Years',
     languages: ['English', 'Mandarin', 'Hindi'],
     image: staff05,

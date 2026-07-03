@@ -27,17 +27,6 @@ const HealthcareAbout = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#002833] via-transparent to-transparent"></div>
             </div>
-
-            <div className="absolute -bottom-6 -right-4 sm:-right-6 bg-white text-[#003d4d] p-5 rounded-3xl shadow-[0_20px_40px_rgba(0,0,0,0.4)] flex items-center gap-4 max-w-[220px]">
-              <div className="h-11 w-11 rounded-2xl bg-[#25b8a7] text-white flex items-center justify-center shrink-0 shadow-lg">
-                <FaUserMd className="text-xl" />
-              </div>
-              <div>
-                <span className="block text-2xl font-black tracking-tight leading-none">30 MIN</span>
-                <span className="block text-[9px] font-black text-slate-400 uppercase tracking-widest mt-1">Response Time</span>
-              </div>
-            </div>
-
           </div>
         </AnimateInView>
 
@@ -46,7 +35,7 @@ const HealthcareAbout = () => {
           <div className="space-y-4">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[#25b8a7] text-xs font-mono tracking-widest uppercase">
               <span className="w-1.5 h-1.5 rounded-full bg-[#25b8a7] animate-pulse"></span>
-              <span>About Our Institution</span>
+              <span>About Our HEALTHCARE </span>
             </div>
             
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white leading-[1.12]">
@@ -102,7 +91,7 @@ const HealthcareAbout = () => {
             viewport={{ once: true }}
           >
             {[
-              'Free Consultation & Guidance',
+              'Consultation & Guidance',
               'On-Site Laboratory Diagnostics',
               'Elite DHA Certified Practitioners',
               'Full Dubai Territorial Coverage',

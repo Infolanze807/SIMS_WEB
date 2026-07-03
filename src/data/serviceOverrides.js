@@ -2597,7 +2597,7 @@ export const DETAIL_OVERRIDES = {
       "description": "",
       "buttonText": "Your Wellness Is Just A Call Away"
     },
-    "faqsTitle": "Nurse Care at Home Frequently Asked Questions",
+    "faqsTitle": "Nurse at Home Frequently Asked Questions",
     "faqs": [
       {
         "question": "1. What is a home nursing care service in Dubai?",

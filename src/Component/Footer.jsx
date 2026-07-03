@@ -29,7 +29,7 @@ const featuredServices = [
   { label: 'Doctor On Call', slug: 'doctor-on-call' },
   { label: 'Doctor at Hotel', slug: 'doctor-at-hotel' },
   { label: 'Lab Test at Home', slug: 'lab-test-at-home' },
-  { label: 'Nurse Care at Home', slug: 'nursing-care-at-home' },
+  { label: 'Nurse at Home', slug: 'nursing-care-at-home' },
   { label: 'IV Therapy at Home', slug: 'iv-therapies' },
   { label: 'Health Checkup at Home', slug: 'health-checkup-at-home' },
 ];

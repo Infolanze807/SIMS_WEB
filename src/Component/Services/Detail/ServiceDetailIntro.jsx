@@ -40,9 +40,9 @@ const ServiceDetailIntro = ({ eyebrow = 'About This Service', title, paragraphs 
           animate="visible"
         >
           {[
-            { label: 'Medical Staff', value: '50+' },
+            { label: 'Medical Staff', value: '30+' },
             { label: 'UAE Experience', value: '10+ Yrs' },
-            { label: 'Patients Covered', value: '10K+' },
+            { label: 'Patients Covered', value: '1K+' },
           ].map((stat) => (
             <motion.div
               key={stat.label}

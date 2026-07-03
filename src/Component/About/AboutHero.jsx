@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaPhoneAlt, FaCheckCircle } from 'react-icons/fa';
+import aboutHeroImage from '../../assets/AboutHeroImage01.png';
 
 const AboutHero = () => {
   const bullets = [
@@ -88,12 +89,12 @@ const AboutHero = () => {
         >
           <div className="relative h-[500px] w-full max-w-lg overflow-hidden rounded-[40px] border border-white/10 bg-gradient-to-b from-white/5 to-transparent p-3 shadow-[0_30px_70px_rgba(0,0,0,0.4)]">
             <img
-              src="https://images.unsplash.com/photo-1612277795421-9bc7706a4a34?auto=format&fit=crop&w=1200&q=80"
+              src={aboutHeroImage}
               alt="SIMS Healthcare"
               className="h-full w-full rounded-[40px] object-cover shadow-[0_30px_80px_rgba(0,0,0,0.35)]"
             />
-            <motion.div
-              className="absolute bottom-8 left-8 flex items-center gap-4 rounded-3xl bg-white/95 p-6 text-[#003d4d] shadow-[0_20px_40px_rgba(0,0,0,0.3)] backdrop-blur-md"
+            {/* <motion.div
+              className="absolute bottom-8 right-0 flex items-center gap-4 rounded-3xl bg-white/95 p-6 text-[#003d4d] shadow-[0_20px_40px_rgba(0,0,0,0.3)] backdrop-blur-md"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7 }}
@@ -110,7 +111,7 @@ const AboutHero = () => {
                   Anywhere in Dubai
                 </p>
               </div>
-            </motion.div>
+            </motion.div> */}
           </div>
         </motion.div>
       </div>

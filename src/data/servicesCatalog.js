@@ -61,7 +61,7 @@ export const SERVICES_CATALOG = [
   },
   {
     slug: 'nursing-care-at-home',
-    title: 'Nurse Care at Home',
+    title: 'Nurse at Home',
     description:
       'Our trained nurses offer compassionate, professional care tailored to your needs, from elderly support to post-surgical recovery.',
     image: nursingCareAtHomeImage,
@@ -357,7 +357,7 @@ export const HEADER_NAV_SERVICES = [
   },
   { title: 'Physiotherapy At Home', slug: 'physiotherapy-at-home', children: [] },
   {
-    title: 'Nurse Care at Home',
+    title: 'Nurse at Home',
     slug: 'nursing-care-at-home',
     children: [
       // { title: 'Elderly care at home', slug: 'elderly-care' },

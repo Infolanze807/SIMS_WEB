@@ -2424,7 +2424,7 @@ export const MANUAL_OVERRIDES = {
         'Book now and get a qualified nurse at your doorstep within 30 minutes—because your care can’t wait. At SIMS, we believe your loved ones deserve attentive, professional nursing support without delay. Our DHA-certified nurses are available 24/7 to provide compassionate care at home—whether it’s wound dressing, post-surgical support, medication management, or elderly assistance. Just one call connects you to quality healthcare in the comfort of your home.',
       buttonText: 'Your Wellness Is Just A Call Away',
     },
-    faqsTitle: 'Nurse Care at Home Frequently Asked Questions',
+    faqsTitle: 'Nurse at Home Frequently Asked Questions',
     faqs: [
       {
         question: '1. What is a home nursing care service in Dubai?',
