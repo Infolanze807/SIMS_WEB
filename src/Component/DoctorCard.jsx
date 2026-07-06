@@ -29,16 +29,15 @@ const DoctorCard = ({ doctor }) => (
         className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.04]"
       />
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/15 to-transparent opacity-90 transition-all duration-500 group-hover:via-brand-dark/20" />
-      <div className="absolute bottom-4 left-4 right-4 z-10 flex items-center justify-between rounded-xl bg-white/90 px-3.5 py-2 text-xs shadow-sm backdrop-blur-md">
-        <span className="flex items-center gap-1.5 font-bold text-brand-dark">
+      <div className="absolute bottom-4 left-4 right-4 z-10 rounded-xl bg-white/90 px-3.5 py-2.5 text-xs shadow-sm backdrop-blur-md">
+        <div className="flex items-center gap-1.5 font-bold text-brand-dark">
           <FaCertificate className="shrink-0 text-sm text-brand-accent" />
           DHA Licensed
-        </span>
-        <span className="rounded-md bg-slate-100/80 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-slate-500">
+        </div>
+        <p className="mt-1 pl-5 text-[10px] font-semibold tracking-wide text-slate-500">
           {doctor.dhaLicense}
-        </span>
-      </div>
-    </div>
+        </p>
+      </div>    </div>
 
     <div className="flex flex-1 flex-col p-6">
       <div className="mb-3 flex items-start justify-between gap-3">

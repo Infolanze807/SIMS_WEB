@@ -15,7 +15,7 @@ import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInVi
 import dhaHealthBadge from '../../assets/logoo.png';
 import doctorAtHomeImage from '../../assets/Home01.png';
 import doctorOnCallImage from '../../assets/DoctorOnCall04.png';
-import ivTherapiesImage from '../../assets/IVTherapies03.jpeg';
+import ivTherapiesImage from '../../assets/IVTherapies001.jpeg';
 import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.jpeg';
 import labTestAtHomeImage from '../../assets/LabTestAtHome02.jpeg';
 import nursingCareAtHomeImage from '../../assets/NursingAtHome01.jpeg';
