@@ -87,13 +87,12 @@ const AboutHero = () => {
           animate={{ opacity: 1, x: 0, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
         >
-          <div className="relative h-[500px] w-full max-w-lg overflow-hidden rounded-[40px] border border-white/10 bg-gradient-to-b from-white/5 to-transparent p-3 shadow-[0_30px_70px_rgba(0,0,0,0.4)]">
+          <div className="relative w-full max-w-lg overflow-hidden rounded-[28px] border border-white/10 bg-white/5 p-2 shadow-[0_30px_70px_rgba(0,0,0,0.4)] sm:rounded-[40px] sm:p-3 lg:h-[500px]">
             <img
               src={aboutHeroImage}
               alt="SIMS Healthcare"
-              className="h-full w-full rounded-[40px] object-cover shadow-[0_30px_80px_rgba(0,0,0,0.35)]"
-            />
-            {/* <motion.div
+              className="h-auto w-full rounded-[22px] object-contain sm:rounded-[32px] lg:h-full lg:rounded-[36px] lg:object-cover lg:object-center"
+            />            {/* <motion.div
               className="absolute bottom-8 right-0 flex items-center gap-4 rounded-3xl bg-white/95 p-6 text-[#003d4d] shadow-[0_20px_40px_rgba(0,0,0,0.3)] backdrop-blur-md"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

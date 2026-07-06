@@ -121,7 +121,7 @@ const UniqueHeroSection = () => {
 
           {/* Premium Visual Composition Right Block */}
           <div className="relative lg:col-span-5 flex justify-center">
-            <div className="relative w-full max-w-sm">
+            <div className="relative w-full max-w-sm pb-2 sm:pb-8 sm:pl-4 lg:pl-6">
               {/* Main Image Framing */}
               <div className="relative h-80 w-full overflow-hidden rounded-3xl border border-white/10 shadow-2xl group">
                 <img src={doctorAtHomeImage} alt="Premium Care" className="h-full w-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700" />
@@ -129,12 +129,11 @@ const UniqueHeroSection = () => {
               </div>
 
               {/* Floating Live Dispatch Metric Card */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                className="absolute -bottom-6 -left-6 rounded-2xl bg-gradient-to-r from-[#003d4d] to-[#002b36] border border-white/10 p-4 shadow-xl backdrop-blur-md max-w-[220px]"
-              >
-                <div className="flex items-start gap-3">
+                className="absolute bottom-3 left-3 z-10 max-w-[calc(100%-1.5rem)] rounded-2xl border border-white/10 bg-gradient-to-r from-[#003d4d] to-[#002b36] p-3 shadow-xl backdrop-blur-md sm:bottom-4 sm:left-4 sm:max-w-[220px] sm:p-4 lg:-bottom-6 lg:-left-6"
+              >                <div className="flex items-start gap-3">
                   <div className="p-2.5 rounded-xl bg-[#25b8a7]/10 text-[#25b8a7]"><FaUserMd size={18}/></div>
                   <div>
                     <h4 className="text-xs font-bold text-white tracking-wide">Rapid Response</h4>

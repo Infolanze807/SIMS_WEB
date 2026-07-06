@@ -20,7 +20,7 @@ import doctorOnCallImage from '../../assets/DoctorOnCall04.png';
 import labTestAtHomeImage from '../../assets/LabTestAtHome02.jpeg';
 import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.jpeg';
 import nursingCareAtHomeImage from '../../assets/NursingAtHome01.jpeg';
-import ivTherapiesImage from '../../assets/IVTherapies04.png';
+import ivTherapiesImage from '../../assets/IVTherapies001.jpeg';
 import oxygenTherapyAtHomeImage from '../../assets/OxygenTherapyAtHome03.jpeg';
 import covidPCRTestAtHomeImage from '../../assets/CovidPCRTestAtHome03.jpeg';
 import fluVaccinationAtHomeInDubaiImage from '../../assets/FluVaccinationAtHomeInDubai03.jpeg';
