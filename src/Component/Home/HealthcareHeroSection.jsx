@@ -13,7 +13,7 @@ import {
 } from 'react-icons/fa';
 import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInView';
 import dhaHealthBadge from '../../assets/logoo.png';
-import doctorAtHomeImage from '../../assets/DoctorAtHome02.jpeg';
+import doctorAtHomeImage from '../../assets/Home01.png';
 import doctorOnCallImage from '../../assets/DoctorOnCall04.png';
 import ivTherapiesImage from '../../assets/IVTherapies03.jpeg';
 import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.jpeg';

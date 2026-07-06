@@ -29,7 +29,7 @@ const ServiceDetailRelated = ({
         </AnimateInView>
 
         <motion.div
-          className={`grid gap-6 ${
+          className={`grid gap-7 lg:gap-8 ${
             display.length >= 4
               ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4'
               : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'
@@ -42,38 +42,63 @@ const ServiceDetailRelated = ({
             const slug = item.slug;
             const cardKey = `${slug || item.title}-${index}`;
             const card = (
-              <motion.div
+              <motion.article
                 variants={fadeUp}
                 whileHover={{ y: -6 }}
-                className="group flex h-full flex-col overflow-hidden rounded-[24px] border border-slate-100 bg-white transition-all duration-300 hover:shadow-lg"
+                transition={{ type: 'spring', stiffness: 300, damping: 22 }}
+                className="group h-full"
               >
-                {item.image && (
-                  <div className="h-36 overflow-hidden">
+                <div className="relative aspect-[4/5] overflow-hidden rounded-[28px] bg-gradient-to-b from-slate-100 to-white shadow-[0_14px_45px_rgba(0,61,77,0.1)] transition-all duration-500 group-hover:shadow-[0_22px_55px_rgba(0,61,77,0.16)]">
+                  {item.image ? (
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
+                      decoding="async"
+                      className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
                     />
-                  </div>
-                )}
-                <div className="flex flex-1 flex-col space-y-2 p-5">
-                  <h3 className="text-sm font-bold text-brand-dark transition-colors group-hover:text-brand-accent">
-                    {item.title}
-                  </h3>
-                  <p className="line-clamp-3 flex-1 text-xs leading-relaxed text-slate-500">
-                    {item.description}
-                  </p>
-                  {slug && (
-                    <span className="inline-flex items-center gap-1 pt-1 text-[10px] font-black uppercase tracking-widest text-brand-accent">
-                      Learn more <FaArrowRight className="text-[8px]" />
-                    </span>
+                  ) : (
+                    <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-brand-dark to-brand-accent">
+                      <span className="px-6 text-center text-lg font-bold text-white">{item.title}</span>
+                    </div>
                   )}
+                  <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-brand-dark/40 to-transparent transition-opacity duration-300 group-hover:opacity-0" />
+
+                  <div className="absolute inset-x-4 bottom-4 rounded-3xl border border-white/70 bg-white/95 px-5 py-4 shadow-[0_10px_30px_rgba(0,61,77,0.12)] backdrop-blur-md transition-all duration-300 group-hover:translate-y-3 group-hover:opacity-0">
+                    <h3 className="text-lg font-bold tracking-tight text-brand-dark sm:text-xl">
+                      {item.title}
+                    </h3>
+                    <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.14em] text-slate-500">
+                      DHA Certified · SIMS Healthcare
+                    </p>
+                  </div>
+
+                  <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-brand-dark/95 via-brand-dark/75 to-brand-dark/20 p-5 opacity-0 transition-all duration-300 group-hover:opacity-100 group-focus-within:opacity-100 sm:p-6">
+                    <div className="translate-y-4 space-y-3 transition-transform duration-300 group-hover:translate-y-0 group-focus-within:translate-y-0">
+                      <h3 className="text-lg font-bold tracking-tight text-white sm:text-xl">
+                        {item.title}
+                      </h3>
+                      {item.description && (
+                        <p className="line-clamp-4 text-sm leading-relaxed text-white/85">
+                          {item.description}
+                        </p>
+                      )}
+                      {slug && (
+                        <span className="inline-flex items-center gap-2 pt-1 text-xs font-black uppercase tracking-widest text-brand-accent">
+                          <span>Learn more</span>
+                          <span className="flex h-6 w-6 items-center justify-center rounded-lg bg-brand-accent/20 transition-all duration-300 group-hover:bg-brand-accent group-hover:text-white">
+                            <FaArrowRight className="text-[9px]" />
+                          </span>
+                        </span>
+                      )}
+                    </div>
+                  </div>
                 </div>
-              </motion.div>
+              </motion.article>
             );
 
             return slug ? (
-              <Link key={cardKey} to={`/services/${slug}`}>
+              <Link key={cardKey} to={`/services/${slug}`} className="block">
                 {card}
               </Link>
             ) : (
