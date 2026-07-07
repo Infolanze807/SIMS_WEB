@@ -939,7 +939,7 @@ export const DETAIL_OVERRIDES = {
       "Diabetes Tests – Fasting glucose, HbA1c",
       "Cholesterol & Lipid Profile – For heart health",
       "Thyroid Panel – TSH, T3, T4",
-      "Vitamin D & B12 – Common deficiencies in UAE residents",
+      // "Vitamin D & B12 – Common deficiencies in UAE residents",
       "Kidney & Liver Function Tests",
       "Full Body Checkup – Men’s & Women’s health panels",
       "COVID-19 PCR and Antibody Testing at Home",
