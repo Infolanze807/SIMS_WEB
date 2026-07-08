@@ -16,6 +16,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 import simsLogo from '../assets/sims-logo.png';
 import dhaLogo from '../assets/DHALOGO.png';
 import { HEADER_NAV_SERVICES } from '../data/servicesCatalog';
+import { LEGAL_LINKS } from '../data/legalContent';
 
 const quickLinks = [
   { label: 'Home', to: '/' },
@@ -63,7 +64,7 @@ const Footer = () => {
         <div className="relative mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-20">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-12 lg:gap-10">
             {/* Brand */}
-            <div className="space-y-6 lg:col-span-4">
+            <div className="space-y-6 lg:col-span-3">
               <Link to="/" className="inline-flex items-center gap-4 flex-wrap sm:flex-nowrap">
                <div className="flex flex-col items-center gap-5">
   {/* SIMS Logo */}
@@ -172,8 +173,28 @@ const Footer = () => {
               </ul>
             </div>
 
+            {/* Legal */}
+            <div className="lg:col-span-2">
+              <p className="mb-5 text-[10px] font-black uppercase tracking-[0.2em] text-brand-accent-light">
+                Legal
+              </p>
+              <ul className="space-y-3">
+                {LEGAL_LINKS.map((link) => (
+                  <li key={link.slug}>
+                    <Link
+                      to={`/legal/${link.slug}`}
+                      className="group flex items-center gap-2 text-sm text-white/80 transition hover:text-brand-accent-light"
+                    >
+                      <FaChevronRight className="text-[10px] text-brand-accent-light transition group-hover:translate-x-0.5" />
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
             {/* Contact & 24/7 */}
-            <div className="space-y-5 lg:col-span-4">
+            <div className="space-y-5 lg:col-span-3">
               <p className="text-[10px] font-black uppercase tracking-[0.2em] text-brand-accent-light">
                 Contact Us
               </p>

@@ -1,6 +1,7 @@
 import labTestAtHomeImage from '../assets/LabTestAtHome02.jpeg';
 import onCall from '../assets/Oncall.png';
 import step from '../assets/StepStep.png';
+import ivDripImage from '../assets/IVDripImage01.jpeg';
 
 export const BLOG_POSTS = [
   {
@@ -15,8 +16,7 @@ export const BLOG_POSTS = [
     commentCount: 0,
     excerpt:
       'Dubai’s heat alone can drain you. Add a busy work schedule or a long flight, and your body is running on empty …',
-    image:
-      'https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800',
+    image: ivDripImage,
   },
   {
     slug: 'home-doctor-visit-dubai-step-by-step-guide',
