@@ -1,7 +1,7 @@
 import labTestAtHomeImage from '../assets/LabTestAtHome02.jpeg';
 import onCall from '../assets/Oncall.png';
 import step from '../assets/StepStep.png';
-import ivDripImage from '../assets/IvDripImage01.jpeg';
+import ivDripImage from '../assets/ivDripImage01.jpeg';
 
 export const BLOG_POSTS = [
   {
