@@ -62,29 +62,29 @@ const Footer = () => {
         <div className="h-1 bg-gradient-to-r from-brand-accent via-brand-accent-light to-brand-dark-mid" />
 
         <div className="relative mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-20">
-          <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-12 lg:gap-10">
+          <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-24 lg:gap-10">
             {/* Brand */}
-            <div className="space-y-6 lg:col-span-3">
+            <div className="space-y-6 lg:col-span-6">
               <Link to="/" className="inline-flex items-center gap-4 flex-wrap sm:flex-nowrap">
-               <div className="flex flex-col items-center gap-5">
-  {/* SIMS Logo */}
-  <div className="flex h-16 w-[250px] items-center justify-center rounded-2xl bg-white px-6 shadow-lg transition-all duration-300 hover:scale-[1.02]">
-    <img
-      src={simsLogo}
-      alt="SIMS Healthcare"
-      className="h-10 w-auto object-contain"
-    />
-  </div>
+                <div className="flex flex-col items-center gap-5">
+                  {/* SIMS Logo */}
+                  <div className="flex h-16 w-[250px] items-center justify-center rounded-2xl bg-white px-6 shadow-lg transition-all duration-300 hover:scale-[1.02]">
+                    <img
+                      src={simsLogo}
+                      alt="SIMS Healthcare"
+                      className="h-10 w-auto object-contain"
+                    />
+                  </div>
 
-  {/* DHA Logo */}
-  <div className="flex h-16 w-[250px] items-center justify-center rounded-2xl bg-white px-6 shadow-lg transition-all duration-300 hover:scale-[1.02]">
-    <img
-      src={dhaLogo}
-      alt="Dubai Health Authority"
-      className="h-12 w-auto object-contain"
-    />
-  </div>
-</div>
+                  {/* DHA Logo */}
+                  <div className="flex h-16 w-[250px] items-center justify-center rounded-2xl bg-white px-6 shadow-lg transition-all duration-300 hover:scale-[1.02]">
+                    <img
+                      src={dhaLogo}
+                      alt="Dubai Health Authority"
+                      className="h-12 w-auto object-contain"
+                    />
+                  </div>
+                </div>
                 {/* <div className="flex h-14 items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 backdrop-blur-sm transition-all hover:bg-white/10 hover:border-brand-accent/30 duration-300">
                   <img src={dhaLogo} alt="Dubai Health Authority Logo" className="h-8 w-auto object-contain shrink-0" />
                 </div> */}
@@ -131,7 +131,7 @@ const Footer = () => {
             </div>
 
             {/* Quick Links */}
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-3">
               <p className="mb-5 text-[10px] font-black uppercase tracking-[0.2em] text-brand-accent-light">
                 Quick Links
               </p>
@@ -145,7 +145,7 @@ const Footer = () => {
             </div>
 
             {/* Popular Services */}
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-4">
               <p className="mb-5 text-[10px] font-black uppercase tracking-[0.2em] text-brand-accent-light">
                 Popular Services
               </p>
@@ -174,7 +174,7 @@ const Footer = () => {
             </div>
 
             {/* Legal */}
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-3">
               <p className="mb-5 text-[10px] font-black uppercase tracking-[0.2em] text-brand-accent-light">
                 Legal
               </p>
@@ -194,7 +194,7 @@ const Footer = () => {
             </div>
 
             {/* Contact & 24/7 */}
-            <div className="space-y-5 lg:col-span-3">
+            <div className="space-y-5 lg:col-span-8">
               <p className="text-[10px] font-black uppercase tracking-[0.2em] text-brand-accent-light">
                 Contact Us
               </p>

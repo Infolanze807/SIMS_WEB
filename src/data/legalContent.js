@@ -237,7 +237,7 @@ export const LEGAL_PAGES = {
 export const LEGAL_LINKS = [
   { label: 'Privacy Policy', slug: 'privacy-policy' },
   { label: 'Patient Rights', slug: 'patient-rights' },
-  { label: 'Terms And Conditions', slug: 'terms-and-conditions' },
+  { label: 'Terms & Conditions', slug: 'terms-and-conditions' },
 ];
 
 export const getLegalPage = (slug) => LEGAL_PAGES[slug] ?? null;
