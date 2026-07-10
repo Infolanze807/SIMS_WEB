@@ -152,35 +152,25 @@ export const MANUAL_OVERRIDES = {
     faqsTitle: 'Docter On Call Frequently Asked Questions',
     faqs: [
       {
-        question: '1. What is a Doctor on Call service in Dubai?',
+        question: '1. What does doctor on call include?',
         answer:
-          'Doctor on Call is a 24/7 home healthcare service that sends a licensed and DHA-certified doctor to your location—home, hotel, or office—for medical consultations and basic treatments without needing to visit a clinic.',
+          "SIMS Home Healthcare's doctor on call service includes urgent care for sudden illness or injury, routine checkups, specialist consultations for chronic conditions, and telemedicine support before a home visit if needed.",
       },
       {
-        question: '2. Who can benefit from a Doctor on Call or virtual consultation?',
+        question: '2. Is doctor on call available for medical emergencies?',
         answer:
-          'This service is ideal for elderly patients, busy professionals, families with children, individuals recovering at home, or anyone who prefers convenient, on-site medical care. Online consultations are also available for follow-ups or minor concerns.',
+          'Doctor on call is suitable for urgent, non-life-threatening medical situations such as sudden fever, injury, or acute illness. For life threatening emergencies, patients should call UAE emergency services (998) immediately.',
       },
       {
-        question: '3. Can I book a Doctor on Call to my hotel in Dubai?',
+        question: '3. How do I book a doctor on call in Dubai?',
         answer:
-          'Yes! Our Doctor on Call service is perfect for tourists and business travelers staying in Dubai hotels. We bring qualified doctors directly to your room for fast, private care.',
+          "To book a doctor on call, contact SIMS Home Healthcare by phone or online, share the patient's condition, location, and urgency, and a licensed doctor will be dispatched to your address.",
       },
       {
-        question: '4. Do you provide Doctor on Call services for children?',
+        question: '4. Is doctor on call available at night?',
         answer:
-          'Absolutely. Our DHA-certified doctors are trained in pediatric care and can treat a wide range of childhood conditions, from fevers and infections to allergies and minor injuries—all from the comfort of your home or hotel.',
-      },
-      {
-        question: '5. What makes your Doctor on Call service different?',
-        answer:
-          'We offer round-the-clock availability, fast response (within 30–45 minutes), DHA-approved doctors, and personalized care at your location. Our goal is to deliver hospital-quality care in a safe, private, and comfortable setting.',
-      },
-      {
-        question: '6. Is the service suitable for tourists and short-term visitors in Dubai?',
-        answer:
-          'Yes, we frequently assist tourists with common illnesses, travel-related concerns, or urgent medical needs. Our multilingual staff ensures smooth communication and fast care wherever you\'re staying.',
-      },
+          "Yes, SIMS Home Healthcare's doctor on call service operates 24 hours a day, including nights, weekends, and public holidays, across Dubai.",
+      }
     ],
   },
   'lab-test-at-home': {
@@ -2214,39 +2204,34 @@ export const MANUAL_OVERRIDES = {
     faqsTitle: 'Physiotherapy At Home Frequently Asked Questions',
     faqs: [
       {
-        question: '1. What is physiotherapy at home in Dubai?',
+        question: '1. Can I get physiotherapy at home in Dubai?',
         answer:
-          'It’s a service where licensed physiotherapists visit your home to provide rehabilitation, pain relief, and mobility exercises tailored to your condition—eliminating the need to travel to a clinic.',
+          'SIMS provides certified physiotherapists for home visits across Dubai.',
       },
       {
-        question: '2. Who can benefit from physiotherapy at home?',
+        question: '2. Need Home Physiotherapy for Back Pain, Stroke',
         answer:
-          'Anyone recovering from surgery, dealing with pain or injury, seniors with mobility issues, athletes, or patients with neurological conditions like stroke or Parkinson’s.',
+          'SIMS physiotherapists specialize in post-surgery rehab, back pain, neurological recovery',
       },
       {
-        question: '3. Are your physiotherapists licensed in Dubai?',
+        question: '3. What conditions can home physiotherapy treat?',
         answer:
-          'Yes. All physiotherapists are DHA-certified, experienced, and trained in specialized rehabilitation care.',
+          'Home physiotherapy from SIMS Home Healthcare can treat back pain, joint pain, sports injuries, stroke recovery, post-surgery stiffness, arthritis, and age-related mobility issues, with a treatment plan customized to each patient.',
       },
       {
-        question: '4. Can I choose a male or female therapist?',
+        question: '4. Is home physiotherapy effective compared to clinic?',
         answer:
-          'Absolutely. We respect your preferences and can assign a male or female therapist based on availability and your comfort.',
+          'Home physio from SIMS allows recovery in your own environment with personalized sessions',
       },
       {
-        question: '5. What are the session durations and how many do I need?',
+        question: '5. Are your physiotherapists fully qualified?',
         answer:
-          'Sessions usually last 45–60 minutes. The number depends on your condition, but a treatment plan will be discussed during your first visit.',
+          'Yes. All our physiotherapist are qualified & licensed by the Dubai Health Authority – DHA. With many years of experience, physiotherapy at home with our team is a helpful medical experience for the patients.',
       },
       {
-        question: '6. Is equipment provided for home sessions?',
+        question: '6. How can I contact you for home physiotherapy in Dubai?',
         answer:
-          'Yes. Our therapists bring portable tools like resistance bands, mobility aids, and electrotherapy machines if needed.',
-      },
-      {
-        question: '7. Is physiotherapy at home suitable for children or seniors?',
-        answer:
-          'Yes. We offer pediatric physiotherapy and elderly rehabilitation, customized for age, comfort, and specific medical needs.',
+          'Book SIMS home physio by visting website  www.simshomehealthcare.ae or call us on 05225231028  to book an appointment and we will respond to you as soon as possible. Find comprehensive details on the website.',
       },
     ],
   },
@@ -4146,39 +4131,29 @@ export const MANUAL_OVERRIDES = {
     faqsTitle: 'IV Therapy at Home Frequently Asked Questions',
     faqs: [
       {
-        question: '1. What is IV Therapy at Home?',
+        question: '1. Is IV drip at home safe in Dubai?',
         answer:
-          'IV Therapy at Home is a mobile healthcare service where licensed nurses deliver IV drips at your location in Dubai. It provides hydration, vitamins, and wellness boosts without needing a clinic visit.',
+          'SIMS IV drips are administered by DHA-licensed nurses  — fully safe and monitored',
       },
       {
-        question: '2. What are the benefits of getting IV therapy at home?',
+        question: '2. What types of IV therapy does SIMS offer?',
         answer:
-          'It’s convenient, fast, private, and tailored to your schedule. No traffic, no waiting. Great for recovery, performance, energy, and hydration.',
+          'SIMS Home Healthcare offers hydration drips, vitamin and mineral infusions, energy-boosting IV therapy, immune support drips, and medically prescribed IV medication administration at home.',
       },
       {
-        question: '3. Who can benefit from this service?',
+        question: '3. How much is IV drip at home in Dubai?',
         answer:
-          '• Travelers with jet lag\n• People with low energy or fatigue\n• Clients with hangovers or flu symptoms\n• Athletes needing quick recovery\n• Professionals looking for a wellness boost',
+          'SIMS IV drip at home packages start from AED 249 all-inclusive.',
       },
       {
-        question: '4. Are the nurses certified?',
+        question: '4. Who can benefit from home IV therapy?',
         answer:
-          'Yes. All our nurses are DHA-licensed and trained in IV administration using sterile, pharmacy-approved fluids.',
+          'Home IV therapy is beneficial for people who are dehydrated, fatigued, recovering from illness or a hangover, or who need vitamin supplementation, as well as patients requiring prescribed IV medication for ongoing treatment.',
       },
       {
-        question: '5. How soon can you arrive?',
+        question: '5. How long does an IV therapy session take?',
         answer:
-          'We usually reach your location within 30 to 60 minutes, depending on where in Dubai you are.',
-      },
-      {
-        question: '6. Is IV therapy safe?',
-        answer:
-          'Absolutely. We use hospital-grade drips, sterile equipment, and personalized care plans reviewed by a physician if needed.',
-      },
-      {
-        question: '7. Do you operate 24/7?',
-        answer:
-          'Yes! Our IV drip service is available 24 hours a day, 7 days a week—including weekends and holidays.',
+          'An IV therapy session typically takes 30 to 60 minutes, depending on the type of infusion, and is performed in the comfort of your home, hotel, or office.',
       },
     ],
   },
@@ -4369,32 +4344,24 @@ export const MANUAL_OVERRIDES = {
     faqsTitle: 'Doctor at Home - Frequently Asked Questions',
     faqs: [
       {
-        question: '1. What is the Doctor at Home service?',
+        question: '1. What conditions can a home doctor treat?',
         answer:
-          'A licensed doctor visits your location in Dubai for non-emergency care—just like a clinic, but more convenient.',
+          'A home doctor from SIMS Home Healthcare can treat fever, infections, flu, minor injuries, chronic disease follow-ups, post-surgery checkups, and general health concerns, with the option to refer patients to a specialist if needed.',
       },
       {
-        question: '2. How fast can a doctor arrive?',
-        answer: 'Usually within 30 to 60 minutes, depending on where in Dubai you are.',
+        question: '2.How long does it take for a doctor to arrive at home?',
+        answer: 'A doctor from SIMS Home Healthcare typically arrives at your home within 1 hour of booking, depending on your area of Dubai, with faster response for urgent cases.',
       },
       {
-        question: '3. What conditions can be treated at home?',
+        question: '3. Can a doctor prescribe medication during a home visit?',
         answer:
-          'We treat common illnesses, infections, pain, allergies, and offer medical advice, prescriptions, and assessments.',
+          "Yes, doctors from SIMS Home Healthcare can assess your condition, prescribe medication during the home visit, and arrange medicine delivery if required, so you don't need to visit a pharmacy separately.",
       },
       {
-        question: '4. Are your doctors licensed?',
+        question: '4. How much does a doctor at home visit cost in Dubai?',
         answer:
-          'Yes. All our doctors are DHA-certified and experienced in home-based patient care.',
-      },
-      {
-        question: '5. Can I book for a hotel or office visit?',
-        answer: 'Absolutely. We serve homes, hotels, and offices across Dubai.',
-      },
-      {
-        question: '6. Do you operate 24/7?',
-        answer: 'Yes, we are available round-the-clock—including holidays.',
-      },
+          'Home doctor consultation in Dubai starts from just AED 199 with SIMS Home Healthcare. The final cost may vary depending on any additional medical tests, treatments, or procedures required during your home visit.',
+      }
     ],
   },
   // 'pediatrician-at-home': {
@@ -4954,37 +4921,24 @@ export const MANUAL_OVERRIDES = {
     faqsTitle: 'Doctor at Hotel Frequently Asked Questions',
     faqs: [
       {
-        question: '1. What is the Doctor at Hotel service?',
+        question: '1. Does SIMS Home Healthcare provide doctor visits to hotels in Dubai?',
         answer:
-          'It’s an on-demand medical service where a licensed doctor visits your hotel room for in-person care and treatment.',
+          'Yes, SIMS Home Healthcare sends DHA-approved doctors directly to hotel rooms across Dubai, offering fast, private medical care for tourists, business travelers, and hotel guests without needing to leave the hotel.',
       },
       {
-        question: '2. Is the service available 24/7?',
+        question: '2. How quickly can a doctor reach my hotel?',
         answer:
-          'Yes, we operate 24/7 across all areas of Dubai, including weekends and public holidays.',
+          'A doctor from SIMS Home Healthcare can usually reach your hotel in Dubai within 30-45 Minutes of booking, with priority dispatch for urgent medical situations.',
       },
       {
-        question: '3. What medical conditions do you treat?',
+        question: '3. What common travel-related issues can a hotel doctor treat?',
         answer:
-          'We handle common illnesses, fatigue, infections, minor injuries, dehydration, and general consultations.',
+          'A hotel doctor from SIMS Home Healthcare can treat food poisoning, jet lag-related issues, dehydration, fever, allergic reactions, minor injuries, and general illness, with medication prescribed and delivered if needed.',
       },
       {
-        question: '4. Are your doctors licensed?',
+        question: '4. Do I need travel insurance to book a hotel doctor visit?',
         answer:
-          'Absolutely. All our physicians are DHA-certified and trained for home/hotel healthcare delivery.',
-      },
-      {
-        question: '5. How fast can the doctor arrive?',
-        answer:
-          'We typically reach your hotel within 30 to 60 minutes, depending on your location in Dubai.',
-      },
-      {
-        question: '6. Will I receive a prescription or medical certificate?',
-        answer: 'Yes. Prescriptions and sick notes can be issued after your consultation.',
-      },
-      {
-        question: '7. Is the service discreet?',
-        answer: 'Yes. All visits are conducted with full confidentiality and professionalism.',
+          'No, travel insurance is not required to book a hotel doctor visit with SIMS Home Healthcare, though guests with insurance may be able to claim reimbursement afterward depending on their provider.',
       },
     ],
   },

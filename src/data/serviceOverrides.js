@@ -1231,28 +1231,28 @@ export const DETAIL_OVERRIDES = {
     "faqsTitle": "STD Test at Home Frequently Asked Questions",
     "faqs": [
       {
-        "question": "1. What is an STD test at home service in Dubai?",
-        "answer": "It is a convenient, private healthcare service where DHA-certified professionals collect samples at your location, eliminating the need to visit clinics or labs."
+        "question": "1. What STD tests are available at home?",
+        "answer": "SIMS Home Healthcare offers home testing for common STDs including HIV, chlamydia, gonorrhea, syphilis, herpes, and hepatitis B and C, with specific panels available depending on your requirements."
       },
       {
-        "question": "2. Which STDs can be tested at home?",
-        "answer": "We offer tests for HIV, syphilis, chlamydia, gonorrhea, herpes, HPV, and more, including full STD screening panels."
+        "question": "2. Is home STD testing confidential and private?",
+        "answer": "Yes, SIMS Home Healthcare ensures complete confidentiality for STD testing, with discreet sample collection at home and results shared privately and securely with the patient only."
       },
       {
-        "question": "3. How private is the testing process?",
-        "answer": "Your privacy is strictly protected at every stage, from booking to sample collection and digital delivery of results."
+        "question": "3. How long does it take to get STD test results?",
+        "answer": "STD test results  are typically available within 24 to 72 hours, depending on the specific test, with results communicated privately and securely."
       },
       {
-        "question": "4. How soon will I get my test results?",
-        "answer": "Results are typically delivered securely within 12 to 24 hours after sample collection."
+        "question": "4. How much does STD testing at home cost?",
+        "answer": "The cost of STD testing depends on the number and type of tests required. Contact SIMS Home Healthcare directly for current pricing on individual tests or full STD panels."
       },
       {
-        "question": "5. Can I book STD testing at my hotel or office in Dubai?",
-        "answer": "Yes, our service is available at any convenient location including homes, hotels, and workplaces."
+        "question": "5. Is a doctor consultation included with STD testing?",
+        "answer": "Yes, SIMS Home Healthcare can arrange a doctor consultation to discuss your results, explain next steps, and provide treatment or referral if a test comes back positive."
       },
       {
-        "question": "6. Is the home STD test service safe and reliable?",
-        "answer": "Absolutely. We follow strict hygiene protocols, and all samples are processed in DHA-approved labs with certified accuracy."
+        "question": "6. Is home STD testing confidential and private?",
+        "answer": "Yes, SIMS Home Healthcare ensures complete confidentiality for STD testing, with discreet sample collection at home and results shared privately and securely with the patient only"
       }
     ]
   },
