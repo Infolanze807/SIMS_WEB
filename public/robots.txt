@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.simshomehealthcare.ae/sitemap.xml
+
+# LLM-friendly site index
+# https://www.simshomehealthcare.ae/llms.txt
