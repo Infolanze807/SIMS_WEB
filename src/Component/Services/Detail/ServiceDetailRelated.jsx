@@ -69,7 +69,7 @@ const ServiceDetailRelated = ({
                       {item.title}
                     </h3>
                     <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.14em] text-slate-500">
-                      DHA Certified · SIMS Healthcare
+                      DHA Certified · SIMS Home Healthcare
                     </p>
                   </div>
 

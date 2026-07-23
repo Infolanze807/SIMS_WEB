@@ -147,7 +147,7 @@ const ServiceDetailHero = ({ eyebrow, headline, subheadline, bullets = [], image
               >
                 <p className="text-base font-black text-brand-dark">{title}</p>
                 <p className="mt-0.5 text-[10px] font-bold uppercase tracking-widest text-slate-500">
-                  DHA Certified · SIMS Healthcare
+                  DHA Certified · SIMS Home Healthcare
                 </p>
               </motion.div>
 

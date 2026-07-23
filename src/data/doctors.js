@@ -12,7 +12,7 @@ export const DOCTORS = [
     experience: '12+ Years',
     languages: ['English', 'Arabic'],
     image: staff01,
-    bio: 'Expert Senior Physiotherapy dedicated to active aging, safe movement, and personalized care.',
+    bio: 'Expert Senior Physiotherapist dedicated to active aging, safe movement, and personalized care.',
     dhaLicense: '11035623-003',
     rating: '4.9',
     reviewsCount: 142,
@@ -31,7 +31,7 @@ export const DOCTORS = [
   },
   {
     id: 'sayeda-marsha',
-    name: 'Sayeda Marsha',
+    name: 'Dr.Syeda Marsha Noor',
     specialty: 'General Practitioner',
     experience: '8+ Years',
     languages: ['English', 'Hindi', 'Urdu'],
@@ -44,7 +44,7 @@ export const DOCTORS = [
   {
     id: 'rina-rathod',
     name: 'Rina Rathod',
-    specialty: 'DHA Licenses Nurse',
+    specialty: 'DHA Licensed Nurse',
     experience: '15+ Years',
     languages: ['English', 'Arabic', 'French'],
     image: staff04,

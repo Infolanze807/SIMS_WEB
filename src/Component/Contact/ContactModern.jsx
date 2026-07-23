@@ -29,7 +29,7 @@ const ContactModern = () => {
           
           <div className="grid grid-cols-2 gap-6">
             {[
-              { label: 'Address', val: '207, AB Center , Sheikh Zayed Road,  Al Barsha First , Dubai' },
+              { label: 'Address', val: 'AB Center - 207 Sheikh Zayed Rd - Al Barsha First - Al Barsha - Dubai' },
               { label: 'Contact', val: '+971525231028' },
               { label: 'Hours', val: '24/7 Available' },
               { label: 'Email', val: 'connect@simshealthcare.ae' }

@@ -43,7 +43,7 @@ const AboutHero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.25, duration: 0.7 }}
             >
-              Home Healthcare in Dubai – <span className="text-[#4fc3c0]">Trusted Care</span> Where You Live
+              SIMS Home Healthcare – <span className="text-[#4fc3c0]">Trusted Healthcare at </span> Home/Hotel/Office in Dubai
             </motion.h1>
           </div>
 
