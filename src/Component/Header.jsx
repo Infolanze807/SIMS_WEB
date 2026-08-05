@@ -108,10 +108,9 @@ const Header = () => {
             <NavLink
               to="/services"
               className={({ isActive }) =>
-                `inline-flex items-center gap-1.5 font-medium transition ${
-                  isActive || showServices
-                    ? 'text-brand-accent'
-                    : 'text-brand-dark hover:text-brand-accent'
+                `inline-flex items-center gap-1.5 font-medium transition ${isActive || showServices
+                  ? 'text-brand-accent'
+                  : 'text-brand-dark hover:text-brand-accent'
                 }`
               }
             >
@@ -143,53 +142,50 @@ const Header = () => {
                       </div>
 
                       <div className="">
-                      {HEADER_NAV_SERVICES.map((service) => {
-                        const isActive = activeService?.slug === service.slug;
-                        const hasChildren = service.children.length > 0;
+                        {HEADER_NAV_SERVICES.map((service) => {
+                          const isActive = activeService?.slug === service.slug;
+                          const hasChildren = service.children.length > 0;
 
-                        return (
-                          <div
-                            key={service.slug}
-                            role="button"
-                            tabIndex={0}
-                            onMouseEnter={() => setActiveService(service)}
-                            onClick={() => goToService(service.slug)}
-                            onKeyDown={(e) => {
-                              if (e.key === 'Enter' || e.key === ' ') {
-                                e.preventDefault();
-                                goToService(service.slug);
-                              }
-                            }}
-                            className={`group flex cursor-pointer items-center justify-between gap-3 border-b border-slate-100 px-5 py-4 text-left transition-all duration-200 last:border-b-0 ${
-                              isActive
-                                ? 'bg-gradient-to-r from-brand-dark via-brand-dark-mid to-brand-dark text-white'
-                                : 'bg-white text-brand-dark hover:bg-[#FAFBFD] hover:text-brand-accent'
-                            }`}
-                          >
-                            <span className="text-[15px] font-bold leading-snug tracking-tight">
-                              {service.title}
-                            </span>
-                            {hasChildren && (
-                              <span
-                                className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-lg text-xs transition-all duration-200 ${
-                                  isActive
-                                    ? 'bg-white/15 text-white'
-                                    : 'bg-brand-accent/10 text-brand-accent group-hover:bg-brand-accent group-hover:text-white'
+                          return (
+                            <div
+                              key={service.slug}
+                              role="button"
+                              tabIndex={0}
+                              onMouseEnter={() => setActiveService(service)}
+                              onClick={() => goToService(service.slug)}
+                              onKeyDown={(e) => {
+                                if (e.key === 'Enter' || e.key === ' ') {
+                                  e.preventDefault();
+                                  goToService(service.slug);
+                                }
+                              }}
+                              className={`group flex cursor-pointer items-center justify-between gap-3 border-b border-slate-100 px-5 py-4 text-left transition-all duration-200 last:border-b-0 ${isActive
+                                  ? 'bg-gradient-to-r from-brand-dark via-brand-dark-mid to-brand-dark text-white'
+                                  : 'bg-white text-brand-dark hover:bg-[#FAFBFD] hover:text-brand-accent'
                                 }`}
-                              >
-                                <FaPlus className="text-[10px]" />
+                            >
+                              <span className="text-[15px] font-bold leading-snug tracking-tight">
+                                {service.title}
                               </span>
-                            )}
-                            {!hasChildren && (
-                              <FaChevronRight
-                                className={`shrink-0 text-[10px] transition-all ${
-                                  isActive ? 'text-brand-accent-light' : 'text-slate-300 group-hover:text-brand-accent'
-                                }`}
-                              />
-                            )}
-                          </div>
-                        );
-                      })}
+                              {hasChildren && (
+                                <span
+                                  className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-lg text-xs transition-all duration-200 ${isActive
+                                      ? 'bg-white/15 text-white'
+                                      : 'bg-brand-accent/10 text-brand-accent group-hover:bg-brand-accent group-hover:text-white'
+                                    }`}
+                                >
+                                  <FaPlus className="text-[10px]" />
+                                </span>
+                              )}
+                              {!hasChildren && (
+                                <FaChevronRight
+                                  className={`shrink-0 text-[10px] transition-all ${isActive ? 'text-brand-accent-light' : 'text-slate-300 group-hover:text-brand-accent'
+                                    }`}
+                                />
+                              )}
+                            </div>
+                          );
+                        })}
                       </div>
                     </div>
 
@@ -241,7 +237,7 @@ const Header = () => {
 
         <div className="flex items-center gap-2 sm:gap-3">
           <a
-            href="+971525231028"
+            href="tel:+971525231028"
             className="hidden items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-brand-dark transition hover:border-brand-accent/30 hover:text-brand-accent sm:flex sm:px-4"
           >
             <FaPhoneAlt />
@@ -285,10 +281,9 @@ const Header = () => {
                   to="/"
                   onClick={closeMobileMenu}
                   className={({ isActive }) =>
-                    `rounded-xl px-4 py-3.5 text-base font-semibold transition ${
-                      isActive
-                        ? 'bg-brand-accent/10 text-brand-accent'
-                        : 'text-brand-dark hover:bg-slate-50 hover:text-brand-accent'
+                    `rounded-xl px-4 py-3.5 text-base font-semibold transition ${isActive
+                      ? 'bg-brand-accent/10 text-brand-accent'
+                      : 'text-brand-dark hover:bg-slate-50 hover:text-brand-accent'
                     }`
                   }
                 >
@@ -299,10 +294,9 @@ const Header = () => {
                   to="/about"
                   onClick={closeMobileMenu}
                   className={({ isActive }) =>
-                    `rounded-xl px-4 py-3.5 text-base font-semibold transition ${
-                      isActive
-                        ? 'bg-brand-accent/10 text-brand-accent'
-                        : 'text-brand-dark hover:bg-slate-50 hover:text-brand-accent'
+                    `rounded-xl px-4 py-3.5 text-base font-semibold transition ${isActive
+                      ? 'bg-brand-accent/10 text-brand-accent'
+                      : 'text-brand-dark hover:bg-slate-50 hover:text-brand-accent'
                     }`
                   }
                 >
@@ -313,11 +307,10 @@ const Header = () => {
                   <button
                     type="button"
                     onClick={() => setMobileServicesOpen((open) => !open)}
-                    className={`flex w-full items-center justify-between rounded-xl px-4 py-3.5 text-left text-base font-semibold transition ${
-                      mobileServicesOpen || location.pathname.startsWith('/services')
+                    className={`flex w-full items-center justify-between rounded-xl px-4 py-3.5 text-left text-base font-semibold transition ${mobileServicesOpen || location.pathname.startsWith('/services')
                         ? 'bg-brand-accent/10 text-brand-accent'
                         : 'text-brand-dark hover:bg-slate-50 hover:text-brand-accent'
-                    }`}
+                      }`}
                   >
                     Our Services
                     <FaChevronDown
@@ -339,10 +332,9 @@ const Header = () => {
                             to="/services"
                             onClick={closeMobileMenu}
                             className={({ isActive }) =>
-                              `block rounded-lg px-4 py-3 text-sm font-semibold transition ${
-                                isActive
-                                  ? 'text-brand-accent'
-                                  : 'text-brand-dark hover:bg-slate-50 hover:text-brand-accent'
+                              `block rounded-lg px-4 py-3 text-sm font-semibold transition ${isActive
+                                ? 'text-brand-accent'
+                                : 'text-brand-dark hover:bg-slate-50 hover:text-brand-accent'
                               }`
                             }
                           >
@@ -418,10 +410,9 @@ const Header = () => {
                   to="/contact"
                   onClick={closeMobileMenu}
                   className={({ isActive }) =>
-                    `rounded-xl px-4 py-3.5 text-base font-semibold transition ${
-                      isActive
-                        ? 'bg-brand-accent/10 text-brand-accent'
-                        : 'text-brand-dark hover:bg-slate-50 hover:text-brand-accent'
+                    `rounded-xl px-4 py-3.5 text-base font-semibold transition ${isActive
+                      ? 'bg-brand-accent/10 text-brand-accent'
+                      : 'text-brand-dark hover:bg-slate-50 hover:text-brand-accent'
                     }`
                   }
                 >
@@ -432,10 +423,9 @@ const Header = () => {
                   to="/blog"
                   onClick={closeMobileMenu}
                   className={({ isActive }) =>
-                    `rounded-xl px-4 py-3.5 text-base font-semibold transition ${
-                      isActive
-                        ? 'bg-brand-accent/10 text-brand-accent'
-                        : 'text-brand-dark hover:bg-slate-50 hover:text-brand-accent'
+                    `rounded-xl px-4 py-3.5 text-base font-semibold transition ${isActive
+                      ? 'bg-brand-accent/10 text-brand-accent'
+                      : 'text-brand-dark hover:bg-slate-50 hover:text-brand-accent'
                     }`
                   }
                 >
@@ -445,7 +435,7 @@ const Header = () => {
 
               <div className="mt-4 flex flex-col gap-2 border-t border-slate-100 pt-4 sm:hidden">
                 <a
-                  href="tel:0525231028"
+                  href="tel:+971525231028"
                   className="flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-brand-dark transition hover:border-brand-accent/30 hover:text-brand-accent"
                 >
                   <FaPhoneAlt />
