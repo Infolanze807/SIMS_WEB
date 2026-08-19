@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { FaPhoneAlt, FaCheckCircle, FaUserMd, FaHospitalUser, FaBuilding, FaUserClock, FaPaperPlane } from 'react-icons/fa';
 import AnimateInView, { fadeUp, slideFromLeft, slideFromRight, staggerContainer } from '../Services/AnimateInView';
 import WhoWeServe from '../../assets/WhoWeServe.png';
+import sendEmail from '../../utils/email';
 
 const SIMSBookingAndAudience = () => {
   const [formData, setFormData] = useState({
@@ -16,6 +17,49 @@ const SIMSBookingAndAudience = () => {
     concern: ''
   });
 
+  const [message, setMessage] = React.useState("");
+  const [loading, setLoading] = React.useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    try {
+      const result = await sendEmail("service", formData);
+
+      if (result.success) {
+        setMessage("Email sent successfully!");
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          gender: '',
+          age: '',
+          service: '',
+          time: '',
+          concern: ''
+        });
+      } else {
+        setMessage(result.message || "Failed to send email.");
+      }
+    } catch (error) {
+      setMessage(error.message || "Failed to send email.");
+    } finally {
+      setLoading(false);
+      setTimeout(() => {
+        setMessage("");
+      }, 10000);
+    }
+  };
+
+
   return (
     <div className="w-full font-sans antialiased text-slate-900 select-none">
       <section className="w-full bg-white py-24 px-6 lg:px-10 relative overflow-hidden">
@@ -23,7 +67,7 @@ const SIMSBookingAndAudience = () => {
         <div className="absolute -bottom-12 left-12 w-64 h-64 bg-[#003d4d]/5 rounded-full blur-2xl pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
-          
+
           <AnimateInView variants={slideFromLeft} className="space-y-8 lg:col-span-5 lg:sticky lg:top-12">
             <div className="space-y-3">
               <span className="text-xs font-black tracking-[0.2em] text-[#25b8a7] uppercase block">
@@ -48,7 +92,7 @@ const SIMSBookingAndAudience = () => {
               <h4 className="text-xs font-black text-[#003d4d] uppercase tracking-wider">
                 Quick Notes for Trust & Conversion:
               </h4>
-              
+
               <div className="space-y-3">
                 {[
                   'We respond within minutes of your request',
@@ -72,13 +116,16 @@ const SIMSBookingAndAudience = () => {
           </AnimateInView>
 
           <AnimateInView variants={slideFromRight} className="w-full rounded-[40px] border border-slate-100 bg-[#FAFBFD] p-8 shadow-[0_30px_60px_rgba(0,61,77,0.04)] sm:p-10 lg:col-span-7">
-            <form onSubmit={(e) => e.preventDefault()} className="space-y-6">
-              
+            <form onSubmit={handleSubmit} className="space-y-6">
+
               <div className="space-y-1.5">
                 <label className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Enter Name</label>
-                <input 
-                  type="text" 
-                  placeholder="Enter Your name" 
+                <input
+                  type="text"
+                  placeholder="Enter Your name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
                   className="w-full bg-white border border-slate-200/80 px-4 py-3.5 rounded-xl text-sm font-medium focus:outline-none focus:border-[#25b8a7] transition-colors shadow-sm"
                 />
               </div>
@@ -86,18 +133,25 @@ const SIMSBookingAndAudience = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div className="space-y-1.5">
                   <label className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Email *</label>
-                  <input 
-                    type="email" 
-                    placeholder="Enter Your Email Address" 
+                  <input
+                    type="email"
+                    placeholder="Enter Your Email Address"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
                     className="w-full bg-white border border-slate-200/80 px-4 py-3.5 rounded-xl text-sm font-medium focus:outline-none focus:border-[#25b8a7] transition-colors shadow-sm"
                     required
                   />
                 </div>
                 <div className="space-y-1.5">
                   <label className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Contact No.</label>
-                  <input 
-                    type="tel" 
-                    placeholder="Enter Your Contact Number" 
+                  <input
+                    type="tel"
+                    placeholder="Enter Your Contact Number"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
                     className="w-full bg-white border border-slate-200/80 px-4 py-3.5 rounded-xl text-sm font-medium focus:outline-none focus:border-[#25b8a7] transition-colors shadow-sm"
                   />
                 </div>
@@ -109,7 +163,7 @@ const SIMSBookingAndAudience = () => {
                   <div className="flex items-center gap-3">
                     {['Men', 'Female', 'Other'].map((g) => (
                       <label key={g} className="flex-1 bg-white border border-slate-200/80 px-3 py-3 rounded-xl flex items-center justify-center gap-2 text-xs font-bold text-slate-700 cursor-pointer shadow-sm hover:border-[#25b8a7]/50 transition-colors">
-                        <input type="radio" name="gender" value={g} className="accent-[#25b8a7]" />
+                        <input type="radio" name="gender" value={g} className="accent-[#25b8a7]" onChange={handleChange} />
                         <span>{g}</span>
                       </label>
                     ))}
@@ -117,9 +171,12 @@ const SIMSBookingAndAudience = () => {
                 </div>
                 <div className="sm:col-span-5 space-y-1.5">
                   <label className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Age</label>
-                  <input 
-                    type="number" 
-                    placeholder="Enter Your Age" 
+                  <input
+                    type="number"
+                    placeholder="Enter Your Age"
+                    name="age"
+                    value={formData.age}
+                    onChange={handleChange}
                     className="w-full bg-white border border-slate-200/80 px-4 py-3.5 rounded-xl text-sm font-medium focus:outline-none focus:border-[#25b8a7] transition-colors shadow-sm"
                   />
                 </div>
@@ -129,7 +186,12 @@ const SIMSBookingAndAudience = () => {
                 <div className="space-y-1.5">
                   <label className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Service Required</label>
                   <div className="relative">
-                    <select className="w-full bg-white border border-slate-200/80 px-4 py-3.5 rounded-xl text-sm font-medium focus:outline-none focus:border-[#25b8a7] transition-colors shadow-sm appearance-none cursor-pointer">
+                    <select
+                      name="service"
+                      value={formData.service}
+                      onChange={handleChange}
+                      className="w-full bg-white border border-slate-200/80 px-4 py-3.5 rounded-xl text-sm font-medium focus:outline-none focus:border-[#25b8a7] transition-colors shadow-sm appearance-none cursor-pointer"
+                    >
                       <option>Service Required</option>
                       <option>Doctor Consultation</option>
                       <option>Nursing Care</option>
@@ -145,7 +207,13 @@ const SIMSBookingAndAudience = () => {
                 <div className="space-y-1.5">
                   <label className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Preferred Time to Contact</label>
                   <div className="relative">
-                    <select className="w-full bg-white border border-slate-200/80 px-4 py-3.5 rounded-xl text-sm font-medium focus:outline-none focus:border-[#25b8a7] transition-colors shadow-sm appearance-none cursor-pointer">
+                    <select
+                      name="time"
+                      value={formData.time}
+                      onChange={handleChange}
+                      className="w-full bg-white border border-slate-200/80 px-4 py-3.5 rounded-xl text-sm font-medium focus:outline-none focus:border-[#25b8a7] transition-colors shadow-sm appearance-none cursor-pointer"
+                    >
+                      <option>Preferred Time to Contact</option>
                       <option>Morning</option>
                       <option>Afternoon</option>
                       <option>Evening</option>
@@ -157,9 +225,12 @@ const SIMSBookingAndAudience = () => {
 
               <div className="space-y-1.5">
                 <label className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Health Concern</label>
-                <textarea 
+                <textarea
                   rows="4"
-                  placeholder="Enter Your Health Concern in detail" 
+                  placeholder="Enter Your Health Concern in detail"
+                  name="concern"
+                  value={formData.concern}
+                  onChange={handleChange}
                   className="w-full bg-white border border-slate-200/80 p-4 rounded-xl text-sm font-medium focus:outline-none focus:border-[#25b8a7] transition-colors shadow-sm resize-none"
                 ></textarea>
               </div>
@@ -170,10 +241,14 @@ const SIMSBookingAndAudience = () => {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <span>Submit Request</span>
+                <span>{loading ? "Submitting..." : "Submit Request"}</span>
                 <FaPaperPlane className="text-[10px] transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
               </motion.button>
-
+              {message.includes("success") ? (
+                <p className="text-center pt-5 text-green-500">{message}</p>
+              ) : message ? (
+                <p className="text-center pt-5 text-red-500">{message}</p>
+              ) : null}
             </form>
           </AnimateInView>
 
@@ -185,7 +260,7 @@ const SIMSBookingAndAudience = () => {
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-black/20 rounded-full blur-2xl pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-          
+
           <AnimateInView variants={slideFromLeft} className="relative z-10 space-y-10 lg:col-span-6">
             <div className="space-y-4">
               <div className="space-y-2">
@@ -196,7 +271,7 @@ const SIMSBookingAndAudience = () => {
                   Who We Serve
                 </h3>
               </div>
-              
+
               <p className="text-xs sm:text-sm font-bold text-slate-300 italic tracking-wide">
                 We cater to a wide array of patients and clients, including:
               </p>
@@ -247,13 +322,13 @@ const SIMSBookingAndAudience = () => {
             <div className="absolute inset-0 bg-[radial-gradient(rgba(37,184,167,0.15)_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none rounded-[40px]"></div>
 
             <div className="relative w-full max-w-[440px] aspect-square rounded-[50px] overflow-hidden border border-white/10 shadow-[0_40px_80px_rgba(0,0,0,0.3)] bg-slate-900/40 group">
-              <img 
+              <img
                 src={WhoWeServe}
-                alt="SIMS Associated Professional Practitioners Group" 
+                alt="SIMS Associated Professional Practitioners Group"
                 className="w-full h-full object-cover scale-102 group-hover:scale-105 transition-transform duration-[1200ms] ease-out"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#002e3a] via-[#002e3a]/20 to-transparent"></div>
-              
+
               <div className="absolute bottom-6 right-6 h-14 w-14 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white text-xl shadow-lg pointer-events-none group-hover:bg-[#25b8a7] group-hover:text-white transition-all duration-500">
                 <span>+</span>
               </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import AnimateInView, { fadeUp, scaleIn, slideFromRight, staggerContainer } from '../Services/AnimateInView';
+import sendEmail from '../../utils/email';
 
 const CONTACT_ITEMS = [
   { title: 'Address', val: 'AB Center - 207 Sheikh Zayed Rd - Al Barsha First - Al Barsha - Dubai' },
@@ -10,6 +11,52 @@ const CONTACT_ITEMS = [
 ];
 
 const SimsHealthcarePage = () => {
+
+  const [formData, setFormData] = React.useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const [message, setMessage] = React.useState("");
+  const [loading, setLoading] = React.useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    try {
+      const result = await sendEmail("contact", formData);
+
+      if (result.success) {
+        setMessage("Email sent successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      } else {
+        setMessage(result.message || "Failed to send email.");
+      }
+    } catch (error) {
+      setMessage(error.message || "Failed to send email.");
+    } finally {
+      setLoading(false);
+      setTimeout(() => {
+        setMessage("");
+      }, 10000);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-[#FAFBFD] font-sans text-slate-900 selection:bg-cyan-200">
       <main className="mx-auto max-w-7xl px-6 py-20">
@@ -52,22 +99,34 @@ const SimsHealthcarePage = () => {
                 Need emergency?
               </p>
               <h3 className="mb-8 text-center text-3xl font-bold">Drop Us a Line</h3>
-              <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+              <form className="space-y-4" onSubmit={handleSubmit}>
                 <input
                   className="w-full rounded-xl bg-white p-4 text-slate-900 outline-none"
                   placeholder="Enter Your Full Name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
                 />
                 <input
                   className="w-full rounded-xl bg-white p-4 text-slate-900 outline-none"
                   placeholder="Enter Your email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                 />
                 <input
                   className="w-full rounded-xl bg-white p-4 text-slate-900 outline-none"
                   placeholder="Enter Your Phone number"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
                 />
                 <textarea
                   className="h-32 w-full rounded-xl bg-white p-4 text-slate-900 outline-none"
                   placeholder="Health Concern / Message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                 />
                 <motion.button
                   type="submit"
@@ -75,10 +134,16 @@ const SimsHealthcarePage = () => {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  Submit Now
+                  {loading ? "Submitting..." : "Submit Now"}
                 </motion.button>
+                {message.includes("success") ? (
+                  <p className="text-center pt-5 text-green-500">{message}</p>
+                ) : message.includes("error") ? (
+                  <p className="text-center pt-5 text-red-500">{message}</p>
+                ) : null}
               </form>
             </div>
+
           </AnimateInView>
         </div>
 
