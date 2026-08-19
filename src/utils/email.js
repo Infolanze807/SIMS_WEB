@@ -14,12 +14,12 @@ const sendEmail = async (type, data) => {
       templateParams = {
         name: data.name,
         email: data.email,
-        contact: data.contact,
+        contact: data.phone,
         gender: data.gender,
         age: data.age,
         service: data.service,
-        preferred_time: data.preferredTime,
-        health_concern: data.healthConcern,
+        preferred_time: data.time,
+        health_concern: data.concern,
       };
     }
 
