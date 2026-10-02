@@ -25,26 +25,46 @@ const ServiceDetailSteps = ({ title, subtitle, steps = [] }) => {
               {title}
             </h2>
           </div>
-          <p className="text-sm leading-relaxed text-slate-500 lg:col-span-5">
-            {subtitle ||
-              'Book in minutes. Our DHA-certified team arrives at your location across Dubai — fast, private, and professional.'}
-          </p>
+          {subtitle !== '' && (
+            <p className="text-sm leading-relaxed text-slate-500 lg:col-span-5">
+              {subtitle ||
+                'Book in minutes. Our DHA-certified team arrives at your location across Dubai — fast, private, and professional.'}
+            </p>
+          )}
         </AnimateInView>
 
         <motion.div
-          className="relative grid grid-cols-1 gap-8 md:grid-cols-3"
+          className={`relative grid grid-cols-1 gap-8 ${
+            steps.length === 4
+              ? 'sm:grid-cols-2 xl:grid-cols-4'
+              : steps.length === 5
+                ? 'sm:grid-cols-2 lg:grid-cols-6'
+                : 'md:grid-cols-3'
+          }`}
           variants={staggerContainer}
           initial="hidden"
           animate="visible"
         >
-          <div className="absolute left-[16%] right-[16%] top-20 hidden h-px bg-gradient-to-r from-transparent via-brand-accent/40 to-transparent md:block" />
+          {steps.length === 3 && (
+            <div className="absolute left-[16%] right-[16%] top-20 hidden h-px bg-gradient-to-r from-transparent via-brand-accent/40 to-transparent md:block" />
+          )}
 
-          {steps.map((item, i) => (
+          {steps.map((item, i) => {
+            const spanClass =
+              steps.length !== 5
+                ? ''
+                : i < 3
+                  ? 'lg:col-span-2'
+                  : i === steps.length - 1
+                    ? 'sm:col-span-2 lg:col-span-3'
+                    : 'lg:col-span-3';
+
+            return (
             <motion.div
               key={`${item.title}-${i}`}
               variants={fadeUp}
               whileHover={{ y: -6 }}
-              className="group relative space-y-5 overflow-hidden rounded-[32px] border border-slate-100 bg-white p-8 transition-all duration-500 hover:shadow-[0_25px_50px_rgba(0,61,77,0.08)]"
+              className={`group relative space-y-5 overflow-hidden rounded-[32px] border border-slate-100 bg-white p-8 transition-all duration-500 hover:shadow-[0_25px_50px_rgba(0,61,77,0.08)] ${spanClass}`}
             >
               <div
                 className={`absolute left-8 right-8 top-0 h-1 rounded-b-full bg-gradient-to-r ${ACCENTS[i % ACCENTS.length]}`}
@@ -73,7 +93,8 @@ const ServiceDetailSteps = ({ title, subtitle, steps = [] }) => {
                 </ul>
               )}
             </motion.div>
-          ))}
+            );
+          })}
         </motion.div>
       </div>
     </section>

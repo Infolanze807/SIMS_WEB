@@ -12,13 +12,13 @@ import AnimateInView, { fadeUp, staggerContainer } from '../AnimateInView';
 
 const ICONS = [FaClock, FaHome, FaUserMd, FaShieldAlt, FaHeartbeat, FaCheckCircle];
 
-const ServiceDetailReasons = ({ title, subtitle, reasons = [] }) => {
+const ServiceDetailReasons = ({ title, subtitle, reasons = [], eyebrow = 'Why Choose SIMS' }) => {
   const gridClass =
-    reasons.length >= 6
-      ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'
-      : reasons.length === 5
-        ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'
-        : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4';
+    reasons.length === 4
+      ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4'
+      : reasons.length === 3
+        ? 'grid-cols-1 md:grid-cols-3'
+        : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3';
 
   return (
     <section className="relative w-full overflow-hidden bg-[#FAFBFD] px-6 py-24 font-sans antialiased lg:px-10">
@@ -26,9 +26,11 @@ const ServiceDetailReasons = ({ title, subtitle, reasons = [] }) => {
 
       <div className="relative z-10 mx-auto max-w-7xl space-y-14">
         <AnimateInView animateOnMount className="mx-auto max-w-3xl space-y-3 text-center">
-          <span className="inline-flex items-center gap-2 rounded-full bg-brand-accent/10 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-brand-accent">
-            Why Choose SIMS
-          </span>
+          {eyebrow ? (
+            <span className="inline-flex items-center gap-2 rounded-full bg-brand-accent/10 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-brand-accent">
+              {eyebrow}
+            </span>
+          ) : null}
           <h2 className="text-3xl font-black leading-tight tracking-tight text-brand-dark sm:text-4xl">
             {title}
           </h2>
@@ -61,7 +63,9 @@ const ServiceDetailReasons = ({ title, subtitle, reasons = [] }) => {
                   </span>
                 </div>
                 <h3 className="text-base font-bold leading-snug text-brand-dark">{item.title}</h3>
-                <p className="text-sm leading-relaxed text-slate-500">{item.description}</p>
+                {item.description ? (
+                  <p className="text-sm leading-relaxed text-slate-500">{item.description}</p>
+                ) : null}
               </motion.div>
             );
           })}

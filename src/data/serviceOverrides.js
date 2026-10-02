@@ -474,6 +474,27 @@ export const DETAIL_OVERRIDES = {
       "Elderly guests",
       "Children requiring medical attention"
     ],
+    "visitExpect": {
+      "title": "What to Expect During Your Home Visit",
+      "phases": [
+        {
+          "title": "Before the visit",
+          "description": "Confirm your address and let us know your main concern so the doctor arrives prepared with the right equipment."
+        },
+        {
+          "title": "During the visit",
+          "description": "The doctor reviews your medical history, performs a physical examination, and discusses your symptoms or condition in detail — with more time than a typical clinic appointment allows."
+        },
+        {
+          "title": "After the visit",
+          "description": "You'll receive a written summary, any prescriptions, and clear next steps — including whether a follow-up visit or lab test is recommended."
+        }
+      ]
+    },
+    "familiesServed": {
+      "title": "Serving Families Across Dubai",
+      "description": "Our home visit doctors regularly serve families in Downtown Dubai, Dubai Marina, Al Barsha, Nad Al Sheba, Mizhar, Al Warqa, Arabian Ranches, Damac Hills and across the city."
+    },
     "exploreTitle": "Explore more of our home health offerings:",
     "exploreServices": [
       {
@@ -533,28 +554,16 @@ export const DETAIL_OVERRIDES = {
     "faqsTitle": "Home Visit Doctor - Frequently Asked Questions",
     "faqs": [
       {
-        "question": "1. What is the Home Visit Doctor service?",
-        "answer": "A licensed doctor visits your home in Dubai for non-emergency care—just like a clinic, but more convenient."
+        "question": "1. What's the difference between a home visit doctor and an urgent doctor at home?",
+        "answer": "A home visit doctor visit can be scheduled in advance for routine or planned care, while our urgent doctor-at-home service is for same-time, on-demand medical needs."
       },
       {
-        "question": "2. How fast can a doctor arrive?",
-        "answer": "Usually within 30 to 60 minutes, depending on where in Dubai you are."
+        "question": "2. Can the doctor issue medical certificates or fitness reports during a scheduled visit?",
+        "answer": "Yes, our doctors can issue medical certificates, sick notes, and travel fitness certificates as part of a scheduled visit."
       },
       {
-        "question": "3. What conditions can be treated at home?",
-        "answer": "We treat common illnesses, infections, pain, allergies, and offer medical advice, prescriptions, and assessments."
-      },
-      {
-        "question": "4. Are your doctors licensed?",
-        "answer": "Yes. All our doctors are DHA-certified and experienced in home-based patient care."
-      },
-      {
-        "question": "5. Can I book for a hotel or office visit?",
-        "answer": "Absolutely. We serve homes, hotels, and offices across Dubai."
-      },
-      {
-        "question": "6. Do you operate 24/7?",
-        "answer": "Yes, we are available round-the-clock—including holidays."
+        "question": "3. Is a home visit doctor suitable for managing a chronic condition long-term?",
+        "answer": "Yes — many patients use scheduled home visits for ongoing management of diabetes, hypertension, and other chronic conditions, with regular monitoring and medication review."
       }
     ]
   },

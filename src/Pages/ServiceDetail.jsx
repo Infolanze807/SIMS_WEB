@@ -8,6 +8,9 @@ import ServiceDetailIntro from '../Component/Services/Detail/ServiceDetailIntro'
 import ServiceDetailReasons from '../Component/Services/Detail/ServiceDetailReasons';
 import ServiceDetailSteps from '../Component/Services/Detail/ServiceDetailSteps';
 import ServiceDetailCoverage from '../Component/Services/Detail/ServiceDetailCoverage';
+import ServiceDetailCoverAreas from '../Component/Services/Detail/ServiceDetailCoverAreas';
+import ServiceDetailVisitExpect from '../Component/Services/Detail/ServiceDetailVisitExpect';
+import ServiceDetailFamilies from '../Component/Services/Detail/ServiceDetailFamilies';
 import ServiceDetailRelated from '../Component/Services/Detail/ServiceDetailRelated';
 import ServiceDetailTestimonials from '../Component/Services/Detail/ServiceDetailTestimonials';
 import ServiceDetailFAQs from '../Component/Services/Detail/ServiceDetailFAQs';
@@ -57,14 +60,18 @@ const ServiceDetail = () => {
         title={detail.reasonsTitle}
         subtitle={detail.reasonsSubtitle}
         reasons={detail.reasons}
+        eyebrow={detail.reasonsEyebrow}
       />
       <ServiceDetailSteps title={detail.stepsTitle} subtitle={detail.stepsSubtitle} steps={detail.steps} />
+      {detail.visitExpect && <ServiceDetailVisitExpect {...detail.visitExpect} />}
       <ServiceDetailCoverage
         title={detail.coverageTitle}
         intro={detail.coverageIntro}
         items={detail.coverage}
         idealFor={detail.idealFor}
       />
+      {detail.coverAreas && <ServiceDetailCoverAreas {...detail.coverAreas} />}
+      {detail.familiesServed && <ServiceDetailFamilies {...detail.familiesServed} />}
       <ServiceDetailRelated
         title={detail.exploreTitle}
         items={detail.exploreServices}
