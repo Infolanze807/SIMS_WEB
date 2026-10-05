@@ -2127,11 +2127,21 @@ export const MANUAL_OVERRIDES = {
         description: 'Progress is tracked and adjusted each session.',
       },
     ],
-    familiesServed: {
-      eyebrow: '',
+    coverAreas: {
       title: 'Areas We Cover',
-      description:
-        'We provide home physiotherapy across Dubai, including Downtown Dubai, Dubai Marina, JBR, Business Bay, Palm Jumeirah, Jumeirah 1, 2, 3, Al Barsha, Arabian Ranches, Damac Hills, and across the city.',
+      intro:
+        'We provide home physiotherapy across Dubai, including these neighbourhoods and across the city.',
+      areas: [
+        { title: 'Downtown Dubai', description: 'Home physiotherapy for residents and visitors in Downtown.' },
+        { title: 'Dubai Marina', description: 'Sessions at home along Dubai Marina.' },
+        { title: 'JBR', description: 'Physiotherapy at Jumeirah Beach Residence apartments and hotels.' },
+        { title: 'Business Bay', description: 'Home visits for residents and hotel guests in Business Bay.' },
+        { title: 'Palm Jumeirah', description: 'Beachfront homes, resorts, and hotel apartments on the Palm.' },
+        { title: 'Jumeirah 1, 2, 3', description: 'Home physiotherapy along Jumeirah 1, Jumeirah 2, and Jumeirah 3.' },
+        { title: 'Al Barsha', description: 'Physiotherapy at home in Al Barsha and along Sheikh Zayed Road.' },
+        { title: 'Arabian Ranches', description: 'Home sessions for families in Arabian Ranches.' },
+        { title: 'Damac Hills', description: 'Physiotherapy at home in Damac Hills.' },
+      ],
     },
     coverageTitle: 'Physiotherapy at Home',
     coverageIntro:
@@ -4149,6 +4159,31 @@ export const MANUAL_OVERRIDES = {
         answer:
           'We accept cash, card, and Amex link payments — whichever is easiest for you.',
       },
+      {
+        question: '6. Is IV drip at home safe in Dubai?',
+        answer:
+          'SIMS IV drips are administered by DHA-licensed nurses  — fully safe and monitored',
+      },
+      {
+        question: '7. What types of IV therapy does SIMS offer?',
+        answer:
+          'SIMS Home Healthcare offers hydration drips, vitamin and mineral infusions, energy-boosting IV therapy, immune support drips, and medically prescribed IV medication administration at home.',
+      },
+      {
+        question: '8. How much is IV drip at home in Dubai?',
+        answer:
+          'SIMS IV drip at home packages start from AED 249 all-inclusive.',
+      },
+      {
+        question: '9. Who can benefit from home IV therapy?',
+        answer:
+          'Home IV therapy is beneficial for people who are dehydrated, fatigued, recovering from illness or a hangover, or who need vitamin supplementation, as well as patients requiring prescribed IV medication for ongoing treatment.',
+      },
+      {
+        question: '10. How long does an IV therapy session take?',
+        answer:
+          'An IV therapy session typically takes 30 to 60 minutes, depending on the type of infusion, and is performed in the comfort of your home, hotel, or office.',
+      },
     ],
   },
   'doctor-at-home': {
@@ -4354,6 +4389,26 @@ export const MANUAL_OVERRIDES = {
         answer:
           'Yes, our doctors travel with sterile, fully equipped medical kits for diagnosis and on-the-spot treatment.',
       },
+      {
+        question: '5. What conditions can a home doctor treat?',
+        answer:
+          'A home doctor from SIMS Home Healthcare can treat fever, infections, flu, minor injuries, chronic disease follow-ups, post-surgery checkups, and general health concerns, with the option to refer patients to a specialist if needed.',
+      },
+      {
+        question: '6. How long does it take for a doctor to arrive at home?',
+        answer: 'A doctor from SIMS Home Healthcare typically arrives at your home within 1 hour of booking, depending on your area of Dubai, with faster response for urgent cases.',
+
+      },
+      {
+        question: '7. Can a doctor prescribe medication during a home visit?',
+        answer:
+          "Yes, doctors from SIMS Home Healthcare can assess your condition, prescribe medication during the home visit, and arrange medicine delivery if required, so you don't need to visit a pharmacy separately.",
+      },
+      {
+        question: '8. How much does a doctor at home visit cost in Dubai?',
+        answer:
+          'Home doctor consultation in Dubai starts from just AED 199 with SIMS Home Healthcare. The final cost may vary depending on any additional medical tests, treatments, or procedures required during your home visit.',
+      }
     ],
   },
   // 'pediatrician-at-home': {
@@ -4961,6 +5016,26 @@ export const MANUAL_OVERRIDES = {
         question: '3. Can you treat food poisoning or travel sickness?',
         answer:
           'Yes, our doctors regularly treat food poisoning, travel sickness, dehydration, and other common travel-related illnesses.',
+      },
+      {
+        question: '4. Does SIMS Home Healthcare provide doctor visits to hotels in Dubai?',
+        answer:
+          'Yes, SIMS Home Healthcare sends DHA-approved doctors directly to hotel rooms across Dubai, offering fast, private medical care for tourists, business travelers, and hotel guests without needing to leave the hotel.',
+      },
+      {
+        question: '5. How quickly can a doctor reach my hotel?',
+        answer:
+          'A doctor from SIMS Home Healthcare can usually reach your hotel in Dubai within 30-45 Minutes of booking, with priority dispatch for urgent medical situations.',
+      },
+      {
+        question: '6. What common travel-related issues can a hotel doctor treat?',
+        answer:
+          'A hotel doctor from SIMS Home Healthcare can treat food poisoning, jet lag-related issues, dehydration, fever, allergic reactions, minor injuries, and general illness, with medication prescribed and delivered if needed.',
+      },
+      {
+        question: '7. Do I need travel insurance to book a hotel doctor visit?',
+        answer:
+          'No, travel insurance is not required to book a hotel doctor visit with SIMS Home Healthcare, though guests with insurance may be able to claim reimbursement afterward depending on their provider.',
       },
     ],
   },

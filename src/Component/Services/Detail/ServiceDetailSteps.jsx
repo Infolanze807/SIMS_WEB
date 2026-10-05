@@ -12,10 +12,8 @@ const ServiceDetailSteps = ({ title, subtitle, steps = [] }) => {
   if (!steps.length) return null;
 
   return (
-    <section className="relative w-full overflow-hidden bg-[#FAFBFD] px-6 py-24 font-sans antialiased lg:px-10">
-      <div className="pointer-events-none absolute right-0 top-0 h-96 w-96 rounded-full bg-brand-accent/5 blur-3xl" />
-
-      <div className="relative z-10 mx-auto max-w-7xl space-y-14">
+    <section className="w-full bg-white px-6 py-24 font-sans antialiased lg:px-10">
+      <div className="mx-auto max-w-7xl space-y-14">
         <AnimateInView animateOnMount className="grid items-end gap-6 border-b border-slate-200/80 pb-10 lg:grid-cols-12">
           <div className="space-y-3 lg:col-span-7">
             <span className="inline-flex items-center gap-2 rounded-full bg-brand-accent/10 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-brand-accent">
@@ -64,7 +62,7 @@ const ServiceDetailSteps = ({ title, subtitle, steps = [] }) => {
               key={`${item.title}-${i}`}
               variants={fadeUp}
               whileHover={{ y: -6 }}
-              className={`group relative space-y-5 overflow-hidden rounded-[32px] border border-slate-100 bg-white p-8 transition-all duration-500 hover:shadow-[0_25px_50px_rgba(0,61,77,0.08)] ${spanClass}`}
+              className={`group relative space-y-5 overflow-hidden rounded-[32px] border border-slate-100 bg-[#FAFBFD] p-8 transition-all duration-500 hover:bg-white hover:shadow-[0_25px_50px_rgba(0,61,77,0.08)] ${spanClass}`}
             >
               <div
                 className={`absolute left-8 right-8 top-0 h-1 rounded-b-full bg-gradient-to-r ${ACCENTS[i % ACCENTS.length]}`}

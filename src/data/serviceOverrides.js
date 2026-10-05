@@ -491,9 +491,19 @@ export const DETAIL_OVERRIDES = {
         }
       ]
     },
-    "familiesServed": {
+    "coverAreas": {
       "title": "Serving Families Across Dubai",
-      "description": "Our home visit doctors regularly serve families in Downtown Dubai, Dubai Marina, Al Barsha, Nad Al Sheba, Mizhar, Al Warqa, Arabian Ranches, Damac Hills and across the city."
+      "intro": "Our home visit doctors regularly serve families in these Dubai neighbourhoods, and across the city.",
+      "areas": [
+        { "title": "Downtown Dubai", "description": "Scheduled home visits for families living in Downtown Dubai." },
+        { "title": "Dubai Marina", "description": "Doctor visits at homes and apartments in Dubai Marina." },
+        { "title": "Al Barsha", "description": "Home doctor visits in Al Barsha and nearby Sheikh Zayed Road communities." },
+        { "title": "Nad Al Sheba", "description": "Family doctor visits at home in Nad Al Sheba." },
+        { "title": "Mizhar", "description": "Home visits for families in Mizhar." },
+        { "title": "Al Warqa", "description": "Doctor visits at home in Al Warqa." },
+        { "title": "Arabian Ranches", "description": "Home doctor visits for families in Arabian Ranches." },
+        { "title": "Damac Hills", "description": "Scheduled visits for families in Damac Hills." }
+      ]
     },
     "exploreTitle": "Explore more of our home health offerings:",
     "exploreServices": [
@@ -4715,7 +4725,31 @@ export const DETAIL_OVERRIDES = {
       {
         "question": "6. Is follow-up support available?",
         "answer": "Yes. We offer doctor consultations and can guide you on treatment options or further care if needed."
-      }
+      },
+      {
+        "question": "7. What is the Home Visit Doctor service?",
+        "answer": "A licensed doctor visits your home in Dubai for non-emergency care—just like a clinic, but more convenient."
+      },
+      {
+        "question": "8. How fast can a doctor arrive?",
+        "answer": "Usually within 30 to 60 minutes, depending on where in Dubai you are."
+      },
+      {
+        "question": "9. What conditions can be treated at home?",
+        "answer": "We treat common illnesses, infections, pain, allergies, and offer medical advice, prescriptions, and assessments."
+      },
+      {
+        "question": "10. Are your doctors licensed?",
+        "answer": "Yes. All our doctors are DHA-certified and experienced in home-based patient care."
+      },
+      {
+        "question": "11. Can I book for a hotel or office visit?",
+        "answer": "Absolutely. We serve homes, hotels, and offices across Dubai."
+      },
+      {
+        "question": "12. Do you operate 24/7?",
+        "answer": "Yes, we are available round-the-clock—including holidays."
+      },
     ]
   }
 };

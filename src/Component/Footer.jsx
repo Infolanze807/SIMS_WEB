@@ -40,6 +40,23 @@ const serviceTags = HEADER_NAV_SERVICES.slice(0, 8).map((s) => ({
   slug: s.slug,
 }));
 
+const areasCovered = [
+  'Downtown Dubai',
+  'Business Bay',
+  'Dubai Marina & JBR',
+  'Palm Jumeirah',
+  'Jumeirah',
+  'Umm Suqeim',
+  'Deira & Bur Dubai',
+  'Al Barsha & Sheikh Zayed Road',
+  'Dubai World Trade Centre',
+  'Nad Al Sheba',
+  'Mizhar',
+  'Al Warqa',
+  'Arabian Ranches',
+  'Damac Hills',
+];
+
 const FooterLink = ({ to, children, className = '' }) => (
   <NavLink
     to={to}
@@ -252,6 +269,23 @@ const Footer = () => {
                 </a>
               </div>
             </div>
+          </div>
+
+          <div className="mt-14 border-t border-white/10 pt-10">
+            <p className="mb-5 text-[10px] font-black uppercase tracking-[0.2em] text-brand-accent-light">
+              Areas We Cover
+            </p>
+            <ul className="flex flex-wrap gap-2">
+              {areasCovered.map((area) => (
+                <li
+                  key={area}
+                  className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-white/80"
+                >
+                  <FaMapMarkerAlt className="text-[10px] text-brand-accent-light" />
+                  {area}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
