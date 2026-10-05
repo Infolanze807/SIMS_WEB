@@ -15,6 +15,8 @@ import ServiceDetailRelated from '../Component/Services/Detail/ServiceDetailRela
 import ServiceDetailTestimonials from '../Component/Services/Detail/ServiceDetailTestimonials';
 import ServiceDetailFAQs from '../Component/Services/Detail/ServiceDetailFAQs';
 import ServiceDetailCTA from '../Component/Services/Detail/ServiceDetailCTA';
+import Seo from '../Component/Seo';
+import { clipText, servicePageJsonLd, SITE_NAME } from '../seo/site';
 
 const ServiceDetail = () => {
   const { slug } = useParams();
@@ -51,9 +53,23 @@ const ServiceDetail = () => {
   }
 
   const related = getRelatedServices(detail.relatedSlugs);
+  const description = clipText(
+    detail.intro?.paragraphs?.[0] || detail.hero?.subheadline || detail.title,
+  );
 
   return (
     <div key={detail.slug} className="font-sans antialiased">
+      <Seo
+        title={`${detail.title} | ${SITE_NAME}`}
+        description={description}
+        path={`/services/${detail.slug}`}
+        jsonLd={servicePageJsonLd({
+          name: detail.title,
+          description,
+          path: `/services/${detail.slug}`,
+          faqs: detail.faqs,
+        })}
+      />
       <ServiceDetailHero {...detail.hero} title={detail.title} image={detail.image} />
       <ServiceDetailIntro {...detail.intro} />
       <ServiceDetailReasons

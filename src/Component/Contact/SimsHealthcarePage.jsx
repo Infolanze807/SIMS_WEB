@@ -150,10 +150,12 @@ const SimsHealthcarePage = () => {
         <AnimateInView variants={scaleIn} className="mt-20">
           <div className="h-[400px] overflow-hidden rounded-[2.5rem] border-4 border-white shadow-2xl">
             <iframe
-              title="Location"
-              src="https://www.google.com/maps?q=25.1055,55.1957&z=15&output=embed"
+              title="SIMS Home Healthcare location"
+              src="https://www.google.com/maps?q=AB+Center+207+Sheikh+Zayed+Rd+Al+Barsha+First+Dubai&z=16&output=embed"
               width="100%"
               height="100%"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
               style={{ border: 0 }}
             />
           </div>

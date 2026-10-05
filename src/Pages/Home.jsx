@@ -1,4 +1,6 @@
 import React from 'react'
+import Seo from '../Component/Seo'
+import { HOME_DESCRIPTION, HOME_TITLE, homepageJsonLd } from '../seo/site'
 import HomeMain from '../Component/Home/HomeMain'
 import HealthcareHeroSection from '../Component/Home/HealthcareHeroSection'
 import BookingSteps from '../Component/Home/BookingSteps'
@@ -13,10 +15,12 @@ import SIMSBookingAndAudience from '../Component/Home/SIMSBookingAndAudience'
 import PatientTestimonials from '../Component/Home/PatientTestimonials'
 import NewsAndBlog from '../Component/Home/NewsAndBlog'
 import ModernFAQs from '../Component/Home/ModernFAQs'
+import HomeLocation from '../Component/Home/HomeLocation'
 
 const Home = () => {
   return (
     <div>
+        <Seo title={HOME_TITLE} description={HOME_DESCRIPTION} path="/" jsonLd={homepageJsonLd()} />
         {/* <HomeMain /> */}
         <HealthcareHeroSection />
         <BookingSteps />
@@ -30,6 +34,7 @@ const Home = () => {
         <MeetOurDoctors />
         <PatientTestimonials />
         <NewsAndBlog />
+        <HomeLocation />
         <ModernFAQs />
     </div>
   )

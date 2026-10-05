@@ -124,7 +124,15 @@ const UniqueHeroSection = () => {
             <div className="relative w-full max-w-sm pb-2 sm:pb-8 sm:pl-4 lg:pl-6">
               {/* Main Image Framing */}
               <div className="relative h-80 w-full overflow-hidden rounded-3xl border border-white/10 shadow-2xl group">
-                <img src={doctorAtHomeImage} alt="Premium Care" className="h-full w-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700" />
+                <img
+                  src={doctorAtHomeImage}
+                  alt="Doctor visit at home in Dubai"
+                  width="640"
+                  height="480"
+                  fetchPriority="high"
+                  decoding="async"
+                  className="h-full w-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#002b36] via-transparent to-transparent" />
               </div>
 
@@ -214,6 +222,10 @@ const UniqueHeroSection = () => {
                     <img
                       src={service.image}
                       alt={service.title}
+                      width="320"
+                      height="400"
+                      loading="lazy"
+                      decoding="async"
                       className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>

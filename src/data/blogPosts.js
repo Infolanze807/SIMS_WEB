@@ -7,11 +7,11 @@ export const BLOG_POSTS = [
   {
     slug: 'iv-drip-at-home-dubai',
     title: 'IV Drips at Home in Dubai: Benefits, Types, Safety, and What to Expect',
-    author: 'simshealthcare',
+    author: 'Dr. Syeda Marsha Noor',
     date: 'April 21, 2026',
     day: '21',
     month: 'Apr',
-    category: 'Doctor on Call',
+    category: 'IV Therapy',
     comments: 'No Comments',
     commentCount: 0,
     excerpt:
@@ -21,7 +21,7 @@ export const BLOG_POSTS = [
   {
     slug: 'home-doctor-visit-dubai-step-by-step-guide',
     title: 'A Step-by-Step Guide to a Home Doctor Visit in Dubai',
-    author: 'simshealthcare',
+    author: 'Dr. Syeda Marsha Noor',
     date: 'April 9, 2026',
     day: '09',
     month: 'Apr',
@@ -36,11 +36,11 @@ export const BLOG_POSTS = [
     slug: 'conditions-treated-doctor-at-home-dubai',
     title:
       'Common Health Problems That Can Be Treated at Home by a Visiting Doctor in Dubai',
-    author: 'simshealthcare',
+    author: 'Dr. Syeda Marsha Noor',
     date: 'March 26, 2026',
     day: '26',
     month: 'Mar',
-    category: 'Doctor on Call',
+    category: 'Doctor at Home',
     comments: 'No Comments',
     commentCount: 0,
     excerpt:
@@ -51,7 +51,7 @@ export const BLOG_POSTS = [
   {
     slug: 'doctor-at-hotel-dubai-for-tourists',
     title: 'Fell Sick at Your Hotel in Dubai? Here’s How to Get Medical Help Fast',
-    author: 'simshealthcare',
+    author: 'Dr. Syeda Marsha Noor',
     date: 'March 26, 2026',
     day: '26',
     month: 'Mar',
@@ -66,11 +66,11 @@ export const BLOG_POSTS = [
   {
     slug: 'post-surgery-rehabilitation-care-dubai-heal-comfortably-at-home',
     title: 'Post-Surgery & Rehabilitation Care Dubai – Heal Comfortably at Home',
-    author: 'simshealthcare',
+    author: 'Dr. Mamoona Fatima',
     date: 'November 20, 2025',
     day: '20',
     month: 'Nov',
-    category: 'Uncategorized',
+    category: 'Physiotherapy',
     comments: 'No Comments',
     commentCount: 0,
     excerpt:
@@ -81,11 +81,11 @@ export const BLOG_POSTS = [
   {
     slug: 'lab-tests-at-home-dubai-fast-accurate-convenient',
     title: 'Lab Tests at Home Dubai – Fast, Accurate & Convenient',
-    author: 'simshealthcare',
+    author: 'Dr. Syeda Marsha Noor',
     date: 'November 6, 2025',
     day: '06',
     month: 'Nov',
-    category: 'Uncategorized',
+    category: 'Lab Tests',
     comments: 'No Comments',
     commentCount: 0,
     excerpt:
@@ -95,11 +95,11 @@ export const BLOG_POSTS = [
   {
     slug: 'doctor-on-call-in-dubai-fast-reliable-healthcare-at-your-doorstep',
     title: 'Doctor on Call in Dubai – Fast, Reliable Healthcare at Your Doorstep',
-    author: 'simshealthcare',
+    author: 'Dr. Syeda Marsha Noor',
     date: 'November 1, 2025',
     day: '01',
     month: 'Nov',
-    category: 'Uncategorized',
+    category: 'Doctor on Call',
     comments: 'No Comments',
     commentCount: 0,
     excerpt:

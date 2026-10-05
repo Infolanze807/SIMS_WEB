@@ -8,6 +8,8 @@ import BlogPostBody from '../Component/Blog/BlogPostBody';
 import BlogPostNav from '../Component/Blog/BlogPostNav';
 import ServiceDetailFAQs from '../Component/Services/Detail/ServiceDetailFAQs';
 import ServiceDetailCTA from '../Component/Services/Detail/ServiceDetailCTA';
+import Seo from '../Component/Seo';
+import { blogPostingJsonLd, clipText, sectionsToPlainText, SITE_NAME } from '../seo/site';
 
 const BlogPost = () => {
   const { slug } = useParams();
@@ -44,8 +46,23 @@ const BlogPost = () => {
     return <Navigate to="/blog" replace />;
   }
 
+  const articleBody = sectionsToPlainText(content.sections);
+  const description = clipText(articleBody || post.excerpt);
+
   return (
     <div className="font-sans antialiased">
+      <Seo
+        title={`${post.title} | ${SITE_NAME}`}
+        description={description}
+        path={`/blog/${post.slug}`}
+        jsonLd={blogPostingJsonLd({
+          post,
+          path: `/blog/${post.slug}`,
+          articleBody,
+          description,
+          faqs: content.faqs,
+        })}
+      />
       <BlogPostHero post={post} />
       <div className="bg-white">
         <BlogPostBody sections={content.sections} />
