@@ -1,7 +1,7 @@
 import React from 'react';
 
 const MAP_SRC =
-  'https://www.google.com/maps?q=AB+Center+207+Sheikh+Zayed+Rd+Al+Barsha+First+Dubai&z=16&output=embed';
+  'https://www.google.com/maps?cid=17407437960497757157&z=16&hl=en&output=embed';
 
 const HomeLocation = () => {
   return (

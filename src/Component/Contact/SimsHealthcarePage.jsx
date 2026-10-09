@@ -151,7 +151,7 @@ const SimsHealthcarePage = () => {
           <div className="h-[400px] overflow-hidden rounded-[2.5rem] border-4 border-white shadow-2xl">
             <iframe
               title="SIMS Home Healthcare location"
-              src="https://www.google.com/maps?q=AB+Center+207+Sheikh+Zayed+Rd+Al+Barsha+First+Dubai&z=16&output=embed"
+              src="https://www.google.com/maps?cid=17407437960497757157&z=16&hl=en&output=embed"
               width="100%"
               height="100%"
               loading="lazy"
