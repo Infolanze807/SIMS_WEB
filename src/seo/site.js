@@ -161,7 +161,7 @@ export const servicePageJsonLd = ({ name, description, path, faqs = [] }) => {
 const partText = (part) => {
   if (typeof part === 'string') return part;
   if (!part || typeof part !== 'object') return '';
-  return part.bold || part.italic || part.text || '';
+  return part.bold || part.italic || part.link || part.text || '';
 };
 
 export const sectionsToPlainText = (sections = []) =>
@@ -170,6 +170,12 @@ export const sectionsToPlainText = (sections = []) =>
       if (!section) return '';
       if (section.type === 'heading') return section.text || '';
       if (section.type === 'paragraph') return (section.parts || []).map(partText).join('');
+      if (section.type === 'image') return section.caption || section.alt || '';
+      if (section.type === 'table') {
+        const header = (section.headers || []).join(' | ');
+        const rows = (section.rows || []).map((row) => row.join(' | ')).join('\n');
+        return [header, rows].filter(Boolean).join('\n');
+      }
       if (section.type === 'list' || section.type === 'ordered-list' || section.type === 'bullets') {
         return (section.items || [])
           .map((item) => {

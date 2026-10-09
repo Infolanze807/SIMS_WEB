@@ -2,8 +2,23 @@ import labTestAtHomeImage from '../assets/LabTestAtHome02.jpeg';
 import onCall from '../assets/Oncall.png';
 import step from '../assets/StepStep.png';
 import ivDripImage from '../assets/ivDripImage01.jpeg';
+import hotelSuiteImage from '../assets/blog/hotel-suite.jpg';
 
 export const BLOG_POSTS = [
+  {
+    slug: 'staying-healthy-on-the-road-hotel-doctor-services',
+    title: 'Staying Healthy on the Road: How Hotel Doctor Services Support International Tourists',
+    author: 'Dr. Syeda Marsha Noor',
+    date: 'October 8, 2026',
+    day: '08',
+    month: 'Oct',
+    category: 'Doctor at Hotel',
+    comments: 'No Comments',
+    commentCount: 0,
+    excerpt:
+      'Traveling to a new city or country brings excitement, but encountering a sudden health issue far from home can derail your entire itinerary …',
+    image: hotelSuiteImage,
+  },
   {
     slug: 'iv-drip-at-home-dubai',
     title: 'IV Drips at Home in Dubai: Benefits, Types, Safety, and What to Expect',

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const renderParts = (parts = []) =>
@@ -18,6 +19,13 @@ const renderParts = (parts = []) =>
         <em key={index} className="font-medium italic text-brand-dark/90">
           {part.italic}
         </em>
+      );
+    }
+    if (part.link && part.to) {
+      return (
+        <Link key={index} to={part.to} className="font-bold text-brand-accent hover:underline">
+          {part.link}
+        </Link>
       );
     }
     return null;
@@ -104,6 +112,60 @@ const BlogPostBody = ({ sections = [] }) => {
                   </motion.li>
                 ))}
               </ul>
+            </AnimatedSection>
+          );
+        }
+
+        if (section.type === 'image') {
+          return (
+            <AnimatedSection key={index} index={index}>
+              <figure className="space-y-3">
+                <img
+                  src={section.src}
+                  alt={section.alt}
+                  width="1200"
+                  height="675"
+                  loading="lazy"
+                  decoding="async"
+                  className="aspect-[16/9] w-full rounded-[28px] object-cover"
+                />
+                {section.caption ? (
+                  <figcaption className="text-center text-sm leading-relaxed text-slate-500">
+                    {section.caption}
+                  </figcaption>
+                ) : null}
+              </figure>
+            </AnimatedSection>
+          );
+        }
+
+        if (section.type === 'table') {
+          return (
+            <AnimatedSection key={index} index={index}>
+              <div className="overflow-hidden rounded-[28px] border border-slate-100">
+                <table className="w-full text-left text-sm">
+                  <thead className="bg-brand-dark text-white">
+                    <tr>
+                      {section.headers.map((header) => (
+                        <th key={header} className="px-5 py-4 font-black">
+                          {header}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {section.rows.map((row) => (
+                      <tr key={row[0]} className="border-t border-slate-100 odd:bg-white even:bg-[#FAFBFD]">
+                        {row.map((cell) => (
+                          <td key={cell} className="px-5 py-4 leading-relaxed text-slate-600">
+                            {cell}
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </AnimatedSection>
           );
         }

@@ -1,7 +1,223 @@
+import doctorVisitImage from '../assets/DoctorAtHome02.jpeg';
+import ivHydrationImage from '../assets/ivDripImage01.jpeg';
+import dubaiSkylineImage from '../assets/blog/dubai-skyline.jpg';
+
 export const BLOG_POST_CONTENT = {
+  'staying-healthy-on-the-road-hotel-doctor-services': {
+    previousSlug: 'iv-drip-at-home-dubai',
+    nextSlug: null,
+    cta: {
+      title: 'Book a Hotel Doctor in Dubai',
+      description:
+        'If you feel unwell in your hotel, SIMS Home Healthcare can send a licensed physician to your room. Care is available 24/7 across Dubai, including evenings, weekends, and public holidays.',
+      buttonText: 'Call +971525231028',
+    },
+    sections: [
+      {
+        type: 'paragraph',
+        parts: [
+          'Traveling to a new city or country brings excitement, but encountering a sudden health issue far from home can derail your entire itinerary. Whether triggered by severe jet lag, unfamiliar local cuisine, a sudden fever, or extreme climate changes, falling ill inside a hotel room creates a stressful situation. Navigating unfamiliar hospital networks, waiting in crowded emergency rooms, or searching for urgent care clinics in a foreign language can quickly become overwhelming.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'To solve this challenge, on-demand mobile medical care has emerged as the premier solution for international visitors. On-call doctor services bring qualified physicians directly to your hotel room, delivering rapid medical support, accurate diagnoses, and immediate relief without forcing you to leave your accommodation.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Why International Travelers Suffer Health Setbacks Away from Home',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Travel places sudden, unique demands on the human body. Even seasoned global travelers often encounter unforeseen physical strain due to drastic changes in environment, diet, and daily routine.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Common Health Issues Encountered During Travel',
+      },
+      {
+        type: 'list',
+        items: [
+          {
+            label: 'Gastrointestinal Distress and Food Illness:',
+            text: 'Sharp shifts in dietary habits, regional spices, or local water composition frequently trigger traveler’s diarrhea, stomach cramps, or acute food poisoning.',
+          },
+          {
+            label: 'Dehydration, Heat Stroke, and Exhaustion:',
+            text: 'Long-haul flights, low cabin humidity, and packed sightseeing schedules under warm climates lead to rapid fluid loss, severe fatigue, and heat-related exhaustion.',
+          },
+          {
+            label: 'Respiratory Infections and Viral Symptoms:',
+            text: 'Recirculated cabin air on flights and exposure to high-traffic transit hubs increase the risk of sudden fevers, sore throats, sinus infections, and flu-like symptoms.',
+          },
+          {
+            label: 'Minor Physical Injuries:',
+            text: 'Unfamiliar terrain, long walking tours, or outdoor adventures often cause unexpected ankle sprains, muscle strains, minor cuts, or joint inflammation.',
+          },
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'What Happens During an In-Room Hotel Doctor Consultation?',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'When you request an on-call hotel medical service, you receive personalized healthcare equivalent to a private clinic visit, delivered in the privacy and comfort of your suite.',
+        ],
+      },
+      {
+        type: 'image',
+        src: doctorVisitImage,
+        alt: 'A physician checking a patient’s blood pressure during an in-room consultation',
+        caption: 'A hotel doctor visit includes a full check of vital signs in the privacy of your room.',
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: '1. Comprehensive Physical Examination',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'A fully licensed, English-speaking physician arrives at your hotel room equipped with diagnostic instruments. The initial assessment includes a thorough check of vital signs:',
+        ],
+      },
+      {
+        type: 'bullets',
+        items: [
+          'Blood pressure and heart rate monitoring',
+          'Blood oxygen saturation (SpO2) testing',
+          'Body temperature measurement',
+          'Symptom evaluation and medical history review',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: '2. Immediate On-Site Diagnostics and Treatment',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Mobile physicians carry portable diagnostic kits to quickly evaluate acute infections, blood glucose levels, or viral markers. If immediate intervention is required, doctors can administer oral medications, arrange pharmacy delivery, or set up intravenous (IV) hydration therapy directly in your room.',
+        ],
+      },
+      {
+        type: 'image',
+        src: ivHydrationImage,
+        alt: 'An intravenous hydration bag prepared for in-room treatment',
+        caption: 'IV hydration can be started in the hotel room when dehydration or heat exhaustion needs prompt treatment.',
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: '3. Official Documentation and Insurance Clearance',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Navigating international travel insurance claims requires accurate, verified paperwork. In-room hotel doctors provide:',
+        ],
+      },
+      {
+        type: 'list',
+        items: [
+          {
+            label: 'Itemized Medical Reports:',
+            text: 'Detailed diagnostic notes and recommended care plans.',
+          },
+          {
+            label: 'Official Receipts:',
+            text: 'Complete billing documentation for seamless travel insurance reimbursement.',
+          },
+          {
+            label: 'Fit-to-Fly Certificates:',
+            text: 'Formal medical clearance required by airlines if you need to travel safely following an illness or injury.',
+          },
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Key Benefits of In-Room Medical Care for Tourists',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Choosing an on-demand hotel physician offers distinct operational and clinical advantages over traditional emergency room visits:',
+        ],
+      },
+      {
+        type: 'table',
+        headers: ['Feature', 'In-Room Hotel Doctor'],
+        rows: [
+          ['Convenience', 'Zero travel; healthcare delivered directly to your suite'],
+          ['Wait Times', 'Rapid arrival with doctor on-site within 30–45 minutes'],
+          ['Privacy & Comfort', 'Total privacy in your own hotel room'],
+          ['Infection Control', 'Low risk of airborne pathogen exposure'],
+          ['Language Support', 'Multilingual, tourist-focused doctors'],
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Rapid Relief for Tourists Visiting Global Hubs',
+      },
+      {
+        type: 'image',
+        src: dubaiSkylineImage,
+        alt: 'Dubai skyline at sunset, including the Burj Khalifa',
+        caption: 'Hotel doctor visits in Dubai help visitors recover without leaving their accommodation.',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Hotel doctor services are an essential component of premium hospitality ecosystems. For instance, securing prompt, professional treatment from a dedicated ',
+          { link: 'doctor at hotel service in Dubai', to: '/services/doctor-at-hotel' },
+          ' allows tourists to quickly overcome heat exhaustion, severe jet lag, or sudden stomach bugs without interrupting their vacation plans.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'By obtaining rapid in-room medical attention, travelers protect their health, avoid costly emergency room fees, safeguard their travel budget, and resume their business or leisure itinerary with minimal delay.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'How quickly does a hotel doctor arrive after being called?',
+        answer:
+          'SIMS hotel doctor services dispatch a licensed physician directly to your suite, with average arrival times ranging between 30 to 45 minutes after your request.',
+      },
+      {
+        question: 'What payment methods are accepted for in-room hotel doctor consultations?',
+        answer:
+          'To accommodate international travelers, hotel doctor services offer flexible payment options directly on-site, including:\n\nCredit & Debit Cards: Major international cards such as Visa, Mastercard, American Express, and Discover.\nContactless & Mobile Payments: Apple Pay, Google Pay, and contactless tap-to-pay terminals carried by the visiting physician.\nLocal & Major Currencies: Cash payments in local currency (e.g., AED in Dubai) or major foreign currencies (such as USD or EUR).\nDirect Insurance Billing / Guarantee of Payment (GOP): Available for select international insurance providers with direct billing partnerships.',
+      },
+      {
+        question: 'Will my travel insurance cover an in-room hotel doctor consultation?',
+        answer:
+          'Yes. Mobile medical providers supply itemized medical reports, diagnostic summaries, and official receipts with standard medical coding required for straightforward travel insurance reimbursement claims.',
+      },
+      {
+        question: 'Can a hotel doctor issue official Fit-to-Fly medical certificates?',
+        answer:
+          'Yes. Licensed physicians conducting in-room visits evaluate your clinical condition and issue official fit-to-fly certificates required by commercial airlines prior to boarding.',
+      },
+    ],
+  },
   'iv-drip-at-home-dubai': {
     previousSlug: 'home-doctor-visit-dubai-step-by-step-guide',
-    nextSlug: null,
+    nextSlug: 'staying-healthy-on-the-road-hotel-doctor-services',
     cta: {
       title: 'Ready to Book Your IV Drip at Home?',
       description:
