@@ -54,7 +54,7 @@ const ServiceDetail = () => {
 
   const related = getRelatedServices(detail.relatedSlugs);
   const description = clipText(
-    detail.intro?.paragraphs?.[0] || detail.hero?.subheadline || detail.title,
+    detail.metaDescription || detail.intro?.paragraphs?.[0] || detail.hero?.subheadline || detail.title,
   );
 
   return (

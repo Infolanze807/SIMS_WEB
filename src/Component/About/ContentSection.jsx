@@ -37,7 +37,7 @@ const ContentSection = () => {
     {
       title: "Physiotherapy at Home",
       desc: "Professional physiotherapy at home helps restore mobility, relieve pain, and support recovery. Get personalized exercises and hands-on care in the comfort of your own space.",
-      icon: <RiPsychotherapyLine  className="text-xl text-rose-600" />,
+      icon: <RiPsychotherapyLine className="text-xl text-rose-600" />,
       bgColor: "bg-rose-50 border-rose-100/50",
     },
     {
@@ -56,7 +56,7 @@ const ContentSection = () => {
 
   return (
     <div className="w-full bg-white font-sans antialiased text-slate-800">
-      
+
       {/* SECTION 1: ABOUT SIMS HEALTHCARE */}
       <section className="relative w-full overflow-hidden px-6 py-20 lg:px-12 lg:py-28">
         <div className="pointer-events-none absolute left-1/4 top-1/2 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#25b8a7]/5 blur-3xl" />
@@ -65,15 +65,15 @@ const ContentSection = () => {
           <AnimateInView variants={slideFromLeft} className="relative flex items-center justify-center lg:col-span-5">
             {/* Elegant background shapes */}
             <div className="absolute -top-6 -left-6 w-48 h-48 rounded-full border-2 border-dashed border-[#25b8a7]/20 pointer-events-none"></div>
-            
+
             {/* Decorative Offset Border */}
             <div className="absolute -bottom-4 -right-4 w-[90%] h-[90%] rounded-[40px] border-4 border-[#25b8a7]/30 pointer-events-none transform translate-x-2 translate-y-2"></div>
-            
+
             {/* Main Premium Image Frame */}
             <div className="relative w-full aspect-[4/3] sm:aspect-[4/3] md:aspect-[1.4] lg:aspect-[1.1] rounded-[32px] overflow-hidden shadow-[0_25px_60px_rgba(0,61,77,0.12)] border border-slate-100 z-10 group">
-              <img 
-                src="/home_medical_room.png" 
-                alt="SIMS Premium Medical Care Room" 
+              <img
+                src="/home_medical_room.png"
+                alt="SIMS Premium Medical Care Room"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out brightness-[0.97]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent"></div>
@@ -103,7 +103,8 @@ const ContentSection = () => {
             </div>
 
             <p className="text-base sm:text-lg text-slate-600 font-light leading-relaxed">
-              At SIMS Healthcare, we believe that quality medical care should be accessible, personalized, and right where you are most comfortable—your home. Based in Dubai, we specialize in delivering 24/7 home healthcare services tailored to your family's needs. From doctor visits and nursing care to lab testing and elderly support, our team is committed to raising the bar for in-home healthcare in the UAE.
+              <strong className="font-bold text-[#003d4d]">SIMS Healthcare</strong> is a leading 24/7 home and hotel medical provider in <strong className="font-bold text-[#003d4d]">Dubai</strong>. We deliver high-quality, personalized healthcare directly to your doorstep —Our average reach time of <strong className="font-bold text-[#003d4d]">30 to 40 minutes</strong>.
+              Whether you require an immediate Doctor consultation at your hotel or home, Physiotherapy sessions, routine Lab Testing, or IV Therapy, our healthcare professionals are available <strong className="font-bold text-[#003d4d]">24 hours a day, 7 days a week</strong>
             </p>
 
             <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }} className="pt-4">
@@ -124,11 +125,11 @@ const ContentSection = () => {
       </section>
 
       <section className="relative w-full py-20 lg:py-28 px-6 lg:px-12 bg-gradient-to-b from-[#f4fbfc] to-white border-y border-slate-100">
-        
+
         <div className="absolute right-0 bottom-0 w-96 h-96 bg-[#4fc3c0]/5 rounded-full blur-3xl pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-          
+
           <AnimateInView variants={slideFromLeft} className="space-y-8 lg:col-span-7">
             <div className="space-y-4">
               <span className="text-xs font-extrabold tracking-widest text-[#25b8a7] uppercase bg-[#25b8a7]/10 px-4 py-2 rounded-full inline-block">
@@ -192,13 +193,13 @@ const ContentSection = () => {
 
           <AnimateInView variants={slideFromRight} className="relative flex items-center justify-center lg:sticky lg:top-32 lg:col-span-5">
             <div className="absolute -bottom-6 -left-6 w-48 h-48 rounded-full border-2 border-dashed border-[#25b8a7]/20 pointer-events-none"></div>
-            
+
             <div className="absolute -top-4 -right-4 w-[90%] h-[90%] rounded-[40px] border-4 border-[#25b8a7]/30 pointer-events-none transform -translate-x-2 -translate-y-2"></div>
 
             <div className="relative w-full aspect-[4/3] sm:aspect-[4/3] md:aspect-[1.4] lg:aspect-[1.1] rounded-[32px] overflow-hidden shadow-[0_25px_60px_rgba(0,61,77,0.12)] border border-slate-100 z-10 group bg-white">
-              <img 
-                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=800" 
-                alt="Smiling Professional Doctors" 
+              <img
+                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=800"
+                alt="Smiling Professional Doctors"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out brightness-[0.98] contrast-[1.01]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 via-transparent to-transparent"></div>
@@ -207,7 +208,7 @@ const ContentSection = () => {
 
         </div>
       </section>
-      
+
     </div>
   );
 };

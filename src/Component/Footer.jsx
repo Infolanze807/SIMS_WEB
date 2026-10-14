@@ -11,8 +11,13 @@ import {
   FaChevronRight,
   FaClock,
   FaYoutube,
+  FaCcAmex,
+  FaCreditCard,
+  FaMoneyBillWave,
+  FaApplePay,
 } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
+import { SiGooglepay } from 'react-icons/si';
 import simsLogo from '../assets/sims-logo.png';
 import dhaLogo from '../assets/DHALOGO.png';
 import { HEADER_NAV_SERVICES } from '../data/servicesCatalog';
@@ -41,20 +46,38 @@ const serviceTags = HEADER_NAV_SERVICES.slice(0, 8).map((s) => ({
 }));
 
 const areasCovered = [
-  'Downtown Dubai',
-  'Business Bay',
-  'Dubai Marina & JBR',
-  'Palm Jumeirah',
-  'Jumeirah',
-  'Umm Suqeim',
-  'Deira & Bur Dubai',
-  'Al Barsha & Sheikh Zayed Road',
-  'Dubai World Trade Centre',
-  'Nad Al Sheba',
-  'Mizhar',
-  'Al Warqa',
-  'Arabian Ranches',
-  'Damac Hills',
+  { name: 'Al Barsha', detail: 'Sheikh Zayed Road' },
+  { name: 'Al Warqa' },
+  { name: 'Arabian Ranches' },
+  { name: 'Arjan' },
+  { name: 'Business Bay' },
+  { name: 'Damac Hills' },
+  { name: 'Deira & Bur Dubai' },
+  { name: 'Downtown Dubai' },
+  { name: 'Dubai Festival City' },
+  { name: 'Dubai Marina & JBR' },
+  { name: 'Dubai Silicon Oasis' },
+  { name: 'Dubai Sports City' },
+  { name: 'Dubai World Trade Centre' },
+  { name: 'Emirates Hills' },
+  { name: 'International City' },
+  { name: 'Jebel Ali' },
+  { name: 'JLT', detail: 'Jumeirah Lake Towers' },
+  { name: 'Jumeirah' },
+  { name: 'JVC', detail: 'Jumeirah Village Circle' },
+  { name: 'JVT', detail: 'Jumeirah Village Triangle' },
+  { name: 'Mizhar' },
+  { name: 'Nad Al Sheba' },
+  { name: 'Palm Jumeirah' },
+  { name: 'Umm Suqeim' },
+];
+
+const paymentMethods = [
+  { label: 'Amex', icon: FaCcAmex, iconClass: 'text-[#2E77BC]' },
+  { label: 'Debit or Credit Card', icon: FaCreditCard, iconClass: 'text-[#003d4d]' },
+  { label: 'Cash', icon: FaMoneyBillWave, iconClass: 'text-[#14804a]' },
+  { label: 'Apple Pay', icon: FaApplePay, iconClass: 'text-black' },
+  { label: 'Google Pay', icon: SiGooglepay, iconClass: 'text-[#3c4043]' },
 ];
 
 const FooterLink = ({ to, children, className = '' }) => (
@@ -210,7 +233,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Contact & 24/7 */}
+            {/* Contact */}
             <div className="space-y-5 lg:col-span-8">
               <p className="text-[10px] font-black uppercase tracking-[0.2em] text-brand-accent-light">
                 Contact Us
@@ -272,19 +295,48 @@ const Footer = () => {
           </div>
 
           <div className="mt-14 border-t border-white/10 pt-10">
-            <p className="mb-5 text-[10px] font-black uppercase tracking-[0.2em] text-brand-accent-light">
-              Areas We Cover
-            </p>
-            <ul className="flex flex-wrap gap-2">
+            <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+              <p className="text-[10px] font-black uppercase tracking-[0.2em] text-brand-accent-light">
+                Areas We Cover
+              </p>
+              <p className="text-xs text-white/55">
+                Home, hotel, and workplace visits across Dubai
+              </p>
+            </div>
+            <ul className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
               {areasCovered.map((area) => (
                 <li
-                  key={area}
-                  className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-white/80"
+                  key={area.name}
+                  className="flex min-h-[52px] items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-2"
                 >
-                  <FaMapMarkerAlt className="text-[10px] text-brand-accent-light" />
-                  {area}
+                  <FaMapMarkerAlt className="shrink-0 text-[10px] text-brand-accent-light" />
+                  <span className="min-w-0">
+                    <span className="block text-xs font-semibold leading-tight text-white/90">{area.name}</span>
+                    {area.detail && (
+                      <span className="mt-0.5 block text-[10px] leading-tight text-white/50">{area.detail}</span>
+                    )}
+                  </span>
                 </li>
               ))}
+            </ul>
+          </div>
+
+          <div className="mt-10 border-t border-white/10 pt-8">
+            <p className="mb-4 text-[10px] font-black uppercase tracking-[0.2em] text-brand-accent-light">
+              Payment Methods
+            </p>
+            <ul className="flex flex-wrap gap-2">
+              {paymentMethods.map((method) => {
+                const Icon = method.icon;
+                return (
+                  <li key={method.label}>
+                    <span className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white px-3 py-2 text-[#003d4d] shadow-sm">
+                      <Icon className={`h-5 w-5 shrink-0 ${method.iconClass}`} aria-hidden="true" />
+                      <span className="text-xs font-bold leading-none">{method.label}</span>
+                    </span>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>

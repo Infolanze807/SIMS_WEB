@@ -1,4 +1,5 @@
 import labTestAtHomeImage from '../assets/LabTestAtHome02.jpeg';
+import physiotherapyAtHomeImage from '../assets/PhysiotherapyAtHome003.jpeg';
 import onCall from '../assets/Oncall.png';
 import step from '../assets/StepStep.png';
 import ivDripImage from '../assets/ivDripImage01.jpeg';
@@ -90,8 +91,7 @@ export const BLOG_POSTS = [
     commentCount: 0,
     excerpt:
       'Recovering after surgery can be stressful, especially when hospital visits are frequent or mobility is limited. SIMS Home Healthcare provides post-surgery and rehabilitation care in Dubai.',
-    image:
-      'https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80&w=800',
+    image: physiotherapyAtHomeImage,
   },
   {
     slug: 'lab-tests-at-home-dubai-fast-accurate-convenient',

@@ -55,7 +55,7 @@ const HealthcareAbout = () => {
               At SIMS Home Healthcare, we are revolutionizing access to quality medical assistance by offering clinical-grade services directly inside your private environment. Whether you are at home, relaxing in a hotel room, or working at your office, our elite medical framework eliminates the logistical stress of hospital lines.
             </p>
             <p>
-              Our expert staff consists exclusively of highly certified, licensed doctors, nurses, and specialists who operate 24 hours a day, 7 days a week, to bring prompt, trustworthy, and tailored medical management right when you need it most.
+              Our expert staff consists exclusively of highly certified, licensed doctors, nurses, and specialists who operate 24 hours a day, 7 days a week, reaching you within 30–40 minutes with prompt, trustworthy, and tailored medical management right when you need it most.
             </p>
           </div>
 

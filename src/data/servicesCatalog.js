@@ -135,7 +135,7 @@ export const SERVICES_CATALOG = [
     slug: 'home-visit-doctor',
     title: 'Home Visit Doctor',
     description:
-      'SIMS Health Care provides home visit doctor services in Dubai—DHA-certified physicians come to your doorstep 24/7 for fast, private medical care.',
+      'SIMS Home Healthcare provides 24/7 DHA-certified doctor home visits, hotel care, and workplace medical treatment in Dubai within 30–40 minutes.',
     image: homeVisitDoctorImage,
     category: 'doctor',
     relatedSlugs: ['doctor-on-call', 'doctor-at-home', 'doctor-at-hotel', // 'pediatrician-at-home'

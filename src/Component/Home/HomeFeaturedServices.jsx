@@ -8,6 +8,8 @@ const IV_SERVICE = getServiceBySlug('iv-therapies');
 const LAB_SERVICE = getServiceBySlug('lab-test-at-home');
 
 const IV_THERAPY_ITEMS = [
+  { label: 'NAD + IV drip ', slug: 'iv-therapies' },
+  { label: 'Glutathione IV Drip', slug: 'iv-therapies' },
   { label: 'Vitamin Infusion', slug: 'iv-therapies' },
   { label: 'Immunity Boost', slug: 'iv-therapies' },
   { label: 'Energy Boost', slug: 'iv-therapies' },
@@ -183,7 +185,7 @@ const HomeFeaturedServices = () => {
     <section className="font-sans text-[#003d4d]">
       <ServicePanel
         eyebrow="IV Therapy"
-        title="Premium SIMS IV Therapy"
+        title="SIMS IV Therapy Dubai | At-Home & Hotel IV Drips 24/7 "
         description={
           IV_SERVICE?.description ??
           'Get personalized IV therapy administered by licensed nurses in the comfort of your home to boost energy, immunity, and overall wellness.'

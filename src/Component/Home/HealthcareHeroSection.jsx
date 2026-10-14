@@ -7,11 +7,12 @@ import {
   FaPhoneAlt,
   FaBriefcaseMedical,
   FaArrowRight,
-  FaGoogle,
   FaUserMd,
   FaAward,
+  FaNotesMedical,
 } from 'react-icons/fa';
 import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInView';
+import { GoogleRatingBadge } from './HomeMain';
 import dhaHealthBadge from '../../assets/logoo.png';
 import doctorAtHomeImage from '../../assets/Home01.png';
 import doctorOnCallImage from '../../assets/DoctorOnCall04.png';
@@ -41,7 +42,7 @@ const UniqueHeroSection = () => {
       form.name && `Patient: ${form.name}`,
       form.phone && `Contact: +971 ${form.phone}`,
       form.location && `Address: ${form.location}`,
-      form.symptoms && `Indication: ${form.symptoms}`,
+      form.symptoms && `Symptoms: ${form.symptoms}`,
     ].filter(Boolean).join('\n');
     window.open(`https://wa.me/971525231028?text=${encodeURIComponent(message)}`, '_blank', 'noreferrer');
   };
@@ -96,16 +97,8 @@ const UniqueHeroSection = () => {
               ))}
             </div>
 
-            <div className="flex flex-wrap items-center gap-3 pt-2">
-              <div className="inline-flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3 shadow-[0_8px_24px_rgba(0,0,0,0.12)] backdrop-blur-sm transition-colors hover:border-[#4285F4]/30">
-                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/10">
-                  <FaGoogle className="text-base text-[#4285F4]" />
-                </div>
-                <div>
-                  <p className="text-[10px] font-black uppercase tracking-wider text-white/50">Trusted By Families</p>
-                  <p className="text-xs font-bold text-white">5 Star Google Reviews</p>
-                </div>
-              </div>
+            <div className="flex flex-col items-start gap-3 pt-2">
+              <GoogleRatingBadge />
 
               <div className="inline-flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3 shadow-[0_8px_24px_rgba(0,0,0,0.12)] backdrop-blur-sm transition-colors hover:border-[#25b8a7]/30">
                 <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white">
@@ -114,6 +107,7 @@ const UniqueHeroSection = () => {
                 <div>
                   <p className="text-[10px] font-black uppercase tracking-wider text-[#25b8a7]">Officially Licensed</p>
                   <p className="text-xs font-bold text-white">DHA Certified Professionals</p>
+                  <p className="text-[11px] font-semibold text-white/80">License No. 6394609</p>
                 </div>
               </div>
             </div>
@@ -163,7 +157,7 @@ const UniqueHeroSection = () => {
         >
           <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-4 lg:grid-cols-12 items-center">
             
-            <div className="lg:col-span-3 space-y-0.5 px-2">
+            <div className="lg:col-span-2 space-y-0.5 px-2">
               <h3 className="text-base font-bold text-[#003d4d] flex items-center gap-2">
                 <FaBriefcaseMedical className="text-[#25b8a7]" size={14}/>
                 Instant Intake
@@ -171,7 +165,7 @@ const UniqueHeroSection = () => {
               <p className="text-[11px] text-slate-500 font-medium">Request medical dispatch on-demand</p>
             </div>
 
-            <div className="lg:col-span-9 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
+            <div className="lg:col-span-10 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-3">
               <div className="relative">
                 <span className="absolute inset-y-0 left-0 flex items-center pl-3.5 text-slate-400"><FaUser size={12}/></span>
                 <input type="text" required value={form.name} onChange={handleChange('name')} placeholder="Patient Name" className="w-full text-xs font-medium bg-slate-50 border border-slate-200 rounded-xl py-3 pl-9 pr-3 outline-none focus:border-[#25b8a7] focus:bg-white transition-all text-[#003d4d]" />
@@ -185,6 +179,11 @@ const UniqueHeroSection = () => {
               <div className="relative">
                 <span className="absolute inset-y-0 left-0 flex items-center pl-3.5 text-slate-400"><FaMapMarkerAlt size={12}/></span>
                 <input type="text" required value={form.location} onChange={handleChange('location')} placeholder="Your Location/Hotel" className="w-full text-xs font-medium bg-slate-50 border border-slate-200 rounded-xl py-3 pl-9 pr-3 outline-none focus:border-[#25b8a7] focus:bg-white transition-all text-[#003d4d]" />
+              </div>
+
+              <div className="relative">
+                <span className="absolute inset-y-0 left-0 flex items-center pl-3.5 text-slate-400"><FaNotesMedical size={12}/></span>
+                <input type="text" required value={form.symptoms} onChange={handleChange('symptoms')} placeholder="Symptoms" aria-label="Symptoms" className="w-full text-xs font-medium bg-slate-50 border border-slate-200 rounded-xl py-3 pl-9 pr-3 outline-none focus:border-[#25b8a7] focus:bg-white transition-all text-[#003d4d]" />
               </div>
 
               <button type="submit" className="w-full flex items-center justify-center gap-2 rounded-xl bg-[#003d4d] text-white text-xs font-bold transition-all duration-300 hover:bg-[#25b8a7] py-3 shadow-md hover:shadow-lg">

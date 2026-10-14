@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaPhoneAlt, FaUserMd, FaHeartbeat } from 'react-icons/fa';
 import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInView';
+import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.jpeg';
 
 const STEPS_DATA = [
   {
@@ -26,7 +27,7 @@ const STEPS_DATA = [
     description: "Our team provides comprehensive healthcare services, including examination, diagnosis, treatment, and medication management—all from the comfort of your space.",
     icon: <FaHeartbeat className="text-2xl text-[#e11d48] group-hover:text-white transition-colors duration-300" />,
     accent: "from-[#e11d48] to-[#fda4af]",
-    bgImage: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80&w=800"
+    bgImage: physiotherapyAtHomeImage
   }
 ];
 
@@ -42,16 +43,16 @@ const BookingSteps = () => {
               <span className="text-[10px] font-black tracking-widest text-[#003d4d] uppercase">Fast & Personalized</span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-[#003d4d] leading-[1.15]">
-              DHA-Certified Doctors & Nurses <br />
+              Certified Doctors and Nurses <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#003d4d] to-[#25b8a7]">
-                At Your Door in 3 Simple Steps
+                at Your Door in 3 Simple Steps
               </span>
             </h2>
           </div>
           
           <div className="lg:col-span-5">
             <p className="text-sm text-gray-500 font-light leading-relaxed">
-              At SIMS Home Healthcare, we bring professional medical services straight to you—fast, safe, and tailored around your schedule. Equipped with the latest tools, our team is here to help 24/7.
+              Hospital-grade care in Dubai by SIMS Home Healthcare. On-call DHA doctors, home nursing, IV therapy, and lab tests at your doorstep within 30–40 mins. Available 24/7.
             </p>
           </div>
         </AnimateInView>

@@ -387,6 +387,7 @@ export const DETAIL_OVERRIDES = {
     ]
   },
   "home-visit-doctor": {
+    "metaDescription": "SIMS Home Healthcare provides 24/7 DHA-certified doctor home visits, hotel care, and workplace medical treatment in Dubai within 30–40 minutes.",
     "hero": {
       "eyebrow": "Available 24/7 Support",
       "headline": "Home Visit Doctor in Dubai – 24/7 Medical Care at Your Doorstep",

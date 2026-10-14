@@ -105,13 +105,12 @@ const HomeVisitDoctors = () => {
             <h2 className="text-3xl font-black leading-[1.1] tracking-tight text-white sm:text-4xl lg:text-[2.75rem]">
               Home Visit{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#25b8a7] to-[#4fc3c0]">
-                Doctors
+                Doctor
               </span>
             </h2>
 
             <p className="max-w-md text-sm leading-relaxed text-slate-400 sm:text-[15px]">
-              {PARENT_SERVICE?.description ??
-                'Your personal doctor typically arrives within 30 minutes of booking, fully equipped to provide comprehensive care in the comfort of your home.'}
+              SIMS Home Healthcare provides 24/7 DHA-certified doctor home visits, hotel care, and workplace medical treatment in Dubai within 30–40 minutes.
             </p>
 
             {/* <Link
