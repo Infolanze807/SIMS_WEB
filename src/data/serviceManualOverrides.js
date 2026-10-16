@@ -49,27 +49,27 @@ export const MANUAL_OVERRIDES = {
       {
         title: 'Reach Out Anytime',
         description:
-          'Call or WhatsApp us 24/7 to request your lab test at home. No forms, no delays — just speak directly with our support team. Share your location, preferred time, and the tests you need. We\'ll handle the rest.',
+          'Call or WhatsApp us 24/7 to request a doctor visit at home. No forms, no delays — just speak directly with our support team. Share your symptoms, location, and preferred time. We\'ll handle the rest. ',
         points: ['Available 24/7', 'Quick and easy booking', 'Immediate confirmation'],
       },
       {
         title: 'We Come to You',
         description:
-          'Our DHA-certified medical professional will arrive at your home, office, or hotel—often within 30–45 minutes. All equipment is brought to you, ensuring a safe and hygienic experience.',
+          'Our DHA-certified medical professionals bring quality care directly to your doorstep—home, office, or hotel—often arriving in just 30–45 minutes. Equipped with everything needed for a safe and hygienic consultation, we make receiving expert medical care completely stress-free.',
         points: [
-          'Licensed and trained staff',
-          'Equipped for accurate sample collection',
-          'Safe, discreet, and professional visit',
+          'DHA-licensed and highly experienced doctors',
+          'Fully equipped for comprehensive on-site consultation',
+          'Safe, discreet, and personalized healthcare',
         ],
       },
       {
         title: 'Receive Personalized Care',
         description:
-          'Your sample is tested in a certified lab, and you receive detailed reports digitally within 12–24 hours. We also provide follow-up guidance if needed.',
+          'Our doctor provides a complete medical assessment and personalized treatment plan at your doorstep. You’ll receive your prescription and medical summary digitally right after the consultation, backed by ongoing follow-up support to ensure a full recovery.',
         points: [
-          'One-on-one medical attention',
-          'Results delivered securely',
-          'Fast reporting & aftercare support',
+          'Dedicated 1-on-1 consultation in comfort',
+          'Instant digital prescriptions & medical notes',
+          'Comprehensive aftercare and follow-up guidance',
         ],
       },
     ],
@@ -2064,8 +2064,8 @@ export const MANUAL_OVERRIDES = {
   'physiotherapy-at-home': {
     hero: {
       eyebrow: 'Available 24/7 Support',
-      headline: 'Physiotherapy at Home in Dubai – Expert Rehab That Comes to You',
-      subheadline: 'Professional Rehab Support in the Comfort of Your Home',
+      headline: 'Professional Home Physiotherapy in Dubai – Expert In-Home Rehabilitation',
+      subheadline: 'Experience professional rehab in the comfort of your home. DHA Certified physiotherapy services in Dubai for back pain, sports injuries , post-op recovery & mobility.',
       bullets: [
         'Book licensed physiotherapists to your home, hotel, or office—available 7 days a week in Dubai.',
         'Ideal for post-surgery recovery, chronic pain relief, injury rehab & elderly mobility.',
@@ -2111,20 +2111,44 @@ export const MANUAL_OVERRIDES = {
     stepsSubtitle: '',
     steps: [
       {
-        title: 'Book a session',
-        description: 'Tell us your condition or share a referral if you have one.',
+        title: 'Connect via Call or WhatsApp',
+        description:
+          'Connect via Call or WhatsApp anytime. Describe your physical condition, symptoms, or share your doctor’s referral to dispatch a licensed physiotherapist to your home or hotel.',
+        points: [
+          '24/7 doorstep & hotel room service',
+          'Personalized 1-on-1 rehabilitation sessions',
+          'Comprehensive assessment & custom treatment plans',
+        ],
       },
       {
-        title: 'We match you with the right physiotherapist',
-        description: 'Based on your specific needs.',
+        title: 'Matched to the Right Therapist',
+        description:
+          'Our clinical team matches you with the ideal DHA-certified physiotherapist based on your exact medical needs, whether for sports injuries, post-surgery rehab, back pain, or mobility recovery.',
+        points: [
+          'Condition-specific physiotherapy expertise',
+          'Customized 1-on-1 recovery plans',
+          'Experienced, DHA-licensed therapists at your door',
+        ],
       },
       {
-        title: 'Initial assessment',
-        description: 'Your therapist evaluates your condition and environment.',
+        title: 'Detailed Physical Assessment',
+        description:
+          'Upon arrival, your DHA-certified physiotherapist performs a detailed physical assessment, evaluates your movement and posture, and adapts the treatment to your home or hotel setup.',
+        points: [
+          'Full musculoskeletal & mobility testing',
+          'Personalized, environment-adapted care',
+          'Immediate treatment plan design',
+        ],
       },
       {
-        title: 'Personalized treatment plan begins',
-        description: 'Progress is tracked and adjusted each session.',
+        title: 'Hands-On Treatment Begins',
+        description:
+          'Your hands-on treatment begins during the first visit. Your DHA-certified therapist actively monitors your mobility gains and pain reduction, fine-tuning your rehabilitation plan each session for maximum efficiency.',
+        points: [
+          '100% personalized rehabilitation & pain relief',
+          'Data-driven progress monitoring every session',
+          'Evolving treatment plans for sustained long-term results',
+        ],
       },
     ],
     coverAreas: {
@@ -4256,12 +4280,12 @@ export const MANUAL_OVERRIDES = {
       {
         title: 'Receive Care',
         description:
-          'Your sample is tested in a certified lab, and you receive detailed reports digitally within 12–24 hours. We also provide follow-up guidance if needed.',
+          'Our doctor conducts a comprehensive physical evaluation in the comfort of your home. You’ll receive immediate diagnostic clarity and an instant digital prescription, backed by dedicated aftercare to monitor your recovery.',
         points: [
-          'Fast & discreet',
-          'Consultation-based care',
-          'No waiting rooms',
-          'Safe, private & convenient',
+          'Fast & discreet personalized care',
+          'Comprehensive consultation-based treatment',
+          ' No waiting rooms, hassle, or delay',
+          // 'Safe, private & convenient',
         ],
       },
     ],
@@ -4847,19 +4871,23 @@ export const MANUAL_OVERRIDES = {
     steps: [
       {
         title: 'Book Instantly',
-        description: 'Call or WhatsApp 24/7. Share your hotel, room number & symptoms.',
-        points: ['No travel', 'Multilingual doctors'],
+        description: 'via Call or WhatsApp 24/7. Share your hotel details, room number, and current symptoms—our system immediately coordinates your on-site medical visit.',
+        points: [' No travel or clinic delays', 'Multilingual medical care', 'Discreet, doorstep consultation'],
       },
       {
         title: 'Doctor Visits Your Hotel',
-        description: 'Our DHA-licensed doctor reaches you—usually within 30–60 mins.',
-        points: ['Fast & private', 'Prescription provided'],
+        description: 'Get expert medical attention in the comfort of your hotel room, with a licensed physician at your doorstep within 30–60 minutes.',
+        points: ['Fast, private, and professional visits', ' Digital prescriptions & notes issued immediately', ' Multilingual medical team available 24/7'],
       },
       {
         title: 'Receive Complete Care',
         description:
-          'Medical consultation, diagnosis, and prescription—all in your hotel room.',
-        points: ['Clear treatment plans', 'Sick note available (on request)'],
+          'Receive complete medical consultations, accurate diagnoses, and immediate prescriptions right inside your hotel suite.',
+        points: [
+          'Tailored treatment plans & instant medication guidance',
+          'Fit to Fly & Not Fit to Fly medical certificates for travel (issued on request)',
+          '100% private, zero-travel healthcare for tourists & travelers',
+        ],
       },
     ],
     coverageTitle: 'Conditions We Treat at Your Hotel',

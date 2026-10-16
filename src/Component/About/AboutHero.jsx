@@ -5,9 +5,22 @@ import aboutHeroImage from '../../assets/AboutHeroImage01.png';
 
 const AboutHero = () => {
   const bullets = [
-    'Get professional care at home with our DHA-licensed doctors and nurses—available 24/7.',
-    'From doctor visits to home nursing, SIMS Healthcare ensures safe, convenient, and trusted care.',
-    'We bring hospital-quality care home—fast, reliable, and always close by.',
+    {
+      label: '24/7 Mobile Medical Services',
+      text: 'SIMS Home Healthcare provides round-the-clock doctor visits to Home, hotel suites, and corporate offices across Dubai.',
+    },
+    {
+      label: 'In-Home Doctor',
+      text: 'Clinical medical assessments delivered by fully qualified, DHA-licensed healthcare professionals.',
+    },
+    {
+      label: 'Mobile Physical Therapy Services',
+      text: 'Personalized physiotherapy and rehabilitation programs conducted at home for post-op recovery, sports injuries, and chronic pain.',
+    },
+    {
+      label: 'Mobile Laboratory & IV Therapy',
+      text: 'Professional at-home lab test sample collection and customized IV drip hydration administered safely at your preferred location.',
+    },
   ];
 
   return (
@@ -43,7 +56,7 @@ const AboutHero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.25, duration: 0.7 }}
             >
-              SIMS Home Healthcare – <span className="text-[#4fc3c0]">Trusted Healthcare at </span> Home/Hotel/Office in Dubai
+              SIMS Home Healthcare – <span className="text-[#4fc3c0]">DHA-Licensed Healthcare</span> at Home, Hotels & Offices in Dubai
             </motion.h1>
           </div>
 
@@ -53,9 +66,9 @@ const AboutHero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
           >
-            {bullets.map((text, i) => (
+            {bullets.map((item, i) => (
               <motion.div
-                key={text}
+                key={item.label}
                 className="flex items-start gap-4"
                 initial={{ opacity: 0, x: -12 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -64,7 +77,9 @@ const AboutHero = () => {
                 <div className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded border border-[#25b8a7]/30 bg-[#25b8a7]/10 text-[8px] text-[#25b8a7]">
                   ■
                 </div>
-                <p className="text-sm font-light leading-relaxed text-white/85">{text}</p>
+                <p className="text-sm font-light leading-relaxed text-white/85">
+                  <span className="font-semibold text-white">{item.label}:</span> {item.text}
+                </p>
               </motion.div>
             ))}
           </motion.div>

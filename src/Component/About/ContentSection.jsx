@@ -103,9 +103,14 @@ const ContentSection = () => {
             </div>
 
             <p className="text-base sm:text-lg text-slate-600 font-light leading-relaxed">
-              <strong className="font-bold text-[#003d4d]">SIMS Healthcare</strong> is a leading 24/7 home and hotel medical provider in <strong className="font-bold text-[#003d4d]">Dubai</strong>. We deliver high-quality, personalized healthcare directly to your doorstep —Our average reach time of <strong className="font-bold text-[#003d4d]">30 to 40 minutes</strong>.
-              Whether you require an immediate Doctor consultation at your hotel or home, Physiotherapy sessions, routine Lab Testing, or IV Therapy, our healthcare professionals are available <strong className="font-bold text-[#003d4d]">24 hours a day, 7 days a week</strong>
+              <strong className="font-bold text-[#003d4d]">SIMS Home Healthcare</strong> provides 24/7 DHA-licensed home medical services across Dubai, offering personalized care for residences, hotel suites, and corporate offices. Our team delivers comprehensive clinical solutions including on-demand doctor home visits, specialized physical therapy, diagnostic blood lab testing, and customized wellness IV drip therapy. Designed for Dubai families, seniors, and expatriates, SIMS Healthcare ensures convenient, reliable, and continuous medical support without requiring hospital visits.
             </p>
+
+            <div className="rounded-2xl border border-amber-200 bg-amber-50 px-5 py-4 text-sm leading-relaxed text-amber-950">
+              <p>
+                <span className="font-bold">Emergency Disclaimer:</span> In a life-threatening medical emergency, call the Dubai Ambulance immediately at <strong>998</strong> or go to the nearest hospital.
+              </p>
+            </div>
 
             <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }} className="pt-4">
               <a
