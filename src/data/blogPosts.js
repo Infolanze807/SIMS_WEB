@@ -4,8 +4,24 @@ import onCall from '../assets/Oncall.png';
 import step from '../assets/StepStep.png';
 import ivDripImage from '../assets/ivDripImage01.jpeg';
 import hotelSuiteImage from '../assets/blog/hotel-suite.jpg';
+import familyHotelDoctorImage from '../assets/blog/family-hotel-doctor-dubai.jpg';
 
 export const BLOG_POSTS = [
+  {
+    slug: 'personalized-family-health-services-at-dubai-hotels',
+    title:
+      'Personalized Family Health Services at Dubai Hotels: A Better Choice for Kids and Seniors',
+    author: 'Dr. Syeda Marsha Noor',
+    date: 'October 16, 2026',
+    day: '16',
+    month: 'Oct',
+    category: 'Doctor on Call',
+    comments: 'No Comments',
+    commentCount: 0,
+    excerpt:
+      'SIMS Home Healthcare’s personalized care at Dubai hotels will keep your family healthy. Find out how easy it is to get medical care for kids and seniors.',
+    image: familyHotelDoctorImage,
+  },
   {
     slug: 'staying-healthy-on-the-road-hotel-doctor-services',
     title: 'Staying Healthy on the Road: How Hotel Doctor Services Support International Tourists',

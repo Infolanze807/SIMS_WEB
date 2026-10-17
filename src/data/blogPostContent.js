@@ -1,11 +1,448 @@
 import doctorVisitImage from '../assets/DoctorAtHome02.jpeg';
 import ivHydrationImage from '../assets/ivDripImage01.jpeg';
 import dubaiSkylineImage from '../assets/blog/dubai-skyline.jpg';
+import familyHotelDoctorImage from '../assets/blog/family-hotel-doctor-dubai.jpg';
 
 export const BLOG_POST_CONTENT = {
+  'personalized-family-health-services-at-dubai-hotels': {
+    previousSlug: 'staying-healthy-on-the-road-hotel-doctor-services',
+    nextSlug: null,
+    cta: {
+      title: 'Book a Doctor at Your Dubai Hotel',
+      description:
+        'If you need medical help while staying in a hotel in Dubai, SIMS Home Healthcare brings professional care to you within 30–40 minutes. Book a visit by call or WhatsApp on +971525231028.',
+      buttonText: 'Call +971525231028',
+    },
+    sections: [
+      {
+        type: 'paragraph',
+        parts: [
+          'Picture yourself on vacation in a fancy Dubai hotel, soaking up the sun and relaxing in your five-star room. All of a sudden, your child has a high fever, or your elderly parent starts to feel unwell. At that moment, the idea of getting to a medical clinic through Dubai’s busy streets can feel like too much to handle.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'A lot of families and older travelers in Dubai, especially expats who are away from home, ask themselves, “Where can I find reliable, immediate medical care when my family needs it the most?” Traditional healthcare is useful, but it often means long waits, crowded clinics, and the stress of leaving your hotel room or home when you are not feeling well.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'This is where SIMS Home Healthcare comes in. We offer a practical way to get family health care in Dubai, with expert, personalized medical care at your location — whether you are staying at a hotel, living in a residential complex, or on a business trip.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'This guide shows how family medical services at Dubai hotels are designed for kids and seniors. It covers useful tips for looking after your health on vacation or a business trip, and how personalized care where you are staying can help keep your family healthy and comfortable.',
+        ],
+      },
+      {
+        type: 'image',
+        src: familyHotelDoctorImage,
+        alt: 'A doctor checking a child’s temperature in a Dubai hotel while a grandparent sits nearby',
+        caption: 'A doctor on call can see children and seniors in the privacy of a Dubai hotel room.',
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Family Medical Services at Dubai Hotels: Care for Kids and Seniors',
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'What Are Family Medical Services at Dubai Hotels?',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Family medical services in Dubai hotels are specialized care for families, children, and seniors, delivered in the comfort and privacy of their hotel room. Instead of going to a clinic, a doctor comes to you. That is less stressful and takes less time.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Going to the doctor can feel especially daunting for children, who may not know what to expect and may have to wait a long time. For older people, especially those who have trouble getting around or live with long-term illness, a trip to a clinic can be very tiring. Hotel medical services make a real difference here.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'What Are the Main Advantages?',
+      },
+      {
+        type: 'list',
+        items: [
+          {
+            label: 'Immediate access to medical care:',
+            text: 'A doctor comes to you, so you do not have to leave your hotel room.',
+          },
+          {
+            label: 'Individualized care:',
+            text: 'A licensed doctor gives you their full attention and focuses on you and your family.',
+          },
+          {
+            label: 'Convenience:',
+            text: 'No traffic, long waits, or the stress of traveling to a clinic.',
+          },
+          {
+            label: 'Comfort for kids and seniors:',
+            text: 'Children and older people often feel more at ease receiving care in a private, familiar place.',
+          },
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'This model brings the ease of a visit where you are staying together with the professionalism of high-quality medical care — a level of comfort that a crowded clinic visit cannot match.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Common Conditions Treated for Kids and Seniors in Hotels',
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'For Kids',
+      },
+      {
+        type: 'bullets',
+        items: [
+          'Fever and infections',
+          'Asthma attacks',
+          'Injuries from falls or small accidents',
+          'Vaccinations and health check-ups',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'For Seniors',
+      },
+      {
+        type: 'bullets',
+        items: [
+          'Long-term problems such as diabetes or high blood pressure',
+          'Problems with moving around and falls',
+          'Breathing problems such as pneumonia or bronchitis',
+          'Short-term problems such as urinary tract infections (UTIs)',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'The Dubai Setting: Why This Matters Here',
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Family Medical Services at Dubai Hotels: A Different Point of View',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Dubai is a busy, cosmopolitan city with many people from other countries living and visiting here. Families on business trips, vacations, or seasonal stays often spend their time in the city’s hotels. Hot weather, humidity, and constant air conditioning can be hard on health, especially for children and older people. The climate can worsen dehydration and breathing problems, and those effects are often stronger for young children and seniors.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Convenience matters even more for expat families. Visitors may not know the local healthcare system well, and a language barrier can make a traditional clinic or hospital harder to navigate. A ',
+          { link: 'doctor on call in Dubai', to: '/services/doctor-on-call' },
+          ' fills that gap with professional medical care that fits Dubai’s fast-paced, multicultural setting.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Important Things That Affect Healthcare in Dubai',
+      },
+      {
+        type: 'list',
+        items: [
+          {
+            label: 'Climate:',
+            text: 'Very hot weather and air-conditioning cycles can lead to dehydration and breathing problems.',
+          },
+          {
+            label: 'Expat demographics:',
+            text: 'Many expats look for medical services that meet their expectations for quality and convenience.',
+          },
+          {
+            label: 'Health risks for kids and seniors:',
+            text: 'Dubai’s climate and pace of life often affect children and older adults more than others.',
+          },
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Families staying in hotels need reliable healthcare that can come to them. It is not only about getting treated. It is about getting treated in a way that is comfortable, quick, and suited to life in Dubai.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'The Clinic Visit vs. Care Where You Are Staying',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Getting medical care at a clinic or hospital involves several steps that can be tiring, especially in Dubai’s traffic or heat. Here is how a traditional visit compares with a doctor who comes to your hotel.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'The Traditional Way of Getting Healthcare',
+      },
+      {
+        type: 'ordered-list',
+        items: [
+          {
+            label: 'Scheduling:',
+            text: 'You need to call, set up an appointment, and wait for confirmation.',
+          },
+          {
+            label: 'Traveling:',
+            text: 'Moving through heavy traffic or heat is tiring, especially with children or older loved ones.',
+          },
+          {
+            label: 'Waiting:',
+            text: 'At the clinic, a long wait is common, and that adds stress for everyone.',
+          },
+          {
+            label: 'Crowded environment:',
+            text: 'Clinics are often full, including people who are unwell, which can raise the chance of catching something contagious.',
+          },
+          {
+            label: 'Short consultation:',
+            text: 'When a clinic is busy, the visit can feel rushed, and you may not feel fully listened to.',
+          },
+        ],
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'The Convenient Doctor-on-Call Method',
+      },
+      {
+        type: 'list',
+        items: [
+          {
+            label: 'No travel stress:',
+            text: 'The doctor comes to you, so you do not have to leave your hotel.',
+          },
+          {
+            label: 'A consultation without the clinic queue:',
+            text: 'You receive personalized care without waiting in a busy clinic.',
+          },
+          {
+            label: 'A comfortable setting:',
+            text: 'You and your family are cared for in the privacy of your hotel room.',
+          },
+          {
+            label: 'Continuity of care:',
+            text: 'Follow-up visits can be arranged so your care stays consistent.',
+          },
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Clinics and hospitals remain important. For many hotel stays, though, a ',
+          { link: 'doctor at your hotel in Dubai', to: '/services/doctor-at-hotel' },
+          ' puts comfort, privacy, and speed first.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'How a Doctor on Call Supports Families in Dubai Hotels',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'A doctor’s visit to your hotel is very different from a regular clinic visit. SIMS Home Healthcare offers personalized care for families, especially those with children or older members, so you can get attention without leaving where you are staying.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Immediate and Tailored Care',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'SIMS Home Healthcare makes sure your family’s health problems are seen promptly. A licensed doctor comes to you and gives you their full attention. That one-on-one time helps them understand the condition, answer your questions, and recommend the right next step.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Comfort and Privacy',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Children and seniors especially benefit from being treated in their hotel room. It reduces the anxiety of going out to a clinic. Kids often feel better when they can stay somewhere familiar. Seniors who have trouble getting around do not have to travel, so they can receive care without the extra strain of leaving their room.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Full Diagnosis and Treatment',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'A doctor on call arrives equipped to assess and treat a wide range of problems on the spot. If your child develops a high fever in the middle of the night, a DHA-certified doctor can come to your hotel, check your child, start care, and plan follow-up. Depending on what is needed, that visit can include medicine, arranging lab tests, or IV therapy.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Care That Stays Consistent',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'SIMS focuses on more than a one-time fix. Ongoing care matters for long-term conditions such as asthma or diabetes. A doctor who understands the medical history can make a real difference in how those conditions are managed.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Useful Advice and Ways to Avoid Problems',
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Your Proactive Health Toolkit',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Prompt care matters, and simple habits can help families avoid many common problems while staying in Dubai hotels.',
+        ],
+      },
+      {
+        type: 'ordered-list',
+        items: [
+          {
+            label: 'Stay hydrated:',
+            text: 'Make sure you and your family drink plenty of water, especially in the heat.',
+          },
+          {
+            label: 'Protect yourself from the sun:',
+            text: 'Use sunscreen often and wear clothes that cover you when you are outside.',
+          },
+          {
+            label: 'Wash your hands often:',
+            text: 'Clean hands, especially in hotel rooms and other shared places, help keep germs away.',
+          },
+          {
+            label: 'Rest and nutrition:',
+            text: 'Enough sleep and regular meals help keep the immune system working well.',
+          },
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Peace of Mind for Family Travel in Dubai',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Family trips, whether for work or leisure, should be a good time. When health problems come up, especially with young children or older family members, the trip can turn stressful very quickly. That is when a doctor who comes to your hotel makes a practical difference.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Having healthcare available at your hotel is about peace of mind as much as convenience. With SIMS Home Healthcare, you do not have to search for a clinic in a new city or sit in a crowded waiting room. You get care where you are, whether it is a routine check-up, urgent but non-emergency care, or support for a long-term condition.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Personalized visits for children and seniors mean each family member can be seen in a comfortable setting. Convenience, clinical knowledge, and attentive care work together so a health problem does not have to take over your time in Dubai.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'What to Do',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'You should not put your family’s health at risk, especially when you are away from home. If you need medical help while staying in a hotel in Dubai, you do not have to wait in a clinic queue. SIMS Home Healthcare provides professional medical care where you are staying.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'We bring care to you within 30–40 minutes in Dubai, whether it is a minor illness, a vaccination, or support for a long-term health problem. To arrange a visit, call or WhatsApp +971525231028.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Medical Disclaimer',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'For life-threatening conditions or medical emergencies, call 998 (Ambulance – UAE) immediately. Doctor-at-home services are not intended for emergencies.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can a doctor who makes house calls handle urgent problems?',
+        answer:
+          'Yes. A doctor on call can assess urgent, non-life-threatening problems such as breathing difficulty that is not an emergency, minor injuries, and infections. They can give immediate care, prescribe medicine, or arrange more specialized care if it is needed. For a life-threatening emergency, call 998.',
+      },
+      {
+        question: 'When can a doctor on call get there?',
+        answer:
+          'A doctor on call usually arrives quickly. SIMS Home Healthcare aims to reach hotel guests in Dubai within 30–40 minutes, and urgent cases that are still suitable for a hotel visit are given priority.',
+      },
+      {
+        question: 'Can a doctor on call give IV therapy to people staying in hotels?',
+        answer:
+          'Yes. Doctors on call can provide IV therapy in your hotel room when it is clinically appropriate. That can include treatment for dehydration, electrolyte imbalance, or vitamin drips.',
+      },
+      {
+        question: 'What if you need to see a specialist after the visit?',
+        answer:
+          'If you need a specialist after the visit, the doctor can help you connect with trusted specialists in Dubai’s healthcare network and plan the next steps for your condition.',
+      },
+      {
+        question: 'Does insurance cover visits from a doctor on call?',
+        answer:
+          'Coverage depends on your health insurance plan. Many insurers cover house calls, but it is best to check with your provider ahead of time. SIMS provides the paperwork you need to file an insurance claim.',
+      },
+      {
+        question: 'What kinds of health problems can a doctor on call help kids and seniors with?',
+        answer:
+          'SIMS doctors treat a wide range of problems that affect children and seniors. That includes common childhood illnesses such as fevers and ear infections, chronic conditions such as diabetes, arthritis, and high blood pressure in seniors, as well as minor injuries, breathing problems, and regular check-ups.',
+      },
+      {
+        question: 'Can the doctor on call give vaccinations?',
+        answer:
+          'Yes. Doctors can give most vaccinations to children and adults in your hotel room. That is helpful for families visiting Dubai who need a vaccine during their stay.',
+      },
+    ],
+  },
   'staying-healthy-on-the-road-hotel-doctor-services': {
     previousSlug: 'iv-drip-at-home-dubai',
-    nextSlug: null,
+    nextSlug: 'personalized-family-health-services-at-dubai-hotels',
     cta: {
       title: 'Book a Hotel Doctor in Dubai',
       description:
