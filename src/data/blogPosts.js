@@ -5,8 +5,23 @@ import step from '../assets/StepStep.png';
 import ivDripImage from '../assets/ivDripImage01.jpeg';
 import hotelSuiteImage from '../assets/blog/hotel-suite.jpg';
 import familyHotelDoctorImage from '../assets/blog/family-hotel-doctor-dubai.jpg';
+import marinaIvTherapyImage from '../assets/blog/iv-therapy-dubai-marina-hotel.jpg';
 
 export const BLOG_POSTS = [
+  {
+    slug: 'iv-therapy-at-hotel-dubai-marina',
+    title: 'IV Therapy at Hotel Dubai Marina: A Premium Solution for Health and Relaxation',
+    author: 'Dr. Syeda Marsha Noor',
+    date: 'October 21, 2026',
+    day: '21',
+    month: 'Oct',
+    category: 'IV Therapy',
+    comments: 'No Comments',
+    commentCount: 0,
+    excerpt:
+      'Explore the benefits of wellness and IV therapy services at Dubai Marina hotels. Learn how these treatments can recharge your body, boost energy, and promote well-being.',
+    image: marinaIvTherapyImage,
+  },
   {
     slug: 'personalized-family-health-services-at-dubai-hotels',
     title:

@@ -2,11 +2,501 @@ import doctorVisitImage from '../assets/DoctorAtHome02.jpeg';
 import ivHydrationImage from '../assets/ivDripImage01.jpeg';
 import dubaiSkylineImage from '../assets/blog/dubai-skyline.jpg';
 import familyHotelDoctorImage from '../assets/blog/family-hotel-doctor-dubai.jpg';
+import marinaIvTherapyImage from '../assets/blog/iv-therapy-dubai-marina-hotel.jpg';
 
 export const BLOG_POST_CONTENT = {
+  'iv-therapy-at-hotel-dubai-marina': {
+    previousSlug: 'personalized-family-health-services-at-dubai-hotels',
+    nextSlug: null,
+    cta: {
+      title: 'Book IV Therapy at Your Dubai Marina Hotel',
+      description:
+        'If you are feeling tired, dehydrated, or in need of extra wellness support during your stay in Dubai, SIMS Home Healthcare is here to help. Book a visit or call +971525231028. IV therapy is supervised by DHA-certified doctors and brought directly to you.',
+      buttonText: 'Call +971525231028',
+    },
+    sections: [
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Wellness and IV Therapy at Hotel Dubai Marina – The Future of Health and Convenience',
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'A Traveler’s Dilemma',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'You’ve just arrived in Dubai, excited about all the experiences the city has to offer — the stunning skyscrapers, luxurious shopping, and indulgent food scene. But after a long flight and a few days of sightseeing, you start to feel the fatigue setting in. Perhaps the heat, the jet lag, or the demanding schedule has left you drained. Suddenly, the thought of navigating the bustling streets to find a clinic or hospital feels like an added stress that would only make you feel worse.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'What if you didn’t have to leave your hotel at all? What if you could simply pick up the phone, call for medical help, and have a licensed doctor come straight to your room to give you the treatment you need, all while staying in the comfort of your luxurious hotel?',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'In this article, we’ll explore the growing trend of wellness and IV therapy at hotels in Dubai Marina, and how these treatments can recharge your body, boost energy, and support well-being without leaving your room.',
+        ],
+      },
+      {
+        type: 'image',
+        src: marinaIvTherapyImage,
+        alt: 'A clinician preparing an IV drip for a guest in a Dubai Marina hotel suite',
+        caption: 'IV therapy at a Dubai Marina hotel can restore fluids and nutrients without a clinic visit.',
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'What Exactly Is Wellness and IV Therapy at Hotel Dubai Marina?',
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Understanding the Concept',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Wellness and IV therapy are a growing service in Dubai, particularly for hotel guests who need to stay energized, hydrated, and healthy while traveling. Wellness services aim to improve physical and mental well-being, while IV (intravenous) therapy targets hydration, energy, and recovery by delivering fluids, vitamins, and minerals directly into the bloodstream.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Wellness services are designed to promote overall health, boost immunity, increase energy, and support the body’s recovery. These services often include:',
+        ],
+      },
+      {
+        type: 'bullets',
+        items: [
+          'Massage therapy for relaxation and stress relief',
+          'Detox programs to cleanse the body of toxins',
+          'Nutritional counseling to guide healthy eating habits while traveling',
+          'Fitness services to maintain or improve physical health during a stay',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'IV therapy involves the direct infusion of fluids into the body, typically through a vein. It has become a popular treatment for several reasons:',
+        ],
+      },
+      {
+        type: 'list',
+        items: [
+          {
+            label: 'Hydration:',
+            text: 'After a long flight or a day in the sun, the body can become dehydrated, leading to fatigue, headaches, and sluggishness. IV therapy provides immediate hydration, restoring fluid levels and helping the body bounce back quickly.',
+          },
+          {
+            label: 'Energy boost:',
+            text: 'For those feeling drained from travel or jet lag, IV therapy can offer a quick energy boost by delivering essential vitamins and nutrients directly into the bloodstream.',
+          },
+          {
+            label: 'Recovery:',
+            text: 'After a strenuous day, or overindulgence in food and drink, IV therapy can help the body recover faster by replenishing electrolytes and vitamins such as vitamin C, B12, and magnesium.',
+          },
+          {
+            label: 'Immune support:',
+            text: 'With vitamins and antioxidants, IV therapy can also strengthen the immune system while traveling in a new environment.',
+          },
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Together, wellness services and IV therapy offer a holistic approach to health that is tailored to travelers in Dubai. See the full menu on our ',
+          { link: 'IV therapy services', to: '/services/iv-therapies' },
+          ' page.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Types of IV Therapy Available',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Several IV treatments are offered for hotel guests in Dubai Marina. Each one can be adjusted to the guest’s needs.',
+        ],
+      },
+      {
+        type: 'list',
+        items: [
+          {
+            label: 'Hydration therapy:',
+            text: 'Replenishes fluids and electrolytes. Ideal for dehydration from heat or long flights.',
+          },
+          {
+            label: 'Energy boost infusion:',
+            text: 'Combines fluids, B vitamins, and other nutrients for a natural lift and to help with jet lag.',
+          },
+          {
+            label: 'Immune support infusion:',
+            text: 'Includes vitamin C, zinc, and antioxidants to help strengthen the immune system.',
+          },
+          {
+            label: 'Beauty and skin rejuvenation:',
+            text: 'Infusions with vitamins and antioxidants aimed at supporting skin health and appearance.',
+          },
+          {
+            label: 'Detox infusion:',
+            text: 'Helps the body clear toxins and supports overall wellness.',
+          },
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'The Dubai Context: Why This Matters Here',
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Dubai’s Unique Challenges for Travelers',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Dubai attracts millions of tourists and business travelers every year. Whether you are visiting for leisure or work, the climate, lifestyle, and pace can take a toll on physical and mental well-being.',
+        ],
+      },
+      {
+        type: 'list',
+        items: [
+          {
+            label: 'The hot and humid climate:',
+            text: 'Temperatures regularly soar above 40°C (104°F) in summer. Intense heat can lead to dehydration, fatigue, and heat exhaustion, so hydration is a priority. Travelers unfamiliar with the climate may feel these effects more strongly.',
+          },
+          {
+            label: 'Jet lag and travel fatigue:',
+            text: 'Long international flights disrupt sleep and leave people sluggish. Adjusting to a new time zone can add fatigue, irritability, and general discomfort.',
+          },
+          {
+            label: 'A fast-paced lifestyle:',
+            text: 'A packed business schedule can lead to stress, exhaustion, and burnout, making it harder to enjoy the city or finish work.',
+          },
+          {
+            label: 'The expatriate community:',
+            text: 'Many people are away from home for long periods. That can contribute to homesickness, isolation, and burnout while adjusting to a new culture and work environment.',
+          },
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Wellness and IV therapy let hotel guests recover from fatigue, stay hydrated, and support immunity in the room. For many travelers in Dubai, that is the more practical option.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Navigating Healthcare in Dubai: The Clinic vs. Your Hotel',
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Traditional Healthcare: Traveling and Waiting for Treatment',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'The usual route means scheduling an appointment, traveling to a clinic or hospital, and waiting in a crowded room. For travelers, that can feel overwhelming, especially with jet lag, dehydration, or illness in an unfamiliar city.',
+        ],
+      },
+      {
+        type: 'ordered-list',
+        items: [
+          {
+            label: 'Booking an appointment:',
+            text: 'Scheduling a visit can take time, and even when you feel unwell the wait for a slot may be significant.',
+          },
+          {
+            label: 'Traveling to the clinic:',
+            text: 'Getting through Dubai’s busy streets, or taking a taxi in the heat, adds stress on top of a long journey.',
+          },
+          {
+            label: 'Waiting in crowded areas:',
+            text: 'Even with an appointment, you may wait among other patients, which can add to discomfort.',
+          },
+          {
+            label: 'Brief consultations:',
+            text: 'Once you see a doctor, the visit can feel rushed, and you may leave feeling unheard.',
+          },
+        ],
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'The Convenient Alternative: Wellness and IV Therapy at Your Hotel',
+      },
+      {
+        type: 'list',
+        items: [
+          {
+            label: 'Immediate access:',
+            text: 'Call for an on-demand visit, and a licensed doctor or nurse can arrive at your hotel room at a time that suits you.',
+          },
+          {
+            label: 'No travel required:',
+            text: 'Your treatment comes to you, which removes the stress of getting to a clinic or hospital.',
+          },
+          {
+            label: 'Personalized care:',
+            text: 'A doctor or nurse can focus on your needs and tailor the service to your health goals.',
+          },
+          {
+            label: 'A wider wellness visit:',
+            text: 'From IV hydration to a personalized plan, you can get care without stepping outside.',
+          },
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'That lets you rest, recharge, and enjoy the trip without turning a health need into a day of travel.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Managing IV Therapy at a Dubai Marina Hotel',
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Immediate and Personalized Attention',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'On-call wellness and IV therapy at hotels in Dubai means personal attention. SIMS Home Healthcare provides timely, individualized care.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'When you call, a doctor or nurse can arrive at your hotel room, assess your needs, and deliver the appropriate treatment. Whether you are dealing with fatigue, dehydration, or other symptoms, a licensed professional can start care in private and give you peace of mind.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Comfort and Discretion in a Private Setting',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Receiving care in your hotel room is easier than waiting in a crowded clinic. The visit stays private, discreet, and calm.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'For travelers who are new to the city, a clinic or hospital can feel overwhelming. Treatment in familiar surroundings lets you stay at ease, without the anxiety of waiting rooms or long commutes.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'For families, this is especially helpful. If a child or an older family member needs attention, a public waiting room can be stressful. A hotel visit keeps them in a familiar environment, with the clinician focused on their needs.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'For anyone dealing with anxiety, limited mobility, or fatigue, being treated in the room is simpler. The experience is calmer, and the treatment feels less disruptive. Relaxation support can also help you unwind and ease physical tension from travel or a busy schedule.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Care at Your Doorstep',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Wellness and IV therapy go beyond a single bag of fluid. In a typical hotel visit, a doctor or licensed professional tailors treatment to what you need that day.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: '1. Initial Consultation and a Personalized Health Plan',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'When the doctor arrives, the first step is a consultation. Whether you are dehydrated, fatigued, jet-lagged, or looking for a general wellness boost, the doctor listens, reviews your symptoms, and helps shape a treatment plan.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'That one-on-one time lets you explain your concerns without feeling rushed. You can discuss symptoms or existing conditions, and the doctor recommends treatment based on your needs.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: '2. IV Therapy',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'IV therapy is one of the main wellness treatments SIMS Home Healthcare provides. Whether you need hydration, an immune-support infusion, or a detox blend, the clinician tailors the infusion to you.',
+        ],
+      },
+      {
+        type: 'list',
+        items: [
+          {
+            label: 'Hydration therapy:',
+            text: 'If you are dehydrated from Dubai’s heat or from travel, IV hydration replenishes fluid, helps restore electrolytes, and can ease fatigue, headaches, and dizziness.',
+          },
+          {
+            label: 'Energy boost infusion:',
+            text: 'If jet lag or a busy itinerary has left you drained, an energy-focused infusion can include B vitamins and other nutrients.',
+          },
+          {
+            label: 'Immune support infusion:',
+            text: 'An immune-focused infusion can include vitamin C, zinc, and antioxidants for travelers who want extra support while away from home.',
+          },
+          {
+            label: 'Beauty and skin rejuvenation:',
+            text: 'Travel can leave skin looking dull or dry. A beauty-focused infusion can include nutrients such as vitamin C and biotin to support a healthy complexion.',
+          },
+        ],
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: '3. Post-Activity Recovery and Detoxification',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Sightseeing can take a toll, especially after long walks, outdoor time, or rich food and drinks. Recovery treatments such as a detox IV can help replenish nutrients after a long day.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Continuity of Care',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'A hotel visit does not have to be a one-time event. If you are staying in Dubai for longer, or you travel here often, you can build a relationship with the clinician.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'If you use wellness services through your stay, the doctor can follow how you are feeling and adjust the plan. That ongoing attention means your health is managed by someone who understands what you need.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Follow-Up Visits and Longer-Term Goals',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Whether you are managing an ongoing condition, improving general wellness, or making sure you get the right nutrients while traveling, follow-up visits can build on the care you have already received and make it easier to stay well through your stay.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Practical Tips for Staying Well While Traveling',
+      },
+      {
+        type: 'ordered-list',
+        items: [
+          {
+            label: 'Stay hydrated:',
+            text: 'Dubai’s heat is draining. Drink water through the day and carry a bottle. If you are outdoors for long periods, electrolytes can help you keep balance.',
+          },
+          {
+            label: 'Eat balanced meals:',
+            text: 'Fresh fruit, vegetables, lean proteins, and whole grains give you steadier energy. Rich or fried meals in excess can leave you sluggish.',
+          },
+          {
+            label: 'Take breaks and rest:',
+            text: 'Packing too much into one day wears you out. Leave room to pause and let your body recharge.',
+          },
+          {
+            label: 'Get enough sleep:',
+            text: 'Jet lag is common across several time zones. Adjust gradually where you can, and protect your sleep. If falling asleep is hard, quiet routines or a calming massage can help.',
+          },
+          {
+            label: 'Protect your skin:',
+            text: 'Use a high-SPF sunscreen, wear covering clothes, and limit direct sun from 10 AM to 4 PM.',
+          },
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Health, Wellness, and Comfort at Your Fingertips',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Wellness and IV therapy at hotels in Dubai Marina give travelers a practical way to recover from fatigue, support energy, and look after their health during a stay. With care that comes to the room, you can enjoy Dubai with less worry about finding a clinic.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Medical Disclaimer',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'IV therapy is a medical treatment and is supervised by DHA-certified doctors. It is not a substitute for emergency care. For a life-threatening condition, call 998 (Ambulance – UAE) immediately.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'How long does it take for IV therapy to show results?',
+        answer:
+          'IV therapy usually begins to show results within 30 to 60 minutes. Many people feel a boost in energy, hydration, or relief from symptoms during or soon after the infusion.',
+      },
+      {
+        question: 'Are wellness and IV therapy services available for children?',
+        answer:
+          'Yes. Wellness and IV therapy can be arranged for children, with the treatment adjusted for age and health. The plan is tailored to the child’s needs and given under medical supervision.',
+      },
+      {
+        question: 'Is IV therapy safe for everyone?',
+        answer:
+          'IV therapy is generally suitable for healthy adults. If you have an underlying medical condition, speak with the doctor before treatment so they can confirm it is appropriate for you.',
+      },
+      {
+        question: 'Can I book wellness and IV therapy services on short notice?',
+        answer:
+          'Yes. SIMS Home Healthcare offers flexible, on-demand bookings, so you can request wellness or IV therapy during your stay.',
+      },
+      {
+        question: 'What if I need further medical attention after receiving IV therapy?',
+        answer:
+          'If you need more care, the doctor on call can refer you to a specialist or a hospital and arrange any follow-up that is needed.',
+      },
+    ],
+  },
   'personalized-family-health-services-at-dubai-hotels': {
     previousSlug: 'staying-healthy-on-the-road-hotel-doctor-services',
-    nextSlug: null,
+    nextSlug: 'iv-therapy-at-hotel-dubai-marina',
     cta: {
       title: 'Book a Doctor at Your Dubai Hotel',
       description:

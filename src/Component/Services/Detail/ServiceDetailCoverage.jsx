@@ -3,25 +3,33 @@ import { motion } from 'framer-motion';
 import { FaCheckCircle, FaUserCheck } from 'react-icons/fa';
 import AnimateInView, { fadeUp, staggerContainer } from '../AnimateInView';
 
+const DETAIL_FIELDS = [
+  { key: 'benefits', label: 'Benefits' },
+  { key: 'ingredients', label: 'Ingredients' },
+  { key: 'bestFor', label: 'Best for' },
+];
+
 const ServiceDetailCoverage = ({ title, intro, items = [], idealFor = [] }) => {
   if (!items.length && !idealFor.length) return null;
 
-  const gridClass =
-    items.length >= 9
+  const isDetailed = items.some((item) => item && typeof item === 'object');
+  const gridClass = isDetailed
+    ? 'sm:grid-cols-2 xl:grid-cols-3'
+    : items.length >= 9
       ? 'sm:grid-cols-2 lg:grid-cols-3'
       : items.length >= 5
         ? 'sm:grid-cols-2'
         : 'sm:grid-cols-2 lg:grid-cols-2';
 
   return (
-    <section className="relative w-full overflow-hidden bg-brand-dark px-6 py-24 font-sans text-white antialiased lg:px-10">
+    <section className={`relative w-full overflow-hidden bg-brand-dark px-6 font-sans text-white antialiased lg:px-10 ${isDetailed ? 'py-16' : 'py-24'}`}>
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-brand-dark via-brand-dark/95 to-brand-dark-mid/90" />
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(37,184,167,0.22),transparent_55%)]" />
       <div className="pointer-events-none absolute -bottom-32 -left-32 h-96 w-96 rounded-full bg-brand-accent/10 blur-3xl" />
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-brand-accent/50 to-transparent" />
 
-      <div className="relative z-10 mx-auto max-w-7xl space-y-14">
-        <AnimateInView animateOnMount className="grid items-end gap-6 border-b border-white/10 pb-10 lg:grid-cols-12">
+      <div className={`relative z-10 mx-auto max-w-7xl ${isDetailed ? 'space-y-8' : 'space-y-14'}`}>
+        <AnimateInView animateOnMount className={`grid items-end gap-6 border-b border-white/10 lg:grid-cols-12 ${isDetailed ? 'pb-6' : 'pb-10'}`}>
           <div className="space-y-3 lg:col-span-7">
             <span className="inline-flex items-center gap-2 rounded-full border border-brand-accent/30 bg-brand-accent/15 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-brand-accent-light">
               What We Cover
@@ -39,26 +47,68 @@ const ServiceDetailCoverage = ({ title, intro, items = [], idealFor = [] }) => {
 
         {items.length > 0 && (
           <motion.div
-            className={`grid grid-cols-1 gap-4 ${gridClass}`}
+            className={`grid grid-cols-1 ${isDetailed ? 'gap-3' : 'gap-4'} ${gridClass}`}
             variants={staggerContainer}
             initial="hidden"
             animate="visible"
           >
-            {items.map((item, i) => (
-              <motion.div
-                key={`${item}-${i}`}
-                variants={fadeUp}
-                whileHover={{ y: -3 }}
-                className="group flex items-start gap-4 rounded-2xl border border-white/10 bg-white/95 p-5 shadow-[0_8px_32px_rgba(0,0,0,0.2)] transition-all duration-300 hover:border-brand-accent/40 hover:bg-white hover:shadow-[0_16px_40px_rgba(0,0,0,0.25)]"
-              >
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-brand-accent/20 to-brand-accent/5 text-brand-accent transition-transform duration-300 group-hover:scale-105">
-                  <FaCheckCircle className="text-sm" />
-                </div>
-                <p className="pt-1.5 text-[15px] font-medium leading-relaxed text-slate-700">
-                  {item}
-                </p>
-              </motion.div>
-            ))}
+            {items.map((item, i) => {
+              if (item && typeof item === 'object') {
+                return (
+                  <motion.div
+                    key={item.title}
+                    variants={fadeUp}
+                    whileHover={{ y: -2 }}
+                    className="group flex h-full flex-col rounded-2xl border border-white/10 bg-white p-4 shadow-[0_6px_20px_rgba(0,0,0,0.16)] transition-all duration-300 hover:border-brand-accent/30"
+                  >
+                    <div className="flex items-start gap-2.5">
+                      <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-brand-dark text-[10px] font-black text-white">
+                        {String(i + 1).padStart(2, '0')}
+                      </span>
+                      <div className="min-w-0 flex-1">
+                        <div className="flex items-start justify-between gap-2">
+                          <h3 className="text-sm font-bold leading-snug text-brand-dark">{item.title}</h3>
+                          {item.duration && (
+                            <span className="shrink-0 rounded-full bg-brand-accent/10 px-2 py-0.5 text-[10px] font-bold leading-4 text-brand-accent">
+                              {item.duration}
+                            </span>
+                          )}
+                        </div>
+                        {item.tagline && (
+                          <p className="mt-0.5 text-xs leading-snug text-slate-500">{item.tagline}</p>
+                        )}
+                      </div>
+                    </div>
+                    <dl className="mt-3 space-y-1.5 border-t border-slate-100 pt-3">
+                      {DETAIL_FIELDS.map((field) =>
+                        item[field.key] ? (
+                          <div key={field.key} className="text-xs leading-relaxed text-slate-600">
+                            <dt className="inline font-bold text-slate-800">{field.label}: </dt>
+                            <dd className="inline">{item[field.key]}</dd>
+                          </div>
+                        ) : null,
+                      )}
+                    </dl>
+                  </motion.div>
+                );
+              }
+
+              return (
+                <motion.div
+                  key={`${item}-${i}`}
+                  variants={fadeUp}
+                  whileHover={{ y: -3 }}
+                  className="group flex items-start gap-4 rounded-2xl border border-white/10 bg-white/95 p-5 shadow-[0_8px_32px_rgba(0,0,0,0.2)] transition-all duration-300 hover:border-brand-accent/40 hover:bg-white hover:shadow-[0_16px_40px_rgba(0,0,0,0.25)]"
+                >
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-brand-accent/20 to-brand-accent/5 text-brand-accent transition-transform duration-300 group-hover:scale-105">
+                    <FaCheckCircle className="text-sm" />
+                  </div>
+                  <p className="pt-1.5 text-[15px] font-medium leading-relaxed text-slate-700">
+                    {item}
+                  </p>
+                </motion.div>
+              );
+            })}
           </motion.div>
         )}
 
