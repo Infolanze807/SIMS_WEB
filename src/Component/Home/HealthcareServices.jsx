@@ -16,16 +16,16 @@ import {
   FaArrowRight,
 } from 'react-icons/fa';
 import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInView';
-import doctorOnCallImage from '../../assets/DoctorOnCall04.png';
-import labTestAtHomeImage from '../../assets/LabTestAtHome02.jpeg';
-import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.jpeg';
-import nursingCareAtHomeImage from '../../assets/NursingAtHome01.jpeg';
-import ivTherapiesImage from '../../assets/IVTherapies001.jpeg';
-import oxygenTherapyAtHomeImage from '../../assets/OxygenTherapyAtHome03.jpeg';
-import covidPCRTestAtHomeImage from '../../assets/CovidPCRTestAtHome03.jpeg';
-import fluVaccinationAtHomeInDubaiImage from '../../assets/FluVaccinationAtHomeInDubai03.jpeg';
-import healthCheckupAtHomeImage from '../../assets/HealthCheckupAtHome03.jpeg';
-import injectionServiceAtHomeImage from '../../assets/InjectionServiceAtHome03.jpeg';
+import doctorOnCallImage from '../../assets/DoctorOnCall04.webp';
+import labTestAtHomeImage from '../../assets/LabTestAtHome02.webp';
+import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.webp';
+import nursingCareAtHomeImage from '../../assets/NursingAtHome01.webp';
+import ivTherapiesImage from '../../assets/IVTherapies001.webp';
+import oxygenTherapyAtHomeImage from '../../assets/OxygenTherapyAtHome03.webp';
+import covidPCRTestAtHomeImage from '../../assets/CovidPCRTestAtHome03.webp';
+import fluVaccinationAtHomeInDubaiImage from '../../assets/FluVaccinationAtHomeInDubai03.webp';
+import healthCheckupAtHomeImage from '../../assets/HealthCheckupAtHome03.webp';
+import injectionServiceAtHomeImage from '../../assets/InjectionServiceAtHome03.webp';
 const SERVICES_DATA = [
   {
     slug: 'doctor-on-call',
@@ -194,7 +194,10 @@ const HealthcareServices = () => {
                 <motion.img
                   src={service.bgImage}
                   alt={service.title}
+                  width="132"
+                  height="180"
                   loading="lazy"
+                  decoding="async"
                   variants={cardImageVariants}
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                   style={

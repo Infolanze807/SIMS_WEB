@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import {
   FaUser,
   FaMapMarkerAlt,
@@ -11,16 +10,15 @@ import {
   FaAward,
   FaNotesMedical,
 } from 'react-icons/fa';
-import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInView';
-import { GoogleRatingBadge } from './HomeMain';
-import dhaHealthBadge from '../../assets/logoo.png';
-import doctorAtHomeImage from '../../assets/Home01.png';
-import doctorOnCallImage from '../../assets/DoctorOnCall04.png';
-import ivTherapiesImage from '../../assets/IVTherapies001.jpeg';
-import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.jpeg';
-import labTestAtHomeImage from '../../assets/LabTestAtHome02.jpeg';
-import nursingCareAtHomeImage from '../../assets/NursingAtHome01.jpeg';
-import healthCheckupAtHomeImage from '../../assets/HealthCheckupAtHome03.jpeg';
+import { GoogleRatingBadge } from './GoogleRatingBadge';
+import dhaHealthBadge from '../../assets/logoo.webp';
+const doctorAtHomeImage = '/images/Home01.webp';
+import doctorOnCallImage from '../../assets/DoctorOnCall04.webp';
+import ivTherapiesImage from '../../assets/IVTherapies001.webp';
+import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.webp';
+import labTestAtHomeImage from '../../assets/LabTestAtHome02.webp';
+import nursingCareAtHomeImage from '../../assets/NursingAtHome01.webp';
+import healthCheckupAtHomeImage from '../../assets/HealthCheckupAtHome03.webp';
 
 const HERO_SERVICES = [
   { slug: 'doctor-on-call', title: 'Doctor On Call', image: doctorOnCallImage },
@@ -102,7 +100,7 @@ const UniqueHeroSection = () => {
 
               <div className="inline-flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3 shadow-[0_8px_24px_rgba(0,0,0,0.12)] backdrop-blur-sm transition-colors hover:border-[#25b8a7]/30">
                 <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white">
-                  <img src={dhaHealthBadge} alt="DHA" className="h-6 w-6 object-contain" />
+                  <img src={dhaHealthBadge} alt="DHA" width="24" height="24" className="h-6 w-6 object-contain" />
                 </div>
                 <div>
                   <p className="text-[10px] font-black uppercase tracking-wider text-[#25b8a7]">Officially Licensed</p>
@@ -124,16 +122,13 @@ const UniqueHeroSection = () => {
                   width="640"
                   height="480"
                   fetchPriority="high"
-                  decoding="async"
                   className="h-full w-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#002b36] via-transparent to-transparent" />
               </div>
 
               {/* Floating Live Dispatch Metric Card */}
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
+              <div
                 className="absolute bottom-3 left-3 z-10 max-w-[calc(100%-1.5rem)] rounded-2xl border border-white/10 bg-gradient-to-r from-[#003d4d] to-[#002b36] p-3 shadow-xl backdrop-blur-md sm:bottom-4 sm:left-4 sm:max-w-[220px] sm:p-4 lg:-bottom-6 lg:-left-6"
               >                <div className="flex items-start gap-3">
                   <div className="p-2.5 rounded-xl bg-[#25b8a7]/10 text-[#25b8a7]"><FaUserMd size={18}/></div>
@@ -142,18 +137,15 @@ const UniqueHeroSection = () => {
                     <p className="text-[11px] text-slate-300 mt-0.5 font-light">Average arrival across Dubai is under 30 minutes.</p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
 
         </div>
 
         {/* COMPACT FLOATING DISPATCH CONSOLE */}
-        <motion.div 
+        <div 
           className="w-full bg-white rounded-2xl shadow-2xl p-4 sm:p-6 text-slate-800 mb-12 border border-slate-100"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
         >
           <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-4 lg:grid-cols-12 items-center">
             
@@ -193,7 +185,7 @@ const UniqueHeroSection = () => {
             </div>
 
           </form>
-        </motion.div>
+        </div>
 
         {/* LOWER SECTION: Fluid Cascading Service Strips */}
         <div className="space-y-4">
@@ -204,15 +196,11 @@ const UniqueHeroSection = () => {
             </a>
           </div>
 
-          <motion.div 
+          <div 
             className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
           >
             {HERO_SERVICES.map((service) => (
-              <motion.div key={service.slug} variants={fadeUp} className="min-w-0">
+              <div key={service.slug} className="min-w-0 transition-transform duration-300 hover:-translate-y-1">
                 <Link
                   to={`/services/${service.slug}`}
                   className="group flex h-full flex-col overflow-hidden rounded-xl border border-white/10 bg-[#002833] duration-300 hover:border-[#25b8a7]/40"
@@ -235,9 +223,9 @@ const UniqueHeroSection = () => {
                     <FaArrowRight size={10} className="shrink-0 text-white/30 transition-all duration-300 group-hover:text-[#25b8a7] group-hover:translate-x-0.5" />
                   </div>
                 </Link>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
         </div>
 
       </div>

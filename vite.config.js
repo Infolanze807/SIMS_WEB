@@ -5,6 +5,8 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   build: {
+    target: 'es2020',
+    cssMinify: true,
     rollupOptions: {
       output: {
         manualChunks(id) {
@@ -17,7 +19,6 @@ export default defineConfig({
           if (id.includes('node_modules')) {
             if (id.includes('framer-motion')) return 'motion';
             if (id.includes('swiper')) return 'swiper';
-            if (id.includes('react-icons')) return 'icons';
           }
         },
       },
