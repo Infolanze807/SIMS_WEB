@@ -81,6 +81,8 @@ const ServicePanel = ({
                   <img
                     src={image}
                     alt={imageAlt}
+                    width="640"
+                    height="440"
                     loading="lazy"
                     decoding="async"
                     className="h-full w-full object-cover"

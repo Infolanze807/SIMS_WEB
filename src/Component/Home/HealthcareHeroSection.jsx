@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
@@ -8,19 +8,18 @@ import {
   FaBriefcaseMedical,
   FaArrowRight,
   FaUserMd,
-  FaAward,
   FaNotesMedical,
 } from 'react-icons/fa';
-import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInView';
-import { GoogleRatingBadge } from './HomeMain';
+import { fadeUp, staggerContainer } from '../Services/AnimateInView';
+import GoogleRatingBadge from './GoogleRatingBadge';
 import dhaHealthBadge from '../../assets/logoo.png';
-import doctorAtHomeImage from '../../assets/Home01.png';
-import doctorOnCallImage from '../../assets/DoctorOnCall04.png';
-import ivTherapiesImage from '../../assets/IVTherapies001.jpeg';
-import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.jpeg';
-import labTestAtHomeImage from '../../assets/LabTestAtHome02.jpeg';
-import nursingCareAtHomeImage from '../../assets/NursingAtHome01.jpeg';
-import healthCheckupAtHomeImage from '../../assets/HealthCheckupAtHome03.jpeg';
+import doctorAtHomeImage from '../../assets/Home01.webp';
+import doctorOnCallImage from '../../assets/DoctorOnCall04.webp';
+import ivTherapiesImage from '../../assets/IVTherapies001.webp';
+import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.webp';
+import labTestAtHomeImage from '../../assets/LabTestAtHome02.webp';
+import nursingCareAtHomeImage from '../../assets/NursingAtHome01.webp';
+import healthCheckupAtHomeImage from '../../assets/HealthCheckupAtHome03.webp';
 
 const HERO_SERVICES = [
   { slug: 'doctor-on-call', title: 'Doctor On Call', image: doctorOnCallImage },
@@ -34,6 +33,19 @@ const HERO_SERVICES = [
 const UniqueHeroSection = () => {
   const [form, setForm] = useState({ symptoms: '', phone: '', name: '', location: '' });
   const handleChange = (field) => (e) => setForm((prev) => ({ ...prev, [field]: e.target.value }));
+
+  useEffect(() => {
+    const existing = document.querySelector('link[data-lcp-preload="hero"]');
+    if (existing) return undefined;
+    const link = document.createElement('link');
+    link.rel = 'preload';
+    link.as = 'image';
+    link.href = doctorAtHomeImage;
+    link.fetchPriority = 'high';
+    link.setAttribute('data-lcp-preload', 'hero');
+    document.head.appendChild(link);
+    return undefined;
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -102,7 +114,7 @@ const UniqueHeroSection = () => {
 
               <div className="inline-flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3 shadow-[0_8px_24px_rgba(0,0,0,0.12)] backdrop-blur-sm transition-colors hover:border-[#25b8a7]/30">
                 <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white">
-                  <img src={dhaHealthBadge} alt="DHA" className="h-6 w-6 object-contain" />
+                  <img src={dhaHealthBadge} alt="DHA" width="24" height="24" className="h-6 w-6 object-contain" />
                 </div>
                 <div>
                   <p className="text-[10px] font-black uppercase tracking-wider text-[#25b8a7]">Officially Licensed</p>
@@ -149,12 +161,7 @@ const UniqueHeroSection = () => {
         </div>
 
         {/* COMPACT FLOATING DISPATCH CONSOLE */}
-        <motion.div 
-          className="w-full bg-white rounded-2xl shadow-2xl p-4 sm:p-6 text-slate-800 mb-12 border border-slate-100"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-        >
+        <div className="w-full bg-white rounded-2xl shadow-2xl p-4 sm:p-6 text-slate-800 mb-12 border border-slate-100">
           <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-4 lg:grid-cols-12 items-center">
             
             <div className="lg:col-span-2 space-y-0.5 px-2">
@@ -193,7 +200,7 @@ const UniqueHeroSection = () => {
             </div>
 
           </form>
-        </motion.div>
+        </div>
 
         {/* LOWER SECTION: Fluid Cascading Service Strips */}
         <div className="space-y-4">

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaPhoneAlt, FaCheckCircle, FaUserMd, FaHospitalUser, FaBuilding, FaUserClock, FaPaperPlane } from 'react-icons/fa';
 import AnimateInView, { fadeUp, slideFromLeft, slideFromRight, staggerContainer } from '../Services/AnimateInView';
-import WhoWeServe from '../../assets/WhoWeServe.png';
+import WhoWeServe from '../../assets/WhoWeServe.webp';
 import sendEmail from '../../utils/email';
 
 const SIMSBookingAndAudience = () => {
@@ -325,6 +325,10 @@ const SIMSBookingAndAudience = () => {
               <img
                 src={WhoWeServe}
                 alt="SIMS Associated Professional Practitioners Group"
+                width="720"
+                height="720"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover scale-102 group-hover:scale-105 transition-transform duration-[1200ms] ease-out"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#002e3a] via-[#002e3a]/20 to-transparent"></div>

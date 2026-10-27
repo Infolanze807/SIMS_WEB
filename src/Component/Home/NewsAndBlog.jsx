@@ -2,32 +2,48 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaUser, FaFolderOpen, FaArrowRight, FaCalendarAlt } from 'react-icons/fa';
-import { getBlogPostBySlug } from '../../data/blogPosts';
 import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInView';
+import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.webp';
+import labTestAtHomeImage from '../../assets/LabTestAtHome02.webp';
+import doctorOnCallImage from '../../assets/DoctorOnCall04.webp';
 
-const HOME_FEATURED_SLUGS = [
-  'post-surgery-rehabilitation-care-dubai-heal-comfortably-at-home',
-  'lab-tests-at-home-dubai-fast-accurate-convenient',
-  'doctor-on-call-in-dubai-fast-reliable-healthcare-at-your-doorstep',
+const articles = [
+  {
+    href: '/blog/post-surgery-rehabilitation-care-dubai-heal-comfortably-at-home',
+    day: '20',
+    month: 'Nov',
+    author: 'Dr. Mamoona Fatima',
+    category: 'Physiotherapy',
+    title: 'Post-Surgery & Rehabilitation Care Dubai – Heal Comfortably at Home',
+    image: physiotherapyAtHomeImage,
+    excerpt:
+      'Recovering after surgery can be stressful, especially when hospital visits are frequent or mobility is limited. SIMS Home Healthcare provides post-surgery and rehabilitation care in Dubai.',
+  },
+  {
+    href: '/blog/lab-tests-at-home-dubai-fast-accurate-convenient',
+    day: '06',
+    month: 'Nov',
+    author: 'Dr. Syeda Marsha Noor',
+    category: 'Lab Tests',
+    title: 'Lab Tests at Home Dubai – Fast, Accurate & Convenient',
+    image: labTestAtHomeImage,
+    excerpt:
+      'SIMS Home Healthcare makes it easy with lab tests at home in Dubai, ensuring accurate, professional testing without leaving the comfort of your home.',
+  },
+  {
+    href: '/blog/doctor-on-call-in-dubai-fast-reliable-healthcare-at-your-doorstep',
+    day: '01',
+    month: 'Nov',
+    author: 'Dr. Syeda Marsha Noor',
+    category: 'Doctor on Call',
+    title: 'Doctor on Call in Dubai – Fast, Reliable Healthcare at Your Doorstep',
+    image: doctorOnCallImage,
+    excerpt:
+      'SIMS Home Healthcare’s doctor on call service in Dubai brings professional medical care directly to your home, hotel, or office—timely, effective, and personalized.',
+  },
 ];
 
-const toCard = (post) =>
-  post && {
-    href: `/blog/${post.slug}`,
-    day: post.day,
-    month: post.month,
-    author: post.author,
-    category: post.category,
-    title: post.title,
-    image: post.image,
-    excerpt: post.excerpt,
-  };
-
 const NewsAndBlog = () => {
-  const articles = HOME_FEATURED_SLUGS.map((slug) => toCard(getBlogPostBySlug(slug))).filter(
-    Boolean
-  );
-
   return (
     <section className="w-full overflow-hidden bg-[#FAFBFD] px-6 py-28 font-sans antialiased text-slate-900 lg:px-10">
       <div className="mx-auto max-w-7xl space-y-16">
@@ -59,6 +75,10 @@ const NewsAndBlog = () => {
                   <img
                     src={post.image}
                     alt={post.title}
+                    width="640"
+                    height="440"
+                    loading="lazy"
+                    decoding="async"
                     className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   />
 

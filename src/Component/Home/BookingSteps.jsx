@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaPhoneAlt, FaUserMd, FaHeartbeat } from 'react-icons/fa';
 import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInView';
-import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.jpeg';
+import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.webp';
 
 const STEPS_DATA = [
   {
@@ -79,6 +79,10 @@ const BookingSteps = () => {
                 <img 
                   src={step.bgImage} 
                   alt="" 
+                  width="800"
+                  height="600"
+                  loading="lazy"
+                  decoding="async"
                   className="absolute inset-0 h-full w-full object-cover brightness-[0.65] contrast-[1.05] saturate-[1.1] group-hover:scale-100 scale-105 transition-transform duration-500" 
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#002833] via-[#003d4d]/80 to-[#003d4d]/30"></div>

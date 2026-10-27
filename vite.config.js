@@ -30,7 +30,7 @@ export default defineConfig({
         './src/App.jsx',
         './src/Pages/Home.jsx',
         './src/Component/Header.jsx',
-        './src/data/servicesCatalog.js',
+        './src/Component/Home/HealthcareHeroSection.jsx',
       ],
     },
   },
