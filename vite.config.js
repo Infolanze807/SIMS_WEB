@@ -7,6 +7,7 @@ export default defineConfig({
   build: {
     target: 'es2020',
     cssMinify: true,
+    assetsInlineLimit: 4096,
     rollupOptions: {
       output: {
         manualChunks(id) {
@@ -19,6 +20,7 @@ export default defineConfig({
           if (id.includes('node_modules')) {
             if (id.includes('framer-motion')) return 'motion';
             if (id.includes('swiper')) return 'swiper';
+            if (id.includes('react-icons')) return 'icons';
           }
         },
       },

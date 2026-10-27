@@ -1,8 +1,8 @@
-import doctorVisitImage from '../assets/DoctorAtHome02.jpeg';
-import ivHydrationImage from '../assets/ivDripImage01.jpeg';
-import dubaiSkylineImage from '../assets/blog/dubai-skyline.jpg';
-import familyHotelDoctorImage from '../assets/blog/family-hotel-doctor-dubai.jpg';
-import marinaIvTherapyImage from '../assets/blog/iv-therapy-dubai-marina-hotel.jpg';
+import doctorVisitImage from '../assets/DoctorAtHome02.webp';
+import ivHydrationImage from '../assets/ivDripImage01.webp';
+import dubaiSkylineImage from '../assets/blog/dubai-skyline.webp';
+import familyHotelDoctorImage from '../assets/blog/family-hotel-doctor-dubai.webp';
+import marinaIvTherapyImage from '../assets/blog/iv-therapy-dubai-marina-hotel.webp';
 
 export const BLOG_POST_CONTENT = {
   'iv-therapy-at-hotel-dubai-marina': {

@@ -1,11 +1,11 @@
-import labTestAtHomeImage from '../assets/LabTestAtHome02.jpeg';
-import physiotherapyAtHomeImage from '../assets/PhysiotherapyAtHome003.jpeg';
-import onCall from '../assets/Oncall.png';
-import step from '../assets/StepStep.png';
-import ivDripImage from '../assets/ivDripImage01.jpeg';
-import hotelSuiteImage from '../assets/blog/hotel-suite.jpg';
-import familyHotelDoctorImage from '../assets/blog/family-hotel-doctor-dubai.jpg';
-import marinaIvTherapyImage from '../assets/blog/iv-therapy-dubai-marina-hotel.jpg';
+import labTestAtHomeImage from '../assets/LabTestAtHome02.webp';
+import physiotherapyAtHomeImage from '../assets/PhysiotherapyAtHome003.webp';
+import onCall from '../assets/Oncall.webp';
+import step from '../assets/StepStep.webp';
+import ivDripImage from '../assets/ivDripImage01.webp';
+import hotelSuiteImage from '../assets/blog/hotel-suite.webp';
+import familyHotelDoctorImage from '../assets/blog/family-hotel-doctor-dubai.webp';
+import marinaIvTherapyImage from '../assets/blog/iv-therapy-dubai-marina-hotel.webp';
 
 export const BLOG_POSTS = [
   {

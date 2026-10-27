@@ -1,15 +1,32 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Google Tag Manager, loaded after the page so it does not delay the first paint -->
+    <!-- Google Tag Manager, loaded on idle / user interaction so it does not degrade TBT / LCP -->
     <script>
-      window.addEventListener('load', function () {
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-KZL6SPC7');
-      });
+      (function() {
+        var gtmLoaded = false;
+        function loadGTM() {
+          if (gtmLoaded) return;
+          gtmLoaded = true;
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-KZL6SPC7');
+        }
+        if ('requestIdleCallback' in window) {
+          window.addEventListener('load', function () {
+            requestIdleCallback(function() { setTimeout(loadGTM, 2000); }, { timeout: 4000 });
+          });
+        } else {
+          window.addEventListener('load', function () {
+            setTimeout(loadGTM, 2500);
+          });
+        }
+        ['pointerdown', 'keydown', 'touchstart', 'scroll'].forEach(function(e) {
+          window.addEventListener(e, loadGTM, { once: true, passive: true });
+        });
+      })();
     </script>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -17,7 +34,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" as="image" href="/images/Home01.webp" type="image/webp" fetchpriority="high" />
-    <link rel="preload" as="image" href="/images/sims-logo.webp" type="image/webp" />
+    <!-- Logo is small (17KB) and not LCP — no preload needed -->
     <link
       rel="preload"
       as="style"

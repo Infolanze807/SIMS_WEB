@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaPhoneAlt, FaCheckCircle } from 'react-icons/fa';
-import aboutHeroImage from '../../assets/AboutHeroImage01.png';
+import { FaPhoneAlt } from 'react-icons/fa';
+import aboutHeroImage from '../../assets/AboutHeroImage01.webp';
 
 const AboutHero = () => {
   const bullets = [

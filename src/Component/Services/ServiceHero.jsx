@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaPhoneAlt } from 'react-icons/fa';
-import Service from '../../assets/Service01.jpeg';
+import Service from '../../assets/Service01.webp';
 
 
 const bullets = [
