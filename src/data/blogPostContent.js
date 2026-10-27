@@ -3,10 +3,34 @@ import ivHydrationImage from '../assets/ivDripImage01.jpeg';
 import dubaiSkylineImage from '../assets/blog/dubai-skyline.jpg';
 import familyHotelDoctorImage from '../assets/blog/family-hotel-doctor-dubai.jpg';
 import marinaIvTherapyImage from '../assets/blog/iv-therapy-dubai-marina-hotel.jpg';
+import { DOCTOR_ON_CALL_HOTEL_ARTICLE } from './doctorOnCallHotelArticle';
+import { CHRONIC_PAIN_HOME_PHYSIOTHERAPY_ARTICLE } from './chronicPainHomePhysiotherapyArticle';
 
 export const BLOG_POST_CONTENT = {
+  'managing-chronic-pain-at-home-mobile-physiotherapy-dubai': {
+    previousSlug: null,
+    nextSlug: 'healthcare-at-your-doorstep-dubai-hotels-doctors-on-call',
+    cta: {
+      title: 'Take Control of Your Health at Home',
+      description:
+        'You do not have to live with persistent pain or rely indefinitely on medications and invasive procedures. SIMS Home Healthcare brings customized in-home physical therapy to your doorstep, helping you rebuild confidence, move comfortably, and work toward long-term recovery in the environment that matters most. Consult a qualified healthcare professional before changing prescribed medication or treatment.',
+      buttonText: 'Call +971525231028',
+    },
+    sections: CHRONIC_PAIN_HOME_PHYSIOTHERAPY_ARTICLE,
+  },
+  'healthcare-at-your-doorstep-dubai-hotels-doctors-on-call': {
+    previousSlug: 'managing-chronic-pain-at-home-mobile-physiotherapy-dubai',
+    nextSlug: 'iv-therapy-at-hotel-dubai-marina',
+    cta: {
+      title: 'Call SIMS Home Healthcare for a Doctor at Your Hotel',
+      description:
+        "Don't let an illness ruin your plans to travel. SIMS Home Healthcare is here for you if you're worried about your health while you're in Dubai or need reliable medical care at your hotel. You can book a visit online or call us at +971525231028 for help right away. Let us bring the medical care to you so you can relax and enjoy your time in Dubai.",
+      buttonText: 'Call +971525231028',
+    },
+    sections: DOCTOR_ON_CALL_HOTEL_ARTICLE,
+  },
   'iv-therapy-at-hotel-dubai-marina': {
-    previousSlug: 'personalized-family-health-services-at-dubai-hotels',
+    previousSlug: 'healthcare-at-your-doorstep-dubai-hotels-doctors-on-call',
     nextSlug: null,
     cta: {
       title: 'Book IV Therapy at Your Dubai Marina Hotel',

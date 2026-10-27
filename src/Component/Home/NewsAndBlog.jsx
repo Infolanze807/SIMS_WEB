@@ -6,6 +6,7 @@ import { getBlogPostBySlug } from '../../data/blogPosts';
 import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInView';
 
 const HOME_FEATURED_SLUGS = [
+  'healthcare-at-your-doorstep-dubai-hotels-doctors-on-call',
   'post-surgery-rehabilitation-care-dubai-heal-comfortably-at-home',
   'lab-tests-at-home-dubai-fast-accurate-convenient',
   'doctor-on-call-in-dubai-fast-reliable-healthcare-at-your-doorstep',

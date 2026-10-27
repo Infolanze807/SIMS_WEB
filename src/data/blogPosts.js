@@ -6,8 +6,44 @@ import ivDripImage from '../assets/ivDripImage01.jpeg';
 import hotelSuiteImage from '../assets/blog/hotel-suite.jpg';
 import familyHotelDoctorImage from '../assets/blog/family-hotel-doctor-dubai.jpg';
 import marinaIvTherapyImage from '../assets/blog/iv-therapy-dubai-marina-hotel.jpg';
+import doctorOnCallImage from '../assets/doc.jpeg';
+import chronicPainHomeImage from '../assets/vac.jpeg';
 
 export const BLOG_POSTS = [
+  {
+    slug: 'managing-chronic-pain-at-home-mobile-physiotherapy-dubai',
+    title:
+      'Managing Chronic Pain at Home: How Mobile Physiotherapy Restores Life Without Surgery or Medication',
+    blogNumber: '04',
+    author: 'Dr. Mamoona Fatima',
+    date: 'October 27, 2026',
+    day: '27',
+    month: 'Oct',
+    category: 'Physiotherapy',
+    comments: 'No Comments',
+    commentCount: 0,
+    excerpt:
+      'Living with chronic pain can feel like an uphill battle, often leaving individuals dependent on daily medications or facing the prospect of invasive surgical procedures. However, modern pain science and mobile physical therapy offer a powerful, non-invasive alternative. By bringing specialized care directly into your living space, home physiotherapy retrains the nervous system, optimizes daily movement, and empowers you to reclaim your quality of life in the comfort and safety of your own home.',
+    metaDescription:
+      'Living with chronic pain can feel like an uphill battle, often leaving individuals dependent on daily medications or facing the prospect of invasive surgical procedures. However, modern pain science and mobile physical therapy offer a powerful, non-invasive alternative.',
+    image: chronicPainHomeImage,
+  },
+  {
+    slug: 'healthcare-at-your-doorstep-dubai-hotels-doctors-on-call',
+    title: 'Healthcare at Your Doorstep: Looking into Dubai Hotels with Doctors on Call',
+    author: 'Dr. Syeda Marsha Noor',
+    date: 'October 26, 2026',
+    day: '26',
+    month: 'Oct',
+    category: 'Doctor on Call',
+    comments: 'No Comments',
+    commentCount: 0,
+    excerpt:
+      'Learn about the best hotels in Dubai that have doctors on call. Find out how these high-end services make it easy and comfortable for you to get healthcare at home.',
+    metaDescription:
+      'Learn about the best hotels in Dubai that have doctors on call. Find out how these high-end services make it easy and comfortable for you to get healthcare at home.',
+    image: doctorOnCallImage,
+  },
   {
     slug: 'iv-therapy-at-hotel-dubai-marina',
     title: 'IV Therapy at Hotel Dubai Marina: A Premium Solution for Health and Relaxation',

@@ -47,7 +47,7 @@ const BlogPost = () => {
   }
 
   const articleBody = sectionsToPlainText(content.sections);
-  const description = clipText(articleBody || post.excerpt);
+  const description = post.metaDescription || clipText(articleBody || post.excerpt);
 
   return (
     <div className="font-sans antialiased">
