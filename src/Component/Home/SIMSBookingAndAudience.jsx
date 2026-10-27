@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaPhoneAlt, FaCheckCircle, FaUserMd, FaHospitalUser, FaBuilding, FaUserClock, FaPaperPlane } from 'react-icons/fa';
 import AnimateInView, { fadeUp, slideFromLeft, slideFromRight, staggerContainer } from '../Services/AnimateInView';
-import WhoWeServe from '../../assets/WhoWeServe.png';
+import WhoWeServe from '../../assets/WhoWeServe.webp';
 import sendEmail from '../../utils/email';
 
 const SIMSBookingAndAudience = () => {
@@ -119,8 +119,9 @@ const SIMSBookingAndAudience = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
 
               <div className="space-y-1.5">
-                <label className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Enter Name</label>
+                <label htmlFor="booking-name" className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Enter Name</label>
                 <input
+                  id="booking-name"
                   type="text"
                   placeholder="Enter Your name"
                   name="name"
@@ -132,8 +133,9 @@ const SIMSBookingAndAudience = () => {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div className="space-y-1.5">
-                  <label className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Email *</label>
+                  <label htmlFor="booking-email" className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Email *</label>
                   <input
+                    id="booking-email"
                     type="email"
                     placeholder="Enter Your Email Address"
                     name="email"
@@ -141,12 +143,12 @@ const SIMSBookingAndAudience = () => {
                     onChange={handleChange}
                     required
                     className="w-full bg-white border border-slate-200/80 px-4 py-3.5 rounded-xl text-sm font-medium focus:outline-none focus:border-[#25b8a7] transition-colors shadow-sm"
-                    required
                   />
                 </div>
                 <div className="space-y-1.5">
-                  <label className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Contact No.</label>
+                  <label htmlFor="booking-phone" className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Contact No.</label>
                   <input
+                    id="booking-phone"
                     type="tel"
                     placeholder="Enter Your Contact Number"
                     name="phone"
@@ -170,8 +172,9 @@ const SIMSBookingAndAudience = () => {
                   </div>
                 </div>
                 <div className="sm:col-span-5 space-y-1.5">
-                  <label className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Age</label>
+                  <label htmlFor="booking-age" className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Age</label>
                   <input
+                    id="booking-age"
                     type="number"
                     placeholder="Enter Your Age"
                     name="age"
@@ -184,12 +187,14 @@ const SIMSBookingAndAudience = () => {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div className="space-y-1.5">
-                  <label className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Service Required</label>
+                  <label htmlFor="booking-service" className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Service Required</label>
                   <div className="relative">
                     <select
+                      id="booking-service"
                       name="service"
                       value={formData.service}
                       onChange={handleChange}
+                      aria-label="Service Required"
                       className="w-full bg-white border border-slate-200/80 px-4 py-3.5 rounded-xl text-sm font-medium focus:outline-none focus:border-[#25b8a7] transition-colors shadow-sm appearance-none cursor-pointer"
                     >
                       <option>Service Required</option>
@@ -205,12 +210,14 @@ const SIMSBookingAndAudience = () => {
                   </div>
                 </div>
                 <div className="space-y-1.5">
-                  <label className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Preferred Time to Contact</label>
+                  <label htmlFor="booking-time" className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Preferred Time to Contact</label>
                   <div className="relative">
                     <select
+                      id="booking-time"
                       name="time"
                       value={formData.time}
                       onChange={handleChange}
+                      aria-label="Preferred Time to Contact"
                       className="w-full bg-white border border-slate-200/80 px-4 py-3.5 rounded-xl text-sm font-medium focus:outline-none focus:border-[#25b8a7] transition-colors shadow-sm appearance-none cursor-pointer"
                     >
                       <option>Preferred Time to Contact</option>
@@ -224,8 +231,9 @@ const SIMSBookingAndAudience = () => {
               </div>
 
               <div className="space-y-1.5">
-                <label className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Health Concern</label>
+                <label htmlFor="booking-concern" className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Health Concern</label>
                 <textarea
+                  id="booking-concern"
                   rows="4"
                   placeholder="Enter Your Health Concern in detail"
                   name="concern"
@@ -325,6 +333,10 @@ const SIMSBookingAndAudience = () => {
               <img
                 src={WhoWeServe}
                 alt="SIMS Associated Professional Practitioners Group"
+                loading="lazy"
+                decoding="async"
+                width="440"
+                height="440"
                 className="w-full h-full object-cover scale-102 group-hover:scale-105 transition-transform duration-[1200ms] ease-out"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#002e3a] via-[#002e3a]/20 to-transparent"></div>

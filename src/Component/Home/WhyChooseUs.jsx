@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaClock, FaUserShield, FaHeartbeat, FaBriefcaseMedical, FaCogs } from 'react-icons/fa';
 import AnimateInView, { fadeUp, slideFromLeft, staggerContainer } from '../Services/AnimateInView';
-import whychooseus from '../../assets/whychooseus01.jpg';
+import whychooseus from '../../assets/whychooseus01.webp';
 
 const WhyChooseUs = () => {
   return (
@@ -18,6 +18,10 @@ const WhyChooseUs = () => {
             <img 
               src={whychooseus} 
               alt="Premium Home Healthcare Patient Care" 
+              loading="lazy"
+              decoding="async"
+              width="350"
+              height="438"
               className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 ease-out brightness-[0.98] contrast-[1.02]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#003d4d]/30 via-transparent to-transparent"></div>

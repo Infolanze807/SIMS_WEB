@@ -9,7 +9,7 @@ import {
   FaTimes,
 } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
-import simsLogo from '../assets/sims-logo.png';
+const simsLogo = '/images/sims-logo.webp';
 import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 import { HEADER_NAV_SERVICES } from '../data/servicesCatalog';
 
@@ -86,6 +86,9 @@ const Header = () => {
           <img
             src={simsLogo}
             alt="SIMS Healthcare"
+            width="160"
+            height="48"
+            fetchPriority="high"
             className="h-12 w-auto object-contain lg:h-16"
           />
         </NavLink>

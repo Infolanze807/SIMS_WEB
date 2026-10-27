@@ -8,7 +8,6 @@ import { DOCTORS } from '../data/doctors';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
-
 const DoctorsShowcase = ({
   eyebrow = 'Expert Medical Team',
   title = (

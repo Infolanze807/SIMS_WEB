@@ -18,8 +18,8 @@ import {
 } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import { SiGooglepay } from 'react-icons/si';
-import simsLogo from '../assets/sims-logo.png';
-import dhaLogo from '../assets/DHALOGO.png';
+import simsLogo from '../assets/sims-logo.webp';
+import dhaLogo from '../assets/DHALOGO.webp';
 import { HEADER_NAV_SERVICES } from '../data/servicesCatalog';
 import { LEGAL_LINKS } from '../data/legalContent';
 

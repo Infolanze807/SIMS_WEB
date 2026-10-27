@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaUserMd, FaShieldAlt, FaBriefcaseMedical } from 'react-icons/fa';
 import AnimateInView, { fadeUp, slideFromLeft, slideFromRight, staggerContainer } from '../Services/AnimateInView';
-import experiencecare from '../../assets/About0002.jpg';
+import experiencecare from '../../assets/About0002.webp';
 
 const ExperienceCare = () => {
   return (
@@ -83,6 +83,10 @@ const ExperienceCare = () => {
               <img 
                 src={experiencecare}
                 alt="SIMS Elite Medical Team Group" 
+                loading="lazy"
+                decoding="async"
+                width="380"
+                height="380"
                 className="w-full h-full object-cover scale-102 group-hover:scale-105 transition-transform duration-1000 ease-out"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#002e3a]/60 via-transparent to-transparent"></div>

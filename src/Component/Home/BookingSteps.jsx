@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaPhoneAlt, FaUserMd, FaHeartbeat } from 'react-icons/fa';
 import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInView';
-import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.jpeg';
+import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.webp';
 
 const STEPS_DATA = [
   {
@@ -11,7 +11,7 @@ const STEPS_DATA = [
     description: "Call us at +971 5252 31028 or send a message via WhatsApp to schedule your appointment instantly.",
     icon: <FaPhoneAlt className="text-xl text-[#003d4d] group-hover:text-white transition-colors duration-300" />,
     accent: "from-[#0a5568] to-[#25b8a7]",
-    bgImage: "https://images.unsplash.com/photo-1516387938699-a93567ec168e?auto=format&fit=crop&q=80&w=800"
+    bgImage: "https://images.unsplash.com/photo-1516387938699-a93567ec168e?auto=format&fit=crop&q=70&w=480"
   },
   {
     stepNumber: "02",
@@ -19,7 +19,7 @@ const STEPS_DATA = [
     description: "A licensed DHA-certified doctor or nurse will arrive at your home, hotel, or office within 30 minutes—ready to assess and assist.",
     icon: <FaUserMd className="text-2xl text-[#25b8a7] group-hover:text-white transition-colors duration-300" />,
     accent: "from-[#25b8a7] to-[#4fc3c0]",
-    bgImage: "https://images.unsplash.com/photo-1584515901107-d5d4d38c6411?auto=format&fit=crop&q=80&w=800"
+    bgImage: "https://images.unsplash.com/photo-1584515901107-d5d4d38c6411?auto=format&fit=crop&q=70&w=480"
   },
   {
     stepNumber: "03",
@@ -79,6 +79,10 @@ const BookingSteps = () => {
                 <img 
                   src={step.bgImage} 
                   alt="" 
+                  loading="lazy"
+                  decoding="async"
+                  width="480"
+                  height="350"
                   className="absolute inset-0 h-full w-full object-cover brightness-[0.65] contrast-[1.05] saturate-[1.1] group-hover:scale-100 scale-105 transition-transform duration-500" 
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#002833] via-[#003d4d]/80 to-[#003d4d]/30"></div>

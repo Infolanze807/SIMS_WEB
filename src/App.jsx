@@ -5,8 +5,8 @@ import Header from './Component/Header';
 import Footer from './Component/Footer';
 import ScrollToTop from './Component/ScrollToTop';
 import PageLoader from './Component/PageLoader';
+import Home from './Pages/Home';
 
-const Home = lazy(() => import('./Pages/Home'));
 const About = lazy(() => import('./Pages/About'));
 const Contact = lazy(() => import('./Pages/Contact'));
 const Service = lazy(() => import('./Pages/Service'));

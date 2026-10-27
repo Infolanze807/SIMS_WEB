@@ -59,6 +59,10 @@ const NewsAndBlog = () => {
                   <img
                     src={post.image}
                     alt={post.title}
+                    width="400"
+                    height="275"
+                    loading="lazy"
+                    decoding="async"
                     className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   />
 
