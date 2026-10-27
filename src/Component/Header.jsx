@@ -11,7 +11,7 @@ import {
 import { motion, AnimatePresence } from 'framer-motion';
 import simsLogo from '../assets/sims-logo.png';
 import { NavLink, useNavigate, useLocation } from 'react-router-dom';
-import { HEADER_NAV_SERVICES } from '../data/servicesCatalog';
+import { HEADER_NAV_SERVICES } from '../data/headerNav';
 
 const navLinkClass = ({ isActive }) =>
   `font-medium transition ${isActive ? 'text-brand-accent' : 'text-brand-dark hover:text-brand-accent'}`;
@@ -86,6 +86,8 @@ const Header = () => {
           <img
             src={simsLogo}
             alt="SIMS Healthcare"
+            width="180"
+            height="64"
             className="h-12 w-auto object-contain lg:h-16"
           />
         </NavLink>

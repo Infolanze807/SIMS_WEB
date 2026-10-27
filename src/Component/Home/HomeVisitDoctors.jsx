@@ -76,6 +76,8 @@ const ServiceImage = ({ src, alt, className }) => {
     <img
       src={imgSrc}
       alt={alt}
+      width="400"
+      height="300"
       loading="lazy"
       decoding="async"
       referrerPolicy="no-referrer"

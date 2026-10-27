@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaShieldAlt, FaUserMd, FaClock, FaCheckCircle } from 'react-icons/fa';
-import about from '../../assets/About01.jpg';
+import about from '../../assets/About01.webp';
 import AnimateInView, { fadeUp, slideFromLeft, slideFromRight, staggerContainer } from '../Services/AnimateInView';
 
 const HealthcareAbout = () => {
@@ -22,7 +22,11 @@ const HealthcareAbout = () => {
             <div className="w-full h-full rounded-[36px] overflow-hidden relative">
               <img 
                 src={about} 
-                alt="SIMS Premium Medical Care" 
+                alt="SIMS Premium Medical Care"
+                width="720"
+                height="720"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover brightness-[0.90] contrast-[1.05]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#002833] via-transparent to-transparent"></div>

@@ -19,8 +19,8 @@ import {
 import { FaXTwitter } from 'react-icons/fa6';
 import { SiGooglepay } from 'react-icons/si';
 import simsLogo from '../assets/sims-logo.png';
-import dhaLogo from '../assets/DHALOGO.png';
-import { HEADER_NAV_SERVICES } from '../data/servicesCatalog';
+import dhaLogo from '../assets/DHALOGO.webp';
+import { HEADER_NAV_SERVICES } from '../data/headerNav';
 import { LEGAL_LINKS } from '../data/legalContent';
 
 const quickLinks = [
@@ -121,6 +121,10 @@ const Footer = () => {
                     <img
                       src={dhaLogo}
                       alt="Dubai Health Authority"
+                      width="96"
+                      height="48"
+                      loading="lazy"
+                      decoding="async"
                       className="h-12 w-auto object-contain"
                     />
                   </div>
