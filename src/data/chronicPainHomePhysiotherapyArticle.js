@@ -1,4 +1,4 @@
-import chronicPainHomeImage from '../assets/vac.jpeg';
+import chronicPainHomeImage from '../assets/vack.jpeg';
 
 const heading = (level, text) => ({ type: 'heading', level, text });
 const paragraph = (text) => ({ type: 'paragraph', parts: [text] });
