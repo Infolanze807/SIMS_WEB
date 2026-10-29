@@ -7,7 +7,7 @@ import hotelSuiteImage from '../assets/blog/hotel-suite.jpg';
 import familyHotelDoctorImage from '../assets/blog/family-hotel-doctor-dubai.jpg';
 import marinaIvTherapyImage from '../assets/blog/iv-therapy-dubai-marina-hotel.jpg';
 import doctorOnCallImage from '../assets/doc.jpeg';
-import chronicPainHomeImage from '../assets/vack.jpeg';
+import chronicPainHomeImage from '../assets/Vack.jpeg';
 
 export const BLOG_POSTS = [
   {
