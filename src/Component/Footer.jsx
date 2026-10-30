@@ -353,8 +353,8 @@ const Footer = () => {
         </div>
       </footer>
 
-      {/* Floating action buttons */}
-      <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+      {/* Floating action buttons (chatbot bubble sits below this stack) */}
+      <div className="fixed bottom-[84px] right-6 z-50 flex flex-col gap-3">
         <a
           href="https://wa.me/971525231028"
           target="_blank"
