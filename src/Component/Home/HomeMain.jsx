@@ -201,7 +201,7 @@ const HomeMain = () => {
             ))}
           </div>
 
-          <DhaLicenseBadge />
+          <GoogleRatingBadge />
 
           <div className="grid grid-cols-2 gap-4 pt-2">
             <motion.a
@@ -287,6 +287,17 @@ const HomeMain = () => {
               </div>
             </div>
           ))}
+
+          <div className="absolute bottom-6 -right-2 z-20 bg-white text-[#003d4d] px-6 py-4 rounded-2xl shadow-[0_20px_40px_rgba(0,0,0,0.3)] border border-gray-100 flex items-center gap-4 animate-bounce-slow max-w-xs hidden sm:flex">
+            <div className="h-10 w-10 rounded-xl bg-[#25b8a7]/10 flex items-center justify-center text-[#25b8a7] shrink-0">
+              <FaBriefcaseMedical className="text-lg" />
+            </div>
+            <div>
+              <p className="text-[9px] font-extrabold uppercase tracking-widest text-gray-400 leading-none mb-1">Officially Licensed</p>
+              <p className="text-xs font-black leading-tight text-[#003d4d]">DHA Certified Professionals</p>
+              <p className="text-[11px] font-bold leading-tight text-[#25b8a7] mt-1">License No. 6394609</p>
+            </div>
+          </div>
 
         </div>
 
