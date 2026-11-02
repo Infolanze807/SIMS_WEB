@@ -19,7 +19,7 @@ const STEPS_DATA = [
     description: "A licensed DHA-certified doctor or nurse will arrive at your home, hotel, or office within 30 minutes—ready to assess and assist.",
     icon: <FaUserMd className="text-2xl text-[#25b8a7] group-hover:text-white transition-colors duration-300" />,
     accent: "from-[#25b8a7] to-[#4fc3c0]",
-    bgImage: "https://images.unsplash.com/photo-1584515901107-d5d4d38c6411?auto=format&fit=crop&q=80&w=800"
+    bgImage: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=800"
   },
   {
     stepNumber: "03",
