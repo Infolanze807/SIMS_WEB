@@ -8,8 +8,46 @@ import familyHotelDoctorImage from '../assets/blog/family-hotel-doctor-dubai.jpg
 import marinaIvTherapyImage from '../assets/blog/iv-therapy-dubai-marina-hotel.jpg';
 import doctorOnCallImage from '../assets/doc.jpeg';
 import chronicPainHomeImage from '../assets/Vack.jpeg';
+import labTestAtHome01Image from '../assets/LabTestAtHome01.jpeg';
+import niptTestAtHomeImage from '../assets/NIPTTestAtHome001.jpeg';
 
 export const BLOG_POSTS = [
+  {
+    slug: 'early-fetal-gender-genetic-screening-at-home-nipt-dubai',
+    title:
+      'Early Fetal Gender & Genetic Screening: At-Home Prenatal Testing for Dubai Moms',
+    blogNumber: '06',
+    author: 'Dr. Mamoona Fatima',
+    date: 'November 2, 2026',
+    day: '02',
+    month: 'Nov',
+    category: 'Lab Tests',
+    comments: 'No Comments',
+    commentCount: 0,
+    excerpt:
+      'With At-Home Non-Invasive Prenatal Testing (NIPT), expectant mothers across Dubai can now access world-class genetic insights and fetal gender determination as early as 10 weeks of pregnancy—all from the comfort, privacy, and calm of their own living room.',
+    metaDescription:
+      'At-Home NIPT testing in Dubai: non-invasive prenatal screening with over 99% accuracy for Down syndrome and fetal gender from 10 weeks. DHA-licensed nurses visit your home. Call or WhatsApp +971 52 523 1028.',
+    image: niptTestAtHomeImage,
+  },
+  {
+    slug: 'at-home-blood-tests-dubai-lab-quality-diagnostics',
+    title:
+      'At-Home Blood Tests in Dubai: How Lab-Quality Diagnostics Come to Your Living Room',
+    blogNumber: '05',
+    author: 'Dr. Mamoona Fatima',
+    date: 'November 2, 2026',
+    day: '02',
+    month: 'Nov',
+    category: 'Lab Tests',
+    comments: 'No Comments',
+    commentCount: 0,
+    excerpt:
+      'At-home blood testing is a concierge healthcare service where certified medical professionals collect diagnostic blood samples directly at your residence, hotel room, or office across Dubai. Instead of commuting through Dubai traffic, or waiting in hospital reception lounges, a licensed nurse brings medical-grade blood extraction equipment straight to your doorstep within 30 to 60 minutes.',
+    metaDescription:
+      'At-home blood tests in Dubai: DHA-certified nurses collect samples at your home, hotel, or office within 30 to 60 minutes, with results delivered in 12 to 24 hours. Call or WhatsApp +971 52 523 1028.',
+    image: labTestAtHome01Image,
+  },
   {
     slug: 'managing-chronic-pain-at-home-mobile-physiotherapy-dubai',
     title:
