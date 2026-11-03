@@ -55,7 +55,7 @@ const ServiceDetailHero = ({ eyebrow, headline, subheadline, bullets = [], image
               {eyebrow}
             </motion.span>
             <motion.h1
-              className="text-3xl font-black leading-[1.08] tracking-tight sm:text-4xl lg:text-5xl xl:text-6xl"
+              className="text-3xl font-black uppercase leading-[1.08] tracking-tight sm:text-4xl lg:text-5xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.7 }}

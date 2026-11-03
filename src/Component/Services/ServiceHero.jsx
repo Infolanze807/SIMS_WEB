@@ -39,7 +39,7 @@ const ServiceHero = () => {
               Certified Home Healthcare Services
             </motion.span>
             <motion.h1
-              className="text-4xl font-black leading-[1.1] tracking-tight text-white lg:text-6xl"
+              className="text-4xl font-black uppercase leading-[1.1] tracking-tight text-white lg:text-5xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.25, duration: 0.7 }}

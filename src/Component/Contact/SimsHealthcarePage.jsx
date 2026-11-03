@@ -66,7 +66,7 @@ const SimsHealthcarePage = () => {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="mb-16 flex flex-col items-center text-center"
         >
-          <h1 className="mb-6 text-5xl font-extrabold text-slate-950">Get in Touch</h1>
+          <h1 className="mb-6 text-5xl font-extrabold uppercase text-slate-950">Get in Touch</h1>
           <p className="max-w-xl text-lg text-slate-600">
             Have questions or need assistance with our healthcare services? Our team is here to help you anytime. Reach out to SIMS Health Care for bookings, inquiries, or support, and we&apos;ll respond promptly with care.
           </p>

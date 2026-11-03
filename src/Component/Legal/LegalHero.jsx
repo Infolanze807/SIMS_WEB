@@ -51,7 +51,7 @@ const LegalHero = ({ eyebrow, title, effectiveDate, slug }) => {
           <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-2xl border border-white/15 bg-white/10 text-brand-accent-light shadow-lg backdrop-blur-sm">
             <Icon className="text-xl" />
           </div>
-          <h1 className="text-3xl font-black leading-tight tracking-tight sm:text-4xl lg:text-[2.75rem]">
+          <h1 className="text-3xl font-black uppercase leading-tight tracking-tight sm:text-4xl lg:text-[2.75rem]">
             {title}
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-white/75 sm:text-base">
