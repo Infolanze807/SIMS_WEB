@@ -3,10 +3,447 @@ import ivHydrationImage from '../assets/ivDripImage01.jpeg';
 import dubaiSkylineImage from '../assets/blog/dubai-skyline.jpg';
 import familyHotelDoctorImage from '../assets/blog/family-hotel-doctor-dubai.jpg';
 import marinaIvTherapyImage from '../assets/blog/iv-therapy-dubai-marina-hotel.jpg';
+import labTestAtHomeImage01 from '../assets/LabTestAtHome01.jpeg';
+import niptTestAtHomeImage from '../assets/NIPTTestAtHome001.jpeg';
 import { DOCTOR_ON_CALL_HOTEL_ARTICLE } from './doctorOnCallHotelArticle';
 import { CHRONIC_PAIN_HOME_PHYSIOTHERAPY_ARTICLE } from './chronicPainHomePhysiotherapyArticle';
 
 export const BLOG_POST_CONTENT = {
+  'early-fetal-gender-genetic-screening-at-home-nipt-dubai': {
+    previousSlug: null,
+    nextSlug: 'at-home-blood-tests-dubai-lab-quality-diagnostics',
+    cta: {
+      title: 'Ready for Early Peace of Mind?',
+      description:
+        'Start your pregnancy journey with complete clarity, safety, and comfort. Book your DHA-licensed At-Home NIPT Test in Dubai today. WhatsApp or call +971525231028, and a discreet, professional sample collection will be arranged at your home, hotel, or suite.',
+      buttonText: 'Call +971525231028',
+    },
+    sections: [
+      {
+        type: 'paragraph',
+        parts: [
+          'Expecting a baby is one of the most transformative journeys of your life. However, along with the joy of hearing a heartbeat for the first time, it is completely natural for new and growing families to carry a few subtle worries. Is the baby developing as expected? Are there underlying genetic concerns? When will you find out whether to start shopping for pastel pink or sky blue? Modern prenatal care has advanced dramatically. You no longer need to spend hours in crowded clinic waiting rooms or endure invasive procedures to get clear, early answers.',
+        ],
+      },
+      {
+        type: 'image',
+        src: niptTestAtHomeImage,
+        alt: 'DHA-licensed nurse collecting a prenatal blood sample at home in Dubai',
+        caption: 'Safe, non-invasive NIPT screening from the comfort, privacy, and calm of your own living room.',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'With At-Home Non-Invasive Prenatal Testing (NIPT), expectant mothers across Dubai can now access world-class genetic insights and fetal gender determination as early as 10 weeks of pregnancy—all from the comfort, privacy, and calm of their own living room.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'What Is Non-Invasive Prenatal Testing (NIPT)?',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Non-Invasive Prenatal Testing (NIPT) is an advanced screening method that analyzes tiny fragments of fetal DNA circulating freely in the mother’s bloodstream (known as cell-free fetal DNA or cfDNA).',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Because small amounts of DNA leak from the placenta into your circulatory system during pregnancy, a routine blood draw from your arm is all that’s required.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'How NIPT Compares to Other Tests',
+      },
+      {
+        type: 'bullets',
+        items: [
+          '100% Safe with Zero Miscarriage Risk: Unlike invasive diagnostic procedures like Amniocentesis or Chorionic Villus Sampling (CVS), NIPT poses zero risk to your developing baby.',
+          'Superior Accuracy: Standard first-trimester double marker blood screens offer around 80–85% accuracy. NIPT delivers over 99% accuracy for detecting Down syndrome.',
+          'Early Fetal Gender Insights: While traditional ultrasounds often require waiting until week 16 to 20 for a clear look, NIPT identifies sex chromosomes with 99.9% precision starting at 10 weeks.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'What Does an At-Home NIPT Test Screen For?',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'When you arrange an at-home NIPT blood collection, the sample undergoes deep laboratory analysis to evaluate the health of your baby’s chromosomes. Depending on the panel you choose, the test screens for:',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [{ bold: '1. Common Chromosomal Trisomies:' }],
+      },
+      {
+        type: 'bullets',
+        items: [
+          'Trisomy 21 (Down Syndrome): The most common genetic condition screened for.',
+          'Trisomy 18 (Edwards Syndrome): Associated with severe developmental delays.',
+          'Trisomy 13 (Patau Syndrome): Linked to structural abnormalities.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [{ bold: '2. Sex Chromosome Conditions:' }],
+      },
+      {
+        type: 'bullets',
+        items: [
+          'Checks for extra or missing X and Y chromosomes, such as Turner Syndrome (Monosomy X) or Klinefelter Syndrome (XXY).',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [{ bold: '3. Early Fetal Sex Determination:' }],
+      },
+      {
+        type: 'bullets',
+        items: [
+          'Accurately identifies whether your baby carries XX (female) or XY (male) sex chromosomes.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [{ bold: '4. Microdeletion Syndromes (Advanced Panels):' }],
+      },
+      {
+        type: 'bullets',
+        items: [
+          'Screens for missing microscopic fragments of chromosomes (such as 22q11.2 / DiGeorge syndrome).',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Why Choose At-Home NIPT Collection in Dubai?',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Navigating Dubai traffic, finding parking, and sitting in busy waiting areas while coping with morning sickness, fatigue, or a busy work calendar can be draining.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Here is why thousands of expectant parents in communities across Dubai—from Palm Jumeirah and Dubai Marina to Arabian Ranches and Business Bay—are choosing in-home prenatal sample collection:',
+        ],
+      },
+      {
+        type: 'bullets',
+        items: [
+          'Ultimate Privacy & Rest: Enjoy a stress-free blood draw in your pajamas on your sofa, where you feel most relaxed.',
+          'DHA-Licensed Medical Personnel: Professional home visits are performed by certified, gentle phlebotomists trained specifically in maternal sample collection.',
+          'Flexible Scheduling: Appointments fit around your morning routine, working hours, or family commitments.',
+          'Rapid Turnaround: Comprehensive, confidential digital lab reports arrive directly to your phone or email, usually within 5 to 10 business days.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Who Should Consider an NIPT Test?',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'While NIPT is beneficial for any expectant mother seeking reassurance early in her pregnancy, medical guidelines particularly encourage screening for:',
+        ],
+      },
+      {
+        type: 'bullets',
+        items: [
+          'Women aged 35 and older at the time of delivery (due to higher baseline chromosomal risks).',
+          'Mothers who received an inconclusive or abnormal first-trimester ultrasound screening.',
+          'Parents with a family history of genetic or chromosomal conditions.',
+          'Couples who underwent IVF or fertility treatments and want clear confirmation of fetal health early on.',
+          'Any parent who simply wants the peace of mind that comes with accurate, early screening.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'How At-Home NIPT Works: A Simple 4-Step Process',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Book Online / WhatsApp ➔ DHA Nurse Home Visit ➔ Accredited Lab Analysis ➔ Confidential Digital Results.',
+        ],
+      },
+      {
+        type: 'ordered-list',
+        items: [
+          { label: 'Book Your Visit:', text: 'Choose a convenient date and time once you reach Week 10 of pregnancy.' },
+          { label: 'Seamless Sample Collection:', text: 'A DHA-licensed practitioner arrives at your Dubai residence or hotel suite. A quick blood draw takes less than 10 minutes.' },
+          { label: 'Accredited Lab Analysis:', text: 'Your blood sample is safely transported under temperature-controlled protocols to a CAP- or ISO-accredited genetics laboratory.' },
+          { label: 'Receive Clear Answers:', text: 'You receive your confidential report electronically, complete with optional consultation with a doctor to walk you through your findings.' },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Is the NIPT test safe for my baby?',
+        answer:
+          'Yes, 100%. Because the test requires only a standard blood sample drawn from the mother’s arm, it poses zero risk of miscarriage or physical harm to the baby.',
+      },
+      {
+        question: 'How early in my pregnancy can I book an NIPT test in Dubai?',
+        answer:
+          'You can take the NIPT test starting at 10 weeks of gestation (confirmed by an ultrasound scan). Testing earlier than 10 weeks is not recommended, as the concentration of fetal DNA in maternal blood may be too low for an accurate reading.',
+      },
+      {
+        question: 'How accurate is NIPT for gender determination?',
+        answer:
+          'NIPT gender determination is over 99% accurate starting at 10 weeks, making it far more reliable than early ultrasound scans.',
+      },
+      {
+        question: 'Do I need to fast before my home blood collection?',
+        answer:
+          'No fasting is required. You can eat and drink normally prior to your home visit. Staying well-hydrated by drinking plenty of water before the nurse arrives is recommended to make the blood draw smooth and easy.',
+      },
+      {
+        question: 'What documents do I need for home NIPT screening in Dubai?',
+        answer:
+          'To comply with UAE health regulations, you will need to present a valid Emirates ID or Passport and a copy of your recent pregnancy ultrasound report (confirming gestational age of 10+ weeks).',
+      },
+    ],
+  },
+  'at-home-blood-tests-dubai-lab-quality-diagnostics': {
+    previousSlug: 'early-fetal-gender-genetic-screening-at-home-nipt-dubai',
+    nextSlug: 'managing-chronic-pain-at-home-mobile-physiotherapy-dubai',
+    cta: {
+      title: 'Book Your At-Home Blood Test at Home in Dubai',
+      description:
+        'Booking a rapid sample collection with SIMS Home Healthcare takes less than two minutes. Call or message +971525231028 for instant 24/7 dispatch. Our teams cover all Dubai communities, including Downtown Dubai, Dubai Marina, Business Bay, Palm Jumeirah, JBR, Al Barsha, and Arabian Ranches.',
+      buttonText: 'Call +971525231028',
+    },
+    sections: [
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Key Takeaways: Quick Summary',
+      },
+      {
+        type: 'bullets',
+        items: [
+          'What is an at-home blood test? A DHA-certified nurse or phlebotomist visits your home, hotel, or office in Dubai to collect blood samples using sterile equipment, delivering them directly to accredited diagnostic laboratories.',
+          'Rapid Response & Sample Collection: A certified clinician reaches your doorstep anywhere in Dubai within 30 to 60 minutes of booking.',
+          'Customized & Tailored Testing: Patients can build fully customized blood test packages or add specific biomarkers based on personal health goals or doctor recommendations.',
+          'Accuracy & Standards: Mobile lab tests follow the exact same laboratory processing, cold-chain handling, and safety standards as hospital clinic visits.',
+          'Turnaround Time: Digital results are delivered securely via email or WhatsApp within 12 to 24 hours.',
+          'Available Panels: Full Body Checkups, Vitamin D & B12 Diagnostics, Custom Biomarker Profiles, Thyroid Checks, Food Intolerance, Hormone Panels, and Lipid Diagnostics.',
+        ],
+      },
+      {
+        type: 'image',
+        src: labTestAtHomeImage01,
+        alt: 'DHA-certified nurse collecting a blood sample at home in Dubai',
+        caption: 'Lab-quality diagnostics collected at your doorstep, with results delivered digitally within 12 to 24 hours.',
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'What Are At-Home Blood Tests in Dubai?',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'At-home blood testing is a concierge healthcare service where certified medical professionals collect diagnostic blood samples directly at your residence, hotel room, or office across Dubai.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Instead of commuting through Dubai traffic, waiting in hospital reception lounges, or taking time off work, a licensed nurse brings medical-grade blood extraction equipment straight to your doorstep within 30 to 60 minutes. The samples are immediately secured in temperature-controlled bio-transport units and dispatched to accredited Dubai health laboratories for processing.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'How Does In-Home Diagnostic Sampling Work?',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'The process is designed for convenience, privacy, and speed:',
+        ],
+      },
+      {
+        type: 'bullets',
+        items: [
+          'Select or Customize Your Test: Choose a pre-designed health package or request a tailored biomarker selection based on your specific health requirements or prescription.',
+          'Rapid Professional Visit: A DHA-licensed nurse or phlebotomist arrives at your location within 30 to 60 minutes with sterile, single-use phlebotomy kits.',
+          'Painless Sample Collection: The extraction takes less than 10 minutes following international sanitary protocols.',
+          'Cold-Chain Specimen Transport: Blood samples are placed in refrigerated containers to maintain sample integrity during transport.',
+          'Fast Digital Delivery: Lab reports are reviewed by certified pathologists and sent directly to your phone or email, complete with doctor recommendations.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'How to Book an At-Home Blood Test in Dubai (SIMS Home Healthcare)',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Booking a rapid sample collection with SIMS Home Healthcare takes less than two minutes:',
+        ],
+      },
+      {
+        type: 'bullets',
+        items: [
+          '24/7 Phone & WhatsApp Booking: Call or message +971 52 523 1028 for instant dispatch.',
+          'Direct Email Inquiries: connect@simshomehealthcare.ae',
+          'Official Website: https://www.simshomehealthcare.ae/',
+          'Head Office: AB Center - 207 Sheikh Zayed Rd, Al Barsha First, Dubai',
+          'Service Coverage: 24/7 sample collection across all Dubai communities (including Downtown Dubai, Dubai Marina, Business Bay, Palm Jumeirah, JBR, Al Barsha, and Arabian Ranches).',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Popular & Customizable At-Home Blood Testing Panels Available in Dubai',
+      },
+      {
+        type: 'bullets',
+        items: [
+          'Customized & Individual Biomarker Testing: Total flexibility to create bespoke test packages (e.g., adding Ferritin to a Vitamin panel, testing specific hormones, or fulfilling custom physician lab requisitions).',
+          'Comprehensive Full Body Checkup: Evaluates overall wellness, organ function, kidney/liver health, blood sugar, and systemic inflammation.',
+          'Routine Health Check-up Packages: Affordable promotional routine checkup packages available directly via SIMS Home Healthcare.',
+          'Vitamin & Nutrient Deficiency Panel: Identifies key deficiencies common in indoor lifestyles, including Vitamin D, Vitamin B12, Iron (Ferritin), Calcium, and Zinc.',
+          'Thyroid Function Test (TSH, Free T3, Free T4): Monitors metabolic speed, energy regulation, and hormonal balance.',
+          'Lipid & Cardiovascular Profile: Checks total cholesterol, HDL, LDL, and triglycerides for cardiovascular risk assessments.',
+          'Hormone Balance Panels: Comprehensive profiling for male and female health, energy optimization, and reproductive wellness.',
+          'Food Intolerance & Allergy Screening: Pinpoints digestive triggers and sensitivities to over 200 food ingredients.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Can I Customize My At-Home Blood Test Package?',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Yes, full customization is available for at-home blood tests in Dubai.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Whether you need a single specific marker (like Vitamin B12 or HbA1c) or want to combine multiple health screens into one home visit, concierge medical teams accommodate customized requests:',
+        ],
+      },
+      {
+        type: 'bullets',
+        items: [
+          'Doctor Prescriptions: Have a doctor’s lab request form from another clinic? Simply share the requisition list, and the mobile nurse will collect the precise samples required.',
+          'Add-On Biomarkers: Easily add individual tests (such as Testosterone, Iron Studies, or Liver Function) to any standard base package.',
+          'Targeted Health Goals: Tailor testing profiles around specific goals, such as fitness performance, hair loss investigation, chronic fatigue diagnosis, or preventative wellness screening.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Are Mobile Blood Tests as Accurate as Clinic Tests?',
+      },
+      {
+        type: 'paragraph',
+        parts: [
+          'Yes, mobile blood testing in Dubai offers 100% equivalent clinical accuracy to hospital-based phlebotomy.',
+        ],
+      },
+      {
+        type: 'bullets',
+        items: [
+          'Certified Personnel: Samples are exclusively drawn by DHA-certified nurses trained in delicate vein access and aseptic collection protocols.',
+          'Accreditation: Samples are processed at CAP-accredited and ISO-certified laboratory facilities across the UAE.',
+          'Cold-Chain Management: Temperature-monitored specimen logistics prevent sample degradation, matching clinic transport standards.',
+        ],
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Why Choose At-Home Blood Testing Over Hospital Visits?',
+      },
+      {
+        type: 'table',
+        headers: ['Feature', 'Clinic / Hospital Visit', 'At-Home Mobile Service'],
+        rows: [
+          [
+            'Test Selection',
+            'Fixed hospital bundles',
+            'Fully customizable & tailorable panels',
+          ],
+          [
+            'Response & Arrival',
+            'Travel + registration time',
+            'Sample collector arrives in 30–60 minutes',
+          ],
+          [
+            'Travel & Traffic',
+            '45–90 minutes commute in Dubai traffic',
+            'Zero travel required',
+          ],
+          [
+            'Waiting Time',
+            '30–60 minutes in waiting areas',
+            'Instant appointment at your exact time',
+          ],
+          [
+            'Infection Risk',
+            'Potential exposure to sick patients',
+            'Completely isolated in your private room',
+          ],
+          [
+            'Convenience',
+            'Fasting requires early morning travel',
+            'Wake up, take test in bed, eat immediately',
+          ],
+          [
+            'Privacy',
+            'Public laboratory environment',
+            '100% confidential and discreet',
+          ],
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'How fast does the phlebotomist arrive for sample collection?',
+        answer:
+          'With SIMS Home Healthcare’s 24/7 rapid response service across Dubai, a DHA-certified professional typically arrives at your home, hotel room, or office within 30 to 60 minutes of booking confirmation.',
+      },
+      {
+        question: 'Can I request specific customized blood tests that are not in a standard package?',
+        answer:
+          'Yes. You can customize your blood test order by adding individual biomarkers or requesting a bespoke panel tailored to your specific symptoms, health goals, or physician instructions.',
+      },
+      {
+        question: 'Can I get an at-home blood test if I am staying in a hotel in Dubai?',
+        answer:
+          'Yes. Concierge healthcare teams cover all major hotels, serviced apartments, and residential communities across Dubai (including Downtown Dubai, Dubai Marina, Business Bay, Palm Jumeirah, JBR, and Arabian Ranches).',
+      },
+      {
+        question: 'How do I prepare for a fasting blood test at home?',
+        answer:
+          'If your panel requires fasting (such as Glucose or Lipid profiles), avoid food and all beverages except plain water for 8 to 12 hours prior to the nurse’s arrival. Scheduling your visit early in the morning allows you to eat immediately after sample collection.',
+      },
+      {
+        question: 'How quickly will I receive my lab results?',
+        answer:
+          'Standard diagnostic results are delivered digitally via email or WhatsApp within 12 to 24 hours. Specialized panels (such as detailed food intolerance or genetic screens) may take 48 to 72 hours.',
+      },
+    ],
+  },
   'managing-chronic-pain-at-home-mobile-physiotherapy-dubai': {
     previousSlug: null,
     nextSlug: 'healthcare-at-your-doorstep-dubai-hotels-doctors-on-call',
