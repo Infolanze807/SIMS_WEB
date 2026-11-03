@@ -51,12 +51,12 @@ const AboutHero = () => {
               Premium Healthcare Excellence
             </motion.span>
             <motion.h1
-              className="text-4xl font-black leading-[1.1] tracking-tight text-white lg:text-6xl"
+              className="text-4xl font-black uppercase leading-[1.1] tracking-tight text-white lg:text-[2.5rem]"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.25, duration: 0.7 }}
             >
-              SIMS Home Healthcare – <span className="text-[#4fc3c0]">DHA-Licensed Healthcare</span> at Home, Hotels & Offices in Dubai
+              SIMS Home Healthcare – <span className="text-[#4fc3c0]"><span className="whitespace-nowrap">DHA-Licensed</span> Healthcare</span> at Home, Hotels & Offices in Dubai
             </motion.h1>
           </div>
 
