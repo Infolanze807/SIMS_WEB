@@ -17,7 +17,7 @@ export const BLOG_POSTS = [
     title:
       'Early Fetal Gender & Genetic Screening: At-Home Prenatal Testing for Dubai Moms',
     blogNumber: '06',
-    author: 'Dr. Mamoona Fatima',
+    author: 'Dr. Syeda Marsha Noor',
     date: 'November 2, 2026',
     day: '02',
     month: 'Nov',
@@ -35,7 +35,7 @@ export const BLOG_POSTS = [
     title:
       'At-Home Blood Tests in Dubai: How Lab-Quality Diagnostics Come to Your Living Room',
     blogNumber: '05',
-    author: 'Dr. Mamoona Fatima',
+    author: 'Dr. Syeda Marsha Noor',
     date: 'November 2, 2026',
     day: '02',
     month: 'Nov',
