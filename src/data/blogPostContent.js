@@ -7,10 +7,34 @@ import labTestAtHomeImage01 from '../assets/LabTestAtHome01.jpeg';
 import niptTestAtHomeImage from '../assets/NIPTTestAtHome001.jpeg';
 import { DOCTOR_ON_CALL_HOTEL_ARTICLE } from './doctorOnCallHotelArticle';
 import { CHRONIC_PAIN_HOME_PHYSIOTHERAPY_ARTICLE } from './chronicPainHomePhysiotherapyArticle';
+import { SAME_DAY_LAB_CHECKUPS_AT_HOME_ARTICLE } from './sameDayLabCheckupsAtHomeArticle';
+import { DUBAI_RUN_2026_RECOVERY_ARTICLE } from './dubaiRun2026RecoveryArticle';
 
 export const BLOG_POST_CONTENT = {
-  'early-fetal-gender-genetic-screening-at-home-nipt-dubai': {
+  'same-day-std-vitamin-full-body-checkups-at-home-dubai': {
     previousSlug: null,
+    nextSlug: 'dubai-run-2026-musculoskeletal-care-hydration-in-home-nursing-recovery',
+    cta: {
+      title: 'Book Same-Day Lab Tests at Home',
+      description:
+        'Schedule confidential STD screening, vitamin panels, or a full body checkup with a DHA-licensed nurse at your home, hotel, or office in Dubai. Call +971525231028 for same-day appointments across Dubai Marina, Downtown, Jumeirah, Business Bay, and surrounding communities.',
+      buttonText: 'Call +971525231028',
+    },
+    sections: SAME_DAY_LAB_CHECKUPS_AT_HOME_ARTICLE,
+  },
+  'dubai-run-2026-musculoskeletal-care-hydration-in-home-nursing-recovery': {
+    previousSlug: 'same-day-std-vitamin-full-body-checkups-at-home-dubai',
+    nextSlug: 'early-fetal-gender-genetic-screening-at-home-nipt-dubai',
+    cta: {
+      title: 'Book Post-Race Recovery at Home',
+      description:
+        'Arrange DHA-licensed IV hydration, sports physiotherapy, or clinical injury screening at your home after Dubai Run 2026. Call +971525231028 for appointments across Downtown Dubai, Dubai Marina, Palm Jumeirah, Business Bay, and surrounding communities.',
+      buttonText: 'Call +971525231028',
+    },
+    sections: DUBAI_RUN_2026_RECOVERY_ARTICLE,
+  },
+  'early-fetal-gender-genetic-screening-at-home-nipt-dubai': {
+    previousSlug: 'dubai-run-2026-musculoskeletal-care-hydration-in-home-nursing-recovery',
     nextSlug: 'at-home-blood-tests-dubai-lab-quality-diagnostics',
     cta: {
       title: 'Ready for Early Peace of Mind?',
@@ -445,7 +469,7 @@ export const BLOG_POST_CONTENT = {
     ],
   },
   'managing-chronic-pain-at-home-mobile-physiotherapy-dubai': {
-    previousSlug: null,
+    previousSlug: 'at-home-blood-tests-dubai-lab-quality-diagnostics',
     nextSlug: 'healthcare-at-your-doorstep-dubai-hotels-doctors-on-call',
     cta: {
       title: 'Take Control of Your Health at Home',

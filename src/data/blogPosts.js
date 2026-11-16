@@ -10,13 +10,50 @@ import doctorOnCallImage from '../assets/doc.jpeg';
 import chronicPainHomeImage from '../assets/Vack.jpeg';
 import labTestAtHome01Image from '../assets/LabTestAtHome01.jpeg';
 import niptTestAtHomeImage from '../assets/NIPTTestAtHome001.jpeg';
+import bloggImage from '../assets/Blogg.jpeg';
+import healthCheckupAtHomeImage from '../assets/HealthCheckupAtHome03.jpeg';
 
 export const BLOG_POSTS = [
+  {
+    slug: 'same-day-std-vitamin-full-body-checkups-at-home-dubai',
+    title: 'Same-Day STD, Vitamin Deficiency, and Full Body Checkups at Home in Dubai',
+    blogNumber: '07',
+    author: 'Dr. Syeda Marsha Noor',
+    date: 'November 16, 2026',
+    day: '16',
+    month: 'Nov',
+    category: 'Lab Tests',
+    comments: 'No Comments',
+    commentCount: 0,
+    excerpt:
+      'Patients across Dubai—including Dubai Marina, Downtown Dubai, Jumeirah, and Business Bay—can book same-day STD screenings, vitamin deficiency tests, and full body checkups at home through DHA-licensed home healthcare providers. A certified DHA-registered nurse arrives within 30 to 60 minutes for sterile, discreet blood and urine collection.',
+    metaDescription:
+      'Book same-day STD screenings, vitamin deficiency tests, and full body checkups at home in Dubai. DHA-licensed nurses collect samples in 30–60 minutes with lab reports in 6–24 hours.',
+    image: healthCheckupAtHomeImage,
+  },
+  {
+    slug: 'dubai-run-2026-musculoskeletal-care-hydration-in-home-nursing-recovery',
+    title:
+      'Dubai Run 2026: Musculoskeletal Care, Hydration Strategy & In-Home Nursing Recovery',
+    blogNumber: '06',
+    author: 'Dr. Mamoona Fatima',
+    date: 'November 6, 2026',
+    day: '06',
+    month: 'Nov',
+    category: 'Physiotherapy',
+    comments: 'No Comments',
+    commentCount: 0,
+    excerpt:
+      'Participating in Dubai Run 2026 along Sheikh Zayed Road stands out as a flagship highlight of the annual Dubai Fitness Challenge (30x30). Whether running the Dubai Run 5km or 10km, endurance racing places heavy demand on lower extremities—making sports recovery, hydration, and post-event musculoskeletal care essential.',
+    metaDescription:
+      'Dubai Run 2026 recovery guide: pre-race prep, finish-line protocols, electrolyte hydration, and DHA-licensed in-home IV nursing and sports physiotherapy across Dubai. Call +971 52 523 1028.',
+    image: bloggImage,
+  },
   {
     slug: 'early-fetal-gender-genetic-screening-at-home-nipt-dubai',
     title:
       'Early Fetal Gender & Genetic Screening: At-Home Prenatal Testing for Dubai Moms',
-    blogNumber: '06',
+    blogNumber: '05',
     author: 'Dr. Syeda Marsha Noor',
     date: 'November 2, 2026',
     day: '02',
@@ -34,7 +71,7 @@ export const BLOG_POSTS = [
     slug: 'at-home-blood-tests-dubai-lab-quality-diagnostics',
     title:
       'At-Home Blood Tests in Dubai: How Lab-Quality Diagnostics Come to Your Living Room',
-    blogNumber: '05',
+    blogNumber: '04',
     author: 'Dr. Syeda Marsha Noor',
     date: 'November 2, 2026',
     day: '02',
@@ -52,7 +89,6 @@ export const BLOG_POSTS = [
     slug: 'managing-chronic-pain-at-home-mobile-physiotherapy-dubai',
     title:
       'Managing Chronic Pain at Home: How Mobile Physiotherapy Restores Life Without Surgery or Medication',
-    blogNumber: '04',
     author: 'Dr. Mamoona Fatima',
     date: 'October 27, 2026',
     day: '27',
