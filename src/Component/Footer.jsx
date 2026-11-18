@@ -22,8 +22,8 @@ import dhaHealthBadge from '../assets/logoo.webp';
 import { GoogleRatingBadge } from './GoogleRatingBadge';
 import { HEADER_NAV_SERVICES } from '../data/headerNavServices';
 import { LEGAL_LINKS } from '../data/legalContent';
-import { IconGooglePay, IconX } from './BrandIcons';
-import { SiOpenai, SiClaude, SiPerplexity } from 'react-icons/si';
+import { IconX } from './BrandIcons';
+import { SiOpenai, SiClaude, SiPerplexity, SiGooglepay } from 'react-icons/si';
 
 /** Official xAI Grok mark (not yet in react-icons/simple-icons). */
 const SiGrok = ({ className = '' }) => (
@@ -115,7 +115,7 @@ const paymentMethods = [
   { label: 'Debit or Credit Card', icon: FaCreditCard, iconClass: 'text-[#003d4d]' },
   { label: 'Cash', icon: FaMoneyBillWave, iconClass: 'text-[#14804a]' },
   { label: 'Apple Pay', icon: FaApplePay, iconClass: 'text-black' },
-  { label: 'Google Pay', icon: IconGooglePay, iconClass: 'text-[#3c4043] h-5 w-5' },
+  { label: 'Google Pay', icon: SiGooglepay, iconClass: 'text-[#3c4043] h-5 w-5' },
 ];
 
 const FooterLink = ({ to, children, className = '' }) => (
