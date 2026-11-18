@@ -63,7 +63,7 @@ const BlogPostHero = ({ post }) => {
             </motion.div>
 
             <motion.h1
-              className="text-3xl font-black leading-tight tracking-tight sm:text-4xl lg:text-5xl"
+              className="text-3xl font-black uppercase leading-tight tracking-tight sm:text-4xl lg:text-4xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.35, duration: 0.7 }}

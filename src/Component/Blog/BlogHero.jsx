@@ -25,7 +25,7 @@ const BlogHero = () => {
             Available 24/7 Support
           </motion.span>
           <motion.h1
-            className="text-4xl font-black leading-tight tracking-tight sm:text-5xl lg:text-6xl"
+            className="text-4xl font-black uppercase leading-tight tracking-tight sm:text-5xl lg:text-6xl"
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.25, duration: 0.7 }}

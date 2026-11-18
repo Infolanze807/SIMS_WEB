@@ -5,6 +5,7 @@ import Header from './Component/Header';
 import Footer from './Component/Footer';
 import ScrollToTop from './Component/ScrollToTop';
 import PageLoader from './Component/PageLoader';
+import ChatBot from './Component/ChatBot/ChatBot';
 
 const Home = lazy(() => import('./Pages/Home'));
 const About = lazy(() => import('./Pages/About'));
@@ -38,6 +39,7 @@ const App = () => {
         </main>
 
         <Footer />
+        <ChatBot />
       </div>
     </BrowserRouter>
   );

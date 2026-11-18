@@ -3,8 +3,6 @@ import { motion } from 'framer-motion';
 import { FaPhoneAlt, FaWhatsapp, FaBriefcaseMedical } from 'react-icons/fa';
 import GoogleRatingBadge from './GoogleRatingBadge';
 
-export { default as GoogleRatingBadge } from './GoogleRatingBadge';
-
 const SLIDE_DATA = [
   {
     id: 1,

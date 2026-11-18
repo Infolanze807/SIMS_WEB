@@ -6,8 +6,119 @@ import ivDripImage from '../assets/ivDripImage01.jpeg';
 import hotelSuiteImage from '../assets/blog/hotel-suite.jpg';
 import familyHotelDoctorImage from '../assets/blog/family-hotel-doctor-dubai.jpg';
 import marinaIvTherapyImage from '../assets/blog/iv-therapy-dubai-marina-hotel.jpg';
+import doctorOnCallImage from '../assets/doc.webp';
+import chronicPainHomeImage from '../assets/Vack.jpeg';
+import labTestAtHome01Image from '../assets/LabTestAtHome01.jpeg';
+import niptTestAtHomeImage from '../assets/NIPTTestAtHome001.jpeg';
+import bloggImage from '../assets/Blogg.jpeg';
+import healthCheckupAtHomeImage from '../assets/HealthCheckupAtHome03.jpeg';
+
 
 export const BLOG_POSTS = [
+  {
+    slug: 'same-day-std-vitamin-full-body-checkups-at-home-dubai',
+    title: 'Same-Day STD, Vitamin Deficiency, and Full Body Checkups at Home in Dubai',
+    blogNumber: '07',
+    author: 'Dr. Syeda Marsha Noor',
+    date: 'November 16, 2026',
+    day: '16',
+    month: 'Nov',
+    category: 'Lab Tests',
+    comments: 'No Comments',
+    commentCount: 0,
+    excerpt:
+      'Patients across Dubai—including Dubai Marina, Downtown Dubai, Jumeirah, and Business Bay—can book same-day STD screenings, vitamin deficiency tests, and full body checkups at home through DHA-licensed home healthcare providers. A certified DHA-registered nurse arrives within 30 to 60 minutes for sterile, discreet blood and urine collection.',
+    metaDescription:
+      'Book same-day STD screenings, vitamin deficiency tests, and full body checkups at home in Dubai. DHA-licensed nurses collect samples in 30–60 minutes with lab reports in 6–24 hours.',
+    image: healthCheckupAtHomeImage,
+  },
+  {
+    slug: 'dubai-run-2026-musculoskeletal-care-hydration-in-home-nursing-recovery',
+    title:
+      'Dubai Run 2026: Musculoskeletal Care, Hydration Strategy & In-Home Nursing Recovery',
+    blogNumber: '06',
+    author: 'Dr. Mamoona Fatima',
+    date: 'November 6, 2026',
+    day: '06',
+    month: 'Nov',
+    category: 'Physiotherapy',
+    comments: 'No Comments',
+    commentCount: 0,
+    excerpt:
+      'Participating in Dubai Run 2026 along Sheikh Zayed Road stands out as a flagship highlight of the annual Dubai Fitness Challenge (30x30). Whether running the Dubai Run 5km or 10km, endurance racing places heavy demand on lower extremities—making sports recovery, hydration, and post-event musculoskeletal care essential.',
+    metaDescription:
+      'Dubai Run 2026 recovery guide: pre-race prep, finish-line protocols, electrolyte hydration, and DHA-licensed in-home IV nursing and sports physiotherapy across Dubai. Call +971 52 523 1028.',
+    image: bloggImage,
+  },
+  {
+    slug: 'early-fetal-gender-genetic-screening-at-home-nipt-dubai',
+    title:
+      'Early Fetal Gender & Genetic Screening: At-Home Prenatal Testing for Dubai Moms',
+    blogNumber: '05',
+    author: 'Dr. Syeda Marsha Noor',
+    date: 'November 2, 2026',
+    day: '02',
+    month: 'Nov',
+    category: 'Lab Tests',
+    comments: 'No Comments',
+    commentCount: 0,
+    excerpt:
+      'With At-Home Non-Invasive Prenatal Testing (NIPT), expectant mothers across Dubai can now access world-class genetic insights and fetal gender determination as early as 10 weeks of pregnancy—all from the comfort, privacy, and calm of their own living room.',
+    metaDescription:
+      'At-Home NIPT testing in Dubai: non-invasive prenatal screening with over 99% accuracy for Down syndrome and fetal gender from 10 weeks. DHA-licensed nurses visit your home. Call or WhatsApp +971 52 523 1028.',
+    image: niptTestAtHomeImage,
+  },
+  {
+    slug: 'at-home-blood-tests-dubai-lab-quality-diagnostics',
+    title:
+      'At-Home Blood Tests in Dubai: How Lab-Quality Diagnostics Come to Your Living Room',
+    blogNumber: '04',
+    author: 'Dr. Syeda Marsha Noor',
+    date: 'November 2, 2026',
+    day: '02',
+    month: 'Nov',
+    category: 'Lab Tests',
+    comments: 'No Comments',
+    commentCount: 0,
+    excerpt:
+      'At-home blood testing is a concierge healthcare service where certified medical professionals collect diagnostic blood samples directly at your residence, hotel room, or office across Dubai. Instead of commuting through Dubai traffic, or waiting in hospital reception lounges, a licensed nurse brings medical-grade blood extraction equipment straight to your doorstep within 30 to 60 minutes.',
+    metaDescription:
+      'At-home blood tests in Dubai: DHA-certified nurses collect samples at your home, hotel, or office within 30 to 60 minutes, with results delivered in 12 to 24 hours. Call or WhatsApp +971 52 523 1028.',
+    image: labTestAtHome01Image,
+  },
+  {
+    slug: 'managing-chronic-pain-at-home-mobile-physiotherapy-dubai',
+    title:
+      'Managing Chronic Pain at Home: How Mobile Physiotherapy Restores Life Without Surgery or Medication',
+    author: 'Dr. Mamoona Fatima',
+    date: 'October 27, 2026',
+    day: '27',
+    month: 'Oct',
+    category: 'Physiotherapy',
+    comments: 'No Comments',
+    commentCount: 0,
+    excerpt:
+      'Living with chronic pain can feel like an uphill battle, often leaving individuals dependent on daily medications or facing the prospect of invasive surgical procedures. However, modern pain science and mobile physical therapy offer a powerful, non-invasive alternative. By bringing specialized care directly into your living space, home physiotherapy retrains the nervous system, optimizes daily movement, and empowers you to reclaim your quality of life in the comfort and safety of your own home.',
+    metaDescription:
+      'Living with chronic pain can feel like an uphill battle, often leaving individuals dependent on daily medications or facing the prospect of invasive surgical procedures. However, modern pain science and mobile physical therapy offer a powerful, non-invasive alternative.',
+    image: chronicPainHomeImage,
+  },
+  {
+    slug: 'healthcare-at-your-doorstep-dubai-hotels-doctors-on-call',
+    title: 'Healthcare at Your Doorstep: Looking into Dubai Hotels with Doctors on Call',
+    author: 'Dr. Syeda Marsha Noor',
+    date: 'October 26, 2026',
+    day: '26',
+    month: 'Oct',
+    category: 'Doctor on Call',
+    comments: 'No Comments',
+    commentCount: 0,
+    excerpt:
+      'Learn about the best hotels in Dubai that have doctors on call. Find out how these high-end services make it easy and comfortable for you to get healthcare at home.',
+    metaDescription:
+      'Learn about the best hotels in Dubai that have doctors on call. Find out how these high-end services make it easy and comfortable for you to get healthcare at home.',
+    image: doctorOnCallImage,
+  },
   {
     slug: 'iv-therapy-at-hotel-dubai-marina',
     title: 'IV Therapy at Hotel Dubai Marina: A Premium Solution for Health and Relaxation',

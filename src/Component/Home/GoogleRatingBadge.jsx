@@ -1,8 +1,4 @@
-import React from 'react';
-
 const GOOGLE_RATING = 4.9;
-const GOOGLE_REVIEW_COUNT = 129;
-const GOOGLE_PROFILE_URL = 'https://www.google.com/maps?cid=17407437960497757157&hl=en';
 
 const GoogleMark = () => (
   <svg viewBox="0 0 24 24" className="h-5 w-5 shrink-0" aria-hidden="true">
@@ -27,7 +23,7 @@ const GoogleStar = ({ fill }) => (
 );
 
 const GoogleRatingBadge = () => (
-  <div className="flex w-full max-w-2xl flex-col gap-3 rounded-2xl border border-[#d6e8f5] bg-[#eef6fb] px-4 py-3 text-[#202124] shadow-[0_10px_28px_rgba(0,0,0,0.16)] sm:flex-row sm:items-center sm:justify-between sm:px-5">
+  <div className="max-w-2xl flex-col gap-3 rounded-2xl border border-[#d6e8f5] bg-[#eef6fb] px-4 py-3 text-[#202124] shadow-[0_10px_28px_rgba(0,0,0,0.16)] sm:flex-row sm:items-center sm:justify-between sm:px-5">
     <div className="flex min-w-0 items-center gap-2.5">
       <GoogleMark />
       <div className="min-w-0">
@@ -40,20 +36,10 @@ const GoogleRatingBadge = () => (
           </span>
           <p className="text-[11px] font-medium leading-tight text-[#5f6368] sm:text-xs">
             <span className="font-bold text-[#202124]">{GOOGLE_RATING.toFixed(1)}</span>
-            {' '}out of 5 based on {GOOGLE_REVIEW_COUNT} reviews
           </p>
         </div>
       </div>
     </div>
-    <a
-      href={GOOGLE_PROFILE_URL}
-      target="_blank"
-      rel="noreferrer"
-      aria-label={`Rated ${GOOGLE_RATING} out of 5 on Google from ${GOOGLE_REVIEW_COUNT} reviews. Review us on Google`}
-      className="inline-flex shrink-0 items-center justify-center rounded-full bg-[#1a73e8] px-4 py-2 text-xs font-semibold text-white transition-colors hover:bg-[#1558b0] sm:text-[13px]"
-    >
-      Review us on Google
-    </a>
   </div>
 );
 
