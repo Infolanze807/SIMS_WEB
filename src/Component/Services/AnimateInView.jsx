@@ -1,63 +1,58 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useEffect, useRef, useState } from 'react';
 
-export const fadeUp = {
-  hidden: { opacity: 0, y: 32 },
-  visible: { opacity: 1, y: 0 },
-};
-
-export const fadeIn = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1 },
-};
-
-export const scaleIn = {
-  hidden: { opacity: 0, scale: 0.94 },
-  visible: { opacity: 1, scale: 1 },
-};
-
-export const slideFromLeft = {
-  hidden: { opacity: 0, x: -36 },
-  visible: { opacity: 1, x: 0 },
-};
-
-export const slideFromRight = {
-  hidden: { opacity: 0, x: 36 },
-  visible: { opacity: 1, x: 0 },
-};
-
-export const staggerContainer = {
-  hidden: {},
-  visible: {
-    transition: { staggerChildren: 0.08, delayChildren: 0.04 },
-  },
-};
-
+/**
+ * Lightweight CSS reveal — avoids shipping framer-motion on first paint / TBT.
+ */
 const AnimateInView = ({
   children,
   className = '',
   delay = 0,
-  duration = 0.6,
-  variants = fadeUp,
   as = 'div',
   animateOnMount = false,
 }) => {
-  const Component = motion[as] || motion.div;
-  const motionProps = animateOnMount
-    ? { animate: 'visible' }
-    : { whileInView: 'visible', viewport: { once: true, amount: 0.15 } };
+  const Component = as;
+  const ref = useRef(null);
+  const [visible, setVisible] = useState(animateOnMount);
+
+  useEffect(() => {
+    if (animateOnMount) return undefined;
+    const node = ref.current;
+    if (!node) return undefined;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+        setVisible(true);
+        observer.disconnect();
+      },
+      { threshold: 0.12, rootMargin: '40px 0px' }
+    );
+
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [animateOnMount]);
 
   return (
     <Component
+      ref={ref}
       className={className}
-      initial="hidden"
-      {...motionProps}
-      variants={variants}
-      transition={{ duration, delay, ease: [0.22, 1, 0.36, 1] }}
+      style={{
+        opacity: visible ? 1 : 0,
+        transform: visible ? 'none' : 'translateY(18px)',
+        transition: `opacity 0.45s ease ${delay}s, transform 0.45s ease ${delay}s`,
+        willChange: visible ? 'auto' : 'opacity, transform',
+      }}
     >
       {children}
     </Component>
   );
 };
+
+export const fadeUp = {};
+export const fadeIn = {};
+export const scaleIn = {};
+export const slideFromLeft = {};
+export const slideFromRight = {};
+export const staggerContainer = {};
 
 export default AnimateInView;

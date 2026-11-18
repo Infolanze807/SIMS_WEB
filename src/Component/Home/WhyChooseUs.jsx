@@ -1,8 +1,7 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { FaClock, FaUserShield, FaHeartbeat, FaBriefcaseMedical, FaCogs } from 'react-icons/fa';
-import AnimateInView, { fadeUp, slideFromLeft, staggerContainer } from '../Services/AnimateInView';
-import whychooseus from '../../assets/whychooseus01.jpg';
+import AnimateInView, { slideFromLeft } from '../Services/AnimateInView';
+import whychooseus from '../../assets/whychooseus01.webp';
 
 const WhyChooseUs = () => {
   return (
@@ -18,6 +17,10 @@ const WhyChooseUs = () => {
             <img 
               src={whychooseus} 
               alt="Premium Home Healthcare Patient Care" 
+              width="700"
+              height="875"
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 ease-out brightness-[0.98] contrast-[1.02]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#003d4d]/30 via-transparent to-transparent"></div>
@@ -40,35 +43,25 @@ const WhyChooseUs = () => {
             </h2>
           </AnimateInView>
 
-          <motion.div
-            className="grid grid-cols-1 gap-5 md:grid-cols-12"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: '-40px' }}
-          >
+          <div className="grid grid-cols-1 gap-5 md:grid-cols-12">
             {[
               { span: 'md:col-span-7', num: '01', icon: <FaClock />, iconClass: 'bg-[#25b8a7]/10 text-[#25b8a7]', hoverNum: 'group-hover:text-[#25b8a7]/5', title: '24/7 Doctor on Call', desc: 'No waiting. No trips to the clinic. Just quick, responsive care at your convenience.', descClass: 'text-xs sm:text-sm' },
               { span: 'md:col-span-5', num: '02', icon: <FaUserShield />, iconClass: 'bg-[#0a5568]/10 text-[#0a5568]', hoverNum: 'group-hover:text-[#0a5568]/5', title: 'Licensed Medical Professionals', desc: 'All our healthcare personnel are certified and adhere to the highest regulatory standards.', descClass: 'text-xs' },
               { span: 'md:col-span-5', num: '03', icon: <FaHeartbeat />, iconClass: 'bg-rose-50 text-rose-500', hoverNum: 'group-hover:text-rose-500/5', title: 'Patient-Centered Care', desc: 'We customize each visit to address your specific health needs with compassion, professionalism, and confidentiality.', descClass: 'text-xs' },
               { span: 'md:col-span-7', num: '04', icon: <FaBriefcaseMedical />, iconClass: 'bg-cyan-50 text-cyan-500', hoverNum: 'group-hover:text-cyan-500/5', title: 'Comprehensive In-Home Services', desc: 'From diagnostic lab tests and physiotherapy to post-operative nursing and elder care—we handle it all.', descClass: 'text-xs sm:text-sm' },
             ].map((card) => (
-              <motion.div
+              <div
                 key={card.num}
-                variants={fadeUp}
-                whileHover={{ y: -4 }}
                 className={`group relative overflow-hidden rounded-[32px] border border-slate-100/80 bg-[#FAFBFD] p-6 transition-all duration-300 hover:bg-white hover:shadow-[0_20px_40px_rgba(0,61,77,0.05)] ${card.span}`}
               >
                 <div className={`absolute right-6 top-4 select-none text-5xl font-black text-slate-100 transition-colors duration-300 ${card.hoverNum}`}>{card.num}</div>
                 <div className={`mb-4 flex h-10 w-10 items-center justify-center rounded-xl text-base ${card.iconClass}`}>{card.icon}</div>
                 <h4 className="text-base font-bold tracking-tight text-[#003d4d]">{card.title}</h4>
                 <p className={`mt-2 font-normal leading-relaxed text-slate-500 ${card.descClass}`}>{card.desc}</p>
-              </motion.div>
+              </div>
             ))}
 
-            <motion.div
-              variants={fadeUp}
-              whileHover={{ y: -4 }}
+            <div
               className="group relative overflow-hidden rounded-[32px] border border-slate-100/80 bg-[#FAFBFD] p-6 transition-all duration-300 hover:bg-white hover:shadow-[0_20px_40px_rgba(0,61,77,0.05)] md:col-span-12"
             >
               <div className="absolute right-6 top-4 select-none text-5xl font-black text-slate-100 transition-colors duration-300 group-hover:text-[#25b8a7]/5">05</div>
@@ -83,8 +76,8 @@ const WhyChooseUs = () => {
                   </p>
                 </div>
               </div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
 
         </div>
 

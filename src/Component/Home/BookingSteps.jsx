@@ -1,8 +1,9 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { FaPhoneAlt, FaUserMd, FaHeartbeat } from 'react-icons/fa';
-import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInView';
-import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.jpeg';
+import AnimateInView from '../Services/AnimateInView';
+import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.webp';
+import doctorOnCallImage from '../../assets/DoctorOnCall03.webp';
+import nursingAtHomeImage from '../../assets/NursingAtHome01.webp';
 
 const STEPS_DATA = [
   {
@@ -11,7 +12,7 @@ const STEPS_DATA = [
     description: "Call us at +971 5252 31028 or send a message via WhatsApp to schedule your appointment instantly.",
     icon: <FaPhoneAlt className="text-xl text-[#003d4d] group-hover:text-white transition-colors duration-300" />,
     accent: "from-[#0a5568] to-[#25b8a7]",
-    bgImage: "https://images.unsplash.com/photo-1516387938699-a93567ec168e?auto=format&fit=crop&q=80&w=800"
+    bgImage: doctorOnCallImage
   },
   {
     stepNumber: "02",
@@ -19,7 +20,7 @@ const STEPS_DATA = [
     description: "A licensed DHA-certified doctor or nurse will arrive at your home, hotel, or office within 30 minutes—ready to assess and assist.",
     icon: <FaUserMd className="text-2xl text-[#25b8a7] group-hover:text-white transition-colors duration-300" />,
     accent: "from-[#25b8a7] to-[#4fc3c0]",
-    bgImage: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=800"
+    bgImage: nursingAtHomeImage
   },
   {
     stepNumber: "03",
@@ -57,21 +58,13 @@ const BookingSteps = () => {
           </div>
         </AnimateInView>
 
-        <motion.div
-          className="relative grid grid-cols-1 gap-8 md:grid-cols-3"
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: '-40px' }}
-        >
+        <div className="relative grid grid-cols-1 gap-8 md:grid-cols-3">
           
           <div className="hidden md:block absolute top-1/2 left-4 right-4 h-[1px] bg-gradient-to-r from-gray-200 via-gray-300 to-transparent -translate-y-12 z-0"></div>
 
           {STEPS_DATA.map((step, idx) => (
-            <motion.div
+            <div
               key={idx}
-              variants={fadeUp}
-              whileHover={{ y: -8 }}
               className="group relative z-10 flex min-h-[350px] flex-col justify-between overflow-hidden rounded-3xl border border-gray-100 bg-white p-8 shadow-[0_15px_40px_-15px_rgba(0,0,0,0.05)] transition-[box-shadow,transform] duration-500 hover:shadow-[0_30px_60px_-10px_rgba(0,61,77,0.18)]"
             >
               
@@ -79,6 +72,10 @@ const BookingSteps = () => {
                 <img 
                   src={step.bgImage} 
                   alt="" 
+                  width="800"
+                  height="1000"
+                  loading="lazy"
+                  decoding="async"
                   className="absolute inset-0 h-full w-full object-cover brightness-[0.65] contrast-[1.05] saturate-[1.1] group-hover:scale-100 scale-105 transition-transform duration-500" 
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#002833] via-[#003d4d]/80 to-[#003d4d]/30"></div>
@@ -112,9 +109,9 @@ const BookingSteps = () => {
                   {step.stepNumber}
                 </span>
               </div>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
 
         <AnimateInView className="relative overflow-hidden rounded-[32px] bg-gradient-to-br from-[#003d4d] to-[#0a5568] p-8 text-white shadow-[0_20px_50px_rgba(0,61,77,0.15)] md:p-10">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_90%_10%,rgba(37,184,167,0.15),transparent_40%)] pointer-events-none"></div>

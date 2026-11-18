@@ -16,7 +16,7 @@ const ContactModern = () => {
 
       {/* 2. Hero Section (image_4b0ba7.jpg) */}
       <section className="h-[40vh] relative flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-[url('image_4b0ba7.jpg')] bg-cover bg-center opacity-40" />
+        <div className="absolute inset-0 bg-[url('image_4b0ba7.webp')] bg-cover bg-center opacity-40" />
         <h1 className="text-5xl font-bold relative z-10">Contact Us</h1>
       </section>
 

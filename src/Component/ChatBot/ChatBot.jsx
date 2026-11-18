@@ -11,7 +11,7 @@ import {
   FaEnvelope,
   FaWhatsapp,
 } from 'react-icons/fa';
-import { HEADER_NAV_SERVICES } from '../../data/servicesCatalog';
+import { HEADER_NAV_SERVICES } from '../../data/headerNavServices';
 
 // Flat list of every service (parent services + their sub-services)
 const CHAT_SERVICE_LINKS = HEADER_NAV_SERVICES.flatMap((service) => [

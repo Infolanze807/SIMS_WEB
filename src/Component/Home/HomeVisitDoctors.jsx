@@ -1,17 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import {
   FaArrowRight,
   FaHome,
   FaHotel,
-  FaBaby,
   FaPhoneAlt,
   FaClock,
   FaUserMd,
 } from 'react-icons/fa';
-import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInView';
+import AnimateInView, { fadeUp } from '../Services/AnimateInView';
 import { getServiceBySlug } from '../../data/servicesCatalog';
+import fallbackDoctorImage from '../../assets/DoctorOnCall03.webp';
+import staff02 from '../../assets/Staff02.webp';
+import staff03 from '../../assets/Staff03.webp';
+import staff04 from '../../assets/Staff04.webp';
 
 const PARENT_SERVICE = getServiceBySlug('doctor-on-call');
 
@@ -31,11 +33,7 @@ const SERVICE_ICONS = {
   // 'pediatrician-on-call': FaPhoneAlt,
 };
 
-const FALLBACK_IMAGE =
-  'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=400';
-
-const toCardImage = (url) =>
-  url ? url.replace('w=1200', 'w=400').replace('q=80', 'q=85') : FALLBACK_IMAGE;
+const FALLBACK_IMAGE = fallbackDoctorImage;
 
 const VISIT_SERVICES = FEATURED_DOCTOR_SLUGS.map((slug) => {
   const service = getServiceBySlug(slug);
@@ -45,29 +43,27 @@ const VISIT_SERVICES = FEATURED_DOCTOR_SLUGS.map((slug) => {
     title: service?.title ?? slug,
     slug,
     description: service?.description ?? '',
-    image: toCardImage(service?.image),
+    image: service?.image || FALLBACK_IMAGE,
     icon: <Icon />,
   };
 });
 
 const DOCTOR_AVATARS = [
   {
-    src: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=120',
+    src: staff02,
     alt: 'DHA licensed doctor',
   },
   {
-    src: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80&w=120',
+    src: staff03,
     alt: 'Home visit doctor',
   },
   {
-    src: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=120',
+    src: staff04,
     alt: 'Medical professional',
   },
 ];
 
-const HERO_IMAGE =
-  PARENT_SERVICE?.image ??
-  'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=1200';
+const HERO_IMAGE = PARENT_SERVICE?.image || FALLBACK_IMAGE;
 
 const ServiceImage = ({ src, alt, className }) => {
   const [imgSrc, setImgSrc] = React.useState(src);
@@ -76,9 +72,10 @@ const ServiceImage = ({ src, alt, className }) => {
     <img
       src={imgSrc}
       alt={alt}
+      width="480"
+      height="600"
       loading="lazy"
       decoding="async"
-      referrerPolicy="no-referrer"
       onError={() => setImgSrc(FALLBACK_IMAGE)}
       className={className}
     />
@@ -109,7 +106,7 @@ const HomeVisitDoctors = () => {
               </span>
             </h2>
 
-            <p className="max-w-md text-sm leading-relaxed text-slate-400 sm:text-[15px]">
+            <p className="max-w-md text-sm leading-relaxed text-slate-200 sm:text-[15px]">
               SIMS Home Healthcare provides 24/7 DHA-certified doctor home visits, hotel care, and workplace medical treatment in Dubai within 30–40 minutes.
             </p>
 
@@ -144,12 +141,8 @@ const HomeVisitDoctors = () => {
           <div className="relative lg:col-span-7">
             <div className="absolute -inset-3 rounded-[48px] border-2 border-dashed border-[#25b8a7]/30" />
 
-            <motion.div
+            <div
               className="relative overflow-hidden rounded-[40px] border border-white/10 bg-white/5 p-1 shadow-[0_30px_70px_rgba(0,0,0,0.35)] backdrop-blur-sm"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
             >
               <ServiceImage
                 src={HERO_IMAGE}
@@ -157,37 +150,29 @@ const HomeVisitDoctors = () => {
                 className="block h-[300px] w-full rounded-[36px] object-cover object-center brightness-[0.95] contrast-[1.03] sm:h-[380px] lg:h-[440px]"
               />
               <div className="pointer-events-none absolute inset-1 rounded-[36px] bg-gradient-to-t from-[#002833]/80 via-transparent to-transparent" />
-            </motion.div>
+            </div>
 
-            {/* <motion.div
+            {/* <div
               className="absolute -bottom-4 left-4 flex items-center gap-3 rounded-2xl border border-white/10 bg-white px-4 py-3 shadow-[0_12px_40px_rgba(0,0,0,0.3)]"
-              initial={{ opacity: 0, y: 12 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.25 }}
             >
               <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#25b8a7] to-[#0a5568] text-white shadow-md">
                 <FaClock className="text-sm" />
               </div>
               <div>
-                <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400">
+                <p className="text-[10px] font-bold uppercase tracking-wider text-slate-300">
                   Average response
                 </p>
                 <p className="text-sm font-black text-[#003d4d]">Within 30 minutes</p>
               </div>
-            </motion.div> */}
+            </div> */}
           </div>
         </div>
 
-        <motion.div
+        <div
           className="relative z-20 mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:-mt-12 lg:grid-cols-4"
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: '-40px' }}
         >
           {VISIT_SERVICES.map((service) => (
-            <motion.div key={service.slug} variants={fadeUp}>
+            <div key={service.slug}>
               <Link
                 to={`/services/${service.slug}`}
                 className="group flex items-center gap-4 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] p-3 shadow-[0_8px_32px_rgba(0,0,0,0.15)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#25b8a7]/40 hover:bg-white/[0.07] hover:shadow-[0_20px_50px_rgba(0,0,0,0.25)]"
@@ -205,7 +190,7 @@ const HomeVisitDoctors = () => {
                   <p className="text-sm font-bold leading-snug text-white transition-colors group-hover:text-[#4fc3c0]">
                     {service.title}
                   </p>
-                  <span className="mt-1 inline-flex items-center gap-1 text-[11px] font-semibold text-slate-400 transition-colors group-hover:text-[#25b8a7]">
+                  <span className="mt-1 inline-flex items-center gap-1 text-[11px] font-semibold text-slate-300 transition-colors group-hover:text-[#25b8a7]">
                     Learn more
                     <FaArrowRight className="text-[8px]" />
                   </span>
@@ -215,9 +200,9 @@ const HomeVisitDoctors = () => {
                   {service.icon}
                 </span>
               </Link>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

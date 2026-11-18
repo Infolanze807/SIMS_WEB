@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import {
   FaPhoneAlt,
   FaFlask,
@@ -15,17 +14,17 @@ import {
   FaBriefcaseMedical,
   FaArrowRight,
 } from 'react-icons/fa';
-import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInView';
-import doctorOnCallImage from '../../assets/DoctorOnCall04.png';
-import labTestAtHomeImage from '../../assets/LabTestAtHome02.jpeg';
-import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.jpeg';
-import nursingCareAtHomeImage from '../../assets/NursingAtHome01.jpeg';
-import ivTherapiesImage from '../../assets/IVTherapies001.jpeg';
-import oxygenTherapyAtHomeImage from '../../assets/OxygenTherapyAtHome03.jpeg';
-import covidPCRTestAtHomeImage from '../../assets/CovidPCRTestAtHome03.jpeg';
-import fluVaccinationAtHomeInDubaiImage from '../../assets/FluVaccinationAtHomeInDubai03.jpeg';
-import healthCheckupAtHomeImage from '../../assets/HealthCheckupAtHome03.jpeg';
-import injectionServiceAtHomeImage from '../../assets/InjectionServiceAtHome03.jpeg';
+import AnimateInView from '../Services/AnimateInView';
+import doctorOnCallImage from '../../assets/DoctorOnCall04.webp';
+import labTestAtHomeImage from '../../assets/LabTestAtHome02.webp';
+import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.webp';
+import nursingCareAtHomeImage from '../../assets/NursingAtHome01.webp';
+import ivTherapiesImage from '../../assets/IVTherapies001.webp';
+import oxygenTherapyAtHomeImage from '../../assets/OxygenTherapyAtHome03.webp';
+import covidPCRTestAtHomeImage from '../../assets/CovidPCRTestAtHome03.webp';
+import fluVaccinationAtHomeInDubaiImage from '../../assets/FluVaccinationAtHomeInDubai03.webp';
+import healthCheckupAtHomeImage from '../../assets/HealthCheckupAtHome03.webp';
+import injectionServiceAtHomeImage from '../../assets/InjectionServiceAtHome03.webp';
 const SERVICES_DATA = [
   {
     slug: 'doctor-on-call',
@@ -136,30 +135,17 @@ const SERVICES_DATA = [
   // },
 ];
 
-const cardImageVariants = {
-  hidden: { scale: 1.08, opacity: 0 },
-  visible: {
-    scale: 1,
-    opacity: 1,
-    transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] },
-  },
-};
-
 const HealthcareServices = () => {
   return (
     <section className="w-full bg-[#FAFBFD] px-4 py-16 font-sans antialiased selection:bg-[#25b8a7]/20 sm:px-6 sm:py-20 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <AnimateInView className="mx-auto mb-10 max-w-3xl space-y-3 text-center sm:mb-12">
-          <motion.div
+          <div
             className="mb-1 inline-flex items-center gap-2 rounded-full bg-[#25b8a7]/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[#25b8a7]"
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
           >
             <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[#25b8a7]" />
             <span>Premium Home Care</span>
-          </motion.div>
+          </div>
           <h2 className="text-3xl font-black leading-none tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
             Comprehensive Home{' '}
             <span className="relative inline-block text-[#25b8a7]">Healthcare Services</span>
@@ -169,19 +155,10 @@ const HealthcareServices = () => {
           </p>
         </AnimateInView>
 
-        <motion.div
-          className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-5"
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: '-40px' }}
-        >
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-5">
           {SERVICES_DATA.map((service, idx) => (
-            <motion.article
+            <article
               key={service.slug}
-              variants={fadeUp}
-              whileHover={{ y: -5 }}
-              transition={{ type: 'spring', stiffness: 400, damping: 28 }}
               className="group relative flex min-h-[130px] overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-shadow duration-300 hover:border-[#25b8a7]/30 hover:shadow-[0_16px_40px_-20px_rgba(0,61,77,0.2)] sm:min-h-[140px]"
             >
               <Link
@@ -191,11 +168,10 @@ const HealthcareServices = () => {
               >
               {/* Full-height image — every service */}
               <div className="relative w-[118px] shrink-0 self-stretch overflow-hidden sm:w-[132px]">
-                <motion.img
+                <img
                   src={service.bgImage}
                   alt={service.title}
                   loading="lazy"
-                  variants={cardImageVariants}
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                   style={
                     service.imagePosition
@@ -205,13 +181,11 @@ const HealthcareServices = () => {
                 />                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-white/10" />
                 <div className="absolute inset-0 bg-[#003d4d]/10 transition-colors duration-300 group-hover:bg-[#003d4d]/0" />
 
-                <motion.div
+                <div
                   className="absolute bottom-2 left-2 flex h-9 w-9 items-center justify-center rounded-lg border border-white/30 bg-white/95 text-sm text-[#25b8a7] shadow-md backdrop-blur-sm"
-                  whileHover={{ scale: 1.1, rotate: 5 }}
-                  transition={{ type: 'spring', stiffness: 400, damping: 18 }}
                 >
                   {service.icon}
-                </motion.div>
+                </div>
 
                 <span className="absolute left-2 top-2 rounded-md bg-[#003d4d]/75 px-1.5 py-0.5 font-mono text-[9px] font-bold text-white backdrop-blur-sm">
                   {String(idx + 1).padStart(2, '0')}
@@ -236,15 +210,12 @@ const HealthcareServices = () => {
               </div>
               </Link>
 
-              <motion.div
+              <div
                 className="absolute bottom-0 left-[118px] right-0 h-0.5 origin-left bg-gradient-to-r from-[#25b8a7] to-[#003d4d] sm:left-[132px]"
-                initial={{ scaleX: 0 }}
-                whileHover={{ scaleX: 1 }}
-                transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
               />
-            </motion.article>
+            </article>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

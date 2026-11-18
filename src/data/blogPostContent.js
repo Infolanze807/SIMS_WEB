@@ -1,10 +1,10 @@
-import doctorVisitImage from '../assets/DoctorAtHome02.jpeg';
-import ivHydrationImage from '../assets/ivDripImage01.jpeg';
-import dubaiSkylineImage from '../assets/blog/dubai-skyline.jpg';
-import familyHotelDoctorImage from '../assets/blog/family-hotel-doctor-dubai.jpg';
-import marinaIvTherapyImage from '../assets/blog/iv-therapy-dubai-marina-hotel.jpg';
-import labTestAtHomeImage01 from '../assets/LabTestAtHome01.jpeg';
-import niptTestAtHomeImage from '../assets/NIPTTestAtHome001.jpeg';
+import doctorVisitImage from '../assets/DoctorAtHome02.webp';
+import ivHydrationImage from '../assets/ivDripImage01.webp';
+import dubaiSkylineImage from '../assets/blog/dubai-skyline.webp';
+import familyHotelDoctorImage from '../assets/blog/family-hotel-doctor-dubai.webp';
+import marinaIvTherapyImage from '../assets/blog/iv-therapy-dubai-marina-hotel.webp';
+import labTestAtHomeImage01 from '../assets/LabTestAtHome01.webp';
+import niptTestAtHomeImage from '../assets/NIPTTestAtHome001.webp';
 import { DOCTOR_ON_CALL_HOTEL_ARTICLE } from './doctorOnCallHotelArticle';
 import { CHRONIC_PAIN_HOME_PHYSIOTHERAPY_ARTICLE } from './chronicPainHomePhysiotherapyArticle';
 import { SAME_DAY_LAB_CHECKUPS_AT_HOME_ARTICLE } from './sameDayLabCheckupsAtHomeArticle';

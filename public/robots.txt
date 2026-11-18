@@ -3,5 +3,8 @@ Allow: /
 
 Sitemap: https://www.simshomehealthcare.ae/sitemap.xml
 
+# Agentic Resource Discovery
+Agentmap: https://www.simshomehealthcare.ae/.well-known/ard.json
+
 # LLM-friendly site index
 # https://www.simshomehealthcare.ae/llms.txt

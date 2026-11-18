@@ -1,4 +1,4 @@
-import healthCheckupAtHomeImage from '../assets/HealthCheckupAtHome03.jpeg';
+import healthCheckupAtHomeImage from '../assets/HealthCheckupAtHome03.webp';
 
 const heading = (level, text) => ({ type: 'heading', level, text });
 const paragraph = (text) => ({ type: 'paragraph', parts: [text] });

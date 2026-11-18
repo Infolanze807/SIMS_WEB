@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const MAP_SRC =
   'https://www.google.com/maps?cid=17407437960497757157&z=16&hl=en&output=embed';
 
 const HomeLocation = () => {
+  const [showMap, setShowMap] = useState(false);
+
   return (
     <section className="bg-[#FAFBFD] px-6 py-24 font-sans antialiased lg:px-10">
       <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-12">
@@ -19,16 +21,33 @@ const HomeLocation = () => {
             are available across the city, 24 hours a day.
           </p>
         </div>
-        <div className="h-[380px] overflow-hidden rounded-[28px] border border-slate-100 bg-white shadow-[0_20px_50px_rgba(0,61,77,0.08)] lg:col-span-8">
-          <iframe
-            title="SIMS Home Healthcare location"
-            src={MAP_SRC}
-            width="100%"
-            height="100%"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            style={{ border: 0 }}
-          />
+        <div className="relative h-[380px] overflow-hidden rounded-[28px] border border-slate-100 bg-white shadow-[0_20px_50px_rgba(0,61,77,0.08)] lg:col-span-8">
+          {showMap ? (
+            <iframe
+              title="SIMS Home Healthcare location"
+              src={MAP_SRC}
+              width="100%"
+              height="100%"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              style={{ border: 0 }}
+              allowFullScreen
+            />
+          ) : (
+            <button
+              type="button"
+              onClick={() => setShowMap(true)}
+              className="flex h-full w-full flex-col items-center justify-center gap-3 bg-gradient-to-br from-[#e8f4f3] to-[#dceef0] px-6 text-center transition hover:from-[#dff0ee] hover:to-[#d2e8eb] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25b8a7] focus-visible:ring-inset"
+              aria-label="Load interactive Google Map for SIMS Home Healthcare location"
+            >
+              <span className="rounded-full bg-[#003d4d] px-5 py-2.5 text-sm font-bold text-white shadow-md">
+                View map
+              </span>
+              <span className="max-w-sm text-sm font-medium text-slate-600">
+                AB Center, 207 Sheikh Zayed Rd, Al Barsha First, Dubai
+              </span>
+            </button>
+          )}
         </div>
       </div>
     </section>

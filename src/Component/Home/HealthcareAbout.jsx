@@ -1,8 +1,7 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { FaShieldAlt, FaUserMd, FaClock, FaCheckCircle } from 'react-icons/fa';
-import about from '../../assets/About01.jpg';
-import AnimateInView, { fadeUp, slideFromLeft, slideFromRight, staggerContainer } from '../Services/AnimateInView';
+import about from '../../assets/About01.webp';
+import AnimateInView, { slideFromLeft, slideFromRight } from '../Services/AnimateInView';
 
 const HealthcareAbout = () => {
   return (
@@ -23,6 +22,10 @@ const HealthcareAbout = () => {
               <img 
                 src={about} 
                 alt="SIMS Premium Medical Care" 
+                width="640"
+                height="640"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover brightness-[0.90] contrast-[1.05]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#002833] via-transparent to-transparent"></div>
@@ -45,12 +48,12 @@ const HealthcareAbout = () => {
               </span>
             </h2>
             
-            <p className="text-base sm:text-lg font-medium text-slate-300 tracking-tight max-w-2xl">
+            <p className="text-base sm:text-lg font-medium text-slate-200 tracking-tight max-w-2xl">
               Hospital-Grade Medical Standards Brought Into Your Personal Space.
             </p>
           </div>
 
-          <div className="space-y-5 text-slate-300/90 font-light text-sm sm:text-base leading-relaxed max-w-3xl">
+          <div className="space-y-5 text-slate-200 font-light text-sm sm:text-base leading-relaxed max-w-3xl">
             <p>
               At SIMS Home Healthcare, we are revolutionizing access to quality medical assistance by offering clinical-grade services directly inside your private environment. Whether you are at home, relaxing in a hotel room, or working at your office, our elite medical framework eliminates the logistical stress of hospital lines.
             </p>
@@ -77,18 +80,14 @@ const HealthcareAbout = () => {
               </div>
               <div>
                 <h5 className="font-bold text-sm text-white tracking-tight">24/7 Uninterrupted Coverage</h5>
-                <p className="text-xs text-slate-400 mt-0.5 leading-normal">From midnight emergencies to early morning diagnostics, we are completely awake.</p>
+                <p className="text-xs text-slate-300 mt-0.5 leading-normal">From midnight emergencies to early morning diagnostics, we are completely awake.</p>
               </div>
             </div>
 
           </div>
 
-          <motion.div
+          <div
             className="grid grid-cols-1 gap-3 pt-2 text-xs font-medium text-slate-200 sm:grid-cols-2 sm:text-sm"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
           >
             {[
               'Consultation & Guidance',
@@ -96,12 +95,12 @@ const HealthcareAbout = () => {
               'Elite DHA Certified Practitioners',
               'Full Dubai Territorial Coverage',
             ].map((text) => (
-              <motion.div key={text} variants={fadeUp} className="flex items-center gap-2">
+              <div key={text} className="flex items-center gap-2">
                 <FaCheckCircle className="shrink-0 text-[#25b8a7]" />
                 <span>{text}</span>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
 
         </AnimateInView>
 

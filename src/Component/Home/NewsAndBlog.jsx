@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { FaUser, FaFolderOpen, FaArrowRight, FaCalendarAlt } from 'react-icons/fa';
 import { getBlogPostBySlug } from '../../data/blogPosts';
-import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInView';
+import AnimateInView from '../Services/AnimateInView';
 
 const HOME_FEATURED_SLUGS = [
   'healthcare-at-your-doorstep-dubai-hotels-doctors-on-call',
@@ -43,15 +42,9 @@ const NewsAndBlog = () => {
           </div>
         </AnimateInView>
 
-        <motion.div
-          className="grid grid-cols-1 gap-8 md:grid-cols-3 lg:gap-10"
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: '-40px' }}
-        >
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3 lg:gap-10">
           {articles.map((post) => (
-            <motion.div key={post.title} variants={fadeUp} whileHover={{ y: -8 }}>
+            <div key={post.title}>
               <Link
                 to={post.href}
                 className="group flex flex-col overflow-hidden rounded-[32px] border border-slate-100 bg-white shadow-[0_15px_40px_rgba(0,61,77,0.02)] transition-shadow duration-500 hover:shadow-[0_30px_60px_rgba(0,61,77,0.08)]"
@@ -105,12 +98,12 @@ const NewsAndBlog = () => {
                   </div>
                 </div>
               </Link>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
 
         <AnimateInView className="flex justify-center pt-2">
-          <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
+          <div>
             <Link
               to="/blog"
               className="inline-flex items-center gap-2 rounded-2xl border border-brand-accent/20 bg-white px-8 py-3 text-xs font-black uppercase tracking-widest text-brand-dark transition hover:border-brand-accent hover:text-brand-accent"
@@ -118,7 +111,7 @@ const NewsAndBlog = () => {
               View All Articles
               <FaArrowRight className="text-[10px]" />
             </Link>
-          </motion.div>
+          </div>
         </AnimateInView>
       </div>
     </section>

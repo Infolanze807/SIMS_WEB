@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaPhoneAlt, FaStar } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import placeLogoBadge from '../../../assets/PLACELOGO.png';
-import dhaLogo from '../../../assets/DHALOGO.png';
+import placeLogoBadge from '../../../assets/PLACELOGO.webp';
+import dhaLogo from '../../../assets/DHALOGO.webp';
 
 const ServiceDetailHero = ({ eyebrow, headline, subheadline, bullets = [], image, title, badges = {} }) => {
   return (

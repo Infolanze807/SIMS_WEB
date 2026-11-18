@@ -1,8 +1,8 @@
-import staff01 from '../assets/Staff07.png';
-import staff02 from '../assets/Staff02.jpeg';
-import staff03 from '../assets/Staff03.jpeg';
-import staff04 from '../assets/Staff04.jpeg';
-import staff05 from '../assets/Staff05.jpeg';
+import staff01 from '../assets/Staff07.webp';
+import staff02 from '../assets/Staff02.webp';
+import staff03 from '../assets/Staff03.webp';
+import staff04 from '../assets/Staff04.webp';
+import staff05 from '../assets/Staff05.webp';
 
 export const DOCTORS = [
   {

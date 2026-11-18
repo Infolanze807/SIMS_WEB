@@ -1,33 +1,33 @@
-import doctorOnCallImage from '../assets/DoctorOnCall04.png';
-import labTestAtHomeImage from '../assets/LabTestAtHome02.jpeg';
-import physiotherapyAtHomeImage from '../assets/PhysiotherapyAtHome003.jpeg';
-import nursingCareAtHomeImage from '../assets/NursingAtHome01.jpeg';
-import ivTherapiesImage from '../assets/IVTherapies001.jpeg';
-import oxygenTherapyAtHomeImage from '../assets/OxygenTherapyAtHome03.jpeg';
-import covidPCRTestAtHomeImage from '../assets/CovidPCRTestAtHome03.jpeg';
-import fluVaccinationAtHomeInDubaiImage from '../assets/FluVaccinationAtHomeInDubai03.jpeg';
-import healthCheckupAtHomeImage from '../assets/HealthCheckupAtHome03.jpeg';
-import injectionServiceAtHomeImage from '../assets/InjectionServiceAtHome03.jpeg';
-import doctorAtHomeImage from '../assets/DoctorAtHome02.jpeg';
-import doctorAtHotelImage from '../assets/DoctorAtHotel01.jfif';
-import homeVisitDoctorImage from '../assets/HomeVisitDoctor01.jfif';
-import pediatricianAtHomeImage from '../assets/PediatricianAtHome02.jfif';
-import pediatricianAtHotelImage from '../assets/PediatricianAtHotel01.jfif';
-import stdTestAtHomeImage from '../assets/STDTestAtHome001.jpeg';
-import NIPTTestAtHomeImage from '../assets/NIPTTestAtHome001.jpeg';
-import dnaTestAtHomeImage from '../assets/DNATestAtHome01.jfif';
-import hivTestAtHomeImage from '../assets/HIVTestAtHome01.jfif';
-import semenAnalysisAtHomeImage from '../assets/SemanAnalytics001.jpeg';
-import hormonesLabTestAtHomeImage from '../assets/HormonesLabTest02.jpg';
-import allergyFoodIntoleranceTestAtHomeImage from '../assets/AllergyFood02.jpg';
-import betaHcgTestAtHomeImage from '../assets/BetaHCG02.jpg';
-import vitaminMineralsTestAtHomeImage from '../assets/Vitamin&MineralsTest01.jpeg';
-import postSurgicalCareAtHomeImage from '../assets/PostSurgicalCare01.jfif';
-import ecgAtHomeImage from '../assets/ECGAtHome02.jpg';
-import woundCareAtHomeImage from '../assets/WoundCare01.jpeg';
-import dressingCareAtHomeImage from '../assets/DressingCare02.jpg';
-import urineCatheterManagementAtHomeImage from '../assets/UrineCatheterManagement01.jpeg';
-import medicationManagementAtHomeImage from '../assets/MedicationManagement03.jpg';
+import doctorOnCallImage from '../assets/DoctorOnCall04.webp';
+import labTestAtHomeImage from '../assets/LabTestAtHome02.webp';
+import physiotherapyAtHomeImage from '../assets/PhysiotherapyAtHome003.webp';
+import nursingCareAtHomeImage from '../assets/NursingAtHome01.webp';
+import ivTherapiesImage from '../assets/IVTherapies001.webp';
+import oxygenTherapyAtHomeImage from '../assets/OxygenTherapyAtHome03.webp';
+import covidPCRTestAtHomeImage from '../assets/CovidPCRTestAtHome03.webp';
+import fluVaccinationAtHomeInDubaiImage from '../assets/FluVaccinationAtHomeInDubai03.webp';
+import healthCheckupAtHomeImage from '../assets/HealthCheckupAtHome03.webp';
+import injectionServiceAtHomeImage from '../assets/InjectionServiceAtHome03.webp';
+import doctorAtHomeImage from '../assets/DoctorAtHome02.webp';
+import doctorAtHotelImage from '../assets/DoctorAtHotel01.webp';
+import homeVisitDoctorImage from '../assets/HomeVisitDoctor01.webp';
+import pediatricianAtHomeImage from '../assets/PediatricianAtHome02.webp';
+import pediatricianAtHotelImage from '../assets/PediatricianAtHotel01.webp';
+import stdTestAtHomeImage from '../assets/STDTestAtHome001.webp';
+import NIPTTestAtHomeImage from '../assets/NIPTTestAtHome001.webp';
+import dnaTestAtHomeImage from '../assets/DNATestAtHome01.webp';
+import hivTestAtHomeImage from '../assets/HIVTestAtHome01.webp';
+import semenAnalysisAtHomeImage from '../assets/SemanAnalytics001.webp';
+import hormonesLabTestAtHomeImage from '../assets/HormonesLabTest02.webp';
+import allergyFoodIntoleranceTestAtHomeImage from '../assets/AllergyFood02.webp';
+import betaHcgTestAtHomeImage from '../assets/BetaHCG02.webp';
+import vitaminMineralsTestAtHomeImage from '../assets/Vitamin&MineralsTest01.webp';
+import postSurgicalCareAtHomeImage from '../assets/PostSurgicalCare01.webp';
+import ecgAtHomeImage from '../assets/ECGAtHome02.webp';
+import woundCareAtHomeImage from '../assets/WoundCare01.webp';
+import dressingCareAtHomeImage from '../assets/DressingCare02.webp';
+import urineCatheterManagementAtHomeImage from '../assets/UrineCatheterManagement01.webp';
+import medicationManagementAtHomeImage from '../assets/MedicationManagement03.webp';
 
 export const SERVICES_CATALOG = [
   {
@@ -328,55 +328,7 @@ export const SERVICES_CATALOG = [
   },
 ];
 
-export const HEADER_NAV_SERVICES = [
-  {
-    title: 'Doctor On Call',
-    slug: 'doctor-on-call',
-    children: [
-      { title: 'Doctor At Home', slug: 'doctor-at-home' },
-      { title: 'Doctor at Hotel', slug: 'doctor-at-hotel' },
-      { title: 'Home Visit Doctor', slug: 'home-visit-doctor' },
-      // { title: 'Pediatrician at Home', slug: 'pediatrician-at-home' },
-      // { title: 'Pediatrician at Hotel', slug: 'pediatrician-at-hotel' },
-    ],
-  },
-  {
-    title: 'Lab Test at Home',
-    slug: 'lab-test-at-home',
-    children: [
-      { title: 'STD Test at Home', slug: 'std-test-at-home' },
-      { title: 'NIPT Test at Home', slug: 'nipt-test-at-home' },
-      { title: 'DNA Test at Home', slug: 'dna-test-at-home' },
-      { title: 'HIV Test at Home', slug: 'hiv-test-at-home' },
-      { title: 'Semen Analysis', slug: 'semen-analysis' },
-      { title: 'Hormones Lab Test', slug: 'hormones-lab-test' },
-      { title: 'Allergy & Food Intolerance Test', slug: 'allergy-food-intolerance-test' },
-      { title: 'Beta HCG Test at Home', slug: 'beta-hcg-test-at-home' },
-      { title: 'Vitamin & Minerals Test at Home', slug: 'vitamin-minerals-test-at-home' },
-    ],
-  },
-  { title: 'Physiotherapy At Home', slug: 'physiotherapy-at-home', children: [] },
-  {
-    title: 'Nurse at Home',
-    slug: 'nursing-care-at-home',
-    children: [
-      // { title: 'Elderly care at home', slug: 'elderly-care' },
-      // { title: 'Mother & Baby Care', slug: 'mother-baby-care' },
-      { title: 'Post Surgical Care', slug: 'post-surgical-care' },
-      { title: 'ECG at Home', slug: 'ecg-at-home' },
-      { title: 'Wound Care', slug: 'wound-care' },
-      { title: 'Dressing Care at Home', slug: 'dressing-care-at-home' },
-      { title: 'Urine Catheter Management', slug: 'urine-catheter-management' },
-      { title: 'Medication Management', slug: 'medication-management' },
-    ],
-  },
-  { title: 'IV Therapy at Home', slug: 'iv-therapies', children: [] },
-  { title: 'Oxygen Therapy at Home', slug: 'oxygen-therapy-at-home', children: [] },
-  { title: 'Covid PCR Test at Home', slug: 'covid-pcr-test-at-home', children: [] },
-  { title: 'Flu Vaccination at Home', slug: 'flu-vaccination-at-home-in-dubai', children: [] },
-  { title: 'Health Checkup at Home', slug: 'health-checkup-at-home', children: [] },
-  { title: 'Injection Service', slug: 'injection-service-at-home', children: [] },
-];
+export { HEADER_NAV_SERVICES } from './headerNavServices';
 
 export const SLUG_ALIASES = {
   'elderly-care-at-home': 'elderly-care',

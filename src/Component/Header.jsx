@@ -8,13 +8,12 @@ import {
   FaBars,
   FaTimes,
 } from 'react-icons/fa';
-import { motion, AnimatePresence } from 'framer-motion';
-import simsLogo from '../assets/sims-logo.png';
+import simsLogo from '../assets/sims-logo.webp';
 import { NavLink, useNavigate, useLocation } from 'react-router-dom';
-import { HEADER_NAV_SERVICES } from '../data/servicesCatalog';
+import { HEADER_NAV_SERVICES } from '../data/headerNavServices';
 
 const navLinkClass = ({ isActive }) =>
-  `font-medium transition ${isActive ? 'text-brand-accent' : 'text-brand-dark hover:text-brand-accent'}`;
+  `font-medium transition ${isActive ? 'text-[#0f766e]' : 'text-brand-dark hover:text-[#0f766e]'}`;
 
 const Header = () => {
   const navigate = useNavigate();
@@ -86,7 +85,10 @@ const Header = () => {
           <img
             src={simsLogo}
             alt="SIMS Healthcare"
-            className="h-12 w-auto object-contain lg:h-16"
+            width="200"
+            height="64"
+            decoding="async"
+            className="h-12 w-[150px] object-contain lg:h-16 lg:w-[200px]"
           />
         </NavLink>
 
@@ -120,15 +122,8 @@ const Header = () => {
               />
             </NavLink>
 
-            <AnimatePresence>
               {showServices && (
-                <motion.div
-                  className="absolute left-0 top-full z-50 pt-3"
-                  initial={{ opacity: 0, y: 8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 6 }}
-                  transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
-                >
+                <div className="absolute left-0 top-full z-50 pt-3">
                   {/* Hover bridge — keeps menu open when moving from link to panel */}
                   <div className="absolute -top-3 left-0 h-3 w-full" aria-hidden="true" />
 
@@ -191,12 +186,7 @@ const Header = () => {
 
                     {/* Sub-services — right column (opens beside left list) */}
                     {activeService?.children?.length > 0 && (
-                      <motion.div
-                        className="w-[310px] shrink-0 border-l border-slate-100 bg-[#FAFBFD]"
-                        initial={{ opacity: 0, x: 8 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.2 }}
-                      >
+                      <div className="w-[310px] shrink-0 border-l border-slate-100 bg-[#FAFBFD]">
                         <div className="border-b border-slate-100 bg-brand-dark px-5 py-3.5">
                           <p className="text-[10px] font-black uppercase tracking-[0.15em] text-brand-accent-light">
                             {activeService.title}
@@ -218,12 +208,11 @@ const Header = () => {
                             </button>
                           ))}
                         </div>
-                      </motion.div>
+                      </div>
                     )}
                   </div>
-                </motion.div>
+                </div>
               )}
-            </AnimatePresence>
           </div>
 
           <NavLink to="/contact" className={navLinkClass}>
@@ -248,7 +237,7 @@ const Header = () => {
             href="https://wa.me/971525231028"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-full bg-brand-green px-3 py-2 text-sm font-semibold text-white shadow-[0_8px_20px_-6px_rgba(37,211,102,0.45)] transition hover:brightness-105 sm:px-5"
+            className="flex items-center gap-2 rounded-full bg-[#0a6b37] px-3 py-2 text-sm font-semibold text-white shadow-[0_8px_20px_-6px_rgba(10,107,55,0.45)] transition hover:brightness-110 sm:px-5"
           >
             <FaWhatsapp />
             <span className="hidden sm:inline">Book Now</span>
@@ -266,15 +255,8 @@ const Header = () => {
         </div>
       </div>
 
-      <AnimatePresence>
         {mobileMenuOpen && (
-          <motion.div
-            className="border-t border-slate-100 bg-white lg:hidden"
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
-          >
+          <div className="border-t border-slate-100 bg-white lg:hidden">
             <nav className="mx-auto max-h-[calc(100dvh-5rem)] max-w-7xl overflow-y-auto px-4 py-4">
               <div className="flex flex-col gap-1">
                 <NavLink
@@ -318,15 +300,8 @@ const Header = () => {
                     />
                   </button>
 
-                  <AnimatePresence>
                     {mobileServicesOpen && (
-                      <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: 'auto' }}
-                        exit={{ opacity: 0, height: 0 }}
-                        transition={{ duration: 0.2 }}
-                        className="overflow-hidden"
-                      >
+                      <div className="overflow-hidden">
                         <div className="space-y-1 pb-2 pl-2 pt-1">
                           <NavLink
                             to="/services"
@@ -372,15 +347,8 @@ const Header = () => {
                                   )}
                                 </div>
 
-                                <AnimatePresence>
                                   {hasChildren && isExpanded && (
-                                    <motion.div
-                                      initial={{ opacity: 0, height: 0 }}
-                                      animate={{ opacity: 1, height: 'auto' }}
-                                      exit={{ opacity: 0, height: 0 }}
-                                      transition={{ duration: 0.2 }}
-                                      className="overflow-hidden"
-                                    >
+                                    <div className="overflow-hidden">
                                       <div className="space-y-0.5 border-l-2 border-brand-accent/20 py-1 pl-4">
                                         {service.children.map((item) => (
                                           <button
@@ -394,16 +362,14 @@ const Header = () => {
                                           </button>
                                         ))}
                                       </div>
-                                    </motion.div>
+                                    </div>
                                   )}
-                                </AnimatePresence>
                               </div>
                             );
                           })}
                         </div>
-                      </motion.div>
+                      </div>
                     )}
-                  </AnimatePresence>
                 </div>
 
                 <NavLink
@@ -445,16 +411,15 @@ const Header = () => {
                   href="https://wa.me/971525231028"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 rounded-xl bg-brand-green px-4 py-3 text-sm font-semibold text-white shadow-[0_8px_20px_-6px_rgba(37,211,102,0.45)] transition hover:brightness-105"
+                  className="flex items-center justify-center gap-2 rounded-xl bg-[#0a6b37] px-4 py-3 text-sm font-semibold text-white shadow-[0_8px_20px_-6px_rgba(10,107,55,0.45)] transition hover:brightness-110"
                 >
                   <FaWhatsapp />
                   Book Now on WhatsApp
                 </a>
               </div>
             </nav>
-          </motion.div>
+          </div>
         )}
-      </AnimatePresence>
     </header>
   );
 };

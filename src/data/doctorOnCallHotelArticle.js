@@ -1,4 +1,4 @@
-import hotelDoctorImage from '../assets/doc.jpeg';
+import hotelDoctorImage from '../assets/doc.webp';
 
 const heading = (level, text) => ({ type: 'heading', level, text });
 const paragraph = (text) => ({ type: 'paragraph', parts: [text] });

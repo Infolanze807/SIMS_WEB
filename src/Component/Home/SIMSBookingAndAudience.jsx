@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
 import { FaPhoneAlt, FaCheckCircle, FaUserMd, FaHospitalUser, FaBuilding, FaUserClock, FaPaperPlane } from 'react-icons/fa';
-import AnimateInView, { fadeUp, slideFromLeft, slideFromRight, staggerContainer } from '../Services/AnimateInView';
-import WhoWeServe from '../../assets/WhoWeServe.png';
+import AnimateInView, { slideFromLeft, slideFromRight } from '../Services/AnimateInView';
+import WhoWeServe from '../../assets/WhoWeServe.webp';
 import sendEmail from '../../utils/email';
 
 const SIMSBookingAndAudience = () => {
@@ -98,18 +97,14 @@ const SIMSBookingAndAudience = () => {
                   'We respond within minutes of your request',
                   'Emergency cases get priority handling',
                   'All submissions are 100% confidential & secure',
-                ].map((text, i) => (
-                  <motion.div
+                ].map((text) => (
+                  <div
                     key={text}
                     className="flex items-center gap-3 rounded-2xl border border-slate-100/70 bg-[#FAFBFD] p-3.5 shadow-sm"
-                    initial={{ opacity: 0, x: -16 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: i * 0.1 }}
                   >
                     <FaCheckCircle className="shrink-0 text-base text-[#25b8a7]" />
                     <span className="text-xs font-bold text-slate-700 sm:text-sm">{text}</span>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
             </div>
@@ -119,47 +114,52 @@ const SIMSBookingAndAudience = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
 
               <div className="space-y-1.5">
-                <label className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Enter Name</label>
+                <label htmlFor="booking-name" className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Enter Name</label>
                 <input
+                  id="booking-name"
                   type="text"
                   placeholder="Enter Your name"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full bg-white border border-slate-200/80 px-4 py-3.5 rounded-xl text-sm font-medium focus:outline-none focus:border-[#25b8a7] transition-colors shadow-sm"
+                  autoComplete="name"
+                  className="w-full bg-white border border-slate-200/80 px-4 py-3.5 rounded-xl text-sm font-medium focus:outline-none focus:border-[#25b8a7] focus:ring-2 focus:ring-[#25b8a7]/30 transition-colors shadow-sm"
                 />
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div className="space-y-1.5">
-                  <label className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Email *</label>
+                  <label htmlFor="booking-email" className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Email *</label>
                   <input
+                    id="booking-email"
                     type="email"
                     placeholder="Enter Your Email Address"
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full bg-white border border-slate-200/80 px-4 py-3.5 rounded-xl text-sm font-medium focus:outline-none focus:border-[#25b8a7] transition-colors shadow-sm"
-                    required
+                    autoComplete="email"
+                    className="w-full bg-white border border-slate-200/80 px-4 py-3.5 rounded-xl text-sm font-medium focus:outline-none focus:border-[#25b8a7] focus:ring-2 focus:ring-[#25b8a7]/30 transition-colors shadow-sm"
                   />
                 </div>
                 <div className="space-y-1.5">
-                  <label className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Contact No.</label>
+                  <label htmlFor="booking-phone" className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Contact No.</label>
                   <input
+                    id="booking-phone"
                     type="tel"
                     placeholder="Enter Your Contact Number"
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full bg-white border border-slate-200/80 px-4 py-3.5 rounded-xl text-sm font-medium focus:outline-none focus:border-[#25b8a7] transition-colors shadow-sm"
+                    autoComplete="tel"
+                    className="w-full bg-white border border-slate-200/80 px-4 py-3.5 rounded-xl text-sm font-medium focus:outline-none focus:border-[#25b8a7] focus:ring-2 focus:ring-[#25b8a7]/30 transition-colors shadow-sm"
                   />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-12 gap-5 items-end">
-                <div className="sm:col-span-7 space-y-2">
-                  <label className="text-xs font-black text-[#003d4d] uppercase tracking-wide block">Gender</label>
+                <fieldset className="sm:col-span-7 space-y-2 border-0 p-0">
+                  <legend className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Gender</legend>
                   <div className="flex items-center gap-3">
                     {['Men', 'Female', 'Other'].map((g) => (
                       <label key={g} className="flex-1 bg-white border border-slate-200/80 px-3 py-3 rounded-xl flex items-center justify-center gap-2 text-xs font-bold text-slate-700 cursor-pointer shadow-sm hover:border-[#25b8a7]/50 transition-colors">
@@ -168,29 +168,31 @@ const SIMSBookingAndAudience = () => {
                       </label>
                     ))}
                   </div>
-                </div>
+                </fieldset>
                 <div className="sm:col-span-5 space-y-1.5">
-                  <label className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Age</label>
+                  <label htmlFor="booking-age" className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Age</label>
                   <input
+                    id="booking-age"
                     type="number"
                     placeholder="Enter Your Age"
                     name="age"
                     value={formData.age}
                     onChange={handleChange}
-                    className="w-full bg-white border border-slate-200/80 px-4 py-3.5 rounded-xl text-sm font-medium focus:outline-none focus:border-[#25b8a7] transition-colors shadow-sm"
+                    className="w-full bg-white border border-slate-200/80 px-4 py-3.5 rounded-xl text-sm font-medium focus:outline-none focus:border-[#25b8a7] focus:ring-2 focus:ring-[#25b8a7]/30 transition-colors shadow-sm"
                   />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div className="space-y-1.5">
-                  <label className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Service Required</label>
+                  <label htmlFor="booking-service" className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Service Required</label>
                   <div className="relative">
                     <select
+                      id="booking-service"
                       name="service"
                       value={formData.service}
                       onChange={handleChange}
-                      className="w-full bg-white border border-slate-200/80 px-4 py-3.5 rounded-xl text-sm font-medium focus:outline-none focus:border-[#25b8a7] transition-colors shadow-sm appearance-none cursor-pointer"
+                      className="w-full bg-white border border-slate-200/80 px-4 py-3.5 rounded-xl text-sm font-medium focus:outline-none focus:border-[#25b8a7] focus:ring-2 focus:ring-[#25b8a7]/30 transition-colors shadow-sm appearance-none cursor-pointer"
                     >
                       <option>Service Required</option>
                       <option>Doctor Consultation</option>
@@ -201,49 +203,49 @@ const SIMSBookingAndAudience = () => {
                       <option>Post-Surgery Care</option>
                       <option>Other</option>
                     </select>
-                    <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400 text-xs">▼</div>
+                    <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-500 text-xs" aria-hidden="true">▼</div>
                   </div>
                 </div>
                 <div className="space-y-1.5">
-                  <label className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Preferred Time to Contact</label>
+                  <label htmlFor="booking-time" className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Preferred Time to Contact</label>
                   <div className="relative">
                     <select
+                      id="booking-time"
                       name="time"
                       value={formData.time}
                       onChange={handleChange}
-                      className="w-full bg-white border border-slate-200/80 px-4 py-3.5 rounded-xl text-sm font-medium focus:outline-none focus:border-[#25b8a7] transition-colors shadow-sm appearance-none cursor-pointer"
+                      className="w-full bg-white border border-slate-200/80 px-4 py-3.5 rounded-xl text-sm font-medium focus:outline-none focus:border-[#25b8a7] focus:ring-2 focus:ring-[#25b8a7]/30 transition-colors shadow-sm appearance-none cursor-pointer"
                     >
                       <option>Preferred Time to Contact</option>
                       <option>Morning</option>
                       <option>Afternoon</option>
                       <option>Evening</option>
                     </select>
-                    <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400 text-xs">▼</div>
+                    <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-500 text-xs" aria-hidden="true">▼</div>
                   </div>
                 </div>
               </div>
 
               <div className="space-y-1.5">
-                <label className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Health Concern</label>
+                <label htmlFor="booking-concern" className="text-xs font-black text-[#003d4d] uppercase tracking-wide">Health Concern</label>
                 <textarea
+                  id="booking-concern"
                   rows="4"
                   placeholder="Enter Your Health Concern in detail"
                   name="concern"
                   value={formData.concern}
                   onChange={handleChange}
-                  className="w-full bg-white border border-slate-200/80 p-4 rounded-xl text-sm font-medium focus:outline-none focus:border-[#25b8a7] transition-colors shadow-sm resize-none"
+                  className="w-full bg-white border border-slate-200/80 p-4 rounded-xl text-sm font-medium focus:outline-none focus:border-[#25b8a7] focus:ring-2 focus:ring-[#25b8a7]/30 transition-colors shadow-sm resize-none"
                 ></textarea>
               </div>
 
-              <motion.button
+              <button
                 type="submit"
                 className="group flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#25b8a7] to-[#0a5568] px-10 py-4 text-xs font-black uppercase tracking-widest text-white shadow-[0_10px_25px_rgba(37,184,167,0.25)] transition-all duration-300 hover:from-[#1fa394] hover:to-[#084656] hover:shadow-none sm:w-auto"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
               >
                 <span>{loading ? "Submitting..." : "Submit Request"}</span>
                 <FaPaperPlane className="text-[10px] transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-              </motion.button>
+              </button>
               {message.includes("success") ? (
                 <p className="text-center pt-5 text-green-500">{message}</p>
               ) : message ? (
@@ -277,23 +279,15 @@ const SIMSBookingAndAudience = () => {
               </p>
             </div>
 
-            <motion.div
-              className="grid grid-cols-1 gap-4 sm:grid-cols-2"
-              variants={staggerContainer}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-            >
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               {[
                 { icon: <FaBuilding className="text-sm" />, iconClass: 'bg-[#25b8a7]/20 border-[#25b8a7]/30 text-[#25b8a7]', title: 'Hotels & Tourism', desc: 'Partners in need of on-site medical services' },
                 { icon: <FaHospitalUser className="text-sm" />, iconClass: 'bg-teal-500/20 border-teal-500/30 text-teal-400', title: 'Families & Individuals', desc: 'Seeking medical care at home' },
                 { icon: <FaUserMd className="text-sm" />, iconClass: 'bg-cyan-500/20 border-cyan-500/30 text-cyan-400', title: 'Corporate Clients', desc: 'Looking for workplace wellness solutions' },
                 { icon: <FaUserClock className="text-sm" />, iconClass: 'bg-emerald-500/20 border-emerald-500/30 text-emerald-400', title: 'Elderly Patients', desc: 'Needing continuous care' },
               ].map((item) => (
-                <motion.div
+                <div
                   key={item.title}
-                  variants={fadeUp}
-                  whileHover={{ x: 4 }}
                   className="group flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur-sm transition-colors hover:bg-white/[0.06]"
                 >
                   <div className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border ${item.iconClass}`}>
@@ -301,11 +295,11 @@ const SIMSBookingAndAudience = () => {
                   </div>
                   <div className="space-y-1">
                     <h5 className="text-sm font-extrabold text-white">{item.title}</h5>
-                    <p className="text-xs font-normal leading-relaxed text-slate-400">{item.desc}</p>
+                    <p className="text-xs font-normal leading-relaxed text-slate-300">{item.desc}</p>
                   </div>
-                </motion.div>
+                </div>
               ))}
-            </motion.div>
+            </div>
 
             <div className="inline-flex flex-col sm:flex-row sm:items-center gap-4 bg-white/[0.04] border border-white/10 p-4 rounded-3xl backdrop-blur-sm">
               <div className="h-12 w-12 rounded-2xl bg-gradient-to-tr from-[#25b8a7] to-teal-500 text-white flex items-center justify-center shadow-md shadow-[#25b8a7]/20">
@@ -325,6 +319,10 @@ const SIMSBookingAndAudience = () => {
               <img
                 src={WhoWeServe}
                 alt="SIMS Associated Professional Practitioners Group"
+                width="880"
+                height="880"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover scale-102 group-hover:scale-105 transition-transform duration-[1200ms] ease-out"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#002e3a] via-[#002e3a]/20 to-transparent"></div>

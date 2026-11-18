@@ -39,6 +39,8 @@ const DoctorImage = ({ src, alt, className, name }) => {
     <img
       src={imgSrc}
       alt={alt}
+      width="480"
+      height="600"
       loading="lazy"
       decoding="async"
       referrerPolicy="no-referrer"

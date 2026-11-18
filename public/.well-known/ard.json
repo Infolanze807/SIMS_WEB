@@ -1,0 +1,61 @@
+{
+  "specVersion": "0.91",
+  "entries": [
+    {
+      "identifier": "urn:air:simshomehealthcare.ae:agent:booking",
+      "displayName": "SIMS Home Healthcare Booking",
+      "type": "application/agent-card+json",
+      "description": "Book DHA-licensed doctor, nurse, IV therapy, lab test, and physiotherapy home visits across Dubai 24/7.",
+      "capabilities": [
+        "BookHomeVisit",
+        "DoctorOnCall",
+        "IVTherapyAtHome",
+        "LabTestAtHome",
+        "NursingCareAtHome"
+      ],
+      "tags": ["healthcare", "dubai", "doctor-on-call", "home-visit"],
+      "representativeQueries": [
+        "book a doctor home visit in Dubai",
+        "doctor on call Dubai tonight",
+        "IV therapy at home Dubai",
+        "nurse at home Al Barsha",
+        "lab test at home Dubai"
+      ],
+      "data": {
+        "name": "SIMS Home Healthcare",
+        "url": "https://www.simshomehealthcare.ae/",
+        "description": "DHA-licensed doctors, nurses, and physiotherapists visit your home or hotel in Dubai 24/7.",
+        "contact": {
+          "telephone": "+971525231028",
+          "email": "connect@simshomehealthcare.ae",
+          "whatsapp": "https://wa.me/971525231028"
+        },
+        "skills": [
+          {
+            "id": "book-home-visit",
+            "name": "Book a home visit",
+            "description": "Collect patient name, UAE mobile, location, and symptoms, then open WhatsApp to dispatch care."
+          },
+          {
+            "id": "urgent-call",
+            "name": "Urgent call center",
+            "description": "Connect the user to SIMS urgent care at +971 52 523 1028."
+          }
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:simshomehealthcare.ae:skill:services",
+      "displayName": "SIMS Healthcare Services Catalog",
+      "type": "application/agent-skills+json",
+      "description": "Catalog of SIMS home healthcare services available across Dubai.",
+      "capabilities": ["ListServices", "ServiceDetails"],
+      "representativeQueries": [
+        "what home healthcare services does SIMS offer",
+        "physiotherapy at home Dubai price",
+        "pediatrician at hotel Dubai"
+      ],
+      "url": "https://www.simshomehealthcare.ae/llms.txt"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import bloggImage from '../assets/Blogg.jpeg';
+import bloggImage from '../assets/Blogg.webp';
 
 const heading = (level, text) => ({ type: 'heading', level, text });
 const paragraph = (text) => ({ type: 'paragraph', parts: [text] });

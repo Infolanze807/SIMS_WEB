@@ -1,7 +1,6 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { FaQuoteLeft, FaStar, FaMapMarkerAlt } from 'react-icons/fa';
-import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInView';
+import AnimateInView from '../Services/AnimateInView';
 
 const reviews = [
   {
@@ -51,18 +50,10 @@ const PatientTestimonials = () => {
           </p>
         </AnimateInView>
 
-        <motion.div
-          className="grid grid-cols-1 items-start gap-8 pt-4 md:grid-cols-3"
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: '-40px' }}
-        >
+        <div className="grid grid-cols-1 items-start gap-8 pt-4 md:grid-cols-3">
           {reviews.map((item, index) => (
-            <motion.div
+            <div
               key={item.id}
-              variants={fadeUp}
-              whileHover={{ y: -6 }}
               className={`group relative space-y-8 rounded-[36px] border border-slate-100 bg-[#FAFBFD] p-8 shadow-[0_20px_40px_rgba(0,61,77,0.02)] transition-all duration-500 hover:bg-white hover:shadow-[0_30px_60px_rgba(0,61,77,0.06)] ${
                 index === 1
                   ? 'border-[#25b8a7]/20 bg-gradient-to-b from-[#FAFBFD] to-white md:translate-y-6'
@@ -108,9 +99,9 @@ const PatientTestimonials = () => {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

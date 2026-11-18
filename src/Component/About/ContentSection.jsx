@@ -72,7 +72,7 @@ const ContentSection = () => {
             {/* Main Premium Image Frame */}
             <div className="relative w-full aspect-[4/3] sm:aspect-[4/3] md:aspect-[1.4] lg:aspect-[1.1] rounded-[32px] overflow-hidden shadow-[0_25px_60px_rgba(0,61,77,0.12)] border border-slate-100 z-10 group">
               <img
-                src="/home_medical_room.png"
+                src="/home_medical_room.webp"
                 alt="SIMS Premium Medical Care Room"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out brightness-[0.97]"
               />

@@ -50,16 +50,12 @@ const sendEmail = async (type, data) => {
       }
     );
 
-    console.log("Email sent successfully:", response);
-
     return {
       success: true,
       message: "Email sent successfully",
     };
 
   } catch (error) {
-    console.error("EmailJS Error:", error);
-
     return {
       success: false,
       message: error?.text || "Failed to send email",

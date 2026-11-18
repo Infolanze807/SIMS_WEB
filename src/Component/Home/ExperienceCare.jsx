@@ -1,8 +1,7 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { FaUserMd, FaShieldAlt, FaBriefcaseMedical } from 'react-icons/fa';
-import AnimateInView, { fadeUp, slideFromLeft, slideFromRight, staggerContainer } from '../Services/AnimateInView';
-import experiencecare from '../../assets/About0002.jpg';
+import AnimateInView, { slideFromLeft, slideFromRight } from '../Services/AnimateInView';
+import experiencecare from '../../assets/About0002.webp';
 
 const ExperienceCare = () => {
   return (
@@ -35,7 +34,7 @@ const ExperienceCare = () => {
 
           <div className="w-20 h-[3px] bg-gradient-to-r from-[#25b8a7] to-teal-400 rounded-full"></div>
 
-          <div className="space-y-6 text-slate-300 font-normal text-sm sm:text-base leading-relaxed max-w-3xl">
+          <div className="space-y-6 text-slate-200 font-normal text-sm sm:text-base leading-relaxed max-w-3xl">
             <p>
               At SIMS Home Healthcare, we are redefining how healthcare is delivered in Dubai. By providing healthcare 24/7, our mission is to ensure that expert medical care is always within reach—no matter where you are. From your home to your workplace or even on the go, our licensed doctors, nurses, physiotherapists, and healthcare professionals deliver prompt, personalized, and reliable support, around the clock. Your health, our priority—anytime, anywhere.
             </p>
@@ -45,29 +44,21 @@ const ExperienceCare = () => {
             </p>
           </div>
 
-          <motion.div
-            className="grid grid-cols-1 gap-4 pt-4 sm:grid-cols-3"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          >
+          <div className="grid grid-cols-1 gap-4 pt-4 sm:grid-cols-3">
             {[
               { icon: <FaUserMd className="text-base text-[#25b8a7]" />, label: 'Clinical Expertise' },
               { icon: <FaShieldAlt className="text-base text-teal-400" />, label: 'Reduced Wait Times' },
               { icon: <FaBriefcaseMedical className="text-base text-[#25b8a7]" />, label: 'Corporate Standards' },
             ].map((item) => (
-              <motion.div
+              <div
                 key={item.label}
-                variants={fadeUp}
-                whileHover={{ y: -3 }}
                 className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-3.5 shadow-sm transition-colors duration-300 hover:bg-white/10"
               >
                 {item.icon}
                 <span className="text-xs font-bold text-slate-200">{item.label}</span>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
 
         </AnimateInView>
 
@@ -83,6 +74,10 @@ const ExperienceCare = () => {
               <img 
                 src={experiencecare}
                 alt="SIMS Elite Medical Team Group" 
+                width="760"
+                height="760"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover scale-102 group-hover:scale-105 transition-transform duration-1000 ease-out"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#002e3a]/60 via-transparent to-transparent"></div>

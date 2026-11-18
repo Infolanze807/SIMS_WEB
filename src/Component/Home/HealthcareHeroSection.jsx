@@ -1,6 +1,4 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import React, { Suspense, lazy, useEffect, useState } from 'react';
 import {
   FaUser,
   FaMapMarkerAlt,
@@ -8,30 +6,26 @@ import {
   FaBriefcaseMedical,
   FaArrowRight,
   FaUserMd,
-  FaAward,
   FaNotesMedical,
 } from 'react-icons/fa';
-import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInView';
-import doctorAtHomeImage from '../../assets/DoctorOnCall03.png';
-import doctorOnCallImage from '../../assets/DoctorOnCall04.png';
-import ivTherapiesImage from '../../assets/IVTherapies001.jpeg';
-import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.jpeg';
-import labTestAtHomeImage from '../../assets/LabTestAtHome02.jpeg';
-import nursingCareAtHomeImage from '../../assets/NursingAtHome01.jpeg';
-import healthCheckupAtHomeImage from '../../assets/HealthCheckupAtHome03.jpeg';
 
-const HERO_SERVICES = [
-  { slug: 'doctor-on-call', title: 'Doctor On Call', image: doctorOnCallImage },
-  { slug: 'iv-therapies', title: 'IV Therapy At Home', image: ivTherapiesImage },
-  { slug: 'physiotherapy-at-home', title: 'Physiotherapy', image: physiotherapyAtHomeImage },
-  { slug: 'lab-test-at-home', title: 'Lab Tests At Home', image: labTestAtHomeImage },
-  { slug: 'nursing-care-at-home', title: 'Nurse At Home', image: nursingCareAtHomeImage },
-  { slug: 'health-checkup-at-home', title: 'Health Checkups', image: healthCheckupAtHomeImage },
-];
+const doctorAtHomeImage = '/hero-doctor.webp';
+const HeroClinicalStrip = lazy(() => import('./HeroClinicalStrip'));
 
 const UniqueHeroSection = () => {
   const [form, setForm] = useState({ symptoms: '', phone: '', name: '', location: '' });
+  const [showStrip, setShowStrip] = useState(false);
   const handleChange = (field) => (e) => setForm((prev) => ({ ...prev, [field]: e.target.value }));
+
+  useEffect(() => {
+    const enable = () => setShowStrip(true);
+    if (typeof window.requestIdleCallback === 'function') {
+      const id = window.requestIdleCallback(enable, { timeout: 3000 });
+      return () => window.cancelIdleCallback(id);
+    }
+    const timeoutId = window.setTimeout(enable, 1500);
+    return () => window.clearTimeout(timeoutId);
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -47,21 +41,15 @@ const UniqueHeroSection = () => {
 
   return (
     <section className="relative min-h-screen w-full bg-gradient-to-br from-[#002b36] via-[#003d4d] to-[#01222a] px-4 py-16 sm:px-6 lg:px-8 lg:py-14 text-white overflow-hidden">
-      {/* Abstract luxury geometric mesh backgrounds */}
       <div className="absolute top-0 left-1/4 h-[500px] w-[500px] rounded-full bg-[#25b8a7]/5 blur-[120px] pointer-events-none" />
       <div className="absolute bottom-8 right-0 h-[400px] w-[400px] rounded-full bg-black/30 blur-[100px] pointer-events-none" />
 
       <div className="relative z-10 mx-auto max-w-7xl">
-        
-        {/* UPPER ECOSYSTEM: Asymmetric Presentation */}
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 mb-12">
-          
-          {/* Brand Promise Left Block */}
           <div className="space-y-4 lg:col-span-7">
-            <div className="inline-flex w-fit items-center gap-3 rounded-full border border-[#25b8a7]/25 bg-white/5 px-4 py-2.5 shadow-[0_0_24px_rgba(37,184,167,0.12)] backdrop-blur-sm">
-              <span className="relative flex h-2.5 w-2.5 shrink-0">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#25b8a7] opacity-50" />
-                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#25b8a7] shadow-[0_0_8px_#25b8a7]" />
+            <div className="inline-flex w-fit items-center gap-3 rounded-full border border-[#25b8a7]/25 bg-white/5 px-4 py-2.5">
+              <span className="relative flex h-2.5 w-2.5 shrink-0" aria-hidden="true">
+                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#25b8a7]" />
               </span>
               <span className="text-[10px] font-black uppercase tracking-[0.22em] text-white sm:text-[11px]">
                 24 Hours A Day
@@ -73,8 +61,7 @@ const UniqueHeroSection = () => {
             </div>
 
             <h1 className="max-w-3xl text-3xl font-black leading-[1.05] tracking-tight text-white sm:text-4xl lg:text-[2.85rem]">
-              Doctor on Call in Dubai:{' '}
-              <span className="text-[#25b8a7]">Fast, 24/7 Care</span> at Your Door
+              Doctor on Call in Dubai: Fast, 24/7 Care at Your Door
             </h1>
 
             <div className="space-y-2 pt-1 text-sm font-medium leading-relaxed text-white/90 sm:text-base">
@@ -84,7 +71,7 @@ const UniqueHeroSection = () => {
                 'Anywhere in Dubai, Anytime You Need Us — We Bring Healthcare to You',
               ].map((item) => (
                 <div key={item} className="flex items-start gap-2">
-                  <span className="mt-1.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-sm border border-white/80">
+                  <span className="mt-1.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-sm border border-white/80" aria-hidden="true">
                     <span className="h-1.5 w-1.5 rounded-sm bg-white" />
                   </span>
                   <span>{item}</span>
@@ -97,19 +84,16 @@ const UniqueHeroSection = () => {
                 href="https://wa.me/971525231028?text=Hi%20SIMS%2C%20I%27d%20like%20to%20book%20a%20home%20doctor%20visit%20in%20Dubai."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-xl bg-[#25b8a7] px-6 py-3.5 text-sm font-black uppercase tracking-wide text-white shadow-[0_12px_28px_rgba(37,184,167,0.35)] transition hover:bg-[#1fa090] hover:shadow-[0_14px_32px_rgba(37,184,167,0.45)]"
+                className="inline-flex items-center gap-2 rounded-xl bg-[#0f766e] px-6 py-3.5 text-sm font-black uppercase tracking-wide text-white shadow-[0_12px_28px_rgba(15,118,110,0.35)] transition hover:bg-[#0d9488] hover:shadow-[0_14px_32px_rgba(15,118,110,0.45)]"
               >
                 Book a Home Visit
-                <FaArrowRight className="text-xs" />
+                <FaArrowRight className="text-xs" aria-hidden="true" />
               </a>
             </div>
-
           </div>
 
-          {/* Premium Visual Composition Right Block */}
           <div className="relative lg:col-span-5 flex justify-center">
             <div className="relative w-full max-w-sm pb-2 sm:pb-8 sm:pl-4 lg:pl-6">
-              {/* Main Image Framing */}
               <div className="relative h-80 w-full overflow-hidden rounded-3xl border border-white/10 shadow-2xl group">
                 <img
                   src={doctorAtHomeImage}
@@ -118,121 +102,146 @@ const UniqueHeroSection = () => {
                   height="480"
                   fetchPriority="high"
                   decoding="async"
-                  className="h-full w-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700"
+                  sizes="(max-width: 1024px) 90vw, 400px"
+                  className="h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#002b36] via-transparent to-transparent" />
               </div>
 
-              {/* Floating Live Dispatch Metric Card */}
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                className="absolute bottom-3 left-3 z-10 max-w-[calc(100%-1.5rem)] rounded-2xl border border-white/10 bg-gradient-to-r from-[#003d4d] to-[#002b36] p-3 shadow-xl backdrop-blur-md sm:bottom-4 sm:left-4 sm:max-w-[220px] sm:p-4 lg:-bottom-6 lg:-left-6"
-              >                <div className="flex items-start gap-3">
-                  <div className="p-2.5 rounded-xl bg-[#25b8a7]/10 text-[#25b8a7]"><FaUserMd size={18}/></div>
+              <div className="absolute bottom-3 left-3 z-10 max-w-[calc(100%-1.5rem)] rounded-2xl border border-white/10 bg-gradient-to-r from-[#003d4d] to-[#002b36] p-3 shadow-xl sm:bottom-4 sm:left-4 sm:max-w-[220px] sm:p-4 lg:-bottom-6 lg:-left-6">
+                <div className="flex items-start gap-3">
+                  <div className="p-2.5 rounded-xl bg-[#25b8a7]/10 text-[#25b8a7]" aria-hidden="true">
+                    <FaUserMd size={18} />
+                  </div>
                   <div>
-                    <h4 className="text-xs font-bold text-white tracking-wide">Rapid Response</h4>
-                    <p className="text-[11px] text-slate-300 mt-0.5 font-light">Average arrival across Dubai is under 30 minutes.</p>
+                    <p className="text-xs font-bold text-white tracking-wide">Rapid Response</p>
+                    <p className="text-[11px] text-slate-200 mt-0.5 font-light">
+                      Average arrival across Dubai is under 30 minutes.
+                    </p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
-
         </div>
 
-        {/* COMPACT FLOATING DISPATCH CONSOLE */}
-        <motion.div 
-          className="w-full bg-white rounded-2xl shadow-2xl p-4 sm:p-6 text-slate-800 mb-12 border border-slate-100"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-        >
-          <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-4 lg:grid-cols-12 items-center">
-            
+        <div className="w-full bg-white rounded-2xl shadow-2xl p-4 sm:p-6 text-slate-800 mb-12 border border-slate-100">
+          <form
+            onSubmit={handleSubmit}
+            toolname="book_home_visit"
+            tooldescription="Book a SIMS DHA-licensed home healthcare visit in Dubai. Collects patient name, UAE mobile number, location, and symptoms, then opens WhatsApp dispatch."
+            className="grid grid-cols-1 gap-4 lg:grid-cols-12 items-center"
+          >
             <div className="lg:col-span-2 space-y-0.5 px-2">
-              <h3 className="text-base font-bold text-[#003d4d] flex items-center gap-2">
-                <FaBriefcaseMedical className="text-[#25b8a7]" size={14}/>
+              <h2 className="text-base font-bold text-[#003d4d] flex items-center gap-2">
+                <FaBriefcaseMedical className="text-[#25b8a7]" size={14} aria-hidden="true" />
                 Instant Intake
-              </h3>
-              <p className="text-[11px] text-slate-500 font-medium">Request medical dispatch on-demand</p>
+              </h2>
+              <p className="text-[11px] text-slate-600 font-medium">Request medical dispatch on-demand</p>
             </div>
 
             <div className="lg:col-span-10 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-3">
               <div className="relative">
-                <span className="absolute inset-y-0 left-0 flex items-center pl-3.5 text-slate-400"><FaUser size={12}/></span>
-                <input type="text" required value={form.name} onChange={handleChange('name')} placeholder="Patient Name" className="w-full text-xs font-medium bg-slate-50 border border-slate-200 rounded-xl py-3 pl-9 pr-3 outline-none focus:border-[#25b8a7] focus:bg-white transition-all text-[#003d4d]" />
+                <span className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5 text-slate-500" aria-hidden="true">
+                  <FaUser size={12} />
+                </span>
+                <input
+                  type="text"
+                  name="patient_name"
+                  required
+                  value={form.name}
+                  onChange={handleChange('name')}
+                  placeholder="Patient Name"
+                  aria-label="Patient Name"
+                  toolparamdescription="Full name of the patient needing care"
+                  autoComplete="name"
+                  className="w-full text-xs font-medium bg-slate-50 border border-slate-200 rounded-xl py-3 pl-9 pr-3 outline-none focus:border-[#25b8a7] focus:ring-2 focus:ring-[#25b8a7]/35 focus:bg-white transition-all text-[#003d4d]"
+                />
               </div>
 
               <div className="relative">
-                <span className="absolute inset-y-0 left-0 flex items-center pl-3.5 text-xs font-bold text-slate-400">+971</span>
-                <input type="tel" required value={form.phone} onChange={handleChange('phone')} placeholder="Mobile Number" className="w-full text-xs font-medium bg-slate-50 border border-slate-200 rounded-xl py-3 pl-14 pr-3 outline-none focus:border-[#25b8a7] focus:bg-white transition-all text-[#003d4d]" />
+                <span className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5 text-xs font-bold text-slate-500" aria-hidden="true">
+                  +971
+                </span>
+                <input
+                  type="tel"
+                  name="mobile_number"
+                  required
+                  value={form.phone}
+                  onChange={handleChange('phone')}
+                  placeholder="Mobile Number"
+                  aria-label="Mobile Number"
+                  toolparamdescription="UAE mobile number without country code"
+                  autoComplete="tel"
+                  className="w-full text-xs font-medium bg-slate-50 border border-slate-200 rounded-xl py-3 pl-14 pr-3 outline-none focus:border-[#25b8a7] focus:ring-2 focus:ring-[#25b8a7]/35 focus:bg-white transition-all text-[#003d4d]"
+                />
               </div>
 
               <div className="relative">
-                <span className="absolute inset-y-0 left-0 flex items-center pl-3.5 text-slate-400"><FaMapMarkerAlt size={12}/></span>
-                <input type="text" required value={form.location} onChange={handleChange('location')} placeholder="Your Location/Hotel" className="w-full text-xs font-medium bg-slate-50 border border-slate-200 rounded-xl py-3 pl-9 pr-3 outline-none focus:border-[#25b8a7] focus:bg-white transition-all text-[#003d4d]" />
+                <span className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5 text-slate-500" aria-hidden="true">
+                  <FaMapMarkerAlt size={12} />
+                </span>
+                <input
+                  type="text"
+                  name="location"
+                  required
+                  value={form.location}
+                  onChange={handleChange('location')}
+                  placeholder="Your Location/Hotel"
+                  aria-label="Your Location or Hotel"
+                  toolparamdescription="Home, hotel, or office address in Dubai"
+                  autoComplete="street-address"
+                  className="w-full text-xs font-medium bg-slate-50 border border-slate-200 rounded-xl py-3 pl-9 pr-3 outline-none focus:border-[#25b8a7] focus:ring-2 focus:ring-[#25b8a7]/35 focus:bg-white transition-all text-[#003d4d]"
+                />
               </div>
 
               <div className="relative">
-                <span className="absolute inset-y-0 left-0 flex items-center pl-3.5 text-slate-400"><FaNotesMedical size={12}/></span>
-                <input type="text" required value={form.symptoms} onChange={handleChange('symptoms')} placeholder="Symptoms" aria-label="Symptoms" className="w-full text-xs font-medium bg-slate-50 border border-slate-200 rounded-xl py-3 pl-9 pr-3 outline-none focus:border-[#25b8a7] focus:bg-white transition-all text-[#003d4d]" />
+                <span className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5 text-slate-500" aria-hidden="true">
+                  <FaNotesMedical size={12} />
+                </span>
+                <input
+                  type="text"
+                  name="symptoms"
+                  required
+                  value={form.symptoms}
+                  onChange={handleChange('symptoms')}
+                  placeholder="Symptoms"
+                  aria-label="Symptoms"
+                  toolparamdescription="Brief description of symptoms or care needed"
+                  className="w-full text-xs font-medium bg-slate-50 border border-slate-200 rounded-xl py-3 pl-9 pr-3 outline-none focus:border-[#25b8a7] focus:ring-2 focus:ring-[#25b8a7]/35 focus:bg-white transition-all text-[#003d4d]"
+                />
               </div>
 
-              <button type="submit" className="w-full flex items-center justify-center gap-2 rounded-xl bg-[#003d4d] text-white text-xs font-bold transition-all duration-300 hover:bg-[#25b8a7] py-3 shadow-md hover:shadow-lg">
+              <button
+                type="submit"
+                className="w-full flex items-center justify-center gap-2 rounded-xl bg-[#003d4d] text-white text-xs font-bold transition-all duration-300 hover:bg-[#0f766e] py-3 shadow-md hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25b8a7] focus-visible:ring-offset-2"
+              >
                 <span>Dispatch Now</span>
-                <FaArrowRight size={10} />
+                <FaArrowRight size={10} aria-hidden="true" />
               </button>
             </div>
-
           </form>
-        </motion.div>
+        </div>
 
-        {/* LOWER SECTION: Fluid Cascading Service Strips */}
         <div className="space-y-4">
           <div className="flex items-center justify-between border-b border-white/10 pb-4">
-            <h3 className="text-sm font-bold uppercase tracking-wider text-[#25b8a7]">Clinical Capabilities</h3>
-            <a href="tel:+971525231028" className="text-xs font-bold text-white hover:text-[#25b8a7] flex items-center gap-2 transition-colors">
-              <FaPhoneAlt size={10}/> Urgent Call Center: +971 52 523 1028
+            <h2 className="text-sm font-bold uppercase tracking-wider text-[#5eead4]">Clinical Capabilities</h2>
+            <a
+              href="tel:+971525231028"
+              className="text-xs font-bold text-white hover:text-[#25b8a7] flex items-center gap-2 transition-colors"
+            >
+              <FaPhoneAlt size={10} aria-hidden="true" /> Urgent Call Center: +971 52 523 1028
             </a>
           </div>
 
-          <motion.div 
-            className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          >
-            {HERO_SERVICES.map((service) => (
-              <motion.div key={service.slug} variants={fadeUp} className="min-w-0">
-                <Link
-                  to={`/services/${service.slug}`}
-                  className="group flex h-full flex-col overflow-hidden rounded-xl border border-white/10 bg-[#002833] duration-300 hover:border-[#25b8a7]/40"
-                >
-                  <div className="relative aspect-[4/5] w-full overflow-hidden bg-[#002833]">
-                    <img
-                      src={service.image}
-                      alt={service.title}
-                      width="320"
-                      height="400"
-                      loading="lazy"
-                      decoding="async"
-                      className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                    />
-                  </div>
-                  <div className="flex min-h-[52px] flex-1 items-center justify-between gap-2 p-3">
-                    <h4 className="text-xs font-bold leading-tight tracking-wide text-white group-hover:text-[#25b8a7] transition-colors duration-300">
-                      {service.title}
-                    </h4>
-                    <FaArrowRight size={10} className="shrink-0 text-white/30 transition-all duration-300 group-hover:text-[#25b8a7] group-hover:translate-x-0.5" />
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-          </motion.div>
+          <div className="min-h-[560px] sm:min-h-[420px] lg:min-h-[340px]">
+            {showStrip ? (
+              <Suspense fallback={null}>
+                <HeroClinicalStrip />
+              </Suspense>
+            ) : null}
+          </div>
         </div>
-
       </div>
     </section>
   );
