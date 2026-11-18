@@ -12,12 +12,31 @@ import labTestAtHome01Image from '../assets/LabTestAtHome01.webp';
 import niptTestAtHomeImage from '../assets/NIPTTestAtHome001.webp';
 import bloggImage from '../assets/Blogg.webp';
 import healthCheckupAtHomeImage from '../assets/HealthCheckupAtHome03.webp';
+import mensHealthHomeCareImage from '../assets/blog/mens-health-home-care-dubai.webp';
 
 export const BLOG_POSTS = [
   {
+    slug: 'mens-health-month-complete-medical-care-at-home-dubai',
+    title:
+      'Prioritizing Men’s Health This Month: Complete Medical Care Without Leaving Home',
+    blogNumber: '07',
+    author: 'Dr. Syeda Marsha Noor',
+    date: 'November 18, 2026',
+    day: '18',
+    month: 'Nov',
+    category: 'Men’s Health',
+    comments: 'No Comments',
+    commentCount: 0,
+    excerpt:
+      'Throughout Men’s Health Month, DHA-licensed home healthcare teams bring 24/7 on-call doctors, private hotel visits, at-home blood tests, and custom IV drip therapy to your door across Dubai—usually within 30 to 45 minutes.',
+    metaDescription:
+      'Men’s Health Month in Dubai: book DHA-licensed doctor on call, hotel visits, at-home blood tests, and IV drip therapy without leaving home. Arrive in 30–45 minutes.',
+    image: mensHealthHomeCareImage,
+  },
+  {
     slug: 'same-day-std-vitamin-full-body-checkups-at-home-dubai',
     title: 'Same-Day STD, Vitamin Deficiency, and Full Body Checkups at Home in Dubai',
-    blogNumber: '07',
+    blogNumber: '06',
     author: 'Dr. Syeda Marsha Noor',
     date: 'November 16, 2026',
     day: '16',
@@ -35,7 +54,7 @@ export const BLOG_POSTS = [
     slug: 'dubai-run-2026-musculoskeletal-care-hydration-in-home-nursing-recovery',
     title:
       'Dubai Run 2026: Musculoskeletal Care, Hydration Strategy & In-Home Nursing Recovery',
-    blogNumber: '06',
+    blogNumber: '05',
     author: 'Dr. Mamoona Fatima',
     date: 'November 6, 2026',
     day: '06',
@@ -53,7 +72,7 @@ export const BLOG_POSTS = [
     slug: 'early-fetal-gender-genetic-screening-at-home-nipt-dubai',
     title:
       'Early Fetal Gender & Genetic Screening: At-Home Prenatal Testing for Dubai Moms',
-    blogNumber: '05',
+    blogNumber: '04',
     author: 'Dr. Syeda Marsha Noor',
     date: 'November 2, 2026',
     day: '02',
@@ -71,7 +90,7 @@ export const BLOG_POSTS = [
     slug: 'at-home-blood-tests-dubai-lab-quality-diagnostics',
     title:
       'At-Home Blood Tests in Dubai: How Lab-Quality Diagnostics Come to Your Living Room',
-    blogNumber: '04',
+    blogNumber: '03',
     author: 'Dr. Syeda Marsha Noor',
     date: 'November 2, 2026',
     day: '02',

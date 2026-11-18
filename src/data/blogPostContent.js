@@ -9,10 +9,22 @@ import { DOCTOR_ON_CALL_HOTEL_ARTICLE } from './doctorOnCallHotelArticle';
 import { CHRONIC_PAIN_HOME_PHYSIOTHERAPY_ARTICLE } from './chronicPainHomePhysiotherapyArticle';
 import { SAME_DAY_LAB_CHECKUPS_AT_HOME_ARTICLE } from './sameDayLabCheckupsAtHomeArticle';
 import { DUBAI_RUN_2026_RECOVERY_ARTICLE } from './dubaiRun2026RecoveryArticle';
+import { MENS_HEALTH_MONTH_HOME_CARE_ARTICLE } from './mensHealthMonthHomeCareArticle';
 
 export const BLOG_POST_CONTENT = {
-  'same-day-std-vitamin-full-body-checkups-at-home-dubai': {
+  'mens-health-month-complete-medical-care-at-home-dubai': {
     previousSlug: null,
+    nextSlug: 'same-day-std-vitamin-full-body-checkups-at-home-dubai',
+    cta: {
+      title: 'Book Men’s Health Care at Home',
+      description:
+        'Arrange a DHA-licensed doctor visit, men’s health blood panel, or recovery IV drip at your home or hotel in Dubai. Call or WhatsApp +971525231028 for 24/7 appointments across Downtown, DIFC, Dubai Marina, Palm Jumeirah, and surrounding communities.',
+      buttonText: 'Call +971525231028',
+    },
+    sections: MENS_HEALTH_MONTH_HOME_CARE_ARTICLE,
+  },
+  'same-day-std-vitamin-full-body-checkups-at-home-dubai': {
+    previousSlug: 'mens-health-month-complete-medical-care-at-home-dubai',
     nextSlug: 'dubai-run-2026-musculoskeletal-care-hydration-in-home-nursing-recovery',
     cta: {
       title: 'Book Same-Day Lab Tests at Home',
