@@ -1,9 +1,12 @@
 // Hand-curated overrides for key hub services
 export const MANUAL_OVERRIDES = {
   'doctor-on-call': {
+    title: '24/7 Doctor on Call in Dubai: Expert Care at Your Door',
+    metaDescription:
+      'Get a licensed doctor at your door in Dubai, day or night. Fast 24/7 home, hotel and office visits, no waiting rooms. Book by call or WhatsApp today',
     hero: {
       eyebrow: 'Available 24/7 Support',
-      headline: '24/7 Doctor on Call Service – Health Delivered to Your Door',
+      headline: '24/7 Doctor on Call in Dubai: Expert Care at Your Door',
       subheadline: 'Trusted 24/7 Doctor on Call Service in Dubai for Home, Hotel & Office Visits',
       bullets: [
         'Get professional medical care at home, hotel, or office—fast, safe, and 24/7.',
@@ -174,9 +177,12 @@ export const MANUAL_OVERRIDES = {
     ],
   },
   'lab-test-at-home': {
+    title: 'Lab Tests at Home in Dubai: Fast, DHA-Certified Blood Tests',
+    metaDescription:
+      'Book lab tests at home in Dubai 24/7. DHA-licensed nurses collect blood & diagnostic samples at your doorstep with fast digital reports.',
     hero: {
       eyebrow: 'Available 24/7 Support',
-      headline: 'Lab Tests at Home in Dubai – Easy, Fast & Certified',
+      headline: 'Lab Tests at Home in Dubai: Fast, DHA-Certified Blood Tests',
       subheadline: 'Get Blood Tests and Lab Reports Without Leaving Home',
       bullets: [
         'Same-day blood test collection at your home, office, or hotel. Results delivered digitally.',
@@ -2062,9 +2068,12 @@ export const MANUAL_OVERRIDES = {
     ],
   },
   'physiotherapy-at-home': {
+    title: 'Physiotherapy at Home in Dubai: Convenient, Expert Rehab',
+    metaDescription:
+      'Get trusted DHA-certified physiotherapy at home in Dubai. Convenient 1-on-1 rehabilitation & mobility care in the comfort of your home.',
     hero: {
       eyebrow: 'Available 24/7 Support',
-      headline: 'Professional Home Physiotherapy in Dubai – Expert In-Home Rehabilitation',
+      headline: 'Physiotherapy at Home in Dubai: Convenient, Expert Rehab',
       subheadline: 'Experience professional rehab in the comfort of your home. DHA Certified physiotherapy services in Dubai for back pain, sports injuries , post-op recovery & mobility.',
       bullets: [
         'Book licensed physiotherapists to your home, hotel, or office—available 7 days a week in Dubai.',
@@ -2274,9 +2283,12 @@ export const MANUAL_OVERRIDES = {
     ],
   },
   'nursing-care-at-home': {
+    title: 'Nurse at Home in Dubai: 24/7 DHA-Licensed Nursing Care',
+    metaDescription:
+      'Book a 24/7 DHA-certified nurse at home in Dubai. Fast, safe post-surgical care, wound dressing, ECG & injection administration at your home.',
     hero: {
       eyebrow: 'Available 24/7 Support',
-      headline: 'Nurse Care in Dubai – Professional Help at Your Home',
+      headline: 'Nurse at Home in Dubai: 24/7 DHA-Licensed Nursing Care',
       subheadline: 'Compassionate, Professional Nursing Support in the Comfort of Your Home',
       bullets: [
         'Get licensed nursing care at your home, hotel, or workplace—24/7 across Dubai.',
@@ -4034,9 +4046,12 @@ export const MANUAL_OVERRIDES = {
     ],
   },
   'iv-therapies': {
+    title: 'IV Therapy at Home in Dubai: 24/7 Fast Hydration & Wellness',
+    metaDescription:
+      'Book 24/7 IV therapy at home in Dubai. DHA-licensed nurses deliver fast hydration, immunity & energy vitamin drips to your home or hotel in 30 mins.',
     hero: {
       eyebrow: 'Available 24/7 Support',
-      headline: 'IV Therapy at Home in Dubai – 24/7 Wellness & Hydration at Your Doorstep',
+      headline: 'IV Therapy at Home in Dubai: 24/7 Fast Hydration & Wellness',
       subheadline: 'Wellness & Recovery on Your Schedule – 24/7 IV Therapy Near You',
       bullets: [
         'Book DHA-certified nurses for IV hydration, vitamin drips, detox & more—available 24/7.',
@@ -4350,10 +4365,21 @@ export const MANUAL_OVERRIDES = {
       },
     ],
   },
+  'home-visit-doctor': {
+    title: 'Home Visit Doctor in Dubai: 24/7 Fast & DHA-Certified Care',
+    metaDescription:
+      'Need a home visit doctor in Dubai? Our DHA-licensed doctors arrive at your doorstep in 30–45 minutes, 24/7. Fast, trusted care for residents & families.',
+    hero: {
+      headline: 'Home Visit Doctor in Dubai: 24/7 Fast & DHA-Certified Care',
+    },
+  },
   'doctor-at-home': {
+    title: 'Doctor at Home in Dubai: 24/7 Fast & Trusted Medical Care',
+    metaDescription:
+      'Skip the clinic waiting room with our 24/7 doctor at home service in Dubai. Certified doctors, rapid arrival & personalized care anywhere in Dubai.',
     hero: {
       eyebrow: 'Available 24/7 Support',
-      headline: '24/7 Home Doctor Visits in Dubai – Fast, Trusted & Professional',
+      headline: 'Doctor at Home in Dubai: 24/7 Fast & Trusted Medical Care',
       subheadline: 'Convenient, Safe & On-Demand Medical Care – Right at Your Door',
       bullets: [
         'DHA-certified doctors for urgent care, illness, chronic conditions & more—anytime, anywhere.',
@@ -4965,9 +4991,12 @@ export const MANUAL_OVERRIDES = {
   //   ],
   // },
   'doctor-at-hotel': {
+    title: 'Doctor at Hotel in Dubai: 24/7 Fast & DHA-Certified Care',
+    metaDescription:
+      'Get a trusted DHA-certified doctor at hotel in Dubai 24/7. Fast room visits, prescriptions & treatments across all Dubai hotels & resorts.',
     hero: {
       eyebrow: 'Available 24/7 Support',
-      headline: 'Doctor at Hotel in Dubai – 24/7 Medical Care at Your Doorstep',
+      headline: 'Doctor at Hotel in Dubai: 24/7 Fast & DHA-Certified Care',
       subheadline: 'Medical Assistance When You Need It – Straight to Your Hotel Room',
       bullets: [
         'DHA-licensed doctors available 24/7 for in-room consultations, diagnosis, and treatment.',
@@ -5690,9 +5719,12 @@ export const MANUAL_OVERRIDES = {
     ],
   },
   'health-checkup-at-home': {
+    title: 'Health Checkups at Home in Dubai: Full Body & Family Packages',
+    metaDescription:
+      'Book comprehensive health checkups at home in Dubai. DHA-certified doctors & nurses provide full body screenings, blood panels & family packages.',
     hero: {
       eyebrow: 'Available 24/7 Support',
-      headline: 'Health Checkups at Home in Dubai – Fast, Safe & Comprehensive Family Care',
+      headline: 'Health Checkups at Home in Dubai: Full Body & Family Packages',
       subheadline: 'Complete Health Assessments – On Your Terms',
       bullets: [
         'Book DHA-certified professionals for full-body health checkups for you and your family—at home.',

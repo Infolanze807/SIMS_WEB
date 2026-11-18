@@ -65,6 +65,18 @@ export const DOCTORS = [
     rating: '4.9',
     reviewsCount: 110,
   },
+  {
+    id: 'neha-daniel-masih',
+    name: 'Neha Daniel Masih',
+    specialty: 'DHA Licensed Nurse',
+    experience: '5+ Years',
+    languages: ['English', 'Hindi', 'Urdu'],
+    image: null,
+    bio: 'Skilled DHA certified nurse providing reliable home medical support. Committed to gentle care, clinical safety, and patient well-being.',
+    dhaLicense: '51537306-002',
+    rating: '4.9',
+    reviewsCount: 64,
+  },
 ];
 
 export const getDoctorById = (id) => DOCTORS.find((doctor) => doctor.id === id);

@@ -20,6 +20,8 @@ import { FaXTwitter } from 'react-icons/fa6';
 import { SiGooglepay } from 'react-icons/si';
 import simsLogo from '../assets/sims-logo.png';
 import dhaLogo from '../assets/DHALOGO.png';
+import dhaHealthBadge from '../assets/logoo.png';
+import { GoogleRatingBadge } from './Home/HomeMain';
 import { HEADER_NAV_SERVICES } from '../data/servicesCatalog';
 import { LEGAL_LINKS } from '../data/legalContent';
 
@@ -135,6 +137,22 @@ const Footer = () => {
                 — whether at home, hotel, or office. Our experienced doctors, nurses, and
                 physiotherapists provide 24/7 healthcare services across Dubai.
               </p>
+
+              <div className="flex flex-col items-start gap-3">
+                <GoogleRatingBadge />
+                <div className="inline-flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3 shadow-[0_8px_24px_rgba(0,0,0,0.12)] backdrop-blur-sm transition-colors hover:border-[#25b8a7]/30">
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white">
+                    <img src={dhaHealthBadge} alt="DHA" className="h-6 w-6 object-contain" />
+                  </div>
+                  <div>
+                    <p className="text-[10px] font-black uppercase tracking-wider text-[#25b8a7]">
+                      Officially Licensed
+                    </p>
+                    <p className="text-xs font-bold text-white">DHA Certified Professionals</p>
+                    <p className="text-[11px] font-semibold text-white/80">License No. 6394609</p>
+                  </div>
+                </div>
+              </div>
 
               <div className="flex flex-wrap gap-2">
                 {serviceTags.map((tag) => (

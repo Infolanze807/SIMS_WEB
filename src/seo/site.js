@@ -1,8 +1,8 @@
 export const SITE_URL = 'https://www.simshomehealthcare.ae';
 export const SITE_NAME = 'SIMS Home Healthcare';
-export const HOME_TITLE = 'Sims Home Healthcare | 24/7 Doctor on call Dubai';
+export const HOME_TITLE = 'Doctor on Call in Dubai: Fast, 24/7 Care at Your Door';
 export const HOME_DESCRIPTION =
-  'DHA-licensed doctors, nurses, and physiotherapists visit your home or hotel in Dubai 24/7. Book doctor visits, IV therapy, lab tests, and nursing care.';
+  'Need a doctor at home in Dubai? Our DHA-licensed team provides fast, 24/7 on-call healthcare to your door. Book a visit in minutes.';
 
 export const ORG_ID = `${SITE_URL}/#organization`;
 export const BUSINESS_ID = `${SITE_URL}/#localbusiness`;
