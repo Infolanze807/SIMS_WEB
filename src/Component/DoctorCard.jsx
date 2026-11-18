@@ -1,11 +1,39 @@
 import React from 'react';
 import { FaCertificate, FaUserMd } from 'react-icons/fa';
 
-const FALLBACK_IMAGE =
-  'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=600';
+const getInitials = (name = '') =>
+  name
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0]?.toUpperCase() ?? '')
+    .join('');
 
-const DoctorImage = ({ src, alt, className }) => {
+const DoctorImage = ({ src, alt, className, name }) => {
   const [imgSrc, setImgSrc] = React.useState(src);
+  const [failed, setFailed] = React.useState(!src);
+
+  React.useEffect(() => {
+    setImgSrc(src);
+    setFailed(!src);
+  }, [src]);
+
+  if (!imgSrc || failed) {
+    return (
+      <div
+        className={`flex h-full w-full flex-col items-center justify-center gap-3 bg-gradient-to-br from-[#e8f7f5] via-[#f4fbfa] to-[#dceff2] ${className || ''}`}
+        aria-label={alt}
+        role="img"
+      >
+        <div className="flex h-24 w-24 items-center justify-center rounded-full border-2 border-brand-accent/30 bg-white text-3xl font-black tracking-wide text-brand-accent shadow-sm">
+          {getInitials(name) || <FaUserMd className="text-2xl" />}
+        </div>
+        <p className="px-4 text-center text-xs font-bold uppercase tracking-[0.18em] text-brand-dark/50">
+          Photo coming soon
+        </p>
+      </div>
+    );
+  }
 
   return (
     <img
@@ -16,7 +44,7 @@ const DoctorImage = ({ src, alt, className }) => {
       loading="lazy"
       decoding="async"
       referrerPolicy="no-referrer"
-      onError={() => setImgSrc(FALLBACK_IMAGE)}
+      onError={() => setFailed(true)}
       className={className}
     />
   );
@@ -28,6 +56,7 @@ const DoctorCard = ({ doctor }) => (
       <DoctorImage
         src={doctor.image}
         alt={doctor.name}
+        name={doctor.name}
         className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.04]"
       />
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/15 to-transparent opacity-90 transition-all duration-500 group-hover:via-brand-dark/20" />
@@ -39,7 +68,8 @@ const DoctorCard = ({ doctor }) => (
         <p className="mt-1 pl-5 text-[10px] font-semibold tracking-wide text-slate-500">
           {doctor.dhaLicense}
         </p>
-      </div>    </div>
+      </div>
+    </div>
 
     <div className="flex flex-1 flex-col p-6">
       <div className="mb-3 flex items-start justify-between gap-3">

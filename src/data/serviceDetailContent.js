@@ -211,7 +211,8 @@ export const getServiceDetail = async (slug) => {
   const template = buildFromTemplate(base);
   const merged = mergeOverride(template, override);
   merged.slug = base.slug;
-  merged.title = base.title;
+  merged.title = override.title ?? base.title;
+  merged.metaDescription = override.metaDescription ?? merged.metaDescription;
   merged.image = override.image ?? merged.hero?.image ?? base.image;
   merged.relatedSlugs = override.relatedSlugs ?? base.relatedSlugs;
 

@@ -12,9 +12,7 @@ import {
   FaNotesMedical,
 } from 'react-icons/fa';
 import AnimateInView, { fadeUp, staggerContainer } from '../Services/AnimateInView';
-import GoogleRatingBadge from './GoogleRatingBadge';
-import dhaHealthBadge from '../../assets/logoo.png';
-import doctorAtHomeImage from '../../assets/Home01.png';
+import doctorAtHomeImage from '../../assets/DoctorOnCall03.png';
 import doctorOnCallImage from '../../assets/DoctorOnCall04.png';
 import ivTherapiesImage from '../../assets/IVTherapies001.jpeg';
 import physiotherapyAtHomeImage from '../../assets/PhysiotherapyAtHome003.jpeg';
@@ -74,12 +72,9 @@ const UniqueHeroSection = () => {
               </span>
             </div>
 
-            <h1 className="max-w-3xl text-3xl font-black uppercase leading-[0.98] tracking-[0.06em] text-white sm:text-5xl lg:text-[3.45rem]">
-              Dubai&apos;s Fastest{' '}
-              <span className="text-[#25b8a7]">On-Call</span>
-              <span className="block">
-                <span className="text-[#25b8a7]">Healthcare</span> —
-              </span>
+            <h1 className="max-w-3xl text-3xl font-black leading-[1.05] tracking-tight text-white sm:text-4xl lg:text-[2.85rem]">
+              Doctor on Call in Dubai:{' '}
+              <span className="text-[#25b8a7]">Fast, 24/7 Care</span> at Your Door
             </h1>
 
             <div className="space-y-2 pt-1 text-sm font-medium leading-relaxed text-white/90 sm:text-base">
@@ -97,20 +92,18 @@ const UniqueHeroSection = () => {
               ))}
             </div>
 
-            <div className="flex flex-col items-start gap-3 pt-2">
-              <GoogleRatingBadge />
-
-              <div className="inline-flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3 shadow-[0_8px_24px_rgba(0,0,0,0.12)] backdrop-blur-sm transition-colors hover:border-[#25b8a7]/30">
-                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white">
-                  <img src={dhaHealthBadge} alt="DHA" className="h-6 w-6 object-contain" />
-                </div>
-                <div>
-                  <p className="text-[10px] font-black uppercase tracking-wider text-[#25b8a7]">Officially Licensed</p>
-                  <p className="text-xs font-bold text-white">DHA Certified Professionals</p>
-                  <p className="text-[11px] font-semibold text-white/80">License No. 6394609</p>
-                </div>
-              </div>
+            <div className="pt-2">
+              <a
+                href="https://wa.me/971525231028?text=Hi%20SIMS%2C%20I%27d%20like%20to%20book%20a%20home%20doctor%20visit%20in%20Dubai."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-xl bg-[#25b8a7] px-6 py-3.5 text-sm font-black uppercase tracking-wide text-white shadow-[0_12px_28px_rgba(37,184,167,0.35)] transition hover:bg-[#1fa090] hover:shadow-[0_14px_32px_rgba(37,184,167,0.45)]"
+              >
+                Book a Home Visit
+                <FaArrowRight className="text-xs" />
+              </a>
             </div>
+
           </div>
 
           {/* Premium Visual Composition Right Block */}
